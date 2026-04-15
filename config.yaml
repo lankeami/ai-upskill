@@ -1,0 +1,51 @@
+sources:
+  reddit:
+    subreddits:
+      - artificial
+      - MachineLearning
+      - LocalLLaMA
+      - ChatGPT
+  hackernews:
+    min_score: 10
+  rss:
+    - name: TechCrunch AI
+      url: https://techcrunch.com/category/artificial-intelligence/feed/
+    - name: The Verge AI
+      url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    - name: Ars Technica AI
+      url: https://feeds.arstechnica.com/arstechnica/technology-lab
+
+keywords:
+  ai_relevance:
+    - AI
+    - artificial intelligence
+    - LLM
+    - GPT
+    - machine learning
+    - neural network
+    - foundation model
+    - deep learning
+    - transformer
+    - diffusion model
+    - generative AI
+    - NLP
+    - computer vision
+    - reinforcement learning
+
+companies:
+  OpenAI: ["openai", "gpt", "chatgpt", "dall-e", "sora", "o1", "o3"]
+  Google: ["google", "gemini", "deepmind", "bard"]
+  Anthropic: ["anthropic", "claude"]
+  Meta: ["meta ai", "llama"]
+  Microsoft: ["microsoft", "copilot", "azure ai", "phi-"]
+  Mistral: ["mistral", "mixtral"]
+  Apple: ["apple intelligence", "apple ai", "apple ml"]
+  Stability AI: ["stability ai", "stable diffusion", "stablelm"]
+  xAI: ["xai", "grok"]
+
+output:
+  dir: reports
+  format: markdown
+
+dedup:
+  levenshtein_threshold: 0.85
