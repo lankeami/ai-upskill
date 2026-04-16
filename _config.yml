@@ -1,0 +1,21 @@
+title: AI Daily Report
+description: Daily AI news aggregated from Reddit, Hacker News, and tech RSS feeds.
+baseurl: ""
+url: ""
+
+exclude:
+  - cmd/
+  - internal/
+  - docs/
+  - go.mod
+  - go.sum
+  - config.yaml
+  - "*.go"
+  - ai-report
+  - scripts/
+  - Makefile
+  - README.md
+  - CLAUDE.md
+  - .claude/
+  - ai-report/
+  - Gemfile.lock
