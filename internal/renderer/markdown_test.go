@@ -54,6 +54,50 @@ func TestRenderMarkdown(t *testing.T) {
 	}
 }
 
+func TestRenderMarkdownIncludesFrontMatter(t *testing.T) {
+	date := time.Date(2026, 4, 15, 0, 0, 0, 0, time.UTC)
+
+	classified := map[string][]processor.DeduplicatedItem{
+		"OpenAI": {
+			{
+				Title:   "GPT-5 Released",
+				Sources: []processor.SourceRef{{Name: "Reddit", URL: "https://reddit.com/gpt5"}},
+			},
+		},
+		"Google": {
+			{
+				Title:   "Gemini Update",
+				Sources: []processor.SourceRef{{Name: "HN", URL: "https://hn.com/gemini"}},
+			},
+			{
+				Title:   "Bard News",
+				Sources: []processor.SourceRef{{Name: "RSS", URL: "https://rss.com/bard"}},
+			},
+		},
+	}
+
+	result := RenderMarkdown(classified, date, []string{"Reddit"})
+
+	if !strings.HasPrefix(result, "---\n") {
+		t.Fatal("report must start with front matter delimiter")
+	}
+	if !strings.Contains(result, "layout: report") {
+		t.Error("missing layout field in front matter")
+	}
+	if !strings.Contains(result, "date: 2026-04-15") {
+		t.Error("missing date field in front matter")
+	}
+	if !strings.Contains(result, "item_count: 3") {
+		t.Error("missing or incorrect item_count in front matter")
+	}
+	if !strings.Contains(result, "\"OpenAI\"") {
+		t.Error("missing OpenAI in companies list")
+	}
+	if !strings.Contains(result, "\"Google\"") {
+		t.Error("missing Google in companies list")
+	}
+}
+
 func TestRenderMarkdownOmitsEmptySections(t *testing.T) {
 	date := time.Date(2026, 4, 15, 0, 0, 0, 0, time.UTC)
 

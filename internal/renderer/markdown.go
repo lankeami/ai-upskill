@@ -15,10 +15,8 @@ var companyOrder = []string{
 }
 
 func RenderMarkdown(classified map[string][]processor.DeduplicatedItem, date time.Time, sources []string) string {
-	var b strings.Builder
-
-	b.WriteString(fmt.Sprintf("# AI Daily Report — %s\n\n", date.Format("2006-01-02")))
-
+	// Collect ordered companies and total item count for front matter
+	orderedCompanies := make([]string, 0)
 	rendered := make(map[string]bool)
 	for _, company := range companyOrder {
 		items, ok := classified[company]
@@ -26,9 +24,8 @@ func RenderMarkdown(classified map[string][]processor.DeduplicatedItem, date tim
 			continue
 		}
 		rendered[company] = true
-		renderSection(&b, company, items)
+		orderedCompanies = append(orderedCompanies, company)
 	}
-
 	remaining := make([]string, 0)
 	for company := range classified {
 		if !rendered[company] {
@@ -36,7 +33,32 @@ func RenderMarkdown(classified map[string][]processor.DeduplicatedItem, date tim
 		}
 	}
 	sort.Strings(remaining)
-	for _, company := range remaining {
+	orderedCompanies = append(orderedCompanies, remaining...)
+
+	itemCount := 0
+	for _, company := range orderedCompanies {
+		itemCount += len(classified[company])
+	}
+
+	quotedCompanies := make([]string, len(orderedCompanies))
+	for i, c := range orderedCompanies {
+		quotedCompanies[i] = fmt.Sprintf("%q", c)
+	}
+
+	var b strings.Builder
+
+	// Jekyll front matter
+	b.WriteString("---\n")
+	b.WriteString("layout: report\n")
+	b.WriteString(fmt.Sprintf("title: \"AI Daily Report \u2014 %s\"\n", date.Format("2006-01-02")))
+	b.WriteString(fmt.Sprintf("date: %s\n", date.Format("2006-01-02")))
+	b.WriteString(fmt.Sprintf("companies: [%s]\n", strings.Join(quotedCompanies, ", ")))
+	b.WriteString(fmt.Sprintf("item_count: %d\n", itemCount))
+	b.WriteString("---\n\n")
+
+	b.WriteString(fmt.Sprintf("# AI Daily Report \u2014 %s\n\n", date.Format("2006-01-02")))
+
+	for _, company := range orderedCompanies {
 		renderSection(&b, company, classified[company])
 	}
 
@@ -60,7 +82,7 @@ func renderSection(b *strings.Builder, company string, items []processor.Dedupli
 		for _, src := range item.Sources {
 			sourceLinks = append(sourceLinks, fmt.Sprintf("[%s](%s)", src.Name, src.URL))
 		}
-		b.WriteString(fmt.Sprintf("- **%s** — %s\n", item.Title, strings.Join(sourceLinks, " | ")))
+		b.WriteString(fmt.Sprintf("- **%s** \u2014 %s\n", item.Title, strings.Join(sourceLinks, " | ")))
 	}
 	b.WriteString("\n")
 }
