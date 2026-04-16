@@ -26,6 +26,15 @@ jobs:
       - name: Generate report
         run: ./ai-report generate
 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Verify Jekyll output
+        run: ./scripts/test-jekyll-output.sh
+
       - name: Commit and push report
         run: |
           git config user.name "github-actions[bot]"
