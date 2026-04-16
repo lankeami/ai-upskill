@@ -2,6 +2,7 @@ package renderer
 
 import (
 	"fmt"
+	"html"
 	"regexp"
 	"sort"
 	"strings"
@@ -12,13 +13,14 @@ import (
 
 var htmlTagRe = regexp.MustCompile("<[^>]*>")
 
-// cleanDescription strips HTML tags and truncates to 200 characters with … suffix.
-// Returns empty string if the input is empty.
+// cleanDescription strips HTML tags, decodes HTML entities, and truncates to
+// 200 characters with … suffix. Returns empty string if the input is empty.
 func cleanDescription(desc string) string {
 	if desc == "" {
 		return ""
 	}
 	desc = htmlTagRe.ReplaceAllString(desc, "")
+	desc = html.UnescapeString(desc)
 	desc = strings.TrimSpace(desc)
 	if len([]rune(desc)) > 200 {
 		runes := []rune(desc)

@@ -15,7 +15,16 @@ type Meta struct {
 	Title       string // og:title, for potential future use
 }
 
+// maxHeadBytes limits how much of the response body we read (256KB is more
+// than enough for any <head> section).
+const maxHeadBytes = 256 * 1024
+
 var httpClient = &http.Client{Timeout: 5 * time.Second}
+
+// SetTimeout overrides the HTTP client timeout used by FetchMeta.
+func SetTimeout(d time.Duration) {
+	httpClient = &http.Client{Timeout: d}
+}
 
 // FetchMeta fetches the URL and extracts meta description and og:title from
 // the HTML <head>. Extraction priority for description:
@@ -26,7 +35,13 @@ var httpClient = &http.Client{Timeout: 5 * time.Second}
 //
 // Returns an empty Meta on any failure — enrichment is best-effort.
 func FetchMeta(url string) Meta {
-	resp, err := httpClient.Get(url)
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		return Meta{}
+	}
+	req.Header.Set("User-Agent", "ai-upskill-bot/1.0")
+
+	resp, err := httpClient.Do(req)
 	if err != nil {
 		return Meta{}
 	}
@@ -36,7 +51,7 @@ func FetchMeta(url string) Meta {
 		return Meta{}
 	}
 
-	return parseMeta(resp.Body)
+	return parseMeta(io.LimitReader(resp.Body, maxHeadBytes))
 }
 
 // parseMeta reads an HTML stream and extracts og:title and the best available

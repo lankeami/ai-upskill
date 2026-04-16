@@ -54,6 +54,9 @@ var generateCmd = &cobra.Command{
 		fmt.Printf("Fetched %d items\n", len(items))
 
 		if !skipEnrich && cfg.Enrichment.Enabled {
+			if cfg.Enrichment.TimeoutSeconds > 0 {
+				enricher.SetTimeout(time.Duration(cfg.Enrichment.TimeoutSeconds) * time.Second)
+			}
 			fmt.Println("Enriching items with metadata...")
 			items = enricher.Enrich(items, cfg.Enrichment.Concurrency)
 			fmt.Printf("Enrichment complete\n")
