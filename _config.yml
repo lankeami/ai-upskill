@@ -19,3 +19,4 @@ exclude:
   - .claude/
   - ai-report/
   - Gemfile.lock
+  - vendor/
