@@ -3,8 +3,6 @@ layout: default
 title: AI Daily Report
 ---
 
-# AI Daily Report
-
 A daily aggregation of AI news from Reddit, Hacker News, and tech RSS feeds, organized by company. Reports are generated automatically each day.
 
 ## Reports
