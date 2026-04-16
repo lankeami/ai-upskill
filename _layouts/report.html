@@ -1,0 +1,114 @@
+---
+layout: default
+---
+
+<style>
+  .report-nav { display: flex; justify-content: space-between; margin-bottom: 1.5rem; font-size: 0.9rem; }
+  .report-nav a { color: #0969da; }
+  .report-nav .disabled { color: #656d76; }
+  .report-date { font-size: 1.1rem; color: #656d76; margin-bottom: 1rem; }
+  .report-toc { margin-bottom: 1.5rem; padding: 1rem; background: #f6f8fa; border-radius: 6px; }
+  .report-toc h3 { font-size: 0.9rem; margin-bottom: 0.5rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em; }
+  .report-toc ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .report-toc li a { font-size: 0.85rem; padding: 0.2rem 0.5rem; background: #fff; border: 1px solid #d1d9e0; border-radius: 4px; display: inline-block; }
+  .report-toc li a:hover { background: #0969da; color: #fff; text-decoration: none; }
+  details { margin-bottom: 1rem; }
+  details summary { cursor: pointer; font-size: 1.25rem; font-weight: 600; padding: 0.5rem 0; }
+  details summary:hover { color: #0969da; }
+  details[open] summary { margin-bottom: 0.5rem; }
+</style>
+
+{% comment %} Build sorted list of report pages for prev/next nav {% endcomment %}
+{% assign report_pages = site.pages | where_exp: "p", "p.path contains 'reports/'" | where_exp: "p", "p.date" | sort: "date" %}
+
+{% assign prev_report = nil %}
+{% assign next_report = nil %}
+{% for p in report_pages %}
+  {% if p.url == page.url %}
+    {% if forloop.index0 > 0 %}
+      {% assign prev_idx = forloop.index0 | minus: 1 %}
+      {% assign prev_report = report_pages[prev_idx] %}
+    {% endif %}
+    {% assign next_idx = forloop.index0 | plus: 1 %}
+    {% if next_idx < report_pages.size %}
+      {% assign next_report = report_pages[next_idx] %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<nav class="report-nav">
+  {% if prev_report %}
+    <a href="{{ prev_report.url | relative_url }}">&larr; {{ prev_report.date | date: "%B %d, %Y" }}</a>
+  {% else %}
+    <span class="disabled">&larr; No earlier report</span>
+  {% endif %}
+  <a href="{{ '/' | relative_url }}">All Reports</a>
+  {% if next_report %}
+    <a href="{{ next_report.url | relative_url }}">{{ next_report.date | date: "%B %d, %Y" }} &rarr;</a>
+  {% else %}
+    <span class="disabled">No later report &rarr;</span>
+  {% endif %}
+</nav>
+
+<h1>{{ page.title }}</h1>
+<p class="report-date">{{ page.date | date: "%A, %B %d, %Y" }}</p>
+
+{% if page.companies %}
+<nav class="report-toc">
+  <h3>Companies</h3>
+  <ul>
+    {% for company in page.companies %}
+      <li><a href="#{{ company | slugify }}">{{ company }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}
+
+<div id="report-content">
+{{ content }}
+</div>
+
+<nav class="report-nav" style="margin-top: 2rem;">
+  {% if prev_report %}
+    <a href="{{ prev_report.url | relative_url }}">&larr; {{ prev_report.date | date: "%B %d, %Y" }}</a>
+  {% else %}
+    <span class="disabled">&larr; No earlier report</span>
+  {% endif %}
+  <a href="{{ '/' | relative_url }}">All Reports</a>
+  {% if next_report %}
+    <a href="{{ next_report.url | relative_url }}">{{ next_report.date | date: "%B %d, %Y" }} &rarr;</a>
+  {% else %}
+    <span class="disabled">No later report &rarr;</span>
+  {% endif %}
+</nav>
+
+<script>
+// Wrap each h2 + following content in a collapsible <details> element
+document.addEventListener('DOMContentLoaded', function() {
+  var content = document.getElementById('report-content');
+  var children = Array.from(content.children);
+  var details = null;
+
+  children.forEach(function(el) {
+    if (el.tagName === 'H2') {
+      // Close previous details if open
+      if (details) {
+        content.insertBefore(details, el);
+      }
+      details = document.createElement('details');
+      details.setAttribute('open', '');
+      var summary = document.createElement('summary');
+      summary.id = el.id || el.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      summary.textContent = el.textContent;
+      details.appendChild(summary);
+      el.remove();
+    } else if (details) {
+      details.appendChild(el);
+    }
+  });
+  // Append last details
+  if (details) {
+    content.appendChild(details);
+  }
+});
+</script>
