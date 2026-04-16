@@ -34,12 +34,19 @@ type OutputConfig struct {
 	Format string `mapstructure:"format"`
 }
 
+type EnrichmentConfig struct {
+	Enabled        bool `mapstructure:"enabled"`
+	Concurrency    int  `mapstructure:"concurrency"`
+	TimeoutSeconds int  `mapstructure:"timeout_seconds"`
+}
+
 type Config struct {
-	Sources   SourcesConfig        `mapstructure:"sources"`
-	Keywords  map[string][]string  `mapstructure:"keywords"`
-	Companies map[string][]string  `mapstructure:"companies"`
-	Dedup     DedupConfig          `mapstructure:"dedup"`
-	Output    OutputConfig         `mapstructure:"output"`
+	Sources    SourcesConfig       `mapstructure:"sources"`
+	Keywords   map[string][]string `mapstructure:"keywords"`
+	Companies  map[string][]string `mapstructure:"companies"`
+	Dedup      DedupConfig         `mapstructure:"dedup"`
+	Output     OutputConfig        `mapstructure:"output"`
+	Enrichment EnrichmentConfig    `mapstructure:"enrichment"`
 }
 
 func Load(path string) (*Config, error) {

@@ -49,3 +49,8 @@ output:
 
 dedup:
   levenshtein_threshold: 0.85
+
+enrichment:
+  enabled: true
+  concurrency: 10
+  timeout_seconds: 5

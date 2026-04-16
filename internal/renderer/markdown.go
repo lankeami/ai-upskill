@@ -2,12 +2,32 @@ package renderer
 
 import (
 	"fmt"
+	"html"
+	"regexp"
 	"sort"
 	"strings"
 	"time"
 
 	"github.com/jaychinthrajah/ai-upskill/internal/processor"
 )
+
+var htmlTagRe = regexp.MustCompile("<[^>]*>")
+
+// cleanDescription strips HTML tags, decodes HTML entities, and truncates to
+// 200 characters with … suffix. Returns empty string if the input is empty.
+func cleanDescription(desc string) string {
+	if desc == "" {
+		return ""
+	}
+	desc = htmlTagRe.ReplaceAllString(desc, "")
+	desc = html.UnescapeString(desc)
+	desc = strings.TrimSpace(desc)
+	if len([]rune(desc)) > 200 {
+		runes := []rune(desc)
+		desc = string(runes[:200]) + "…"
+	}
+	return desc
+}
 
 var companyOrder = []string{
 	"OpenAI", "Google", "Anthropic", "Meta", "Microsoft",
@@ -83,6 +103,9 @@ func renderSection(b *strings.Builder, company string, items []processor.Dedupli
 			sourceLinks = append(sourceLinks, fmt.Sprintf("[%s](%s)", src.Name, src.URL))
 		}
 		b.WriteString(fmt.Sprintf("- **%s** \u2014 %s\n", item.Title, strings.Join(sourceLinks, " | ")))
+		if desc := cleanDescription(item.Description); desc != "" {
+			b.WriteString(fmt.Sprintf("  %s\n", desc))
+		}
 	}
 	b.WriteString("\n")
 }

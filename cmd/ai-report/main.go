@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/jaychinthrajah/ai-upskill/internal/config"
+	"github.com/jaychinthrajah/ai-upskill/internal/enricher"
 	"github.com/jaychinthrajah/ai-upskill/internal/fetcher"
 	"github.com/jaychinthrajah/ai-upskill/internal/processor"
 	"github.com/jaychinthrajah/ai-upskill/internal/renderer"
@@ -25,6 +26,7 @@ var generateCmd = &cobra.Command{
 		cfgPath, _ := cmd.Flags().GetString("config")
 		dateStr, _ := cmd.Flags().GetString("date")
 		dryRun, _ := cmd.Flags().GetBool("dry-run")
+		skipEnrich, _ := cmd.Flags().GetBool("skip-enrich")
 
 		fmt.Println("Loading config...")
 		cfg, err := config.Load(cfgPath)
@@ -50,6 +52,15 @@ var generateCmd = &cobra.Command{
 			fmt.Fprintf(os.Stderr, "fetch warning: %v\n", e)
 		}
 		fmt.Printf("Fetched %d items\n", len(items))
+
+		if !skipEnrich && cfg.Enrichment.Enabled {
+			if cfg.Enrichment.TimeoutSeconds > 0 {
+				enricher.SetTimeout(time.Duration(cfg.Enrichment.TimeoutSeconds) * time.Second)
+			}
+			fmt.Println("Enriching items with metadata...")
+			items = enricher.Enrich(items, cfg.Enrichment.Concurrency)
+			fmt.Printf("Enrichment complete\n")
+		}
 
 		allKeywords := make([]string, 0)
 		for _, kws := range cfg.Keywords {
@@ -135,6 +146,7 @@ func init() {
 	generateCmd.Flags().String("config", "config.yaml", "Path to config file")
 	generateCmd.Flags().String("date", "", "Generate report for a specific date (YYYY-MM-DD)")
 	generateCmd.Flags().Bool("dry-run", false, "Show report without writing to file")
+	generateCmd.Flags().Bool("skip-enrich", false, "Skip metadata enrichment step")
 
 	sourcesCmd.Flags().String("config", "config.yaml", "Path to config file")
 
