@@ -66,7 +66,7 @@ jobs:
         run: |
           REPORT_DATE="${{ steps.date.outputs.report_date }}"
           REPORT_FILE="reports/${REPORT_DATE}.md"
-          PODCAST_URL="https://github.com/lankeami/ai-upskill/releases/download/podcast-${REPORT_DATE}/podcast-${REPORT_DATE}.mp3"
+          PODCAST_URL="https://github.com/lankeami/ai-upskill/releases/download/podcast-${REPORT_DATE}/${REPORT_DATE}.mp3"
 
           # Use Python for reliable front matter editing
           python3 -c "
