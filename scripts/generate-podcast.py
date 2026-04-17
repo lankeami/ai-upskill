@@ -50,8 +50,7 @@ async def generate_podcast(report_date: str) -> Path:
 
     print(f"Generating podcast for {report_date}...")
 
-    from notebooklm import NotebookLMClient
-    from notebooklm.enums import AudioFormat, AudioLength
+    from notebooklm import NotebookLMClient, AudioFormat, AudioLength
 
     async with await NotebookLMClient.from_storage() as client:
         # Create notebook
