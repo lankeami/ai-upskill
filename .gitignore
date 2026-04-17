@@ -1,2 +1,7 @@
 .worktrees/
 podcasts/
+.venv/
+.jekyll-cache/
+_site/
+ai-report
+.claude-controller-uploads/
