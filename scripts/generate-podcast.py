@@ -80,8 +80,8 @@ async def generate_podcast(report_date: str, media_type: str) -> Path:
                 )
                 print(f"Video generation started (task: {status.task_id})")
 
-                # Wait for completion (video takes longer)
-                await client.artifacts.wait_for_completion(nb.id, status.task_id, timeout=900.0)
+                # Wait for completion (video takes longer — up to 30 min for large reports)
+                await client.artifacts.wait_for_completion(nb.id, status.task_id, timeout=1800.0)
                 print("Video generation complete")
 
                 # Download MP4
