@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate an audio podcast from a daily AI report using NotebookLM."""
+"""Generate an audio or video podcast from a daily AI report using NotebookLM."""
 
 import argparse
 import asyncio
@@ -20,6 +20,13 @@ def parse_args() -> argparse.Namespace:
         default=date.today().isoformat(),
         help="Report date in YYYY-MM-DD format (default: today)",
     )
+    parser.add_argument(
+        "--media-type",
+        type=str,
+        choices=["audio", "video"],
+        default="video",
+        help="Media type to generate: audio or video (default: video)",
+    )
     return parser.parse_args()
 
 
@@ -31,8 +38,8 @@ def strip_front_matter(content: str) -> str:
     return content
 
 
-async def generate_podcast(report_date: str) -> Path:
-    """Generate a podcast MP3 from the report for the given date."""
+async def generate_podcast(report_date: str, media_type: str) -> Path:
+    """Generate a podcast from the report for the given date."""
     report_path = REPORTS_DIR / f"{report_date}.md"
     if not report_path.exists():
         print(f"Error: Report not found at {report_path}", file=sys.stderr)
@@ -46,11 +53,12 @@ async def generate_podcast(report_date: str) -> Path:
         sys.exit(1)
 
     PODCASTS_DIR.mkdir(exist_ok=True)
-    output_path = PODCASTS_DIR / f"{report_date}.mp3"
+    ext = ".mp4" if media_type == "video" else ".mp3"
+    output_path = PODCASTS_DIR / f"{report_date}{ext}"
 
-    print(f"Generating podcast for {report_date}...")
+    print(f"Generating {media_type} podcast for {report_date}...")
 
-    from notebooklm import NotebookLMClient, AudioFormat, AudioLength
+    from notebooklm import NotebookLMClient, AudioFormat, AudioLength, VideoFormat, VideoStyle
 
     async with await NotebookLMClient.from_storage() as client:
         # Create notebook
@@ -63,21 +71,38 @@ async def generate_podcast(report_date: str) -> Path:
             await client.sources.add_text(nb.id, notebook_title, content)
             print("Added report content as source")
 
-            # Generate audio
-            status = await client.artifacts.generate_audio(
-                nb.id,
-                audio_format=AudioFormat.DEEP_DIVE,
-                audio_length=AudioLength.SHORT,
-            )
-            print(f"Audio generation started (task: {status.task_id})")
+            if media_type == "video":
+                # Generate video
+                status = await client.artifacts.generate_video(
+                    nb.id,
+                    video_format=VideoFormat.EXPLAINER,
+                    video_style=VideoStyle.AUTO_SELECT,
+                )
+                print(f"Video generation started (task: {status.task_id})")
 
-            # Wait for completion
-            await client.artifacts.wait_for_completion(nb.id, status.task_id)
-            print("Audio generation complete")
+                # Wait for completion (video takes longer)
+                await client.artifacts.wait_for_completion(nb.id, status.task_id, timeout=600.0)
+                print("Video generation complete")
 
-            # Download MP3
-            await client.artifacts.download_audio(nb.id, str(output_path))
-            print(f"Downloaded podcast to {output_path}")
+                # Download MP4
+                await client.artifacts.download_video(nb.id, str(output_path))
+                print(f"Downloaded video to {output_path}")
+            else:
+                # Generate audio
+                status = await client.artifacts.generate_audio(
+                    nb.id,
+                    audio_format=AudioFormat.DEEP_DIVE,
+                    audio_length=AudioLength.SHORT,
+                )
+                print(f"Audio generation started (task: {status.task_id})")
+
+                # Wait for completion
+                await client.artifacts.wait_for_completion(nb.id, status.task_id)
+                print("Audio generation complete")
+
+                # Download MP3
+                await client.artifacts.download_audio(nb.id, str(output_path))
+                print(f"Downloaded podcast to {output_path}")
 
         finally:
             # Clean up notebook
@@ -97,8 +122,8 @@ def main() -> None:
         print(f"Error: Invalid date format '{args.date}'. Use YYYY-MM-DD.", file=sys.stderr)
         sys.exit(1)
 
-    output = asyncio.run(generate_podcast(args.date))
-    print(f"\nPodcast generated: {output}")
+    output = asyncio.run(generate_podcast(args.date, args.media_type))
+    print(f"\n{args.media_type.title()} generated: {output}")
 
 
 if __name__ == "__main__":
