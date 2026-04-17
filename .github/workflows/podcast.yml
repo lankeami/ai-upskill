@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,8 +39,9 @@ jobs:
             # Find the most recently changed report file
             REPORT_FILE=$(git diff --name-only HEAD~1 HEAD -- 'reports/*.md' | head -1)
             if [ -z "$REPORT_FILE" ]; then
-              echo "No report file changed in last commit"
-              exit 1
+              echo "No report file changed in last commit, skipping"
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              exit 0
             fi
             # Extract date from filename: reports/YYYY-MM-DD.md -> YYYY-MM-DD
             REPORT_DATE=$(basename "$REPORT_FILE" .md)
@@ -46,11 +49,13 @@ jobs:
           fi
 
       - name: Generate podcast
+        if: steps.date.outputs.skip != 'true'
         env:
           NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
         run: python scripts/generate-podcast.py --date ${{ steps.date.outputs.report_date }}
 
       - name: Create GitHub Release
+        if: steps.date.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -63,6 +68,7 @@ jobs:
             --notes "Audio podcast for AI Daily Report ${REPORT_DATE}"
 
       - name: Update report front matter with podcast URL
+        if: steps.date.outputs.skip != 'true'
         run: |
           REPORT_DATE="${{ steps.date.outputs.report_date }}"
           REPORT_FILE="reports/${REPORT_DATE}.md"
@@ -92,6 +98,7 @@ jobs:
           "
 
       - name: Commit updated report
+        if: steps.date.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
