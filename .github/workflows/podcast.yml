@@ -9,6 +9,17 @@ on:
       date:
         description: 'Report date (YYYY-MM-DD)'
         required: true
+      media_type:
+        description: 'Media type to generate'
+        required: false
+        default: 'video'
+        type: choice
+        options:
+          - video
+          - audio
+
+env:
+  DEFAULT_MEDIA_TYPE: video
 
 permissions:
   contents: write
@@ -48,11 +59,22 @@ jobs:
             echo "report_date=$REPORT_DATE" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Determine media type
+        id: media
+        run: |
+          MEDIA_TYPE="${{ github.event.inputs.media_type || env.DEFAULT_MEDIA_TYPE }}"
+          echo "media_type=$MEDIA_TYPE" >> "$GITHUB_OUTPUT"
+          if [ "$MEDIA_TYPE" = "video" ]; then
+            echo "ext=mp4" >> "$GITHUB_OUTPUT"
+          else
+            echo "ext=mp3" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Generate podcast
         if: steps.date.outputs.skip != 'true'
         env:
           NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
-        run: python scripts/generate-podcast.py --date ${{ steps.date.outputs.report_date }}
+        run: python scripts/generate-podcast.py --date ${{ steps.date.outputs.report_date }} --media-type ${{ steps.media.outputs.media_type }}
 
       - name: Create GitHub Release
         if: steps.date.outputs.skip != 'true'
@@ -61,18 +83,20 @@ jobs:
         run: |
           REPORT_DATE="${{ steps.date.outputs.report_date }}"
           TAG="podcast-${REPORT_DATE}"
-          MP3_FILE="podcasts/${REPORT_DATE}.mp3"
+          EXT="${{ steps.media.outputs.ext }}"
+          MEDIA_FILE="podcasts/${REPORT_DATE}.${EXT}"
 
-          gh release create "$TAG" "$MP3_FILE" \
+          gh release create "$TAG" "$MEDIA_FILE" \
             --title "Podcast — ${REPORT_DATE}" \
-            --notes "Audio podcast for AI Daily Report ${REPORT_DATE}"
+            --notes "${{ steps.media.outputs.media_type }} podcast for AI Daily Report ${REPORT_DATE}"
 
       - name: Update report front matter with podcast URL
         if: steps.date.outputs.skip != 'true'
         run: |
           REPORT_DATE="${{ steps.date.outputs.report_date }}"
           REPORT_FILE="reports/${REPORT_DATE}.md"
-          PODCAST_URL="https://github.com/lankeami/ai-upskill/releases/download/podcast-${REPORT_DATE}/${REPORT_DATE}.mp3"
+          EXT="${{ steps.media.outputs.ext }}"
+          PODCAST_URL="https://github.com/lankeami/ai-upskill/releases/download/podcast-${REPORT_DATE}/${REPORT_DATE}.${EXT}"
 
           # Use Python for reliable front matter editing
           python3 -c "
