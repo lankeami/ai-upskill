@@ -46,7 +46,6 @@ GEM
       logger
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
-    ffi (1.17.4-aarch64-linux-gnu)
     ffi (1.17.4-x86_64-linux)
     ffi (1.17.4-x86_64-linux-musl)
     forwardable-extended (2.6.0)
@@ -238,8 +237,6 @@ GEM
     minitest (5.27.0)
     net-http (0.9.1)
       uri (>= 0.11.1)
-    nokogiri (1.18.10-aarch64-linux-gnu)
-      racc (~> 1.4)
     nokogiri (1.18.10-x86_64-linux)
     nokogiri (1.18.10-x86_64-linux-musl)
       racc (~> 1.4)
