@@ -56,12 +56,20 @@ layout: default
 
 {% if page.podcast_url %}
 <div class="podcast-player" style="margin-bottom: 1.5rem; padding: 1rem; background: #f6f8fa; border-radius: 6px;">
+  {% if page.podcast_url contains '.mp4' %}
+  <h3 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em;">Watch this report</h3>
+  <video controls preload="none" style="width: 100%; max-width: 100%; border-radius: 4px; margin-bottom: 0.5rem;">
+    <source src="{{ page.podcast_url }}" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+  {% else %}
   <h3 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em;">Listen to this report</h3>
   <audio controls preload="none" style="width: 100%; margin-bottom: 0.5rem;">
     <source src="{{ page.podcast_url }}" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <p style="margin: 0; font-size: 0.85rem;"><a href="{{ page.podcast_url }}">Download podcast</a></p>
+  {% endif %}
+  <p style="margin: 0; font-size: 0.85rem;"><a href="{{ page.podcast_url }}">Download</a></p>
 </div>
 {% endif %}
 
