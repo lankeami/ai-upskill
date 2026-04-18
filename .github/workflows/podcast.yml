@@ -1,9 +1,6 @@
 name: Generate Podcast
 
 on:
-  push:
-    branches: [main]
-    paths: ['reports/*.md']
   workflow_dispatch:
     inputs:
       date:
