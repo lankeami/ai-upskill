@@ -19,8 +19,9 @@ Store the resolved date — all subsequent steps reference it as `DATE`.
 
 ## Prerequisites Check
 
-Before running the pipeline, verify all prerequisites. Run these checks and stop immediately with a clear error if any fail:
+Before running the pipeline, first load environment variables, then verify all prerequisites. Stop immediately with a clear error if any check fails:
 
+0. **Load .env:** If a `.env` file exists in the project root, source it: `set -a && source .env && set +a`. This loads `NOTEBOOKLM_AUTH_JSON` and any other env vars.
 1. **Go:** Run `go version`. If it fails, tell the user to install Go.
 2. **Python 3:** Run `python3 --version`. If it fails, tell the user to install Python 3.
 3. **notebooklm-py:** Run `python3 -c "import notebooklm"`. If it fails, run `pip install notebooklm-py`.
