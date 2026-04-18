@@ -22,13 +22,14 @@ Store the resolved date — all subsequent steps reference it as `DATE`.
 Before running the pipeline, first load environment variables, then verify all prerequisites. Stop immediately with a clear error if any check fails:
 
 0. **Load .env:** If a `.env` file exists in the project root, source it: `set -a && source .env && set +a`. This loads `NOTEBOOKLM_AUTH_JSON` and any other env vars.
-1. **Go:** Run `go version`. If it fails, tell the user to install Go.
-2. **Python 3:** Run `python3 --version`. If it fails, tell the user to install Python 3.
-3. **notebooklm-py:** Run `python3 -c "import notebooklm"`. If it fails, run `pip install notebooklm-py`.
-4. **gh CLI:** Run `gh auth status`. If it fails, tell the user to run `gh auth login`.
-5. **NOTEBOOKLM_AUTH_JSON:** Check if the environment variable is set. If not, stop and tell the user:
+1. **Activate venv:** Run `source .venv/bin/activate`. If `.venv/` doesn't exist, create it first: `python3 -m venv .venv && source .venv/bin/activate`.
+2. **Go:** Run `go version`. If it fails, tell the user to install Go.
+3. **Python 3:** Run `python3 --version`. If it fails, tell the user to install Python 3.
+4. **notebooklm-py:** Run `python3 -c "import notebooklm"`. If it fails, run `pip install notebooklm-py`.
+5. **gh CLI:** Run `gh auth status`. If it fails, tell the user to run `gh auth login`.
+6. **NOTEBOOKLM_AUTH_JSON:** Check if the environment variable is set. If not, stop and tell the user:
    > Set the `NOTEBOOKLM_AUTH_JSON` environment variable with your NotebookLM credentials before running this skill.
-6. **Clean git state:** Run `git status --porcelain`. If there is output, stop and tell the user to commit or stash their changes first.
+7. **Clean git state:** Run `git status --porcelain`. If there is output, stop and tell the user to commit or stash their changes first.
 
 ## Step 1: Build Go CLI
 
