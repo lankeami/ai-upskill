@@ -97,7 +97,14 @@ If there are changes:
 
 ```bash
 git add reports/DATE.md
-git commit -m "chore: daily AI report and podcast for DATE"
+```
+
+Use the appropriate commit message:
+- If the report was **newly generated** in Step 2: `git commit -m "chore: daily AI report and podcast for DATE"`
+- If the report **already existed** and only the front matter was updated: `git commit -m "chore: add podcast URL to DATE report"`
+
+Then push:
+```bash
 git push
 ```
 
@@ -122,7 +129,7 @@ This skill can be scheduled to run automatically. Three options:
 ### Option B: Local Crontab
 ```bash
 # crontab -e
-0 8 * * * claude -p "run /daily-pipeline"
+0 8 * * * cd /Users/jaychinthrajah/workspaces/_personal_/ai-upskill && claude -p "run /daily-pipeline"
 ```
 
 ### Option C: macOS launchd
