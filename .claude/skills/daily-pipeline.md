@@ -112,7 +112,7 @@ Summarize what was done:
 
 ## Scheduling (Reference)
 
-This skill can be scheduled to run automatically. Two options:
+This skill can be scheduled to run automatically. Three options:
 
 ### Option A: Claude Code Remote Triggers
 ```
