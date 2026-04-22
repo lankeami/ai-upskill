@@ -82,6 +82,125 @@ def delete_state() -> None:
         STATE_FILE.unlink()
 
 
+async def start_generation(client, report_date: str, media_type: str) -> str | None:
+    """Create notebook, add source, kick off generation, write state file.
+
+    Returns task_id on success, None if skipped (already in progress).
+    Exits with code 1 if state file exists for a different date.
+    """
+    existing = read_state()
+    if existing:
+        if existing["date"] == report_date and existing["media_type"] == media_type:
+            print(f"Generation already in progress for {report_date}")
+            return None
+        else:
+            print(
+                f"Error: State file exists for a different date ({existing['date']}). "
+                f"Run 'download' or delete .podcast-state.json first.",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+
+    report_path = REPORTS_DIR / f"{report_date}.md"
+    if not report_path.exists():
+        print(f"Error: Report not found at {report_path}", file=sys.stderr)
+        sys.exit(1)
+
+    raw_content = report_path.read_text(encoding="utf-8")
+    content = strip_front_matter(raw_content)
+
+    if not content.strip():
+        print(f"Error: Report {report_path} is empty after stripping front matter", file=sys.stderr)
+        sys.exit(1)
+
+    notebook_title = f"AI Daily Report — {report_date}"
+    nb = await client.notebooks.create(notebook_title)
+    print(f"Created notebook: {notebook_title} ({nb.id})")
+
+    await client.sources.add_text(nb.id, notebook_title, content)
+    print("Added report content as source")
+
+    if media_type == "video":
+        from notebooklm import VideoFormat, VideoStyle
+        status = await client.artifacts.generate_video(
+            nb.id,
+            video_format=VideoFormat.EXPLAINER,
+            video_style=VideoStyle.AUTO_SELECT,
+        )
+    else:
+        from notebooklm import AudioFormat, AudioLength
+        status = await client.artifacts.generate_audio(
+            nb.id,
+            audio_format=AudioFormat.DEEP_DIVE,
+            audio_length=AudioLength.SHORT,
+        )
+
+    print(f"Started {media_type} generation (task: {status.task_id})")
+    write_state(nb.id, status.task_id, report_date, media_type)
+    return status.task_id
+
+
+async def poll_generation(client) -> int:
+    """Check the status of an in-progress generation.
+
+    Returns exit code: 0=complete, 1=in-progress/no-state, 2=failed.
+    """
+    state = read_state()
+    if not state:
+        print("No generation in progress. Run 'start' first.")
+        return 1
+
+    status = await client.artifacts.poll_status(state["notebook_id"], state["task_id"])
+
+    if status.is_complete:
+        print("complete")
+        return 0
+    elif status.is_failed:
+        print(f"failed: {status.error}", file=sys.stderr)
+        return 2
+    else:
+        print(status.status)
+        return 1
+
+
+async def download_artifact(client) -> Path:
+    """Download completed artifact, clean up notebook, remove state file.
+
+    Returns path to the downloaded file.
+    Exits with code 1 if no state file or generation not complete.
+    """
+    state = read_state()
+    if not state:
+        print("Error: No generation in progress. Run 'start' first.", file=sys.stderr)
+        sys.exit(1)
+
+    status = await client.artifacts.poll_status(state["notebook_id"], state["task_id"])
+    if not status.is_complete:
+        print("Error: Generation not complete. Run 'poll' to check status.", file=sys.stderr)
+        sys.exit(1)
+
+    PODCASTS_DIR.mkdir(exist_ok=True)
+    ext = ".mp4" if state["media_type"] == "video" else ".mp3"
+    output_path = PODCASTS_DIR / f"{state['date']}{ext}"
+
+    if state["media_type"] == "video":
+        await client.artifacts.download_video(state["notebook_id"], str(output_path))
+    else:
+        await client.artifacts.download_audio(state["notebook_id"], str(output_path))
+
+    print(f"Downloaded {state['media_type']} to {output_path}")
+
+    # Clean up notebook (warn on failure, don't fail the download)
+    try:
+        await client.notebooks.delete(state["notebook_id"])
+        print(f"Cleaned up notebook {state['notebook_id']}")
+    except Exception as e:
+        print(f"Warning: Failed to delete notebook {state['notebook_id']}: {e}", file=sys.stderr)
+
+    delete_state()
+    return output_path
+
+
 async def generate_podcast(report_date: str, media_type: str) -> Path:
     """Generate a podcast from the report for the given date."""
     report_path = REPORTS_DIR / f"{report_date}.md"
