@@ -55,16 +55,42 @@ Verify that `reports/DATE.md` was created. If not, stop and show the error.
 
 **Check:** Does `podcasts/DATE.mp4` already exist? If yes, skip this step and note "Video already exists for DATE".
 
-If not, run:
+If not, generate the video in three phases:
+
+### Step 3a: Start Generation
+
+Run:
 ```bash
-python scripts/generate-podcast.py --date DATE --media-type video
+python scripts/generate-podcast.py start --date DATE --media-type video
 ```
 
-Tell the user: "Video generation is in progress. This typically takes 10-30 minutes."
+If this command fails, stop the pipeline and show the error.
 
-Run this command with a timeout of at least 2400 seconds (40 minutes).
+Tell the user: "Video generation started. Polling for completion (this typically takes 10-30 minutes)."
 
-If the command fails, stop the pipeline. Do NOT proceed to release creation or commit. Show the full error output.
+### Step 3b: Poll for Completion
+
+Run this command in a loop, waiting 30 seconds between each attempt:
+```bash
+python scripts/generate-podcast.py poll
+```
+
+- **Exit code 0** (prints `complete`): generation is done — proceed to Step 3c.
+- **Exit code 1** (prints `pending` or `in_progress`): still working — wait 30 seconds and poll again.
+- **Exit code 2** (prints error): generation failed — stop the pipeline and show the error.
+
+Maximum 40 poll attempts (~20 minutes). If exceeded, stop the pipeline with: "Video generation timed out after 20 minutes of polling. The state file `.podcast-state.json` has been preserved for manual recovery."
+
+Between polls, tell the user the current status (e.g., "Poll 5/40: in_progress").
+
+### Step 3c: Download
+
+Run:
+```bash
+python scripts/generate-podcast.py download
+```
+
+If this command fails, stop the pipeline and show the error.
 
 Verify that `podcasts/DATE.mp4` was created.
 
