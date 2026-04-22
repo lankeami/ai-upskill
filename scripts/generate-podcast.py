@@ -95,7 +95,7 @@ async def start_generation(client, report_date: str, media_type: str) -> str | N
             return None
         else:
             print(
-                f"Error: State file exists for a different date ({existing['date']}). "
+                f"Error: State file exists for {existing['date']}/{existing['media_type']}. "
                 f"Run 'download' or delete .podcast-state.json first.",
                 file=sys.stderr,
             )
@@ -135,7 +135,7 @@ async def start_generation(client, report_date: str, media_type: str) -> str | N
             audio_length=AudioLength.SHORT,
         )
 
-    print(f"Started {media_type} generation (task: {status.task_id})")
+    print(f"Started {media_type} generation for {report_date} (task: {status.task_id})")
     write_state(nb.id, status.task_id, report_date, media_type)
     return status.task_id
 
@@ -156,7 +156,7 @@ async def poll_generation(client) -> int:
         print("complete")
         return 0
     elif status.is_failed:
-        print(f"failed: {status.error}", file=sys.stderr)
+        print(f"{status.error}", file=sys.stderr)
         return 2
     else:
         print(status.status)
