@@ -6,3 +6,4 @@ podcasts/
 _site/
 ai-report
 .claude-controller-uploads/
+.podcast-state.json
