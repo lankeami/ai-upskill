@@ -3,30 +3,49 @@
 
 import argparse
 import asyncio
+import json
 import re
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
 PODCASTS_DIR = Path(__file__).resolve().parent.parent / "podcasts"
+STATE_FILE = Path(__file__).resolve().parent.parent / ".podcast-state.json"
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate podcast from AI daily report")
+
+    # Legacy mode args (top-level, used when no subcommand is given)
     parser.add_argument(
-        "--date",
-        type=str,
-        default=date.today().isoformat(),
+        "--date", type=str, default=date.today().isoformat(),
         help="Report date in YYYY-MM-DD format (default: today)",
     )
     parser.add_argument(
-        "--media-type",
-        type=str,
-        choices=["audio", "video"],
-        default="video",
+        "--media-type", type=str, choices=["audio", "video"], default="video",
         help="Media type to generate: audio or video (default: video)",
     )
+
+    subparsers = parser.add_subparsers(dest="command")
+
+    # start subcommand
+    start_parser = subparsers.add_parser("start", help="Start podcast generation")
+    start_parser.add_argument(
+        "--date", type=str, default=date.today().isoformat(),
+        help="Report date in YYYY-MM-DD format (default: today)",
+    )
+    start_parser.add_argument(
+        "--media-type", type=str, choices=["audio", "video"], default="video",
+        help="Media type to generate (default: video)",
+    )
+
+    # poll subcommand — no arguments needed (reads state file)
+    subparsers.add_parser("poll", help="Check generation status")
+
+    # download subcommand — no arguments needed (reads state file)
+    subparsers.add_parser("download", help="Download completed artifact")
+
     return parser.parse_args()
 
 
@@ -36,6 +55,31 @@ def strip_front_matter(content: str) -> str:
     if match:
         return content[match.end():]
     return content
+
+
+def write_state(notebook_id: str, task_id: str, report_date: str, media_type: str) -> None:
+    """Write generation state to the state file."""
+    state = {
+        "notebook_id": notebook_id,
+        "task_id": task_id,
+        "date": report_date,
+        "media_type": media_type,
+        "started_at": datetime.now(timezone.utc).isoformat(),
+    }
+    STATE_FILE.write_text(json.dumps(state, indent=2))
+
+
+def read_state() -> dict | None:
+    """Read generation state from the state file. Returns None if no file."""
+    if not STATE_FILE.exists():
+        return None
+    return json.loads(STATE_FILE.read_text())
+
+
+def delete_state() -> None:
+    """Remove the state file if it exists."""
+    if STATE_FILE.exists():
+        STATE_FILE.unlink()
 
 
 async def generate_podcast(report_date: str, media_type: str) -> Path:
