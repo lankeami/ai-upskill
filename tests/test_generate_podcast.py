@@ -291,3 +291,19 @@ class TestDownloadCommand:
         assert output == podcasts_dir / "2026-04-22.mp3"
         captured = capsys.readouterr()
         assert "warning" in captured.out.lower() or "warning" in captured.err.lower()
+
+
+class TestMainRouting:
+    def test_no_subcommand_calls_legacy_generate(self, podcast_module, monkeypatch):
+        """No subcommand should call the original generate_podcast function."""
+        called = {}
+        async def fake_generate(date, media_type):
+            called["date"] = date
+            called["media_type"] = media_type
+            return Path("/fake/output.mp4")
+
+        monkeypatch.setattr(podcast_module, "generate_podcast", fake_generate)
+        monkeypatch.setattr("sys.argv", ["generate-podcast.py", "--date", "2026-04-22", "--media-type", "video"])
+        podcast_module.main()
+        assert called["date"] == "2026-04-22"
+        assert called["media_type"] == "video"
