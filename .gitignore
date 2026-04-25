@@ -7,3 +7,4 @@ _site/
 ai-report
 .claude-controller-uploads/
 .podcast-state.json
+.youtube-token.json

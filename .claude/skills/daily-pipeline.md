@@ -1,6 +1,6 @@
 ---
 name: daily-pipeline
-description: Run the full daily AI report pipeline — generate report, create video, publish release, update front matter, commit & push
+description: Run the full daily AI report pipeline — generate report, create video, upload to YouTube, update front matter, commit & push
 arguments:
   - name: date
     description: Report date in YYYY-MM-DD format (default: today)
@@ -21,15 +21,19 @@ Store the resolved date — all subsequent steps reference it as `DATE`.
 
 Before running the pipeline, first load environment variables, then verify all prerequisites. Stop immediately with a clear error if any check fails:
 
-0. **Load .env:** If a `.env` file exists in the project root, source it: `set -a && source .env && set +a`. This loads `NOTEBOOKLM_AUTH_JSON` and any other env vars.
+0. **Load .env:** If a `.env` file exists in the project root, source it: `set -a && source .env && set +a`. This loads `NOTEBOOKLM_AUTH_JSON`, `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET`, and any other env vars.
 1. **Activate venv:** Run `source .venv/bin/activate`. If `.venv/` doesn't exist, create it first: `python3 -m venv .venv && source .venv/bin/activate`.
 2. **Go:** Run `go version`. If it fails, tell the user to install Go.
 3. **Python 3:** Run `python3 --version`. If it fails, tell the user to install Python 3.
 4. **notebooklm-py:** Run `python3 -c "import notebooklm"`. If it fails, run `pip install notebooklm-py`.
-5. **gh CLI:** Run `gh auth status`. If it fails, tell the user to run `gh auth login`.
+5. **google-api-python-client:** Run `python3 -c "import googleapiclient"`. If it fails, run `pip install google-api-python-client google-auth-oauthlib`.
 6. **NOTEBOOKLM_AUTH_JSON:** Check if the environment variable is set. If not, stop and tell the user:
    > Set the `NOTEBOOKLM_AUTH_JSON` environment variable with your NotebookLM credentials before running this skill.
-7. **Clean git state:** Run `git status --porcelain`. If there is output, stop and tell the user to commit or stash their changes first.
+7. **YOUTUBE_CLIENT_ID / YOUTUBE_CLIENT_SECRET:** Check both are set. If not, stop and tell the user:
+   > Set `YOUTUBE_CLIENT_ID` and `YOUTUBE_CLIENT_SECRET` in `.env`. See `docs/youtube-setup.md` for instructions.
+8. **.youtube-token.json:** Check the file exists in the project root. If not, stop and tell the user:
+   > Run `python scripts/upload-youtube.py --auth` to complete one-time YouTube authentication.
+9. **Clean git state:** Run `git status --porcelain`. If there is output, stop and tell the user to commit or stash their changes first.
 
 ## Step 1: Build Go CLI
 
@@ -94,28 +98,30 @@ If this command fails, stop the pipeline and show the error.
 
 Verify that `podcasts/DATE.mp4` was created.
 
-## Step 4: Create GitHub Release
+## Step 4: Upload to YouTube
 
-**Check:** Run `gh release view podcast-DATE 2>/dev/null`. If it succeeds (exit code 0), the release already exists — skip this step and note "Release already exists for DATE".
+**Check:** Does `reports/DATE.md` already contain a `youtube_url` in the YAML front matter? If yes, skip this step and note "YouTube upload already done for DATE".
 
 If not, run:
 ```bash
-gh release create "podcast-DATE" "podcasts/DATE.mp4" \
-  --title "Podcast — DATE" \
-  --notes "Video podcast for AI Daily Report DATE"
+python scripts/upload-youtube.py --date DATE
 ```
 
-If this fails, stop and show the error.
+Capture the last line of stdout — this is the YouTube URL (format: `https://youtube.com/watch?v=VIDEO_ID`). Store it as `YOUTUBE_URL`.
+
+If the command fails, stop the pipeline and show the full error output.
 
 ## Step 5: Update Report Front Matter
 
-**Check:** Read `reports/DATE.md` and check if `podcast_url` is already present in the YAML front matter. If it already contains the correct URL, skip this step.
+**Check:** Read `reports/DATE.md` and check if `youtube_url` is already present in the YAML front matter. If it already contains the correct URL, skip this step.
 
 If not, use the Edit tool to add the following line to the YAML front matter (before the closing `---`):
 
 ```
-podcast_url: "https://github.com/lankeami/ai-upskill/releases/download/podcast-DATE/DATE.mp4"
+youtube_url: "YOUTUBE_URL"
 ```
+
+Where `YOUTUBE_URL` is the URL captured in Step 4.
 
 ## Step 6: Commit & Push
 
@@ -141,7 +147,7 @@ git push
 Summarize what was done:
 - Report: generated or already existed
 - Video: generated or already existed
-- Release: created or already existed
+- YouTube: uploaded or already existed
 - Front matter: updated or already correct
 - Commit: pushed or nothing to commit
 
