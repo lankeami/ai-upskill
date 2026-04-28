@@ -47,13 +47,21 @@ func RenderMarkdown(classified map[string][]processor.DeduplicatedItem, date tim
 		orderedCompanies = append(orderedCompanies, company)
 	}
 	remaining := make([]string, 0)
+	other := ""
 	for company := range classified {
 		if !rendered[company] {
-			remaining = append(remaining, company)
+			if company == "Other/Independent" {
+				other = company
+			} else {
+				remaining = append(remaining, company)
+			}
 		}
 	}
 	sort.Strings(remaining)
 	orderedCompanies = append(orderedCompanies, remaining...)
+	if other != "" {
+		orderedCompanies = append(orderedCompanies, other)
+	}
 
 	itemCount := 0
 	for _, company := range orderedCompanies {
