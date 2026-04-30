@@ -1,0 +1,8 @@
+audio:
+  # Custom instructions passed to NotebookLM's generate_audio() call.
+  # Controls what the podcast hosts cover and how they cover it.
+  # Remove or leave blank to use NotebookLM's default behavior (picks 1-2 topics).
+  instructions: >
+    Go through every headline in the report in order. For each one, read the headline
+    aloud and then explain in 1–2 sentences what it means and why it matters to someone
+    learning about AI.

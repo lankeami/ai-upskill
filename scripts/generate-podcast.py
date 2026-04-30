@@ -9,15 +9,23 @@ import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import yaml
+
 REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
 PODCASTS_DIR = Path(__file__).resolve().parent.parent / "podcasts"
 STATE_FILE = Path(__file__).resolve().parent.parent / ".podcast-state.json"
+PODCAST_CONFIG_FILE = Path(__file__).resolve().parent.parent / "podcast-config.yaml"
 
-AUDIO_INSTRUCTIONS = (
-    "Go through every headline in the report in order. For each one, read the headline "
-    "aloud and then explain in 1–2 sentences what it means and why it matters to someone "
-    "learning about AI."
-)
+
+def load_audio_instructions() -> str | None:
+    """Load custom audio instructions from podcast-config.yaml, if present."""
+    if not PODCAST_CONFIG_FILE.exists():
+        return None
+    cfg = yaml.safe_load(PODCAST_CONFIG_FILE.read_text(encoding="utf-8")) or {}
+    return cfg.get("audio", {}).get("instructions") or None
+
+
+AUDIO_INSTRUCTIONS = load_audio_instructions()
 
 
 def parse_args() -> argparse.Namespace:
