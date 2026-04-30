@@ -95,23 +95,23 @@ Verify that `podcasts/DATE.mp3` was created.
 
 ## Step 4: Publish GitHub Release
 
-**Check:** Run `gh release view podcast-DATE 2>/dev/null && echo exists || echo missing`. If it prints `exists`, skip this step and note "Release already exists for DATE".
+**Check:** Run `gh release view podcast-DATE 2>/dev/null >/dev/null && echo "exists" || echo "missing"`. If it prints `exists`, skip this step and note "Release already exists for DATE".
 
 If not, run:
 ```bash
 gh release create podcast-DATE podcasts/DATE.mp3 \
-  --title "Podcast — DATE" \
-  --notes "Audio podcast for AI Daily Report DATE"
+  --title "Podcast — ${DATE}" \
+  --notes "Audio podcast for AI Daily Report ${DATE}"
 ```
 
 If this command fails, stop the pipeline and show the error.
 
 The asset URL is deterministic — no need to parse output:
 ```
-PODCAST_URL=https://github.com/lankeami/ai-upskill/releases/download/podcast-DATE/DATE.mp3
+PODCAST_URL=https://github.com/lankeami/ai-upskill/releases/download/podcast-${DATE}/${DATE}.mp3
 ```
 
-**Check:** Read `reports/DATE.md` and check if `podcast_url` is already in the YAML front matter. If so, skip the injection and note "Front matter already has podcast_url for DATE".
+**Check:** Run `grep -q 'podcast_url:' reports/DATE.md && echo "found" || echo "missing"`. If it prints `found`, skip the injection and note "Front matter already has podcast_url for DATE".
 
 If not, inject it using Python:
 ```bash
