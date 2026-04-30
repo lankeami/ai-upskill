@@ -13,6 +13,12 @@ REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
 PODCASTS_DIR = Path(__file__).resolve().parent.parent / "podcasts"
 STATE_FILE = Path(__file__).resolve().parent.parent / ".podcast-state.json"
 
+AUDIO_INSTRUCTIONS = (
+    "Go through every headline in the report in order. For each one, read the headline "
+    "aloud and then explain in 1–2 sentences what it means and why it matters to someone "
+    "learning about AI."
+)
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate podcast from AI daily report")
@@ -133,6 +139,7 @@ async def start_generation(client, report_date: str, media_type: str) -> str | N
             nb.id,
             audio_format=AudioFormat.DEEP_DIVE,
             audio_length=AudioLength.SHORT,
+            instructions=AUDIO_INSTRUCTIONS,
         )
 
     print(f"Started {media_type} generation for {report_date} (task: {status.task_id})")
@@ -256,6 +263,7 @@ async def generate_podcast(report_date: str, media_type: str) -> Path:
                     nb.id,
                     audio_format=AudioFormat.DEEP_DIVE,
                     audio_length=AudioLength.SHORT,
+                    instructions=AUDIO_INSTRUCTIONS,
                 )
                 print(f"Audio generation started (task: {status.task_id})")
 
