@@ -14,9 +14,12 @@ on:
         options:
           - video
           - audio
+  workflow_run:
+    workflows: ["Daily AI Report"]
+    types: [completed]
 
 env:
-  DEFAULT_MEDIA_TYPE: video
+  DEFAULT_MEDIA_TYPE: audio
 
 permissions:
   contents: write
@@ -24,6 +27,7 @@ permissions:
 jobs:
   generate-podcast:
     runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,7 +40,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install notebooklm-py
-        run: pip install notebooklm-py
+        run: pip install notebooklm-py pyyaml
 
       - name: Determine report date
         id: date

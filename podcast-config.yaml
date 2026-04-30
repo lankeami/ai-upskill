@@ -1,0 +1,14 @@
+audio:
+  # AudioFormat: DEEP_DIVE, BRIEF, CRITIQUE, or DEBATE
+  format: DEEP_DIVE
+
+  # AudioLength: SHORT, DEFAULT, or LONG
+  # Use DEFAULT or LONG if the report has many sections and hosts are rushing.
+  length: SHORT
+
+  # Custom instructions for the podcast hosts.
+  # Remove or leave blank to use NotebookLM's default behavior (picks 1-2 topics).
+  instructions: >
+    Go through every headline in the report in order. For each one, read the headline
+    aloud and then explain in 1–2 sentences what it means and why it matters to someone
+    learning about AI.
