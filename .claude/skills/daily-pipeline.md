@@ -93,7 +93,45 @@ If this command fails, stop the pipeline and show the error.
 
 Verify that `podcasts/DATE.mp3` was created.
 
-## Step 4: Commit & Push
+## Step 4: Publish GitHub Release
+
+**Check:** Run `gh release view podcast-DATE 2>/dev/null && echo exists || echo missing`. If it prints `exists`, skip this step and note "Release already exists for DATE".
+
+If not, run:
+```bash
+gh release create podcast-DATE podcasts/DATE.mp3 \
+  --title "Podcast — DATE" \
+  --notes "Audio podcast for AI Daily Report DATE"
+```
+
+If this command fails, stop the pipeline and show the error.
+
+The asset URL is deterministic — no need to parse output:
+```
+PODCAST_URL=https://github.com/lankeami/ai-upskill/releases/download/podcast-DATE/DATE.mp3
+```
+
+**Check:** Read `reports/DATE.md` and check if `podcast_url` is already in the YAML front matter. If so, skip the injection and note "Front matter already has podcast_url for DATE".
+
+If not, inject it using Python:
+```bash
+python3 -c "
+path = 'reports/DATE.md'
+url = 'PODCAST_URL'
+content = open(path).read()
+parts = content.split('---', 2)
+if len(parts) >= 3:
+    parts[1] = parts[1].rstrip('\n') + '\npodcast_url: \"' + url + '\"\n'
+    open(path, 'w').write('---'.join(parts))
+    print('Added podcast_url to', path)
+else:
+    import sys; print('Error: could not parse front matter', file=sys.stderr); sys.exit(1)
+"
+```
+
+If the Python command fails, stop the pipeline and show the error.
+
+## Step 5: Commit & Push
 
 **Check:** Run `git status --porcelain`. If there are no changes, note "Nothing to commit" and finish.
 
@@ -105,7 +143,7 @@ git add reports/DATE.md
 
 Use the appropriate commit message:
 - If the report was **newly generated** in Step 2: `git commit -m "chore: daily AI report for DATE"`
-- If the report **already existed**: `git commit -m "chore: regenerate report for DATE"`
+- If the report **already existed** and only the front matter was updated: `git commit -m "chore: add podcast URL to DATE report"`
 
 Then push:
 ```bash
@@ -117,6 +155,8 @@ git push
 Summarize what was done:
 - Report: generated or already existed
 - Audio: generated or already existed
+- GitHub Release: published or already existed
+- Front matter: updated or already correct
 - Commit: pushed or nothing to commit
 
 ## Scheduling (Reference)
