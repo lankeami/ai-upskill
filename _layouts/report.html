@@ -54,15 +54,13 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p class="report-date">{{ page.date | date: "%A, %B %d, %Y" }}</p>
 
-{% if page.youtube_url %}
+{% if page.podcast_url %}
 <div class="podcast-player" style="margin-bottom: 1.5rem; padding: 1rem; background: #f6f8fa; border-radius: 6px;">
-  <h3 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em;">Watch this report</h3>
-  {% assign yt_id = page.youtube_url | split: "v=" | last %}
-  <iframe width="100%" height="315" style="border-radius: 4px; border: none; margin-bottom: 0.5rem;"
-    src="https://www.youtube.com/embed/{{ yt_id }}"
-    allowfullscreen loading="lazy">
-  </iframe>
-  <p style="margin: 0; font-size: 0.85rem;"><a href="{{ page.youtube_url }}">Watch on YouTube</a></p>
+  <h3 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em;">Listen to this report</h3>
+  <audio controls style="width: 100%; margin-bottom: 0.5rem;">
+    <source src="{{ page.podcast_url }}" type="audio/mpeg">
+  </audio>
+  <p style="margin: 0; font-size: 0.85rem;"><a href="{{ page.podcast_url }}">Download MP3</a></p>
 </div>
 {% endif %}
 
