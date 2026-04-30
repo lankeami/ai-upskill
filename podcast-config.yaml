@@ -4,7 +4,7 @@ audio:
 
   # AudioLength: SHORT, DEFAULT, or LONG
   # Use DEFAULT or LONG if the report has many sections and hosts are rushing.
-  length: SHORT
+  length: LONG
 
   # Custom instructions for the podcast hosts.
   # Remove or leave blank to use NotebookLM's default behavior (picks 1-2 topics).
