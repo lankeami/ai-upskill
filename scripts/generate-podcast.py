@@ -17,15 +17,18 @@ STATE_FILE = Path(__file__).resolve().parent.parent / ".podcast-state.json"
 PODCAST_CONFIG_FILE = Path(__file__).resolve().parent.parent / "podcast-config.yaml"
 
 
-def load_audio_instructions() -> str | None:
-    """Load custom audio instructions from podcast-config.yaml, if present."""
+def load_audio_config() -> dict:
+    """Load audio generation settings from podcast-config.yaml."""
     if not PODCAST_CONFIG_FILE.exists():
-        return None
+        return {}
     cfg = yaml.safe_load(PODCAST_CONFIG_FILE.read_text(encoding="utf-8")) or {}
-    return cfg.get("audio", {}).get("instructions") or None
+    return cfg.get("audio", {})
 
 
-AUDIO_INSTRUCTIONS = load_audio_instructions()
+_AUDIO_CFG = load_audio_config()
+AUDIO_INSTRUCTIONS = _AUDIO_CFG.get("instructions") or None
+AUDIO_FORMAT_NAME = _AUDIO_CFG.get("format", "DEEP_DIVE")
+AUDIO_LENGTH_NAME = _AUDIO_CFG.get("length", "SHORT")
 
 
 def parse_args() -> argparse.Namespace:
@@ -145,8 +148,8 @@ async def start_generation(client, report_date: str, media_type: str) -> str | N
         from notebooklm import AudioFormat, AudioLength
         status = await client.artifacts.generate_audio(
             nb.id,
-            audio_format=AudioFormat.DEEP_DIVE,
-            audio_length=AudioLength.SHORT,
+            audio_format=AudioFormat[AUDIO_FORMAT_NAME],
+            audio_length=AudioLength[AUDIO_LENGTH_NAME],
             instructions=AUDIO_INSTRUCTIONS,
         )
 
@@ -269,8 +272,8 @@ async def generate_podcast(report_date: str, media_type: str) -> Path:
                 # Generate audio
                 status = await client.artifacts.generate_audio(
                     nb.id,
-                    audio_format=AudioFormat.DEEP_DIVE,
-                    audio_length=AudioLength.SHORT,
+                    audio_format=AudioFormat[AUDIO_FORMAT_NAME],
+                    audio_length=AudioLength[AUDIO_LENGTH_NAME],
                     instructions=AUDIO_INSTRUCTIONS,
                 )
                 print(f"Audio generation started (task: {status.task_id})")

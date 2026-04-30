@@ -1,6 +1,12 @@
 audio:
-  # Custom instructions passed to NotebookLM's generate_audio() call.
-  # Controls what the podcast hosts cover and how they cover it.
+  # AudioFormat: DEEP_DIVE, BRIEF, CRITIQUE, or DEBATE
+  format: DEEP_DIVE
+
+  # AudioLength: SHORT, DEFAULT, or LONG
+  # Use DEFAULT or LONG if the report has many sections and hosts are rushing.
+  length: SHORT
+
+  # Custom instructions for the podcast hosts.
   # Remove or leave blank to use NotebookLM's default behavior (picks 1-2 topics).
   instructions: >
     Go through every headline in the report in order. For each one, read the headline
