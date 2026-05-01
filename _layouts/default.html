@@ -36,5 +36,15 @@
   <footer class="site-footer">
     <p>Generated daily from Reddit, Hacker News, and RSS feeds.</p>
   </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href]').forEach(function(a) {
+    if (!a.getAttribute('href').startsWith('#')) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+});
+</script>
 </body>
 </html>
