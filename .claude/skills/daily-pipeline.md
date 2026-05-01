@@ -30,6 +30,15 @@ Before running the pipeline, first load environment variables, then verify all p
    > Set the `NOTEBOOKLM_AUTH_JSON` environment variable with your NotebookLM credentials before running this skill.
 6. **Clean git state:** Run `git status --porcelain`. If there is output, stop and tell the user to commit or stash their changes first.
 
+## Step 0: Sync Main
+
+Run:
+```bash
+git pull origin main
+```
+
+If this fails (e.g. merge conflict, diverged branches), stop and tell the user to resolve the conflict manually before running the pipeline.
+
 ## Step 1: Build Go CLI
 
 Run:
@@ -153,6 +162,7 @@ git push
 ## Done
 
 Summarize what was done:
+- Sync: pulled latest main
 - Report: generated or already existed
 - Audio: generated or already existed
 - GitHub Release: published or already existed
