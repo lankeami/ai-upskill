@@ -19,6 +19,7 @@
       --accent-hover: #4f46e5;
       --header-bg: #0f172a;
       --header-text: #f1f5f9;
+      --header-text-hover: #a5b4fc;
     }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -52,7 +53,7 @@
       font-size: 1.1rem;
       letter-spacing: -0.01em;
     }
-    .site-header a:hover { color: #a5b4fc; text-decoration: none; }
+    .site-header a:hover { color: var(--header-text-hover); text-decoration: none; }
     .site-main {
       flex: 1;
       max-width: 860px;
