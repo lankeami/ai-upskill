@@ -278,8 +278,8 @@ async def generate_podcast(report_date: str, media_type: str) -> Path:
                 )
                 print(f"Audio generation started (task: {status.task_id})")
 
-                # Wait for completion
-                await client.artifacts.wait_for_completion(nb.id, status.task_id)
+                # Wait for completion (LONG audio can take up to 30 min)
+                await client.artifacts.wait_for_completion(nb.id, status.task_id, timeout=1800.0)
                 print("Audio generation complete")
 
                 # Download MP3
