@@ -3,20 +3,125 @@ layout: default
 ---
 
 <style>
-  .report-nav { display: flex; justify-content: space-between; margin-bottom: 1.5rem; font-size: 0.9rem; }
-  .report-nav a { color: #0969da; }
-  .report-nav .disabled { color: #656d76; }
-  .report-date { font-size: 1.1rem; color: #656d76; margin-bottom: 1rem; }
-  .report-toc { margin-bottom: 1.5rem; padding: 1rem; background: #f6f8fa; border-radius: 6px; }
-  .report-toc h3 { font-size: 0.9rem; margin-bottom: 0.5rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em; }
-  .report-toc ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .report-toc li a { font-size: 0.85rem; padding: 0.2rem 0.5rem; background: #fff; border: 1px solid #d1d9e0; border-radius: 4px; display: inline-block; }
-  .report-toc li a:hover { background: #0969da; color: #fff; text-decoration: none; }
-  details { margin-bottom: 1rem; }
-  details summary { cursor: pointer; font-size: 1.25rem; font-weight: 600; padding: 0.5rem 0; }
-  details summary:hover { color: #0969da; }
-  details[open] summary { margin-bottom: 0.5rem; }
-  #report-content li p { font-size: 0.85rem; color: #656d76; margin-top: 0; line-height: 1.3; }
+  .report-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    gap: 1rem;
+  }
+  .report-nav a {
+    color: var(--accent);
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .report-nav a:hover {
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-color: var(--accent);
+  }
+  .report-nav .disabled {
+    color: var(--text-disabled);
+    padding: 0.4rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+  .report-date {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .report-toc {
+    margin-bottom: 2rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .report-toc h3 {
+    font-size: 0.75rem;
+    margin: 0 0 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+  .report-toc ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .report-toc li a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.65rem;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .report-toc li a:hover {
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border-color: var(--accent);
+  }
+  details {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  details summary {
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.875rem 1.25rem;
+    background: var(--surface);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.15s;
+    user-select: none;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before {
+    content: '▶';
+    font-size: 0.65rem;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  details[open] summary::before { transform: rotate(90deg); }
+  details summary:hover { background: var(--surface-hover); color: var(--accent); }
+  details[open] { border-color: var(--accent); }
+  details[open] summary { color: var(--accent); border-bottom: 1px solid var(--border); }
+  details > ul { padding: 0.75rem 1.25rem 1rem 2.75rem; }
+  #report-content li p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+    line-height: 1.4;
+  }
+  .podcast-player {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  #btn-play { background: var(--accent) !important; }
 </style>
 
 {% comment %} Build sorted list of report pages for prev/next nav {% endcomment %}
@@ -55,7 +160,7 @@ layout: default
 <p class="report-date">{{ page.date | date: "%A, %B %d, %Y" }}</p>
 
 {% if page.podcast_url %}
-<div class="podcast-player" style="margin-bottom: 1.5rem; padding: 1.25rem; background: #f6f8fa; border-radius: 8px;">
+<div class="podcast-player">
   <p style="margin: 0 0 0.75rem; font-size: 0.8rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">🎙 Listen to this report</p>
   <audio id="podcast-audio" preload="metadata">
     <source src="{{ page.podcast_url }}" type="audio/mpeg">
