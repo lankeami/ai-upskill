@@ -162,7 +162,7 @@ layout: default
 {% if page.podcast_url %}
 <div class="podcast-player">
   <p style="margin: 0 0 0.75rem; font-size: 0.8rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">🎙 Listen to this report</p>
-  <audio id="podcast-audio" preload="metadata">
+  <audio id="podcast-audio" preload="none">
     <source src="{{ page.podcast_url }}" type="audio/mpeg">
   </audio>
   <div style="display: flex; align-items: center; gap: 0.75rem;">
