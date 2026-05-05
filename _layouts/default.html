@@ -123,7 +123,10 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href]').forEach(function(a) {
-    if (!a.getAttribute('href').startsWith('#')) {
+    var href = a.getAttribute('href');
+    if (href.startsWith('#')) return;
+    var isExternal = /^https?:\/\//i.test(href) && !href.startsWith(location.origin);
+    if (isExternal) {
       a.setAttribute('target', '_blank');
       a.setAttribute('rel', 'noopener noreferrer');
     }
