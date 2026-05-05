@@ -98,6 +98,41 @@ sources:
 
 Add subreddits or RSS feed URLs directly. Adjust `min_score` to control HN noise.
 
+## Environment Setup
+
+The audio podcast pipeline requires NotebookLM credentials. These are stored as a Playwright browser storage state (Google session cookies) and supplied via environment variable.
+
+### Populating the `.env` file
+
+1. **Install the `notebooklm-py` package** (if not already installed):
+   ```bash
+   python -m pip install notebooklm-py
+   ```
+
+2. **Log in to NotebookLM** to capture your Google session cookies:
+   ```bash
+   notebooklm login
+   ```
+   This opens a browser window. Sign in with your Google account and close the browser when prompted. Your session is saved to `~/.notebooklm/storage_state.json`.
+
+3. **Export the storage state as JSON** and write it to `.env`:
+   ```bash
+   echo "NOTEBOOKLM_AUTH_JSON=$(cat ~/.notebooklm/storage_state.json)" > .env
+   ```
+   On Windows (PowerShell):
+   ```powershell
+   "NOTEBOOKLM_AUTH_JSON=$(Get-Content $HOME\.notebooklm\storage_state.json -Raw)" | Out-File .env -Encoding utf8
+   ```
+
+4. **Verify** the variable is set correctly:
+   ```bash
+   python -c "import os, json; json.loads(os.environ['NOTEBOOKLM_AUTH_JSON']); print('OK')"
+   ```
+
+The `.env` file is gitignored and never committed. It must be present locally whenever you run the pipeline.
+
+> **Sessions expire.** If the pipeline fails with an authentication error, re-run `notebooklm login` and regenerate `.env` using the steps above.
+
 ## Building and Running Locally
 
 ### Prerequisites
