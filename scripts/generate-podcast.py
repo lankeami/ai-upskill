@@ -29,6 +29,7 @@ _AUDIO_CFG = load_audio_config()
 AUDIO_INSTRUCTIONS = _AUDIO_CFG.get("instructions") or None
 AUDIO_FORMAT_NAME = _AUDIO_CFG.get("format", "DEEP_DIVE")
 AUDIO_LENGTH_NAME = _AUDIO_CFG.get("length", "SHORT")
+AUDIO_EXCLUDE_SECTIONS = _AUDIO_CFG.get("exclude_sections") or []
 
 
 def parse_args() -> argparse.Namespace:
@@ -71,6 +72,20 @@ def strip_front_matter(content: str) -> str:
     match = re.match(r"^---\s*\n.*?\n---\s*\n", content, re.DOTALL)
     if match:
         return content[match.end():]
+    return content
+
+
+def strip_excluded_sections(content: str, exclude_sections: list[str]) -> str:
+    """Remove ## sections whose heading matches any name in exclude_sections."""
+    if not exclude_sections:
+        return content
+    for name in exclude_sections:
+        # Match the heading line and everything up to the next ## heading or end of string
+        pattern = re.compile(
+            r"^## " + re.escape(name) + r"\s*\n.*?(?=^## |\Z)",
+            re.MULTILINE | re.DOTALL,
+        )
+        content = pattern.sub("", content)
     return content
 
 
@@ -125,6 +140,7 @@ async def start_generation(client, report_date: str, media_type: str) -> str | N
 
     raw_content = report_path.read_text(encoding="utf-8")
     content = strip_front_matter(raw_content)
+    content = strip_excluded_sections(content, AUDIO_EXCLUDE_SECTIONS)
 
     if not content.strip():
         print(f"Error: Report {report_path} is empty after stripping front matter", file=sys.stderr)
@@ -228,6 +244,7 @@ async def generate_podcast(report_date: str, media_type: str) -> Path:
 
     raw_content = report_path.read_text(encoding="utf-8")
     content = strip_front_matter(raw_content)
+    content = strip_excluded_sections(content, AUDIO_EXCLUDE_SECTIONS)
 
     if not content.strip():
         print(f"Error: Report {report_path} is empty after stripping front matter", file=sys.stderr)

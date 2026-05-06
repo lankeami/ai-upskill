@@ -4,7 +4,12 @@ audio:
 
   # AudioLength: SHORT, DEFAULT, or LONG
   # Use DEFAULT or LONG if the report has many sections and hosts are rushing.
-  length: LONG
+  length: MEDIUM
+
+  # Sections to strip from the report before sending to NotebookLM.
+  # Use the exact section heading text (without the ## prefix).
+  exclude_sections:
+    - "Other/Independent"
 
   # Custom instructions for the podcast hosts.
   # Remove or leave blank to use NotebookLM's default behavior (picks 1-2 topics).
