@@ -235,3 +235,43 @@ func TestRenderSectionWithDescriptions(t *testing.T) {
 		}
 	})
 }
+
+func TestRenderMarkdownOtherIndependentIsLast(t *testing.T) {
+	date := time.Date(2026, 4, 15, 0, 0, 0, 0, time.UTC)
+
+	classified := map[string][]processor.DeduplicatedItem{
+		"OpenAI": {
+			{
+				Title:   "GPT-5 Released",
+				Sources: []processor.SourceRef{{Name: "Reddit", URL: "https://reddit.com/gpt5"}},
+			},
+		},
+		"UnknownCo": {
+			{
+				Title:   "Some Startup News",
+				Sources: []processor.SourceRef{{Name: "HN", URL: "https://hn.com/startup"}},
+			},
+		},
+		"Other/Independent": {
+			{
+				Title:   "Random Indie Project",
+				Sources: []processor.SourceRef{{Name: "RSS", URL: "https://rss.com/indie"}},
+			},
+		},
+	}
+
+	result := RenderMarkdown(classified, date, []string{"Reddit", "HN", "RSS"})
+
+	otherIdx := strings.Index(result, "## Other/Independent")
+	unknownIdx := strings.Index(result, "## UnknownCo")
+
+	if otherIdx == -1 {
+		t.Fatal("Other/Independent section missing from output")
+	}
+	if unknownIdx == -1 {
+		t.Fatal("UnknownCo section missing from output")
+	}
+	if otherIdx < unknownIdx {
+		t.Errorf("Other/Independent (pos %d) must appear after UnknownCo (pos %d)", otherIdx, unknownIdx)
+	}
+}
