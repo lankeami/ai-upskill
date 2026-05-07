@@ -31,7 +31,7 @@ func cleanDescription(desc string) string {
 
 var companyOrder = []string{
 	"OpenAI", "Google", "Anthropic", "Meta", "Microsoft",
-	"Mistral", "Apple", "Stability AI", "xAI", "Other/Independent",
+	"Mistral", "Apple", "Stability AI", "xAI",
 }
 
 func RenderMarkdown(classified map[string][]processor.DeduplicatedItem, date time.Time, sources []string) string {
