@@ -21,3 +21,4 @@ exclude:
   - Gemfile.lock
   - vendor/
   - podcasts/
+  - today.md
