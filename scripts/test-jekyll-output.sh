@@ -21,6 +21,7 @@ while IFS= read -r file; do
   rel="${file#_site/}"
   case "$rel" in
     index.html) ;;
+    today.html) ;;
     reports/*.html) ;;
     *)
       echo "UNEXPECTED FILE: $rel"
@@ -36,4 +37,4 @@ if [ "$fail" -eq 1 ]; then
 fi
 
 echo ""
-echo "PASS: Jekyll output contains only index.html and reports/*.html"
+echo "PASS: Jekyll output contains only index.html, today.html, and reports/*.html"
