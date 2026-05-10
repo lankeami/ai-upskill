@@ -87,9 +87,13 @@ jobs:
           EXT="${{ steps.media.outputs.ext }}"
           MEDIA_FILE="podcasts/${REPORT_DATE}.${EXT}"
 
-          gh release create "$TAG" "$MEDIA_FILE" \
-            --title "Podcast — ${REPORT_DATE}" \
-            --notes "${{ steps.media.outputs.media_type }} podcast for AI Daily Report ${REPORT_DATE}"
+          if gh release view "$TAG" &>/dev/null; then
+            echo "Release $TAG already exists, skipping creation"
+          else
+            gh release create "$TAG" "$MEDIA_FILE" \
+              --title "Podcast — ${REPORT_DATE}" \
+              --notes "${{ steps.media.outputs.media_type }} podcast for AI Daily Report ${REPORT_DATE}"
+          fi
 
       - name: Update report front matter with podcast URL
         if: steps.date.outputs.skip != 'true'
