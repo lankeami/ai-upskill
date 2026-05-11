@@ -140,6 +140,25 @@ else:
 
 If the Python command fails, stop the pipeline and show the error.
 
+**Copy report to today.md:** Copy the report (now with podcast_url) to `today.md`, adding `permalink: /today` to its front matter:
+
+```bash
+python3 -c "
+src = 'reports/DATE.md'
+dst = 'today.md'
+content = open(src).read()
+parts = content.split('---', 2)
+if len(parts) >= 3:
+    parts[1] = parts[1].rstrip('\n') + '\npermalink: /today\n'
+    open(dst, 'w').write('---'.join(parts))
+    print('Copied', src, 'to today.md')
+else:
+    import sys; print('Error: could not parse front matter', file=sys.stderr); sys.exit(1)
+"
+```
+
+If this command fails, stop the pipeline and show the error.
+
 ## Step 5: Commit & Push
 
 **Check:** Run `git status --porcelain`. If there are no changes, note "Nothing to commit" and finish.
@@ -147,7 +166,7 @@ If the Python command fails, stop the pipeline and show the error.
 If there are changes:
 
 ```bash
-git add reports/DATE.md
+git add reports/DATE.md today.md
 ```
 
 Use the appropriate commit message:
