@@ -126,12 +126,26 @@ jobs:
               sys.exit(1)
           "
 
+      - name: Sync today.md with podcast URL
+        if: steps.date.outputs.skip != 'true'
+        run: |
+          REPORT_DATE="${{ steps.date.outputs.report_date }}"
+          REPORT_FILE="reports/${REPORT_DATE}.md"
+          if [ -f "$REPORT_FILE" ]; then
+            awk '
+              BEGIN { fm=0; done=0 }
+              /^---$/ && fm==0 { fm=1; print; next }
+              /^---$/ && fm==1 && done==0 { print "permalink: /today"; print; done=1; next }
+              { print }
+            ' "$REPORT_FILE" > today.md
+          fi
+
       - name: Commit updated report
         if: steps.date.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/
+          git add reports/ today.md
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
