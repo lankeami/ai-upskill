@@ -35,11 +35,26 @@ jobs:
       - name: Verify Jekyll output
         run: ./scripts/test-jekyll-output.sh
 
+      - name: Sync today.md
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          REPORT="reports/${DATE}.md"
+          if [ -f "$REPORT" ]; then
+            awk '
+              BEGIN { fm=0; done=0 }
+              /^---$/ && fm==0 { fm=1; print; next }
+              /^---$/ && fm==1 && done==0 { print "permalink: /today"; print; done=1; next }
+              { print }
+            ' "$REPORT" > today.md
+          else
+            echo "Report $REPORT not found, skipping today.md sync"
+          fi
+
       - name: Commit and push report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/
+          git add reports/ today.md
           if git diff --cached --quiet; then
             echo "No new report to commit"
           else

@@ -1,68 +1,89 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-05-11"
-date: 2026-05-11
-companies: ["anthropic", "google", "Other/Independent"]
-item_count: 25
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-05-11/2026-05-11.mp3
+title: "AI Daily Report — 2026-05-12"
+date: 2026-05-12
+companies: ["anthropic", "google", "openai", "Other/Independent"]
+item_count: 33
+podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-05-12/2026-05-12.mp3
 permalink: /today
 ---
 
-# AI Daily Report — 2026-05-11
+# AI Daily Report — 2026-05-12
 
 ## anthropic
-- **Anthropic says ‘evil’ portrayals of AI were responsible for Claude’s blackmail attempts** — [TechCrunch AI](https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/)
-  Fictional portrayals of artificial intelligence can have a real effect on AI models, according to Anthropic.
-- **We’re feeling cynical about xAI’s big deal with Anthropic** — [TechCrunch AI](https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/)
-  On the latest episode of the Equity podcast, we discussed what xAI's deal with Anthropic might mean for parent company SpaceX.
+- **OpenAI just released its answer to Claude Mythos** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai)
+  OpenAI is launching Daybreak, an AI initiative focused on detecting and patching vulnerabilities before attackers find them. Daybreak uses the Codex Security AI agent that launched in March to create …
+- **Claude Platform on AWS** — [Hacker News](https://claude.com/blog/claude-platform-on-aws)
+  The Claude Platform on AWS is now generally available, offering a new way for AWS customers to access the full set of Claude platform features with AWS authentication, billing, and commitment retireme…
 - **Mythos Finds a Curl Vulnerability** — [Hacker News](https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/)
   yes, as in singular one. Back in April 2026 Anthropic caused a lot of media noise when they concluded that their new AI model Mythos is dangerously good at finding security flaws in source code. Appar…
-- **How Fast Does Claude, Acting as a User Space IP Stack, Respond to Pings?** — [Hacker News](https://dunkels.com/adam/claude-user-space-ip-stack-ping/)
-  Here is a fun thought: if we ask Claude Code to act as a user space IP stack, how quickly will it be able to respond to a ping?
+- **Interfaze: A new model architecture built for high accuracy at scale** — [Hacker News](https://interfaze.ai/blog/interfaze-a-new-model-architecture-built-for-high-accuracy-at-scale)
+  A complete walkthrough of Interfaze: what it is, who we benchmark against (Gemini-3-Flash, Claude-Sonnet-4.6, GPT-5.4-Mini, Grok-4.3, plus task specialists like Reducto, SAM 3, Scribe v2), full result…
 - **Show HN: adamsreview – better multi-agent PR reviews for Claude Code** — [Hacker News](https://github.com/adamjgmiller/adamsreview)
   Multi-lens code review pipeline for Claude Code: deep review (Claude or Codex), auto-fix loop, interactive walkthrough, external-finding injection. - adamjgmiller/adamsreview
 
 ## google
-- **Hardware Attestation as Monopoly Enabler** — [Hacker News](https://grapheneos.social/@GrapheneOS/116550899908879585)
-  Apple and Google are gradually expanding their use of hardware-based attestation. They're convincing a growing number of services to adopt it. Google's Play Integrity API and Apple's App Attest API ar…
-- **Gemini API File Search is now multimodal** — [Hacker News](https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/)
-  Updates to the Gemini API File Search tool makes building efficient, multimodal file retrieval systems easier for developers.
+- **Google stopped a zero-day hack that it says was developed with AI** — [The Verge AI](https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped)
+  For the first time, Google says it has spotted and stopped a zero-day exploit developed with AI. According to a report from Google Threat Intelligence Group (GTIG), "prominent cyber crime threat actor…
+- **Google says criminal hackers used AI to find a major software flaw** — [Hacker News](https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html)
+- **Show HN: OpenGravity – A zero-install, BYOK vanilla JS clone of Antigravity** — [Hacker News](https://github.com/ab-613/opengravity)
+  A lightweight, BYOK (Bring Your Own Key) recreation of the Google Antigravity UI. It currently features a live xterm.js terminal with direct local file system sync and a sidebar agent capable of ru...
 - **Gmail registration now requires scanning a QR code and sending a text message** — [Hacker News](https://discuss.privacyguides.net/t/google-account-registration-now-requires-sending-an-sms-via-phone-instead-of-receiving-an-sms/36082)
   I have tried it myself, the registration is no longer possible with the QR code. Supposedly, using the QR code on the smartphone triggers an SMS sent from your phone to Google in order to verify your …
 
+## openai
+- **Here&#8217;s what Mira Murati&#8217;s AI company is up to** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/928309/mira-murati-thinking-machines-ai-interaction-model)
+  Thinking Machines, the AI company founded by former OpenAI CTO Mira Murati, announced Monday that it's working on something called "interaction models." The idea behind interaction models, according t…
+- **Live updates from Elon Musk and Sam Altman's court battle over the future of OpenAI** — [The Verge AI](https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit)
+  Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter the future of OpenAI and its most well-known product, ChatGPT. In 2024, Musk filed a lawsuit accusing OpenAI of abandoni…
+- **A consistent pattern of lying': trial exposes what insiders think of Sam Altman** — [Hacker News](https://www.theguardian.com/us-news/2026/may/11/musk-v-openai-altman-trial)
+  The trial has exposed even more details about OpenAI's fractious corporate past than previously documented
+
 ## Other/Independent
-- **Voice AI in India is hard. Wispr Flow is betting on it anyway.** — [TechCrunch AI](https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/)
-  Wispr Flow says growth accelerated in India after its Hinglish rollout, even as voice AI products continue to face challenges.
-- **Local AI needs to be the norm** — [Hacker News](https://unix.foo/posts/local-ai-needs-to-be-norm/)
-  Local AI models should be the default.
-- **Chrome's AI features may be hogging 4GB of your computer storage** — [Hacker News](https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features)
-  You can take steps to delete it though.
-- **I Work in Hollywood. Everyone Who Used to Make TV Is Now Training AI** — [Hacker News](https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai/)
-  For screenwriters like me—and job seekers all over—AI gig work is the new waiting tables. In eight months, I’ve done 20 of these soul-crushing contracts for five different platforms. It’s bad.
-- **I'm going back to writing code by hand** — [Hacker News](https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/)
-  I vibe-coded a GPU-aware Kubernetes TUI for 7 months, archived it, and started over. Here's what AI gets wrong when projects grow complex.
+- **Thinking Machines wants to build an AI that actually listens while it talks** — [TechCrunch AI](https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/)
+  Right now, every AI model you've ever used works the same way. You talk, it listens. It responds, you listen. Thinking Machines is trying to change that by building a model that processes your input a…
+- **Riding an AI rally, Robinhood preps second retail venture IPO** — [TechCrunch AI](https://techcrunch.com/2026/05/11/riding-an-ai-rally-robinhood-preps-second-retail-venture-ipo/)
+  Robinhood files confidentially for its second venture fund, this time targeting growth and early-stage startups.
+- **GM just laid off hundreds of IT workers to hire those with stronger AI skills** — [TechCrunch AI](https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/)
+  Some of the positions focus on AI-native development, data engineering and analytics, cloud-based engineering, and agent and model development as well as prompt engineering and new AI workflows.
+- **Digg tries again, this time as an AI news aggregator** — [TechCrunch AI](https://techcrunch.com/2026/05/11/digg-tries-again-this-time-as-an-ai-news-aggregator/)
+  In an email to beta testers, the company said the site's goal is to "track the most influential voices in a space" and to surface the news that's actually worth "paying attention to."
+- **There aren't enough rockets for space data centers — Cowboy Space raised $275M to build them** — [TechCrunch AI](https://techcrunch.com/2026/05/11/there-arent-enough-rockets-for-space-data-centers-cowboy-space-raised-275-million-to-build-them/)
+  The apparently insatiable demand for AI compute has data center entrepreneurs looking to the stars. There's a key problem: There aren't enough rockets to put data centers in orbit around Earth, and th…
+- **Learning Software Architecture** — [Hacker News](https://matklad.github.io/2026/05/12/software-architecture.html)
+  In reply to an email asking about learning software design skills as a researcher physicist:
+- **Postmortem: TanStack NPM supply-chain compromise** — [Hacker News](https://tanstack.com/blog/npm-supply-chain-compromise-postmortem)
+  On 2026-05-11, an attacker chained a pull_request_target Pwn Request, GitHub Actions cache poisoning across the fork↔base trust boundary, and OIDC token extraction from runner memory to publish 84 mal…
+- **What a Japanese cooking principle taught me about overcoming AI fatigue** — [Hacker News](https://www.devas.life/what-a-japanese-cooking-principle-taught-me-about-overcoming-ai-fatigue/)
+  Hey, what's up? It's Takuya.
+
+I've been thinking about how to live well in this AI era as a developer, content creator, and artist. By "living well," I mean enjoying the act of creating while maintain…
+- **If AI writes your code, why use Python?** — [Hacker News](https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055)
+- **UCLA discovers first stroke rehabilitation drug to repair brain damage (2025)** — [Hacker News](https://stemcell.ucla.edu/news/ucla-discovers-first-stroke-rehabilitation-drug-repair-brain-damage)
+  A new study by UCLA Health has discovered what researchers say is the first drug to fully reproduce the effects of physical stroke rehabilitation in model mice.
+- **I let AI build a tool to help me figure out what was waking me up at night** — [Hacker News](https://martin.sh/i-let-ai-build-a-tool-to-help-me-figure-out-what-was-waking-me-up-at-night/)
+  I try to pay attention to the small things that affect my quality of life. When something keeps bothering me, I want to investigate, find a likely cause, and act on it.
+
+What changed recently is what …
 - **The greatest shot in television: James Burke had one chance to nail this scene (2024)** — [Hacker News](https://www.openculture.com/2024/10/the-greatest-shot-in-television.html)
   The 80-second clip above captures a rocket launch, something of which we've all seen footage at one time or another. What makes its viewers call it 'the greatest shot in television' still today, 45 ye…
-- **European Money Pours into Palantir** — [Hacker News](https://english.elpais.com/economy-and-business/branded/2026-04-11/european-money-pours-into-palantir-over-100-asset-managers-and-banks-boost-their-investments-in-the-controversial-tech-company.html)
-  Investors across the continent have already put more than $27 billion into this leader in military-grade AI that has been accused of numerous human rights violations
-- **Rotten Dot Com** — [Hacker News](https://www.theparisreview.org/blog/2026/05/06/rotten-dot-com/)
-  May 6, 2026 – “Rotten.com was a haunted arcade, dispensing trauma in gumball-machine doses straight to kids with dial-up, who chewed on images never meant for their half-formed stomachs.”
-- **Spain has become one of Europe’s cheapest power markets** — [Hacker News](https://janrosenow.substack.com/p/spain-just-became-one-of-europes)
-- **I knew my writing students used AI. Their confessions led to a teaching moment** — [Hacker News](https://www.theguardian.com/us-news/ng-interactive/2026/may/10/fiction-writing-professor-ai)
-  The problem wasn’t just the perfectly polished, yet mediocre prose. It’s what’s lost when we surrender the struggle to translate thought into words
-- **PS3 Emulator Devs Politely Ask That People Stop Flooding It with AI PRs** — [Hacker News](https://kotaku.com/playstation-3-emulator-devs-politely-ask-that-people-stop-flooding-it-with-ai-code-pull-requests-2000694656)
-  The team behind RPCS3 suggests that vibe-coders "learn how to debug and code" instead of "generating slop that you don't understand"
-- **An AI coding agent, used to write code, needs to reduce your maintenance costs** — [Hacker News](https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs)
-- **Obsidian plugin was abused to deploy a remote access trojan** — [Hacker News](https://cyber.netsecops.io/articles/obsidian-plugin-abused-in-campaign-to-deploy-phantom-pulse-rat/)
-  A sophisticated campaign is abusing the Obsidian note-taking app to deliver a new RAT, PHANTOMPULSE, to targets in the finance and crypto sectors using social engineering and malicious plugins.
-- **Task Paralysis and AI** — [Hacker News](https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html)
-  An article about ADHD, Task Paralysis and AI.
-- **Maryland citizens hit with $2B power grid upgrade for out-of-state AI** — [Hacker News](https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises)
-  Aren't AI hyperscalers supposed to pay for these upgrades?
-- **Show HN: An index of indie web/blog indexes** — [Hacker News](https://theindex.fyi)
-  A maintained, canonical meta-index of indie web and small web index sites. 38 entries across 6 categories.
-- **LLMorphism: When humans come to see themselves as language models** — [Hacker News](https://arxiv.org/abs/2605.05419)
-  LLMorphism is the biased belief that human cognition works like a large language model. I argue that the rise of conversational LLMs may make this bias increasingly psychologically available. When art…
+- **Interaction Models** — [Hacker News](https://thinkingmachines.ai/blog/interaction-models/)
+  Interaction models move beyond turn-based AI interfaces by handling multimodal, real-time collaboration natively across audio, video, and text.
+- **Show HN: TikTok but for scientific papers** — [Hacker News](https://andreaturchet.github.io/website/index.html)
+  Discover, read, and engage with academic papers. AI-powered summaries, quizzes, and a community of researchers — all in one beautiful app.
+- **Can someone please explain whether Cloudflare blackmailed Canonical?** — [Hacker News](https://www.flyingpenguin.com/can-someone-please-explain-whether-cloudflare-blackmailed-canonical/)
+- **Unitree GD01: China's $537k rideable transformer robot is now in production** — [Hacker News](https://gagadget.com/en/709729-unitree-gd01-chinas-537k-rideable-transformer-robot-is-now-in-production/)
+  Unitree's GD01 is the world's first mass-produced manned mech suit — a 500kg bipedal/quadrupedal machine that you actually ride. No US or UK release date in sight.
+- **I'm going back to writing code by hand** — [Hacker News](https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/)
+  I vibe-coded a GPU-aware Kubernetes TUI for 7 months, archived it, and started over. Here's what AI gets wrong when projects grow complex.
+- **Show HN: E2a – Open-source email gateway for AI agents** — [Hacker News](https://github.com/Mnexa-AI/e2a)
+  Authenticated email gateway for AI agents — SPF/DKIM verified inbound, HMAC-signed delivery, webhook + WebSocket fan-out, CLI + SDKs - Mnexa-AI/e2a
+- **A Caddy Cert Expired Because Systemd-Resolved Was Selectively Broken** — [Hacker News](https://rant.mvh.dev/a-caddy-cert-expired-because-systemd-resolved-was-selectively-broken/)
+  What do a SERVFAIL on one specific zone and one specific resolver path, instant resolution on every other zone, and forty-two hours of failed cert renewals that nobody was watching all have in common?…
+- **Natural-language messages between LLM agents are an architectural anti-pattern** — [Hacker News](https://novaberg.de/papers/clipboard-pattern.html)
+  Why natural-language messages between agents are an anti-pattern, and what to do instead.
+- **Red Hot Chili Peppers ink $300M deal with Warner Music to sell catalog** — [Hacker News](https://www.hollywoodreporter.com/music/music-industry-news/wmg-acquired-red-hot-chili-peppers-catalog-for-350-million-1236589567/)
+  The Red Hot Chili Peppers have sold their recorded catalog for $350 million to Warner Music Group through WMG's joint venture with Bain Capital.
 
 ---
-*Generated at 2026-05-11T13:23:15Z | Sources: r/artificial, r/MachineLearning, r/LocalLLaMA, r/ChatGPT, HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI*
+*Generated at 2026-05-12T10:55:02Z | Sources: r/artificial, r/MachineLearning, r/LocalLLaMA, r/ChatGPT, HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI*
