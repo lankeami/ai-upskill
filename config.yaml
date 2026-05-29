@@ -42,6 +42,7 @@ companies:
   Apple: ["apple intelligence", "apple ai", "apple ml"]
   Stability AI: ["stability ai", "stable diffusion", "stablelm"]
   xAI: ["xai", "grok"]
+  Amazon Alexa: ["alexa", "amazon echo", "echo dot", "echo show", "echo auto"]
 
 output:
   dir: reports
