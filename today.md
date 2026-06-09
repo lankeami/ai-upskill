@@ -4,6 +4,7 @@ title: "AI Daily Report — 2026-06-09"
 date: 2026-06-09
 companies: ["anthropic", "apple", "google", "microsoft", "openai", "xai", "Other/Independent"]
 item_count: 45
+podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-06-09/2026-06-09.mp3
 permalink: /today
 ---
 
