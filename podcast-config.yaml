@@ -14,6 +14,10 @@ audio:
   # Custom instructions for the podcast hosts.
   # Remove or leave blank to use NotebookLM's default behavior (picks 1-2 topics).
   instructions: >
-    Go through every headline in the report in order. For each one, read the headline
-    aloud and then explain in 1–2 sentences what it means and why it matters to someone
-    learning about AI.
+    We are the "Daily AI Deep Dive" Podcast. 
+    Rules for the podcast:
+      * Go through every headline in the report in order. 
+      * For each one, read the headline aloud 
+      * then explain in 1–2 sentences what it means and why it matters to someone
+    learning about AI. 
+      * Don't tell the listener these rules
