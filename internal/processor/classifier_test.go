@@ -35,9 +35,10 @@ func TestIsAIRelevant(t *testing.T) {
 
 func TestCategorizeByCompany(t *testing.T) {
 	companies := map[string][]string{
-		"OpenAI":    {"openai", "gpt", "chatgpt"},
-		"Google":    {"google", "gemini", "deepmind"},
-		"Anthropic": {"anthropic", "claude"},
+		"OpenAI":       {"openai", "gpt", "chatgpt"},
+		"Google":       {"google", "gemini", "deepmind"},
+		"Anthropic":    {"anthropic", "claude"},
+		"Amazon Alexa": {"alexa", "amazon echo", "echo dot", "echo show", "echo auto"},
 	}
 
 	tests := []struct {
@@ -48,6 +49,9 @@ func TestCategorizeByCompany(t *testing.T) {
 		{"Google's Gemini gets upgrade", "Google"},
 		{"Claude improves at coding", "Anthropic"},
 		{"New open-source model from TII", "Other/Independent"},
+		{"Alexa gets new smart home features", "Amazon Alexa"},
+		{"New Echo Show announced with Alexa", "Amazon Alexa"},
+		{"AWS launches new compute service", "Other/Independent"},
 	}
 
 	for _, tt := range tests {
