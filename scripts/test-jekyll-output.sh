@@ -54,3 +54,13 @@ if ! grep -q 'href="/reports/' _site/index.html; then
 fi
 
 echo "PASS: No /ai-upskill links; index links resolve from the domain root"
+
+echo ""
+echo "Checking /today prev/next navigation..."
+if ! grep -q 'href="/reports/[0-9-]*\.html">&larr;' _site/today.html; then
+  echo ""
+  echo "FAIL: _site/today.html has no previous-report link. The report layout must resolve prev/next for the /today permalink page."
+  exit 1
+fi
+
+echo "PASS: /today has a working previous-report link"

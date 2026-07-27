@@ -130,7 +130,8 @@ layout: default
 {% assign prev_report = nil %}
 {% assign next_report = nil %}
 {% for p in report_pages %}
-  {% if p.url == page.url %}
+  {% comment %} Match by date, not url, so the /today permalink copy of the latest report resolves the same prev/next as its dated counterpart {% endcomment %}
+  {% if p.date == page.date %}
     {% if forloop.index0 > 0 %}
       {% assign prev_idx = forloop.index0 | minus: 1 %}
       {% assign prev_report = report_pages[prev_idx] %}
