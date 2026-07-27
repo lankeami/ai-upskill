@@ -38,3 +38,19 @@ fi
 
 echo ""
 echo "PASS: Jekyll output contains only index.html, today.html, and reports/*.html"
+
+echo ""
+echo "Checking for stale /ai-upskill baseurl in links..."
+if grep -rn 'href="/ai-upskill' _site/ ; then
+  echo ""
+  echo "FAIL: Built HTML links to /ai-upskill/... — the site serves from the domain root. Set baseurl: \"\" in _config.yml."
+  exit 1
+fi
+
+if ! grep -q 'href="/reports/' _site/index.html; then
+  echo ""
+  echo "FAIL: _site/index.html has no root-relative /reports/ links."
+  exit 1
+fi
+
+echo "PASS: No /ai-upskill links; index links resolve from the domain root"
