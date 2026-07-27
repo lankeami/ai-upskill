@@ -9,3 +9,5 @@ ai-report
 .podcast-state.json
 .youtube-token.json
 .claude/settings.local.json
+.bundle/
+vendor/
