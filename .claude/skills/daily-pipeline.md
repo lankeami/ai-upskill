@@ -102,13 +102,37 @@ If this command fails, stop the pipeline and show the error.
 
 Verify that `podcasts/DATE.mp3` was created.
 
+### Step 3d: Generate Chapters
+
+Run:
+```bash
+python scripts/generate_chapters.py \
+  --report reports/DATE.md \
+  --transcript podcasts/DATE.vtt \
+  --output reports/DATE.chapters.json
+```
+
+This script matches article sections to transcript timestamps. If the VTT transcript doesn't exist yet, download it from NotebookLM or skip this step — the chapters file is optional.
+
+If this command fails, log the error but do not stop the pipeline (chapters are a nice-to-have enhancement).
+
+Verify that `reports/DATE.chapters.json` was created (optional — the pipeline continues if it fails).
+
 ## Step 4: Publish GitHub Release
 
 **Check:** Run `gh release view podcast-DATE 2>/dev/null >/dev/null && echo "exists" || echo "missing"`. If it prints `exists`, skip this step and note "Release already exists for DATE".
 
-If not, run:
+If not, build the release command with audio and optionally chapters:
+
 ```bash
-gh release create podcast-DATE podcasts/DATE.mp3 \
+# Build asset list
+ASSETS="podcasts/DATE.mp3"
+if [ -f "reports/DATE.chapters.json" ]; then
+  ASSETS="$ASSETS reports/DATE.chapters.json"
+fi
+
+# Create release with assets
+gh release create podcast-DATE $ASSETS \
   --title "Podcast — ${DATE}" \
   --notes "Audio podcast for AI Daily Report ${DATE}"
 ```
@@ -166,7 +190,13 @@ If this command fails, stop the pipeline and show the error.
 If there are changes:
 
 ```bash
+# Add report and today.md
 git add reports/DATE.md today.md
+
+# Optionally add chapters file if it was generated
+if [ -f "reports/DATE.chapters.json" ]; then
+  git add reports/DATE.chapters.json
+fi
 ```
 
 Use the appropriate commit message:

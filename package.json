@@ -1,0 +1,22 @@
+{
+  "name": "ai-upskill-video",
+  "version": "1.0.0",
+  "description": "Video generation for AI daily reports",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@remixicon/react": "^4.1.0",
+    "@testing-library/react": "^15.0.0",
+    "@types/node": "^20.0.0",
+    "remotion": "^3.3.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0"
+  }
+}
