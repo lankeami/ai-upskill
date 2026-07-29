@@ -1,6 +1,8 @@
 import { execFile } from 'child_process';
 import { promisify } from 'util';
-import { existsSync, statSync } from 'fs';
+import { existsSync, statSync, writeFileSync, unlinkSync } from 'fs';
+import { tmpdir } from 'os';
+import { join, resolve } from 'path';
 
 const execFileAsync = promisify(execFile);
 
@@ -85,10 +87,108 @@ export async function composeVideoWithAudio(
   };
 }
 
+export interface VideoSegment {
+  imagePath: string;
+  durationSeconds: number;
+}
+
+export interface SegmentedComposeOptions {
+  audioPath: string;
+  segments: VideoSegment[];
+  outputPath: string;
+  width: number;
+  height: number;
+  frameRate: number;
+}
+
+export interface SegmentedCompositionResult {
+  outputPath: string;
+  durationSeconds: number;
+  frameRate: number;
+  segmentCount: number;
+  fileSize: number;
+}
+
+/**
+ * Compose a video where each image displays for its own duration,
+ * with the audio track overlaid. Images of differing sizes are
+ * scaled and letterboxed to the target dimensions.
+ */
+export async function composeSegmentedVideo(
+  options: SegmentedComposeOptions
+): Promise<SegmentedCompositionResult> {
+  const { audioPath, segments, outputPath, width, height, frameRate } = options;
+
+  if (segments.length === 0) {
+    throw new Error('composeSegmentedVideo requires at least one segment');
+  }
+  if (!existsSync(audioPath)) {
+    throw new Error(`Audio file not found: ${audioPath}`);
+  }
+  for (const seg of segments) {
+    if (!existsSync(seg.imagePath)) {
+      throw new Error(`Segment image not found: ${seg.imagePath}`);
+    }
+  }
+
+  // Build a concat demuxer list: each image shown for its duration.
+  // The final image is repeated without duration per concat demuxer rules.
+  const escapePath = (p: string) => resolve(p).replace(/'/g, "'\\''");
+  const lines: string[] = ['ffconcat version 1.0'];
+  for (const seg of segments) {
+    lines.push(`file '${escapePath(seg.imagePath)}'`);
+    lines.push(`duration ${seg.durationSeconds}`);
+  }
+  lines.push(`file '${escapePath(segments[segments.length - 1].imagePath)}'`);
+
+  const concatFile = join(tmpdir(), `video-segments-${process.pid}-${Math.floor(performance.now())}.txt`);
+  writeFileSync(concatFile, lines.join('\n'));
+
+  try {
+    const vf = [
+      `scale=${width}:${height}:force_original_aspect_ratio=decrease`,
+      `pad=${width}:${height}:(ow-iw)/2:(oh-ih)/2:color=black`,
+      `fps=${frameRate}`,
+      'format=yuv420p',
+    ].join(',');
+
+    await execFileAsync('ffmpeg', [
+      '-y',
+      '-f', 'concat',
+      '-safe', '0',
+      '-i', concatFile,
+      '-i', audioPath,
+      '-vf', vf,
+      '-c:v', 'libx264',
+      '-preset', 'ultrafast',
+      '-c:a', 'aac',
+      '-shortest',
+      outputPath,
+    ]);
+  } finally {
+    if (existsSync(concatFile)) unlinkSync(concatFile);
+  }
+
+  if (!existsSync(outputPath)) {
+    throw new Error(`Video was not created at ${outputPath}`);
+  }
+
+  const durationSeconds = await getAudioDuration(outputPath);
+  const fileSize = statSync(outputPath).size;
+
+  return {
+    outputPath,
+    durationSeconds,
+    frameRate,
+    segmentCount: segments.length,
+    fileSize,
+  };
+}
+
 /**
  * Get the duration of an audio file in seconds.
  */
-async function getAudioDuration(audioPath: string): Promise<number> {
+export async function getAudioDuration(audioPath: string): Promise<number> {
   try {
     const { stdout } = await execFileAsync('ffprobe', [
       '-v', 'error',

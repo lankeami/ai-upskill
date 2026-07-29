@@ -1,6 +1,8 @@
 .env
 .worktrees/
 podcasts/
+videos/
+.env.bk
 .venv/
 .jekyll-cache/
 _site/
