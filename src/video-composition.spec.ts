@@ -2,7 +2,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { existsSync, unlinkSync } from 'fs';
 import { execFile } from 'child_process';
 import { promisify } from 'util';
-import { composeVideoWithAudio } from './video-composition';
+import { composeVideoWithAudio, composeSegmentedVideo, VideoSegment } from './video-composition';
 
 const execFileAsync = promisify(execFile);
 
@@ -140,5 +140,34 @@ describe('Video composition with audio sync', () => {
 
     // Audio file is 2 seconds, video should match
     expect(result.durationSeconds).toBeCloseTo(2, 0);
+  });
+
+  it('includes splash screen as first segment when provided', async () => {
+    const outputPath = `${TEST_OUTPUT_DIR}/splash-screen-video.mp4`;
+    const splashScreenDuration = 3; // 3 seconds for splash
+
+    const segments: VideoSegment[] = [
+      {
+        imagePath: TEST_SCREENSHOT_FILE,
+        durationSeconds: 2,
+      },
+    ];
+
+    const result = await composeSegmentedVideo({
+      audioPath: TEST_AUDIO_FILE,
+      segments,
+      splashScreenPath: TEST_SCREENSHOT_FILE,
+      splashScreenDuration,
+      outputPath,
+      width: 1920,
+      height: 1080,
+      frameRate: 30,
+    });
+
+    expect(existsSync(outputPath)).toBe(true);
+    expect(result.outputPath).toBe(outputPath);
+    // Video should be: splash (3s) + segment (2s) = 5s, but we're mixing with 2s audio
+    // so it will be clamped by audio duration or extended. Result should have splash included.
+    expect(result.segmentCount).toBe(2); // splash + 1 content segment
   });
 });

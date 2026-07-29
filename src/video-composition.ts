@@ -99,6 +99,8 @@ export interface SegmentedComposeOptions {
   width: number;
   height: number;
   frameRate: number;
+  splashScreenPath?: string;
+  splashScreenDuration?: number;
 }
 
 export interface SegmentedCompositionResult {
@@ -117,7 +119,16 @@ export interface SegmentedCompositionResult {
 export async function composeSegmentedVideo(
   options: SegmentedComposeOptions
 ): Promise<SegmentedCompositionResult> {
-  const { audioPath, segments, outputPath, width, height, frameRate } = options;
+  const {
+    audioPath,
+    segments,
+    outputPath,
+    width,
+    height,
+    frameRate,
+    splashScreenPath,
+    splashScreenDuration = 3,
+  } = options;
 
   if (segments.length === 0) {
     throw new Error('composeSegmentedVideo requires at least one segment');
@@ -125,6 +136,12 @@ export async function composeSegmentedVideo(
   if (!existsSync(audioPath)) {
     throw new Error(`Audio file not found: ${audioPath}`);
   }
+
+  // Validate splash screen if provided
+  if (splashScreenPath && !existsSync(splashScreenPath)) {
+    throw new Error(`Splash screen file not found: ${splashScreenPath}`);
+  }
+
   for (const seg of segments) {
     if (!existsSync(seg.imagePath)) {
       throw new Error(`Segment image not found: ${seg.imagePath}`);
@@ -132,14 +149,26 @@ export async function composeSegmentedVideo(
   }
 
   // Build a concat demuxer list: each image shown for its duration.
+  // If splash screen is provided, it's the first segment.
   // The final image is repeated without duration per concat demuxer rules.
   const escapePath = (p: string) => resolve(p).replace(/'/g, "'\\''");
   const lines: string[] = ['ffconcat version 1.0'];
-  for (const seg of segments) {
+
+  // Add splash screen as first segment if provided
+  const allSegments: VideoSegment[] = [];
+  if (splashScreenPath) {
+    allSegments.push({
+      imagePath: splashScreenPath,
+      durationSeconds: splashScreenDuration,
+    });
+  }
+  allSegments.push(...segments);
+
+  for (const seg of allSegments) {
     lines.push(`file '${escapePath(seg.imagePath)}'`);
     lines.push(`duration ${seg.durationSeconds}`);
   }
-  lines.push(`file '${escapePath(segments[segments.length - 1].imagePath)}'`);
+  lines.push(`file '${escapePath(allSegments[allSegments.length - 1].imagePath)}'`);
 
   const concatFile = join(tmpdir(), `video-segments-${process.pid}-${Math.floor(performance.now())}.txt`);
   writeFileSync(concatFile, lines.join('\n'));
@@ -180,7 +209,7 @@ export async function composeSegmentedVideo(
     outputPath,
     durationSeconds,
     frameRate,
-    segmentCount: segments.length,
+    segmentCount: allSegments.length,
     fileSize,
   };
 }

@@ -27,6 +27,8 @@ program
   .option('--audio <path>', 'Path to audio file')
   .option('--output <path>', 'Output video file path')
   .option('--report <path>', 'Report markdown path (defaults to reports/DATE.md)')
+  .option('--splash-screen <path>', 'Path to splash screen image')
+  .option('--splash-duration <number>', 'Splash screen duration in seconds', '3')
   .option('--width <number>', 'Video width', '1920')
   .option('--height <number>', 'Video height', '1080')
   .option('--frame-rate <number>', 'Frame rate (fps)', '30');
@@ -39,6 +41,8 @@ async function main() {
   const audioPath = options.audio || `podcasts/${date}.mp3`;
   const outputPath = options.output || `videos/${date}.mp4`;
   const reportPath = options.report || `reports/${date}.md`;
+  const splashScreenPath = options.splashScreen;
+  const splashScreenDuration = parseInt(options.splashDuration, 10);
   const width = parseInt(options.width, 10);
   const height = parseInt(options.height, 10);
   const frameRate = parseInt(options.frameRate, 10);
@@ -49,6 +53,10 @@ async function main() {
   }
   if (!existsSync(reportPath)) {
     console.error(`Error: Report not found: ${reportPath}`);
+    process.exit(1);
+  }
+  if (splashScreenPath && !existsSync(splashScreenPath)) {
+    console.error(`Error: Splash screen not found: ${splashScreenPath}`);
     process.exit(1);
   }
 
@@ -91,8 +99,10 @@ async function main() {
     imagePath: r.outputPath,
     durationSeconds: perSegment,
   }));
+  const totalSegments = splashScreenPath ? segments.length + 1 : segments.length;
+  const splashInfo = splashScreenPath ? ` + ${splashScreenDuration}s splash` : '';
   console.log(
-    `Composing ${segments.length} segments × ${perSegment.toFixed(1)}s over ${audioDuration.toFixed(0)}s of audio...`
+    `Composing ${totalSegments} segments${splashInfo} over ${audioDuration.toFixed(0)}s of audio...`
   );
 
   // 4. Compose
@@ -103,6 +113,8 @@ async function main() {
     width,
     height,
     frameRate,
+    splashScreenPath,
+    splashScreenDuration,
   });
 
   console.log(`✓ Video created: ${video.outputPath}`);

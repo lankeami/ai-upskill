@@ -121,7 +121,15 @@ layout: default
     border: 1px solid var(--border);
     border-radius: 12px;
   }
+  .video-player {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
   #btn-play { background: var(--accent) !important; }
+  #btn-video-play { background: var(--accent) !important; }
 </style>
 
 {% comment %} Build sorted list of report pages for prev/next nav {% endcomment %}
@@ -225,6 +233,76 @@ layout: default
   seek.addEventListener('change', function() { audio.currentTime = seek.value; seek._dragging = false; });
 
   speed.addEventListener('change', function() { audio.playbackRate = parseFloat(speed.value); });
+})();
+</script>
+{% endif %}
+
+{% if page.video_url %}
+<div class="video-player">
+  <p style="margin: 0 0 0.75rem; font-size: 0.8rem; color: #656d76; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">📹 Watch this report</p>
+  <video id="report-video" preload="none" style="width: 100%; max-width: 100%; background: #000; border-radius: 8px; margin-bottom: 0.75rem;">
+    <source src="{{ page.video_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div style="display: flex; align-items: center; gap: 0.75rem;">
+    <!-- Rewind 15s -->
+    <button id="btn-video-rewind" title="Back 15s" style="flex-shrink:0; width:44px; height:44px; border-radius:50%; border:none; background:#e1e8f0; cursor:pointer; font-size:1.1rem; display:flex; align-items:center; justify-content:center;">⏪</button>
+    <!-- Play/Pause -->
+    <button id="btn-video-play" title="Play / Pause" style="flex-shrink:0; width:56px; height:56px; border-radius:50%; border:none; background:#0969da; color:#fff; cursor:pointer; font-size:1.6rem; display:flex; align-items:center; justify-content:center;">▶</button>
+    <!-- Forward 30s -->
+    <button id="btn-video-forward" title="Forward 30s" style="flex-shrink:0; width:44px; height:44px; border-radius:50%; border:none; background:#e1e8f0; cursor:pointer; font-size:1.1rem; display:flex; align-items:center; justify-content:center;">⏩</button>
+    <!-- Seek bar + time -->
+    <div style="flex:1; display:flex; flex-direction:column; gap:0.3rem;">
+      <input id="video-seek" type="range" min="0" max="100" value="0" step="0.1"
+        style="width:100%; height:6px; accent-color:#0969da; cursor:pointer;">
+      <div style="display:flex; justify-content:space-between; font-size:0.78rem; color:#656d76;">
+        <span id="video-current">0:00</span>
+        <span id="video-duration">--:--</span>
+      </div>
+    </div>
+    <!-- Speed -->
+    <select id="video-speed" title="Playback speed" style="flex-shrink:0; padding:0.3rem 0.4rem; border:1px solid #d1d9e0; border-radius:4px; background:#fff; font-size:0.85rem; cursor:pointer; color:#24292f;">
+      <option value="0.75">0.75×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.25">1.25×</option>
+      <option value="1.5">1.5×</option>
+      <option value="2">2×</option>
+    </select>
+  </div>
+  <p style="margin: 0.75rem 0 0; font-size: 0.82rem;"><a href="{{ page.video_url }}" download>⬇ Download MP4</a></p>
+</div>
+<script>
+(function() {
+  var video = document.getElementById('report-video');
+  var btnPlay = document.getElementById('btn-video-play');
+  var btnRew = document.getElementById('btn-video-rewind');
+  var btnFwd = document.getElementById('btn-video-forward');
+  var seek = document.getElementById('video-seek');
+  var cur = document.getElementById('video-current');
+  var dur = document.getElementById('video-duration');
+  var speed = document.getElementById('video-speed');
+
+  function fmt(s) {
+    s = Math.floor(s || 0);
+    var m = Math.floor(s / 60), ss = s % 60;
+    return m + ':' + (ss < 10 ? '0' : '') + ss;
+  }
+
+  video.addEventListener('loadedmetadata', function() { dur.textContent = fmt(video.duration); seek.max = video.duration; });
+  video.addEventListener('timeupdate', function() { cur.textContent = fmt(video.currentTime); if (!seek._dragging) seek.value = video.currentTime; });
+  video.addEventListener('ended', function() { btnPlay.textContent = '▶'; });
+
+  btnPlay.addEventListener('click', function() {
+    if (video.paused) { video.play(); btnPlay.textContent = '⏸'; } else { video.pause(); btnPlay.textContent = '▶'; }
+  });
+  btnRew.addEventListener('click', function() { video.currentTime = Math.max(0, video.currentTime - 15); });
+  btnFwd.addEventListener('click', function() { video.currentTime = Math.min(video.duration, video.currentTime + 30); });
+
+  seek.addEventListener('mousedown', function() { seek._dragging = true; });
+  seek.addEventListener('input', function() { cur.textContent = fmt(seek.value); });
+  seek.addEventListener('change', function() { video.currentTime = seek.value; seek._dragging = false; });
+
+  speed.addEventListener('change', function() { video.playbackRate = parseFloat(speed.value); });
 })();
 </script>
 {% endif %}
