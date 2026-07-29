@@ -258,7 +258,7 @@ async def generate_podcast(report_date: str, media_type: str) -> Path:
 
     from notebooklm import NotebookLMClient, AudioFormat, AudioLength, VideoFormat, VideoStyle
 
-    async with await NotebookLMClient.from_storage() as client:
+    async with NotebookLMClient.from_storage() as client:
         # Create notebook
         notebook_title = f"AI Daily Report — {report_date}"
         nb = await client.notebooks.create(notebook_title)
@@ -334,7 +334,7 @@ def main() -> None:
 
         async def run_start():
             from notebooklm import NotebookLMClient
-            async with await NotebookLMClient.from_storage() as client:
+            async with NotebookLMClient.from_storage() as client:
                 await start_generation(client, args.date, args.media_type)
 
         asyncio.run(run_start())
@@ -342,7 +342,7 @@ def main() -> None:
     elif args.command == "poll":
         async def run_poll():
             from notebooklm import NotebookLMClient
-            async with await NotebookLMClient.from_storage() as client:
+            async with NotebookLMClient.from_storage() as client:
                 return await poll_generation(client)
 
         exit_code = asyncio.run(run_poll())
@@ -351,7 +351,7 @@ def main() -> None:
     elif args.command == "download":
         async def run_download():
             from notebooklm import NotebookLMClient
-            async with await NotebookLMClient.from_storage() as client:
+            async with NotebookLMClient.from_storage() as client:
                 return await download_artifact(client)
 
         output = asyncio.run(run_download())
