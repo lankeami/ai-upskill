@@ -142,6 +142,41 @@ describe('Video composition with audio sync', () => {
     expect(result.durationSeconds).toBeCloseTo(2, 0);
   });
 
+  it('displays splash screen as the first frame even when its dimensions differ from content', async () => {
+    const outputPath = `${TEST_OUTPUT_DIR}/splash-4k-video.mp4`;
+    const splash4k = '/tmp/test-splash-4k.png';
+    // Red 4K splash vs blue 1080p content — concat demuxer drops mismatched
+    // first frames unless the splash is normalized to target dimensions
+    await execFileAsync('ffmpeg', [
+      '-y', '-f', 'lavfi', '-i', 'color=red:s=3840x2160:d=0.1', '-frames:v', '1', splash4k,
+    ]);
+
+    await composeSegmentedVideo({
+      audioPath: TEST_AUDIO_FILE,
+      segments: [{ imagePath: TEST_SCREENSHOT_FILE, durationSeconds: 1 }],
+      splashScreenPath: splash4k,
+      splashScreenDuration: 1,
+      outputPath,
+      width: 1920,
+      height: 1080,
+      frameRate: 30,
+    });
+
+    // Extract first frame as raw RGB and check the center pixel is red
+    const rawFrame = `${TEST_OUTPUT_DIR}/first-frame.rgb`;
+    await execFileAsync('ffmpeg', [
+      '-y', '-i', outputPath, '-frames:v', '1', '-f', 'rawvideo', '-pix_fmt', 'rgb24', rawFrame,
+    ]);
+    const buf = require('fs').readFileSync(rawFrame);
+    const centerOffset = ((1080 / 2) * 1920 + 1920 / 2) * 3;
+    const [r, g, b] = [buf[centerOffset], buf[centerOffset + 1], buf[centerOffset + 2]];
+    expect(r).toBeGreaterThan(150); // red channel dominant
+    expect(g).toBeLessThan(100);
+    expect(b).toBeLessThan(100);
+
+    unlinkSync(splash4k);
+  });
+
   it('includes splash screen as first segment when provided', async () => {
     const outputPath = `${TEST_OUTPUT_DIR}/splash-screen-video.mp4`;
     const splashScreenDuration = 3; // 3 seconds for splash

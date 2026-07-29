@@ -154,11 +154,25 @@ export async function composeSegmentedVideo(
   const escapePath = (p: string) => resolve(p).replace(/'/g, "'\\''");
   const lines: string[] = ['ffconcat version 1.0'];
 
-  // Add splash screen as first segment if provided
+  // Add splash screen as first segment if provided.
+  // The concat demuxer silently drops frames whose dimensions differ from
+  // the other inputs, so normalize the splash to the target size first.
   const allSegments: VideoSegment[] = [];
+  let normalizedSplash: string | undefined;
   if (splashScreenPath) {
+    normalizedSplash = join(
+      tmpdir(),
+      `splash-normalized-${process.pid}-${Math.floor(performance.now())}.png`
+    );
+    await execFileAsync('ffmpeg', [
+      '-y',
+      '-i', splashScreenPath,
+      '-vf',
+      `scale=${width}:${height}:force_original_aspect_ratio=decrease,pad=${width}:${height}:(ow-iw)/2:(oh-ih)/2:color=black`,
+      normalizedSplash,
+    ]);
     allSegments.push({
-      imagePath: splashScreenPath,
+      imagePath: normalizedSplash,
       durationSeconds: splashScreenDuration,
     });
   }
@@ -196,6 +210,7 @@ export async function composeSegmentedVideo(
     ]);
   } finally {
     if (existsSync(concatFile)) unlinkSync(concatFile);
+    if (normalizedSplash && existsSync(normalizedSplash)) unlinkSync(normalizedSplash);
   }
 
   if (!existsSync(outputPath)) {
