@@ -4,6 +4,7 @@ title: "AI Daily Report — 2026-08-05"
 date: 2026-08-05
 companies: ["anthropic", "mistral", "openai", "Other/Independent"]
 item_count: 46
+podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-08-05/2026-08-05.mp3
 permalink: /today
 ---
 
