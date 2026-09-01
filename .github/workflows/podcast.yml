@@ -14,6 +14,11 @@ on:
         options:
           - video
           - audio
+      force:
+        description: 'Force regeneration even if audio already exists'
+        required: false
+        default: false
+        type: boolean
   workflow_run:
     workflows: ["Daily AI Report"]
     types: [completed]
@@ -71,14 +76,32 @@ jobs:
             echo "ext=mp3" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Generate podcast
+      - name: Check if audio already exists
+        id: existing
         if: steps.date.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="podcast-${{ steps.date.outputs.report_date }}"
+          if gh release view "$TAG" &>/dev/null; then
+            echo "audio_exists=true" >> "$GITHUB_OUTPUT"
+            echo "Release $TAG already exists"
+          else
+            echo "audio_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Skip (audio already published)
+        if: steps.existing.outputs.audio_exists == 'true' && github.event.inputs.force != 'true'
+        run: echo "Audio already published for ${{ steps.date.outputs.report_date }}. Use force=true to override."
+
+      - name: Generate podcast
+        if: steps.date.outputs.skip != 'true' && (steps.existing.outputs.audio_exists != 'true' || github.event.inputs.force == 'true')
         env:
           NOTEBOOKLM_AUTH_JSON: ${{ secrets.NOTEBOOKLM_AUTH_JSON }}
         run: python scripts/generate-podcast.py --date ${{ steps.date.outputs.report_date }} --media-type ${{ steps.media.outputs.media_type }}
 
       - name: Create GitHub Release
-        if: steps.date.outputs.skip != 'true'
+        if: steps.date.outputs.skip != 'true' && (steps.existing.outputs.audio_exists != 'true' || github.event.inputs.force == 'true')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -88,15 +111,15 @@ jobs:
           MEDIA_FILE="podcasts/${REPORT_DATE}.${EXT}"
 
           if gh release view "$TAG" &>/dev/null; then
-            echo "Release $TAG already exists, skipping creation"
-          else
-            gh release create "$TAG" "$MEDIA_FILE" \
+            echo "Release $TAG already exists, deleting for force re-upload"
+            gh release delete "$TAG" --yes
+          fi
+          gh release create "$TAG" "$MEDIA_FILE" \
               --title "Podcast — ${REPORT_DATE}" \
               --notes "${{ steps.media.outputs.media_type }} podcast for AI Daily Report ${REPORT_DATE}"
-          fi
 
       - name: Update report front matter with podcast URL
-        if: steps.date.outputs.skip != 'true'
+        if: steps.date.outputs.skip != 'true' && (steps.existing.outputs.audio_exists != 'true' || github.event.inputs.force == 'true')
         run: |
           REPORT_DATE="${{ steps.date.outputs.report_date }}"
           REPORT_FILE="reports/${REPORT_DATE}.md"
@@ -127,7 +150,7 @@ jobs:
           "
 
       - name: Sync today.md with podcast URL
-        if: steps.date.outputs.skip != 'true'
+        if: steps.date.outputs.skip != 'true' && (steps.existing.outputs.audio_exists != 'true' || github.event.inputs.force == 'true')
         run: |
           REPORT_DATE="${{ steps.date.outputs.report_date }}"
           REPORT_FILE="reports/${REPORT_DATE}.md"
@@ -141,7 +164,7 @@ jobs:
           fi
 
       - name: Commit updated report
-        if: steps.date.outputs.skip != 'true'
+        if: steps.date.outputs.skip != 'true' && (steps.existing.outputs.audio_exists != 'true' || github.event.inputs.force == 'true')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

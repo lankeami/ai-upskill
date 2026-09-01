@@ -5,17 +5,20 @@ arguments:
   - name: date
     description: Report date in YYYY-MM-DD format (default: today)
     required: false
+  - name: force
+    description: "Pass --force to regenerate audio even if already published"
+    required: false
 ---
 
 # Daily Pipeline
 
 Run the full daily pipeline for the ai-upskill project. This generates a daily AI report, creates an audio podcast via NotebookLM, publishes it as a GitHub Release, and commits everything.
 
-## Date
+## Arguments
 
-Use the provided `$ARGUMENTS` as the target date. If no argument was provided, use today's date in `YYYY-MM-DD` format.
-
-Store the resolved date — all subsequent steps reference it as `DATE`.
+Parse `$ARGUMENTS` for two optional flags:
+- A date in `YYYY-MM-DD` format — if not provided, use today's date. Store as `DATE`.
+- `--force` — if present, regenerate audio even if already published. Store as `FORCE=true`, otherwise `FORCE=false`.
 
 ## Prerequisites Check
 
@@ -61,7 +64,13 @@ Verify that `reports/DATE.md` was created. If not, stop and show the error.
 
 ## Step 3: Generate Audio
 
-**Check:** Does `podcasts/DATE.mp3` already exist? If yes, skip this step and note "Audio already exists for DATE".
+**Check (published):** Run `gh release view podcast-DATE 2>/dev/null >/dev/null && echo "exists" || echo "missing"`. If it prints `exists` and `FORCE` is false, **stop the pipeline early** and tell the user:
+> Audio for DATE is already published (release `podcast-DATE` exists). Run with `--force` to regenerate.
+Then print the summary of what was done so far and exit — do not proceed to Step 4 or Step 5.
+
+If `FORCE` is true and the release exists, note "Force mode: will regenerate and overwrite existing release" and continue.
+
+**Check (local):** Does `podcasts/DATE.mp3` already exist? If yes, skip this step and note "Audio already exists for DATE".
 
 If not, generate the audio in three phases:
 
@@ -104,9 +113,9 @@ Verify that `podcasts/DATE.mp3` was created.
 
 ## Step 4: Publish GitHub Release
 
-**Check:** Run `gh release view podcast-DATE 2>/dev/null >/dev/null && echo "exists" || echo "missing"`. If it prints `exists`, skip this step and note "Release already exists for DATE".
+**Check:** Run `gh release view podcast-DATE 2>/dev/null >/dev/null && echo "exists" || echo "missing"`. If it prints `exists` and `FORCE` is false, skip this step and note "Release already exists for DATE". If `FORCE` is true, delete the existing release first: `gh release delete podcast-DATE --yes`.
 
-If not, run:
+Run:
 ```bash
 gh release create podcast-DATE podcasts/DATE.mp3 \
   --title "Podcast — ${DATE}" \
