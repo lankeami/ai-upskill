@@ -2,8 +2,8 @@
 
 ## 2026-09-03
 
-- [f87f808](https://github.com/lankeami/ai-upskill/commit/f87f8082b3d32d482a9b7d7dd349d4d80ba464d7) Fix Docker build, add Makefile targets, switch Reddit to RSS
-  - Fix Go version in Dockerfile (1.24 → 1.26 to match go.mod) - Fix .env parsing for Docker --env-file (strip export and quotes) - Add Makefile targets: local, report, podcast with DATE override - Switch Reddit subreddits from JSON API (403s) to RSS feeds - Add daily reports for 2026-09-02 and 2026-09-03
+- [423b352](https://github.com/lankeami/ai-upskill/commit/423b35272b2fbab0050c03343891e492b4113e45) Fix daily report CI failure by excluding CHANGELOG.md from Jekyll
+  CHANGELOG.md was added in #52 but not added to the Jekyll exclude list, causing test-jekyll-output.sh to fail on unexpected CHANGELOG.html.
 
 ## 2026-09-01
 
