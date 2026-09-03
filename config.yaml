@@ -1,10 +1,6 @@
 sources:
   reddit:
-    subreddits:
-      - artificial
-      - MachineLearning
-      - LocalLLaMA
-      - ChatGPT
+    subreddits: []
   hackernews:
     min_score: 10
   rss:
@@ -14,6 +10,14 @@ sources:
       url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
     - name: Ars Technica AI
       url: https://feeds.arstechnica.com/arstechnica/technology-lab
+    - name: Reddit r/artificial
+      url: https://www.reddit.com/r/artificial/new/.rss
+    - name: Reddit r/MachineLearning
+      url: https://www.reddit.com/r/MachineLearning/new/.rss
+    - name: Reddit r/LocalLLaMA
+      url: https://www.reddit.com/r/LocalLLaMA/new/.rss
+    - name: Reddit r/ChatGPT
+      url: https://www.reddit.com/r/ChatGPT/new/.rss
 
 keywords:
   ai_relevance:
