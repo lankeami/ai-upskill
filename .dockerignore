@@ -1,0 +1,15 @@
+.git
+.venv
+node_modules
+vendor
+_site
+_layouts
+videos/
+podcasts/*.mp3
+.env
+.env.bk
+.podcast-state.json
+*.exe
+ai-report
+.claude/
+docs/
