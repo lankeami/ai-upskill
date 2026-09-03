@@ -2,6 +2,7 @@
 
 ## 2026-09-03
 
+- [9a6cc4f](https://github.com/lankeami/ai-upskill/commit/9a6cc4f973b5af27dd14cf8358c7c8c425b74e92) chore: add podcast URL to 2026-09-03 report
 - [423b352](https://github.com/lankeami/ai-upskill/commit/423b35272b2fbab0050c03343891e492b4113e45) Fix daily report CI failure by excluding CHANGELOG.md from Jekyll
   CHANGELOG.md was added in #52 but not added to the Jekyll exclude list, causing test-jekyll-output.sh to fail on unexpected CHANGELOG.html.
 
