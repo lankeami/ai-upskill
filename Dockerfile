@@ -1,5 +1,5 @@
 # Build stage: compile Go binary
-FROM golang:1.24-bookworm AS builder
+FROM golang:1.26-bookworm AS builder
 WORKDIR /build
 COPY go.mod go.sum ./
 RUN go mod download
@@ -22,7 +22,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Go runtime (needed by go test, not just the binary)
-COPY --from=golang:1.24-bookworm /usr/local/go /usr/local/go
+COPY --from=golang:1.26-bookworm /usr/local/go /usr/local/go
 ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN pip install --no-cache-dir notebooklm-py pyyaml
