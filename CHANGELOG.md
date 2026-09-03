@@ -2,6 +2,8 @@
 
 ## 2026-09-03
 
+- [2bdf706](https://github.com/lankeami/ai-upskill/commit/2bdf7061c43fc0cc24788be9a0785b255329673c) docs: add manual cookie capture method to README auth setup
+  Document Method B for when `notebooklm login` hangs: capture cookies via Chrome DevTools Network tab and convert to storage state JSON. Also fix storage state path to match actual profile directory.
 - [9a6cc4f](https://github.com/lankeami/ai-upskill/commit/9a6cc4f973b5af27dd14cf8358c7c8c425b74e92) chore: add podcast URL to 2026-09-03 report
 - [423b352](https://github.com/lankeami/ai-upskill/commit/423b35272b2fbab0050c03343891e492b4113e45) Fix daily report CI failure by excluding CHANGELOG.md from Jekyll
   CHANGELOG.md was added in #52 but not added to the Jekyll exclude list, causing test-jekyll-output.sh to fail on unexpected CHANGELOG.html.
