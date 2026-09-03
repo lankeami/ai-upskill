@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-03
+
+- [f87f808](https://github.com/lankeami/ai-upskill/commit/f87f8082b3d32d482a9b7d7dd349d4d80ba464d7) Fix Docker build, add Makefile targets, switch Reddit to RSS
+  - Fix Go version in Dockerfile (1.24 → 1.26 to match go.mod) - Fix .env parsing for Docker --env-file (strip export and quotes) - Add Makefile targets: local, report, podcast with DATE override - Switch Reddit subreddits from JSON API (403s) to RSS feeds - Add daily reports for 2026-09-02 and 2026-09-03
+
 ## 2026-09-01
 
 - [d855dbf](https://github.com/lankeami/ai-upskill/commit/d855dbf0c9cb00a1b16d20a10242b036daefe074) fix: restructure skill files so they appear in Claude Code sidebar
