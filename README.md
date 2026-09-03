@@ -109,19 +109,28 @@ The audio podcast pipeline requires NotebookLM credentials. These are stored as 
    python -m pip install notebooklm-py
    ```
 
-2. **Log in to NotebookLM** to capture your Google session cookies:
+2. **Log in to NotebookLM** to capture your Google session cookies. Two methods:
+
+   **Method A: CLI login (preferred)**
    ```bash
    notebooklm login
    ```
-   This opens a browser window. Sign in with your Google account and close the browser when prompted. Your session is saved to `~/.notebooklm/storage_state.json`.
+   This opens a Chromium window via Playwright. Sign in with your Google account and close the browser when prompted. Your session is saved to `~/.notebooklm/profiles/default/storage_state.json`.
+
+   **Method B: Manual cookie capture (if CLI login hangs or fails to detect the session)**
+   1. Open https://notebook.google.com in Chrome and sign in.
+   2. Open DevTools (Cmd+Option+I / Ctrl+Shift+I) → **Network** tab.
+   3. Navigate away from and back to https://notebook.google.com to trigger a fresh document request.
+   4. Find the `notebook.google.com` document request (the first one, type `document`), right-click it → **Copy as cURL**.
+   5. Give the curl command to Claude Code and ask it to extract the cookies into `~/.notebooklm/profiles/default/storage_state.json`. The cookies in the `-b` / `--cookie` header need to be converted to Playwright storage state format (JSON with a `cookies` array).
 
 3. **Export the storage state as JSON** and write it to `.env`:
    ```bash
-   echo "NOTEBOOKLM_AUTH_JSON=$(cat ~/.notebooklm/storage_state.json)" > .env
+   echo "export NOTEBOOKLM_AUTH_JSON='$(cat ~/.notebooklm/profiles/default/storage_state.json)'" > .env
    ```
    On Windows (PowerShell):
    ```powershell
-   "NOTEBOOKLM_AUTH_JSON=$(Get-Content $HOME\.notebooklm\storage_state.json -Raw)" | Out-File .env -Encoding utf8
+   "NOTEBOOKLM_AUTH_JSON=$(Get-Content $HOME\.notebooklm\profiles\default\storage_state.json -Raw)" | Out-File .env -Encoding utf8
    ```
 
 4. **Verify** the variable is set correctly:
