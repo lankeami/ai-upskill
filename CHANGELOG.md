@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-04
+
+- [e4eca68](https://github.com/lankeami/ai-upskill/commit/e4eca683927d1fc500c92b3acd200321ccb45ff4) chore: daily AI report for 2026-09-04
+
 ## 2026-09-03
 
 - [2bdf706](https://github.com/lankeami/ai-upskill/commit/2bdf7061c43fc0cc24788be9a0785b255329673c) docs: add manual cookie capture method to README auth setup
