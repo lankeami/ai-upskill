@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-08
+
+- [db3ce21](https://github.com/lankeami/ai-upskill/commit/db3ce216ed83c45da360c7424fbc504fa1dc0a0c) chore: daily AI report for 2026-09-08
+
 ## 2026-09-06
 
 - [5ac00de](https://github.com/lankeami/ai-upskill/commit/5ac00de593a78e7e2c955829e8e5cb6baf996a34) chore: add podcast URL to 2026-09-06 report
