@@ -1,93 +1,110 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-10-11"
-date: 2026-10-11
-companies: ["anthropic", "microsoft", "openai", "Other/Independent"]
-item_count: 38
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-10-11/2026-10-11.mp3
+title: "AI Daily Report — 2026-10-12"
+date: 2026-10-12
+companies: ["anthropic", "google", "microsoft", "openai", "Other/Independent"]
+item_count: 46
 permalink: /today
 ---
 
-# AI Daily Report — 2026-10-11
+# AI Daily Report — 2026-10-12
 
 ## anthropic
-- **Anthropic is cutting off its internal evaluations from the internet** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet)
-  After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed "…
-- **Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead** — [TechCrunch AI](https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/)
-  Anthropic said it "turned off live internet access" for "all our internal evaluations" until further notice.
+- **Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p** — [Hacker News](https://github.com/SaarthurR/atticus-mac)
+  Fast, free voice assistant for your Mac. No API key: runs on your Claude Pro or Max plan. Remembers you and learns your shortcuts. Hold ⌃⌥Space and talk. - SaarthurR/atticus-mac
+
+## google
+- **I Found a $90k Remote Code Execution Vulnerability in Google** — [Hacker News](https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce)
+  A Flask cookie on developers.google.com was signed with a secret it was also carrying inside itself. Pulling that secret out turned a forged session into code execution across seven Google domains.
+- **Google Data Centers around the world** — [Hacker News](https://datacenters.google/locations/)
+  Discover the different Google data center communities located around the world.
 
 ## microsoft
-- **Satya Nadella says we should assume all AI models are ‘compromised’** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised)
-  In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is t…
-- **Microsoft’s Satya Nadella says AI models need an ‘emergency brake’** — [TechCrunch AI](https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/)
-  In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.
-- **Open-Source Microsoft Office Excel, PowerPoint, and Word Replications** — [Hacker News](https://www.tomshardware.com/software/microsoft-office/creator-of-free-adobe-clones-unveils-open-source-microsoft-office-excel-powerpoint-and-word-replications-autodesk-tools-and-other-subscription-based-services-may-come-next)
-  It's a protest now.
+- **Microsoft president says UK is best placed to drive AI regulation** — [TechCrunch AI](https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/)
+  Microsoft president Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.
+- **Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs** — [The Verge AI](https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout)
+  Microsoft is announcing its third-generation Maia in-house AI chip today, designed to be the "primary AI inference system" for Microsoft's products and services. Maia 300 not only improves the cost an…
+- **AI less regulated than milk, Microsoft president says in warning over safety** — [Hacker News](https://www.theguardian.com/technology/2026/oct/12/ai-less-regulated-than-milk-microsoft-president-calls-for-tougher-rules)
+  Brad Smith adds to calls for tougher rules for AI, including ‘kill switches’ and legal obligation to victims of rogue agents
 
 ## openai
-- **AI agent makers are promising privacy — will they deliver?** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots)
-  At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to "set a new standard for privacy in frontier AI." OpenAI would spend…
 - **These execs think voice AI hasn’t reached its ChatGPT moment yet** — [TechCrunch AI](https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/)
-  Voice AI's often misses important points for its context layer, and causes the whole pipeline to break
-- **World Action Models vs VLAs: Robotics Just Had Its GPT-2 Moment [N]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x38qpy/world_action_models_vs_vlas_robotics_just_had_its/)
+  Voice AI often misses important points for its context layer, and causes the whole pipeline to break.
 
 ## Other/Independent
+- **Meta releases its first frontier model, Muse Wonder** — [TechCrunch AI](https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/)
+  Meta's Superintelligence Lab released a pair of new state-of-the-art models on Monday, Muse Wonder and Muse Wonder Full, the company's first attempt at a frontier model.
+- **WindBorne wins a hefty US Air Force contract for its balloon data** — [TechCrunch AI](https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/)
+  A Silicon Valley startup that uses weather balloons and AI to predict the weather won a US military contract worth almost $50 million.
+- **This AI startup says it can generate permit-ready blueprints in minutes** — [TechCrunch AI](https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/)
+  Blueprints AI, a bootstrapped startup based in Santa Monica, developed software that produces code-compliant construction blueprints from a photo, PDF, or sketch.
+- **Former Plaud exec raises $26M for AI app that listens to you in the background** — [TechCrunch AI](https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/)
+  One of the core promises of AI is that the more it knows about a person, the better it will be able to assist them with tasks and make appropriate suggestions, which, if you'll believe the tech compan…
+- **Can the AI industry persuade data center opponents by getting rid of NDAs?** — [TechCrunch AI](https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/)
+  On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.
+- **Meta has some Wonder Full new AI models ** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model)
+  Meta is making up for lost time in the AI race. After launching Muse Spark, the first model from its revamped Superintelligence Labs division, and buzzy AI agent Muse, it's now launching two new model…
+- **Silicon Valley is falling in line with Trump’s attempt to rename AI** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai)
+  When President Donald Trump announced his plans to rebrand artificial intelligence as "super intelligence," you'd be forgiven for being skeptical that it would catch on. While most of the broader popu…
 - **Learning to use local AI is exciting, overwhelming, and frustrating** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress)
   I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly p…
-- **DistroKid has been quietly taking down songs in response to UMG lawsuit** — [The Verge AI](https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit)
-  Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response t…
-- **Apple discloses deal to hire team and license tech from personalized podcast startup Huxe** — [TechCrunch AI](https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/)
-  Is Apple hoping to get into the AI-generated podcast business?
-- **3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream** — [TechCrunch AI](https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/)
-  TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ s…
-- **Here are the top AI agents that can live in your text messages** — [TechCrunch AI](https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/)
-  We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.
-- **Sliced Wasserstein embeddings + HNSW for color-scheme search over 48k paintings [P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x39uu6/sliced_wasserstein_embeddings_hnsw_for/)
-- **I trained a 414k-parameter transformer to fly a boids flock, then tested whether the rules a probe can read are the ones it uses [P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x39jlu/i_trained_a_414kparameter_transformer_to_fly_a/)
-- **What ai is best to operate a system from screen video [p]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x2yoxe/what_ai_is_best_to_operate_a_system_from_screen/)
-- **Has machine learning research gotten more "wordy"? [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x2uklq/has_machine_learning_research_gotten_more_wordy_d/)
-- **I Built a O(NlogN) attention system that retains 97% accuracy over long context (MQAR)[P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x2lwja/i_built_a_onlogn_attention_system_that_retains_97/)
-- **Internal files add to evidence of an ExxonMobil climate deception campaign** — [Hacker News](https://insideclimatenews.org/news/07102026/exxonmobil-climate-deception-new-evidence/)
-  Court filings by the Massachusetts attorney general’s office include previously undisclosed documents, revealing new details about internal deliberations at the oil giant.
-- **Build your own decision model** — [Hacker News](https://nishtahir.com/build-your-own-decision-model/)
-  "System one" decision models are models that infer and respond with calibrated probabilities or every allowed answer.
+- **Has anyone actually deployed private AI inference on an attested confidential GPU? (Chutes, VoltageGPU, GCP)** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x4782z/has_anyone_actually_deployed_private_ai_inference/)
+- **Boole-1.7B: A 1-bit Qwen3-1.7B model that outperforms Bonsai-1.7B** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x452zj/boole17b_a_1bit_qwen317b_model_that_outperforms/)
+- **NVIDIA RTX 5080 24GB reportedly launching in Q1 2027, board partners still waiting for details** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x41n6l/nvidia_rtx_5080_24gb_reportedly_launching_in_q1/)
+- **Qwen released QwenGyre - RL framework for training AI agents on extremely long complex tasks** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x41myz/qwen_released_qwengyre_rl_framework_for_training/)
+- **A "free" multi-modal "embedding" model (already) included with your LLM: vLLM plugin + upstream PR** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x416s0/a_free_multimodal_embedding_model_already/)
+- **A Record of the Process of Increasing MFU from 21% to 50% While Pre-training 21B MoE Using a Single GH200 Chip (Includes Code and Logs)** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x411cv/a_record_of_the_process_of_increasing_mfu_from_21/)
+- **I'm testing small local models, is MetriLLM considered to be a good benchmark, or are there other test suites that I should use?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x403ka/im_testing_small_local_models_is_metrillm/)
+- **Any takers for local llm? NVIDIA’s CUDA Moat Is Accelerating RTX Spark Laptop Sales, Higher 128GB Unified Memory Options Belonging To Surface Laptop Ultra Already Out Of Stock** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x3ykyb/any_takers_for_local_llm_nvidias_cuda_moat_is/)
+- **I made an open-source AI leaderboard that shows the best models your machine can run** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x3wp8c/i_made_an_opensource_ai_leaderboard_that_shows/)
+- **Qwen3.8-Flash-Next on six 3090s with vLLM: 7 users at 262k, 6.5k t/s prefill, 57 t/s decode solo / 206 t/s aggregate with all 7 generating. Fixes for the upstream included.** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x3wjzf/qwen38flashnext_on_six_3090s_with_vllm_7_users_at/)
+- **AI coding agents generate more code, but not more software** — [Hacker News](https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/)
+  Study finds coding efficiency gains get "absorbed" by human review "bottleneck."
+- **Kevin Kelly's 2016 AI Predictions, 10 Years Later** — [Hacker News](https://taylor.town/kk-ai-2026)
+  Kelly predicted AI heavyweights while advocating for a future of open weights
+- **A Modern Web App in C** — [Hacker News](https://prophitt.me/writing/a-modern-web-app-in-c)
+  A modern web app written in c and served the old way: CGI, SQLite and a single binary. No frameworks, no containers and no regrets.
+- **The gap in shared understanding of LLM capability is widening** — [Hacker News](https://twitter.com/karpathy/status/2109361546505966046)
+  Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less "two groups of people speaking past each other" and more a sharp funnel.
 
-Consider your everyday language model, to get typed output from it (JSON), you ma…
-- **I paid people to try and follow my README** — [Hacker News](https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/)
-  Developers suck at writing documentation. We like to say RTFM but often there ain't no FM to R. At best we have a half-arsed collection of notes, some obsolete tips, and a link to a desolate forum ful…
-- **The Lightbulb Computer** — [Hacker News](https://lightbulbcomputer.com/)
-  A new direction for computing: projecting information into the real world to augment it, with a device that combines a projector and computer vision in the shape of a large lightbulb.
-- **Open-source version of Adobe Creative Suite, built with Rust, using AI** — [Hacker News](https://petapixel.com/2026/10/07/someone-rebuilt-free-open-source-versions-of-photoshop-premiere-and-lightroom-using-ai/)
-  People are excited for open-source Adobe alternatives.
-- **Bitwarden Dual License Model** — [Hacker News](https://community.bitwarden.com/t/published-version-update-in-app-stores/102750)
-  Hello everyone!  Starting in the next release, the Bitwarden apps published to the various stores will be the commercially licensed builds. No action is needed, and the apps will work exactly as they …
-- **How strong is the strong interaction?** — [Hacker News](https://cerncourier.com/how-strong-is-the-strong-interaction/)
-  A lattice calculation has narrowed the uncertainty on the strong coupling to five parts per mille.
-- **Wilmund** — [Hacker News](https://wilmund.com/)
-  An autonomous AI agent that has to pay its own rent, and exists to make things better for Earth's nature and animals.
-- **AI agents in a stand-up call** — [Hacker News](https://atoll92.github.io/agent-standup/)
-  Your AI agents, in a stand-up call. See who is working, waiting or blocked. Free and open source: VS Code, Cursor, terminal or desktop app.
-- **I wish you the best in the Offline** — [Hacker News](https://daverupert.com/2026/09/i-wish-you-the-best-in-the-offline/)
-  A handful of people I follow and know about have announced their recent departure. Not from a job (although plenty of that going around), but from social media, AI usage, or in more extreme cases the …
-- **Using AI for Just 10 Minutes Erodes Your Ability to Persist at Hard Things** — [Hacker News](https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things)
+- Na…
+- **Living in the Weimar Era of Ruby** — [Hacker News](https://blog.julik.nl/2026/10/the-weimar-of-ruby)
+  Much has been said about the DHH keynote that he gave at RailsWorld. To me, it was the voice of a person in an existential crisis, but also a very jaded one. “Look how I don’t care anymore, and you sh…
+- **Running the unmodified Linux amdgpu driver on an iPad** — [Hacker News](https://github.com/Geramy/LemonSeed-Studio)
+  An iPad IDE with local LLM inference on an AMD GPU over Thunderbolt: the upstream Linux amdgpu driver embedded as DriverKit, LemonSeed Engine, and live GPU telemetry. - Geramy/LemonSeed-Studio
+- **KeePassXC is 10 years old today** — [Hacker News](https://fosstodon.org/@keepassxc/117426800473292490)
+  Today, 10 years ago, we pushed our first tag #KeePassXC 2.0.3-http after forking from KeePassX: https://github.com/keepassxreboot/keepassxc/releases/tag/2.0.3-http
+
+This first pre-release was the resu…
+- **Deep dive into Azure Maia 300 architecture** — [Hacker News](https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/)
+  Learn how Maia 300 is helping us move toward making advanced AI capabilities more accessible, affordable, and useful.
+- **QGIS: No AI contributions permitted** — [Hacker News](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387)
+  Followup discussion at https://lists.osgeo.org/pipermail/qgis-developer/2026-September/068576.html.
+This formally changes the AI policy to a strict "NOT ALLOWED" policy.
+- **Feds Got Warrants to Use Fake Cell Towers to Hunt Down Don Lemon's Producer** — [Hacker News](https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/)
+  Investigators also sought permission to use an invasive surveillance tool called a cell-site simulators against journalist Georgia Fort and a Minnesota state Senate candidate.
+- **Illustration Beyond Proof** — [Hacker News](https://terrytao.wordpress.com/2026/10/11/illustration-beyond-proof/)
+  [This is a guest post by Kate Stange and Edmund Harriss. This blog post was initially written in a different file format and converted using AI. — T.] In January a group of mathematicians, hi…
+- **500B tokens later: Letting AI agents decompile a first-person shooter** — [Hacker News](https://momo5502.com/posts/2026-10-09-game-decompilation/)
+  During the last 3 months, I spent some of my time and tokens decompiling a popular first-person shooter. The goal was not to reach a simple proof-of-concept state. Instead, we really wanted an accurat…
+- **French supermarkets suffer fridge shutdown after 'unprecedented' cyberattack** — [Hacker News](https://uk.finance.yahoo.com/news/french-supermarket-chains-cyberattack-forced-115141288.html)
+  Major French supermarket chains on Monday said they were hit by a cyberattack that caused their refrigerators to shoot up in temperature in hundreds of stores, forcing spoiled food to be thrown away a…
+- **Vectorized CLZ and CTZ** — [Hacker News](https://purplesyringa.moe/blog/vectorized-clz-and-ctz/)
+  clz and ctz are instructions that compute the number of leading (trailing) zero bits in a fixed-size integer. They are natively supported by modern CPUs, though they are not always fast, e.g. tzcnt ha…
+- **Using AI for just 10 minutes erodes your ability to persist at hard things** — [Hacker News](https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things)
   A UC Berkeley researcher raises profound questions about how we interact with artificial intelligence in daily life.
-- **Nicolas Cage says he won't work with Amazon again over AI dispute** — [Hacker News](https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute)
-  Nicolas Cage, who recently starred in "Spider-Noir," said he won't work with Amazon again after a disagreement over an AI waiver.
-- **When Ldaxr Doesn't Work: Exclusive Accesses and Cacheability on AArch64** — [Hacker News](https://joelsiks.com/posts/aarch64-exclusive-access-cacheability/)
-  Why a load exclusive (ldaxr) raised a Data Abort on real Raspberry Pi 5 hardware but not in QEMU, and what cacheability has to do with AArch64 exclusive accesses.
-- **Talorys – A self-hosted personal AI agent on Cloudflare's free tier** — [Hacker News](https://github.com/rociiu/talorys)
-  Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx create-talorys@latest. Free-tier friendly, single-user, no ...
-- **Food processing influences metabolism and brain activity** — [Hacker News](https://news.vt.edu/articles/2026/10/research_fralinbiomed_upfhutelin.html)
-  In healthy adults, meals matched for calories and nutrients, but otherwise prepared differently, led to unexpectedly different metabolic responses and activity in the brain’s reward system.
+- **Why aren't AI companies being charged for hacking?** — [Hacker News](https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/)
+  AI companies claim their hacks were unpredictable accidents — but they follow foreseeably from deliberate design choices, and that establishes criminal intent.
 - **3rd Yandex Cloud Data Center Was Hit** — [Hacker News](https://status.yandex.cloud/en/incidents/2136)
   Most up-to-the-minute information on service availability, timeline & reports of Yandex Cloud
-- **500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter** — [Hacker News](https://momo5502.com/posts/2026-10-09-game-decompilation/)
-  During the last 3 months, I spent some of my time and tokens decompiling a popular first-person shooter. The goal was not to reach a simple proof-of-concept state. Instead, we really wanted an accurat…
-- **AI is creating a 'human premium' for art created by people** — [Hacker News](https://www.bbc.com/news/articles/c5vgjm3gk7rzo)
-  Amid a surge in AI content, many are placing extra value on art that's obviously made by a human. But can that last, asks Ros Atkins
-- **`123456' password used in Danish CPR data breach** — [Hacker News](https://cphpost.dk/2026-10-10/news/round-up/123456-password-used-in-massive-danish-cpr-data-breach/)
-  At least three accounts at the company linked to a major breach of Denmark’s CPR register reportedly used the password “123456”, including an administrator account. At least three user accounts at the…
-- **Nvidia in talks to acquire US 'open' model startup Reflection AI** — [Hacker News](https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a)
+- **A decade after Stardew Valley, Eric Barone is still going it alone** — [Hacker News](https://www.gq-magazine.co.uk/article/a-decade-after-stardew-valley-eric-barone-is-still-going-it-alone)
+  10 years after Stardew Valley reinvented “cosy gaming” all by himself, creator Eric Barone tells GQ about the pressures of making its long-awaited follow-up, Haunted Chocolatier
+- **I paid people to try and follow my README** — [Hacker News](https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/)
+  Developers suck at writing documentation. We like to say RTFM but often there ain't no FM to R. At best we have a half-arsed collection of notes, some obsolete tips, and a link to a desolate forum ful…
+- **French supermarket chains say cyberattack forced refrigerator shutdown** — [Hacker News](https://www.france24.com/en/live-news/20261012-french-supermarket-chains-say-cyberattack-forced-refrigerator-shutdown)
+  Hundreds of French supermarket chains were targeted overnight Sunday to Monday in a cyberattack that affected the refrigerators of up to 200 Intermarché stores and almost 100 Coopérative U locations,…
+- **Postgres isn't slow, your storage is** — [Hacker News](https://clickhouse.com/blog/posette-talk-recap-postgres-isnt-slow-your-storage-is)
+  A recap of Sai Srirampur's POSETTE 2026 talk on storage performance in Postgres, with a local NVMe vs. EBS benchmark and the production setup behind it.
 
 ---
-*Generated at 2026-10-11T15:01:42Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-10-12T18:08:48Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
