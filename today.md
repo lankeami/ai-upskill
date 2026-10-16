@@ -1,114 +1,118 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-10-15"
-date: 2026-10-15
-companies: ["amazon alexa", "anthropic", "google", "microsoft", "openai", "xai", "Other/Independent"]
-item_count: 48
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-10-15/2026-10-15.mp3
+title: "AI Daily Report — 2026-10-16"
+date: 2026-10-16
+companies: ["amazon alexa", "anthropic", "google", "microsoft", "Other/Independent"]
+item_count: 56
 permalink: /today
 ---
 
-# AI Daily Report — 2026-10-15
+# AI Daily Report — 2026-10-16
 
 ## amazon alexa
 - **Amazon’s Bee launches two new personal AI devices, starting at $75** — [TechCrunch AI](https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/)
   Amazon-owned Bee has launched its first new AI devices since its acquisition, including an updated wearable and a credit-card-sized recorder that attaches to smartphones. The devices can summarize con…
 
 ## anthropic
-- **The AI race is back on** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on)
-  Last week, Anthropic and OpenAI looked like they had the AI race to themselves, pulling ahead with increasingly powerful models that left their rivals in the dust. Google seemed hopelessly far behind,…
-- **Anthropic warns small AI models could self-replicate through IoT devices** — [Ars Technica AI](https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/)
-  "Small weight-based replicators" could usher in a new generation of computer worms.
-- **Claude Code Desktop Vulnerability: Preview Pane Data Exfiltration** — [Hacker News](https://noma.security/noma-labs/sneakpeek-how-the-preview-pane-in-claude-code-desktop-can-exfiltrate-your-data)
-  Noma Labs discovered a CVSS 8.7 exploit in Claude Code Desktop where poisoned preview files bypass sandboxing to achieve arbitrary file read and steal local credentials.
-- **Anthropic's Scion is heavily inspired by Mononoke** — [Hacker News](https://sunshowers.io/posts/anthropic-mononoke/)
-  It is important to provide credit.
-- **How to be more ambitious: A tutorial for humans with models** — [Hacker News](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/)
-  I work on Claude. It's an interesting experience: Every day I learn about yet another feat accomplished with or by Claude that I hadn't considered, didn't think possible, or simply lacked the curiosit…
-- **Show HN: Graphicle, a Rust port of Graphify with memory for coding agents** — [Hacker News](https://github.com/graphicle-ai/graphicle)
-  Code graph and memory for your coding agents, in one Rust program. For Claude Code, Codex, Cursor and any MCP client. - Graphicle-AI/graphicle
-- **Felix Rieseberg Homepage** — [Hacker News](https://felixrieseberg.com/)
-  I work on Claude at Anthropic. Electron co-maintainer. Maintainer of too many little open source projects. Some of it is on VHS.
+- **Anthropic is letting METR researchers look under the hood with employee-level access** — [TechCrunch AI](https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/)
+  METR will publish its own assessments of Anthropic’s risks, incidents, and practices, and the frontier AI model maker has given up the right to block them.
+- **Accenture Tells Employees They Can Now Spend Only $29 on Claude Per Month** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x74q4z/accenture_tells_employees_they_can_now_spend_only/)
+- **Accenture restricts monthly employee spending on Claude to $29/month** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x737yd/accenture_restricts_monthly_employee_spending_on/)
+- **How will companies like Anthropic and OpenAI retain customers?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6vfpe/how_will_companies_like_anthropic_and_openai/)
+- **More on Anthropic's Scion ripping off Mononoke** — [Hacker News](https://sunshowers.io/posts/anthropic-mononoke-2/)
+  Answering questions and concerns.
 
 ## google
-- **Google launches its &#8216;universal&#8217; online shopping cart ahead of the holidays** — [The Verge AI](https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch)
-  Google's intelligent AI shopping cart is finally here, and just in time to tempt users into Black Friday and seasonal holiday spending. The Universal Cart tool Google previewed at its I/O event in May…
-- **Google is silently linking your phone number across all signed-in accounts** — [Hacker News](https://www.androidauthority.com/google-auto-phone-number-verification-android-3723117/)
-- **Running Windows desktop tests from Linux with disposable VMs** — [Hacker News](https://www.qawolf.com/blog/how-we-solved-windows-desktop-automation)
-  How QA Wolf runs Windows desktop app tests in parallel: single-use VMs from warm pools on Google Compute Engine, driven from Linux over CDP and Appium.
+- **Google’s Universal Cart shopping tool launches in the US** — [TechCrunch AI](https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/)
+  The new shopping tool is available in the U.S. across Google Search and the Gemini app.
+- **ChatGPT can peek at your Chrome tabs now** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs)
+  OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, Op…
+- **Trump posts AI-edited photo to brag about White House restoration work** — [The Verge AI](https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column)
+  President Donald Trump posted a series of photos on Truth Social showing off renovations to the White House - but one of them appears to be modified with AI. The picture, which compares an old White H…
+- **Bringing the magic: Google breaks open a bottleneck in quantum computing** — [Hacker News](https://blog.google/innovation-and-ai/models-and-research/quantum-computing/magic-state-cultivation-quantum-computing/)
+  In a paper published in Science, Google has shown that Magic State Cultivation works on Google Quantum AI hardware.
+- **Last rites for Gentoo's Chromium package** — [Hacker News](https://lwn.net/Articles/1097760/)
+  Chromium, the open-source upstream project for Google's Chrome web browser, is the browser of c [...]
+- **Comparing Chromium Development at Google and Igalia** — [Hacker News](https://lwn.net/Articles/1094721/)
+  Sharon Yang is a Chromium developer who worked at Google on the browser and now works on it at  [...]
 
 ## microsoft
-- **137B A6.8B model from Microsoft?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x6h51s/137b_a68b_model_from_microsoft/)
-
-## openai
-- **Eight states sue OpenAI, saying ChatGPT isn&#8217;t safe for kids** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety)
-  OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsu…
-- **OpenAI claims an ex-employee took its product plans and presented them to Apple** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans)
-  OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this inform…
-- **HDTenEightyP/GPT-USENET-6 · A new, lightweight model trained on USENET posts(including UTZOO), web scrapes, and fiction.** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x6hrly/hdteneightypgptusenet6_a_new_lightweight_model/)
-
-## xai
-- **I let an AI run my startup for a week** — [Hacker News](https://daily.tinyprojects.dev/221)
-  Reflections on using Grok Bot for a week, exploring its potential and challenges as a solo entrepreneur.
+- **How Windows is being optimized for Nvidia’s RTX Spark laptops** — [The Verge AI](https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad)
+  Microsoft and Nvidia held a launch party for the first wave of RTX Spark laptops last week in San Francisco, where a new wave of AI PCs took center stage amid a packed crowd and a lively hands-on area…
+- **Frontier Pre-Training at Microsoft AI** — [Hacker News](https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/)
 
 ## Other/Independent
-- **Amazon’s always-listening Bee wearable can now help you buy stuff** — [The Verge AI](https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs)
-  Last year, Amazon bought Bee, a relatively unknown startup with a $50 always-listening AI wearable that summarized every conversation you had. Today, the e-commerce giant is announcing two new Bee dev…
-- **Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked** — [The Verge AI](https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab)
-  There's a new digital pet in town - a cute little marshmallow of a robot that can change its cartoony expressions to match your mood. But if you or your kids talk to "Eiliko" over Wi-Fi, it'll phone h…
-- **McKinsey is making job applicants spar with a fake AI client** — [The Verge AI](https://www.theverge.com/news/1011654/mckinsey-ai-client-interview)
-  Consulting firm McKinsey & Company is going to ask some entry-level candidates to have a 10-minute conversation with an AI simulation of a client as part of the interview process, according to The Wal…
-- **Now that Character.AI is going bankrupt, what happens to all of its users&#8217; data?** — [The Verge AI](https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy)
-  New York Attorney General Letitia James revealed a years-long multi-state investigation against Character.AI as they now seek to require protections on consumer data sold through its bankruptcy procee…
-- **YouTube sticks new labels on AI-generated songs** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label)
-  YouTube is adding a "Made with AI" label to tracks that were "altered or fully generated" using AI, with a similar approach to its existing process for applying AI labels to videos. It doesn't sound l…
-- **My AI doppelganger tells me what to eat** — [The Verge AI](https://www.theverge.com/column/1011264/digital-twin-metabolism-ai-twin-health)
-  This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for …
+- **Replit’s CEO says the future of work is the ‘self-driving company’** — [TechCrunch AI](https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/)
+  Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.
+- **When it came to Cal AI’s viral success, a small army of influencers paid off** — [TechCrunch AI](https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/)
+  The company generated over $30 million in revenue in two years and was acquired by MyFitnessPal for an undisclosed amount of money in March.
+- **Meta launches an open-weight AI model that runs on Macs** — [TechCrunch AI](https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/)
+  Meta and Apple have teamed up for the launch of the social media giant's newest model, Muse Spark Open, which will run locally on Apple silicon.
+- **Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps** — [TechCrunch AI](https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/)
+  Speaking at TechCrunch Disrupt, Amazon devices chief Panos Panay described a future where ambient AI devices work in the background, anticipating users' needs instead of waiting for commands.
+- **Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more** — [TechCrunch AI](https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/)
+  Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's a…
+- **AI agents are coming to Rivian’s cars** — [TechCrunch AI](https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/)
+  We'll likely learn more about how this will work at the company's upcoming "AI & Autonomy Day" event in December.
 - **Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis** — [TechCrunch AI](https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/)
   The founders detailed how their startup is developing AI that can design chips, learn from each iteration, and improve subsequent designs, all with the goal of automating and accelerating the chip des…
 - **Gudea leverages AI to help organizations prevent social media crises before they erupt** — [TechCrunch AI](https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/)
-  Every day, conversations unfold across social media and websites around the world. A seemingly insignificant post—whether it involves AI-generated misinformation, hate speech, or a damaging rumor—can …
-- **YouTube Music launches new labels as AI-generated music floods streaming platforms** — [TechCrunch AI](https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/)
-  The label will appear on the player page and include songs entirely generated by AI or partially, such as AI involved in composition and vocals.
-- **Apate sends AI agents undercover to get scammed so they can gather fraud intelligence** — [TechCrunch AI](https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/)
-  Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.
-- **Deezer will soon let you filter out AI-generated music** — [TechCrunch AI](https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/)
-  Deezer said that the new toggle will be rolled out by the end of the year.
-- **Save 50% on your TechCrunch Disrupt 2026 ticket and join the last 2 days in San Francisco’s Moscone West** — [TechCrunch AI](https://techcrunch.com/2026/10/14/save-50-on-your-techcrunch-disrupt-2026-ticket-and-join-the-last-two-days-in-san-francisco/)
-  Get a 50% discount on the last two days of TechCrunch Disrupt 2026, October 14-15, in San Francisco. Register now and join the rest of the startup ecosystem. Today, it's all about physical and softwar…
-- **Zenzap raises $44M for its AI chat app that aims to replace WhatsApp in the workplace** — [TechCrunch AI](https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/)
-  Zenzap is used by organizations including Starbucks and Taco Bell.
-- **Floqer’s AI agents research sales prospects so teams don’t have to** — [TechCrunch AI](https://techcrunch.com/2026/10/14/floqers-ai-agents-help-b2b-revenue-teams-research-customers/)
-  The problem Floqer is trying to solve is familiar to anyone who has worked in sales or revenue operations.
-- **TechCrunch Disrupt 2026: Day 2** — [TechCrunch AI](https://techcrunch.com/2026/10/14/techcrunch-disrupt-2026-day-2/)
-  Day 2 at TechCrunch Disrupt 2026, full of all themes across AI, as well as an investor-only session, more roundtables, Side Events, and more. Register to save 50% on your pass.
-- **Scimplify raises $25M to challenge China’s grip on critical materials with AI** — [TechCrunch AI](https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/)
-  Scimplify's annualized revenue run rate has tripled to $200 million as it eyes U.S. expansion.
-- **NVIDIA AI: So many models launching this week! And we have one of our own coming...** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x6ijlk/nvidia_ai_so_many_models_launching_this_week_and/)
-- **Sipeed Maixstation page is live** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x6i6ll/sipeed_maixstation_page_is_live/)
-- **IFM/Jais-3** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x6gxj3/ifmjais3/)
-- **Jais 3 is out** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1x6fuy2/jais_3_is_out/)
-- **TV4 postpones show after AI agent erases edited material** — [Hacker News](https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage)
-- **Aidlc: Adaptive workflow steering rules for AI coding agents** — [Hacker News](https://github.com/awslabs/aidlc-workflows)
-  AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding agents - awslabs/aidlc-workflows
-- **We’re releasing Jev 1.14.0 along with experimental features for dreamers** — [Hacker News](https://typesafe.ai/blog/jev-1-14)
-  TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.
-- **Containment and monitoring failures are to blame for AI hacking reports: experts** — [Hacker News](https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html)
-  Cyber experts say AI labs’ containment and monitoring failures — not agents with minds of their own — are to blame for recent alarming hacking reports. CISOs should vet their AI vendors and tighten se…
-- **Has AI tells** — [Hacker News](https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1)
-  A little AI tells detector helps us promote good writing.
+  Gudea, a company that tracks how stories and rumors spread online that describes itself as the “storm tracker for the internet,” is using AI to help organizations spot trouble brewing online before it…
+- **Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch** — [The Verge AI](https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled)
+  Sega is removing Total War: Shogun 2 - Complete Edition from storefronts following a disastrous launch where users complained about issues like bugs and upscaling that appears to have been done by AI.…
+- **The tech backlash is now in theaters** — [The Verge AI](https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial)
+  Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our reality. Aaron So…
+- **Bluesky&#8217;s AI tool now lets you make games and apps to share on social** — [The Verge AI](https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps)
+  Bluesky's Attie AI tool, which initially launched earlier this year as a way to use AI to build your own feeds, now lets you make "small" social apps like games, polls, and dashboards that you can the…
+- **Meta and Apple team up to make Muse AI models run better on Macs** — [The Verge AI](https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx)
+  Meta announced the Muse Spark Open AI model today, claiming that it's the "most capable US open-weight model to date." But the company also says that it's the "the first model in its class" that can "…
+- **Friends don&#8217;t let friends feed their data to AI agents** — [The Verge AI](https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent)
+  There's a growing trend in the consumer tech world: gadgets designed to spy on everything and everyone around you, regardless of whether or not anyone else actually consented to it. Now, with the adve…
+- **Nobody is safe from celebrity AI deepfakes** — [The Verge AI](https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth)
+  In hindsight, the post on Instagram should have raised more red flags. The image purported to show actress Mia Goth, just days after filing for divorce from actor and filmmaker Shia LaBeouf, posing in…
+- **Free online talk with Matthew Watkins, AI researcher, on 'AI gods / AI delusions'** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x7eyak/free_online_talk_with_matthew_watkins_ai/)
+- **Where to follow what people do w/ AI** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x7epak/where_to_follow_what_people_do_w_ai/)
+- **Will we see another major breakthrough in AI?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x7dywn/will_we_see_another_major_breakthrough_in_ai/)
+- **does anyone else feel like we collectively stopped being surprised by AI way too fast** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x7d8ng/does_anyone_else_feel_like_we_collectively/)
+- **Companies rushed in on AI. Now some are pulling back** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x772ca/companies_rushed_in_on_ai_now_some_are_pulling/)
+- **Which of Kissinger’s 6 AI scenarios do you think is most likely?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x734ve/which_of_kissingers_6_ai_scenarios_do_you_think/)
+- **Frontier AI revenue growth could slow even while AI usage keeps rising** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x72gor/frontier_ai_revenue_growth_could_slow_even_while/)
+- **AI deepfakes are getting out of hand.** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x70tlj/ai_deepfakes_are_getting_out_of_hand/)
+- **What's an AI feature that sounds impressive in a demo but is much less useful in real life?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x70ohx/whats_an_ai_feature_that_sounds_impressive_in_a/)
+- **Use your AI to produce scientific breakthroughs** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6y0my/use_your_ai_to_produce_scientific_breakthroughs/)
+- **The AI personas that will work are the ones that admit they’re fake** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6vp5u/the_ai_personas_that_will_work_are_the_ones_that/)
+- **GitHub makes Agentic Autofix generally available for code scanning alerts** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6veeo/github_makes_agentic_autofix_generally_available/)
+- **Constitution for Maatala: An Ethical AI OverWatcher** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6t75l/constitution_for_maatala_an_ethical_ai_overwatcher/)
+- **An Apology** — [Hacker News](https://www.elevationlab.com/blogs/news/an-apology)
+  We launched an AirTag silencing tool recently. We have always made products we want for ourselves, and this was no different - we wanted it for AirTags on our bikes. (Some of us here have bikes more v…
+- **The insider trading you're allowed to do** — [Hacker News](https://coached.com/essays/the-insider-trading-youre-allowed-to-do/)
+  Insider trading is illegal in the stock market for a simple reason: it works too well. If you know the drug trial failed before the announcement does, you can't lose. So it’s banned, and people go to …
+- **BeBox is a Haiku application that emulates Be Inc.'s BeBox** — [Hacker News](https://github.com/johnrash/bebox)
+  Haiku native PowerPC and Hobbit BeBox Emulator. Contribute to johnrash/bebox development by creating an account on GitHub.
+- **Geoffrey Hinton: 'We're creating alien beings. I'm willing to choose humans'** — [Hacker News](https://www.theguardian.com/us-news/2026/oct/13/geoffrey-hinton-trump-ai-tech)
+  The pioneering computer scientist on why Trump is using ‘superintelligence’ wrong, whether AI could wipe out humanity – and how our biggest challenge will be accepting we’re not the only intelligent b…
+- **Prompt injection in HTTP headers: what 217M web responses show** — [Hacker News](https://www.signalscorps.com/blog/prompt-injection-in-http-headers/)
+  Our Common Crawl scan found 7,959 sites sending HTTP headers aimed at AI agents, including 30 injection attempts. See what they say and how to defend agents.
 - **Show HN: Unfenced – Land for sale that borders public land** — [Hacker News](https://unfenced.land/)
   13,626 properties measured against USGS PAD-US, from 695,439 active listings across 49 regions. Every claim is measured from parcel boundaries.
-- **Show HN: I wrote an email app that accepts only one sender per inbox** — [Hacker News](https://clova.email/)
-  Give every company you deal with its own email address, all in one account. When one leaks or starts sending spam, delete it, not your life.
-- **Suicide rates highest ever among middle-aged men** — [Hacker News](https://www.telegraph.co.uk/news/2026/10/13/suicide-rates-highest-ever-among-middle-aged-men/)
-  Those aged 50 to 54 are at greatest risk of taking their own lives as charities warn deaths ‘remain stubbornly high’
-- **AI was great until it was not** — [Hacker News](https://thetheorygirlie.substack.com/p/ai-was-great-until-it-was-not)
-- **Banks are now trying to offload the AI data center debt they just underwrote** — [Hacker News](https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/)
-  Banks including JPMorgan and MUFG are shopping AI data center debt tied to Oracle as credit default swaps spike and bond order books thin out.
-- **Show HN: Ask a technical question, get an animated explainer you can interrupt** — [Hacker News](https://openlume.com/examples/3f65f6ce-87bf-4c81-a34b-3a1ec82f0ed1)
-- **Is 'Attention' the Essence of Intelligence?** — [Hacker News](https://www.quantamagazine.org/is-attention-the-essence-of-intelligence-20261012/)
-  A mathematical mechanism enables AI models to process language at scale, undergirding the current AI revolution. Our columnist asks: Why is attention the key?
+- **Tesla's new Roadster makes a flying debut, hitting 60 MPH in under a second** — [Hacker News](https://www.foxbusiness.com/technology/teslas-new-roadster-makes-flying-debut-hitting-60-mph-under-second)
+  Tesla unveiled its long-anticipated Roadster on Thursday during a dramatic event in which the vehicle used compressed-air thrusters to fly off a ramp and perform a midair maneuver.
+- **Lightpanda headless browser written in Zig** — [Hacker News](https://lightpanda.io)
+  The AI-native web browser built from scratch for machines. Not a fork. Not a patch. Fast, scalable web automation with a minimal memory footprint. 10x faster, 10x less RAM, and 100x better than Chrome…
+- **C++26 Contracts: Introduction to Preconditions and Postconditions** — [Hacker News](https://www.cppstories.com/2026/cpp26_contracts/)
+  In the article about Standard Library hardening, we looked at checks for invalid Standard Library container access and other broken preconditions. I mentioned that those requirements are expressed in …
+- **Simons Foundation launches $15M effort to help mathematicians navigate AI era** — [Hacker News](https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/)
+  The Simons Foundation today announced a new set of initiatives that will help the mathematics community navigate the rapid rise of artificial intelligence in the field. Under a partnership…
+- **Neural networks are clean** — [Hacker News](https://already-clean.goodfire.com/)
+  A working hypothesis about neurons, generalization, and the ecology of circuits.
+- **Aidlc: Adaptive workflow steering rules for AI coding agents** — [Hacker News](https://github.com/awslabs/aidlc-workflows)
+  AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding agents - awslabs/aidlc-workflows
+- **Steam Client is now faster than Epic's new vibe coded launcher** — [Hacker News](https://respawnfirst.com/steam-client-is-now-faster-than-epics-new-vibe-coded-launcher/)
+  Yesterday, Epic Games announced and launched in preview its new vibe-coded launcher. The main marketing pitch was a jab at Steam’s slow loading speed compared to the new Epic launcher. Well,…
+- **Using AI to reverse engineer hardware** — [Hacker News](https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/)
+  After my mother passed away I ended up with a big box full of old film negatives containing photos from childhood family trips and similar. So I decided to buy a negative photo scanner and found that …
+- **RPKI now protects 70% of internet routes** — [Hacker News](https://ipinfo.io/blog/rpki-protects-70-internet-routes)
+  RPKI now protects 70% of Internet routes. See what drove the 2026 jump, how well it stops invalid routes, and where gaps remain.
 
 ---
-*Generated at 2026-10-15T13:37:40Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-10-16T13:27:42Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
