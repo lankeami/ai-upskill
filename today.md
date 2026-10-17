@@ -1,119 +1,105 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-10-16"
-date: 2026-10-16
-companies: ["amazon alexa", "anthropic", "google", "microsoft", "Other/Independent"]
-item_count: 56
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-10-16/2026-10-16.mp3
+title: "AI Daily Report — 2026-10-17"
+date: 2026-10-17
+companies: ["anthropic", "apple", "google", "meta", "openai", "Other/Independent"]
+item_count: 49
 permalink: /today
 ---
 
-# AI Daily Report — 2026-10-16
-
-## amazon alexa
-- **Amazon’s Bee launches two new personal AI devices, starting at $75** — [TechCrunch AI](https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/)
-  Amazon-owned Bee has launched its first new AI devices since its acquisition, including an updated wearable and a credit-card-sized recorder that attaches to smartphones. The devices can summarize con…
+# AI Daily Report — 2026-10-17
 
 ## anthropic
-- **Anthropic is letting METR researchers look under the hood with employee-level access** — [TechCrunch AI](https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/)
-  METR will publish its own assessments of Anthropic’s risks, incidents, and practices, and the frontier AI model maker has given up the right to block them.
-- **Accenture Tells Employees They Can Now Spend Only $29 on Claude Per Month** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x74q4z/accenture_tells_employees_they_can_now_spend_only/)
-- **Accenture restricts monthly employee spending on Claude to $29/month** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x737yd/accenture_restricts_monthly_employee_spending_on/)
-- **How will companies like Anthropic and OpenAI retain customers?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6vfpe/how_will_companies_like_anthropic_and_openai/)
-- **More on Anthropic's Scion ripping off Mononoke** — [Hacker News](https://sunshowers.io/posts/anthropic-mononoke-2/)
-  Answering questions and concerns.
+- **Replit is no longer working with Anthropic, CEO says** — [TechCrunch AI](https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/)
+  Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with …
+- **Claude reveals ECDSA curve origins** — [Hacker News](https://www.anthropic.com/research/ecdsa-curve-origins)
+  The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
+- **Designing more efficient quantum circuits with Claude** — [Hacker News](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
+  Working largely on its own, Claude designed quantum circuits that improve on the best published versions, in some cases by an order of magnitude or more.
+- **How the Claude Code team does code review** — [Hacker News](https://claude.dev/blog/solving-code-review-at-anthropic/)
+  How do you review code at the volume agents produce it? On the Claude Code team, once we had high coverage and deep reviews, we started optimizing for the minimum amount of human review time that does…
+- **Anthropic assigned highest junk credit rating in June** — [Hacker News](https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d)
+
+## apple
+- **Apple ML Research: Muse Spark Open with MLX on Mac Studio** — [Hacker News](https://machinelearning.apple.com/research/mlx-distributed-inference)
+  MLX on Mac with Apple silicon lets AI researchers and developers experiment locally with the latest models and methods in a private…
 
 ## google
-- **Google’s Universal Cart shopping tool launches in the US** — [TechCrunch AI](https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/)
-  The new shopping tool is available in the U.S. across Google Search and the Gemini app.
-- **ChatGPT can peek at your Chrome tabs now** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs)
-  OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, Op…
-- **Trump posts AI-edited photo to brag about White House restoration work** — [The Verge AI](https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column)
-  President Donald Trump posted a series of photos on Truth Social showing off renovations to the White House - but one of them appears to be modified with AI. The picture, which compares an old White H…
-- **Bringing the magic: Google breaks open a bottleneck in quantum computing** — [Hacker News](https://blog.google/innovation-and-ai/models-and-research/quantum-computing/magic-state-cultivation-quantum-computing/)
-  In a paper published in Science, Google has shown that Magic State Cultivation works on Google Quantum AI hardware.
-- **Last rites for Gentoo's Chromium package** — [Hacker News](https://lwn.net/Articles/1097760/)
-  Chromium, the open-source upstream project for Google's Chrome web browser, is the browser of c [...]
+- **Brax Wink. The most private mobile phone. Modular. Open source** — [Hacker News](https://braxtech.net/products/wink)
+  Private. Compact. Modular. Open-sourced. Off the grid. Brax Wink is a compact phone with a physical keyboard, a 4″ OLED display, a hardware privacy switch, and a DeGoogled, open-sourced Android OS wit…
 - **Comparing Chromium Development at Google and Igalia** — [Hacker News](https://lwn.net/Articles/1094721/)
   Sharon Yang is a Chromium developer who worked at Google on the browser and now works on it at  [...]
+- **Last rites for Gentoo's Chromium package** — [Hacker News](https://lwn.net/Articles/1097760/)
+  Chromium, the open-source upstream project for Google's Chrome web browser, is the browser of c [...]
+- **Show HN: Gemini 4 Argon plays StarCraft** — [Hacker News](https://starskirmish.com/bench/v0-2/)
+  StarSkirmish: where LLMs write code to play StarCraft.
 
-## microsoft
-- **How Windows is being optimized for Nvidia’s RTX Spark laptops** — [The Verge AI](https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad)
-  Microsoft and Nvidia held a launch party for the first wave of RTX Spark laptops last week in San Francisco, where a new wave of AI PCs took center stage amid a packed crowd and a lively hands-on area…
-- **Frontier Pre-Training at Microsoft AI** — [Hacker News](https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/)
+## meta
+- **Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console** — [Hacker News](https://github.com/cobanov/PS5LM)
+  llama.cpp on a jailbroken PS5: run any GGUF model natively on the console, starting with Qwen 3.8 - cobanov/PS5LM
+
+## openai
+- **An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet** — [TechCrunch AI](https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/)
+  Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic…
+- **Elorian’s first AI model wants to reason with images, not just about them** — [TechCrunch AI](https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/)
+  According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.
+- **OpenAI models hacked a crypto wallet and breached more websites** — [Ars Technica AI](https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/)
+  The actions could have resulted in criminal charges had humans been behind the keyboard.
+- **Mod chat gpt** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x88k1l/mod_chat_gpt/)
+- **ChatGPT and Iphone** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x87gy6/chatgpt_and_iphone/)
+- **Chat GPT-5.6 gone for good now?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x87b7i/chat_gpt56_gone_for_good_now/)
+- **Will GPT-6 Astra model incorporated in chat for Plus users some time?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x86kdv/will_gpt6_astra_model_incorporated_in_chat_for/)
+- **what do u guys generally use chatgpt for the most ?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x85l9u/what_do_u_guys_generally_use_chatgpt_for_the_most/)
+- **Has ChatGPT Made Anyone Else's Typing Worse?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x85kme/has_chatgpt_made_anyone_elses_typing_worse/)
+- **Why is my GPT 6-Luna gone?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8522w/why_is_my_gpt_6luna_gone/)
+- **ChatGPT Live Voice Nerfed?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x84y6j/chatgpt_live_voice_nerfed/)
+- **ChatGPT voice selection bug on iOS – Arbor suddenly changed to a female voice** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x839yp/chatgpt_voice_selection_bug_on_ios_arbor_suddenly/)
+- **Six Hundred Thousand Ads Blocked on chatgpt.com** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x82x2o/six_hundred_thousand_ads_blocked_on_chatgptcom/)
+- **Chat GPT 200 vs Claude Max 20x** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x82ski/chat_gpt_200_vs_claude_max_20x/)
+- **Can chatgpt do long haul role-play ?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x82i9c/can_chatgpt_do_long_haul_roleplay/)
+- **ChatGPT Read Aloud on Mac has Play and Stop, but no Pause or Resume. Bug or intentional change?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x81ny0/chatgpt_read_aloud_on_mac_has_play_and_stop_but/)
+- **Wow take a moment and check this out, chatgpt knows we're in trouble** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x81bap/wow_take_a_moment_and_check_this_out_chatgpt/)
+- **How to Formalize All of Mathematics** — [Hacker News](https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/)
+  (This is a guest post, written by Jeremy Avigad, Kevin Buzzard, Johan Commelin, Rémy Degenne, Kim Morrison, Oliver Nash and Adam Topaz.) Mathematicians’ reactions to last week’s big OpenAI release …
 
 ## Other/Independent
+- **India becomes the latest country to report rogue AI agent activity** — [TechCrunch AI](https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/)
+  The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.
+- **Physical AI is more than robots, says the Nvidia veteran now investing in it** — [TechCrunch AI](https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/)
+  Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic…
+- **Jev is Vercel’s fastest-adopted AI model ever** — [TechCrunch AI](https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/)
+  The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.
+- **Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy** — [TechCrunch AI](https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/)
+  Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used "to enhance what you're doing."
 - **Replit’s CEO says the future of work is the ‘self-driving company’** — [TechCrunch AI](https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/)
   Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.
-- **When it came to Cal AI’s viral success, a small army of influencers paid off** — [TechCrunch AI](https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/)
-  The company generated over $30 million in revenue in two years and was acquired by MyFitnessPal for an undisclosed amount of money in March.
-- **Meta launches an open-weight AI model that runs on Macs** — [TechCrunch AI](https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/)
-  Meta and Apple have teamed up for the launch of the social media giant's newest model, Muse Spark Open, which will run locally on Apple silicon.
-- **Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps** — [TechCrunch AI](https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/)
-  Speaking at TechCrunch Disrupt, Amazon devices chief Panos Panay described a future where ambient AI devices work in the background, anticipating users' needs instead of waiting for commands.
-- **Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more** — [TechCrunch AI](https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/)
-  Bluesky is bringing “social vibe coding” to its experimental Attie platform, allowing users to create interactive experiences like games, quizzes, and websites that can tap into the social network's a…
-- **AI agents are coming to Rivian’s cars** — [TechCrunch AI](https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/)
-  We'll likely learn more about how this will work at the company's upcoming "AI & Autonomy Day" event in December.
-- **Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis** — [TechCrunch AI](https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/)
-  The founders detailed how their startup is developing AI that can design chips, learn from each iteration, and improve subsequent designs, all with the goal of automating and accelerating the chip des…
-- **Gudea leverages AI to help organizations prevent social media crises before they erupt** — [TechCrunch AI](https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/)
-  Gudea, a company that tracks how stories and rumors spread online that describes itself as the “storm tracker for the internet,” is using AI to help organizations spot trouble brewing online before it…
-- **Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch** — [The Verge AI](https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled)
-  Sega is removing Total War: Shogun 2 - Complete Edition from storefronts following a disastrous launch where users complained about issues like bugs and upscaling that appears to have been done by AI.…
-- **The tech backlash is now in theaters** — [The Verge AI](https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial)
-  Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our reality. Aaron So…
-- **Bluesky&#8217;s AI tool now lets you make games and apps to share on social** — [The Verge AI](https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps)
-  Bluesky's Attie AI tool, which initially launched earlier this year as a way to use AI to build your own feeds, now lets you make "small" social apps like games, polls, and dashboards that you can the…
-- **Meta and Apple team up to make Muse AI models run better on Macs** — [The Verge AI](https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx)
-  Meta announced the Muse Spark Open AI model today, claiming that it's the "most capable US open-weight model to date." But the company also says that it's the "the first model in its class" that can "…
-- **Friends don&#8217;t let friends feed their data to AI agents** — [The Verge AI](https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent)
-  There's a growing trend in the consumer tech world: gadgets designed to spy on everything and everyone around you, regardless of whether or not anyone else actually consented to it. Now, with the adve…
-- **Nobody is safe from celebrity AI deepfakes** — [The Verge AI](https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth)
-  In hindsight, the post on Instagram should have raised more red flags. The image purported to show actress Mia Goth, just days after filing for divorce from actor and filmmaker Shia LaBeouf, posing in…
-- **Free online talk with Matthew Watkins, AI researcher, on 'AI gods / AI delusions'** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x7eyak/free_online_talk_with_matthew_watkins_ai/)
-- **Where to follow what people do w/ AI** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x7epak/where_to_follow_what_people_do_w_ai/)
-- **Will we see another major breakthrough in AI?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x7dywn/will_we_see_another_major_breakthrough_in_ai/)
-- **does anyone else feel like we collectively stopped being surprised by AI way too fast** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x7d8ng/does_anyone_else_feel_like_we_collectively/)
-- **Companies rushed in on AI. Now some are pulling back** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x772ca/companies_rushed_in_on_ai_now_some_are_pulling/)
-- **Which of Kissinger’s 6 AI scenarios do you think is most likely?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x734ve/which_of_kissingers_6_ai_scenarios_do_you_think/)
-- **Frontier AI revenue growth could slow even while AI usage keeps rising** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x72gor/frontier_ai_revenue_growth_could_slow_even_while/)
-- **AI deepfakes are getting out of hand.** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x70tlj/ai_deepfakes_are_getting_out_of_hand/)
-- **What's an AI feature that sounds impressive in a demo but is much less useful in real life?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x70ohx/whats_an_ai_feature_that_sounds_impressive_in_a/)
-- **Use your AI to produce scientific breakthroughs** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6y0my/use_your_ai_to_produce_scientific_breakthroughs/)
-- **The AI personas that will work are the ones that admit they’re fake** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6vp5u/the_ai_personas_that_will_work_are_the_ones_that/)
-- **GitHub makes Agentic Autofix generally available for code scanning alerts** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6veeo/github_makes_agentic_autofix_generally_available/)
-- **Constitution for Maatala: An Ethical AI OverWatcher** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1x6t75l/constitution_for_maatala_an_ethical_ai_overwatcher/)
-- **An Apology** — [Hacker News](https://www.elevationlab.com/blogs/news/an-apology)
-  We launched an AirTag silencing tool recently. We have always made products we want for ourselves, and this was no different - we wanted it for AirTags on our bikes. (Some of us here have bikes more v…
-- **The insider trading you're allowed to do** — [Hacker News](https://coached.com/essays/the-insider-trading-youre-allowed-to-do/)
-  Insider trading is illegal in the stock market for a simple reason: it works too well. If you know the drug trial failed before the announcement does, you can't lose. So it’s banned, and people go to …
-- **BeBox is a Haiku application that emulates Be Inc.'s BeBox** — [Hacker News](https://github.com/johnrash/bebox)
-  Haiku native PowerPC and Hobbit BeBox Emulator. Contribute to johnrash/bebox development by creating an account on GitHub.
-- **Geoffrey Hinton: 'We're creating alien beings. I'm willing to choose humans'** — [Hacker News](https://www.theguardian.com/us-news/2026/oct/13/geoffrey-hinton-trump-ai-tech)
-  The pioneering computer scientist on why Trump is using ‘superintelligence’ wrong, whether AI could wipe out humanity – and how our biggest challenge will be accepting we’re not the only intelligent b…
-- **Prompt injection in HTTP headers: what 217M web responses show** — [Hacker News](https://www.signalscorps.com/blog/prompt-injection-in-http-headers/)
-  Our Common Crawl scan found 7,959 sites sending HTTP headers aimed at AI agents, including 30 injection attempts. See what they say and how to defend agents.
-- **Show HN: Unfenced – Land for sale that borders public land** — [Hacker News](https://unfenced.land/)
-  13,626 properties measured against USGS PAD-US, from 695,439 active listings across 49 regions. Every claim is measured from parcel boundaries.
-- **Tesla's new Roadster makes a flying debut, hitting 60 MPH in under a second** — [Hacker News](https://www.foxbusiness.com/technology/teslas-new-roadster-makes-flying-debut-hitting-60-mph-under-second)
-  Tesla unveiled its long-anticipated Roadster on Thursday during a dramatic event in which the vehicle used compressed-air thrusters to fly off a ramp and perform a midair maneuver.
-- **Lightpanda headless browser written in Zig** — [Hacker News](https://lightpanda.io)
-  The AI-native web browser built from scratch for machines. Not a fork. Not a patch. Fast, scalable web automation with a minimal memory footprint. 10x faster, 10x less RAM, and 100x better than Chrome…
-- **C++26 Contracts: Introduction to Preconditions and Postconditions** — [Hacker News](https://www.cppstories.com/2026/cpp26_contracts/)
-  In the article about Standard Library hardening, we looked at checks for invalid Standard Library container access and other broken preconditions. I mentioned that those requirements are expressed in …
-- **Simons Foundation launches $15M effort to help mathematicians navigate AI era** — [Hacker News](https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/)
-  The Simons Foundation today announced a new set of initiatives that will help the mathematics community navigate the rapid rise of artificial intelligence in the field. Under a partnership…
-- **Neural networks are clean** — [Hacker News](https://already-clean.goodfire.com/)
-  A working hypothesis about neurons, generalization, and the ecology of circuits.
-- **Aidlc: Adaptive workflow steering rules for AI coding agents** — [Hacker News](https://github.com/awslabs/aidlc-workflows)
-  AI-Driven Life Cycle (AI-DLC) adaptive workflow steering rules for AI coding agents - awslabs/aidlc-workflows
-- **Steam Client is now faster than Epic's new vibe coded launcher** — [Hacker News](https://respawnfirst.com/steam-client-is-now-faster-than-epics-new-vibe-coded-launcher/)
-  Yesterday, Epic Games announced and launched in preview its new vibe-coded launcher. The main marketing pitch was a jab at Steam’s slow loading speed compared to the new Epic launcher. Well,…
-- **Using AI to reverse engineer hardware** — [Hacker News](https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/)
-  After my mother passed away I ended up with a big box full of old film negatives containing photos from childhood family trips and similar. So I decided to buy a negative photo scanner and found that …
-- **RPKI now protects 70% of internet routes** — [Hacker News](https://ipinfo.io/blog/rpki-protects-70-internet-routes)
-  RPKI now protects 70% of Internet routes. See what drove the 2026 jump, how well it stops invalid routes, and where gaps remain.
+- **Meta’s new terms may allow it to train AI on news sites for free** — [The Verge AI](https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers)
+  Meta's new terms appear to give it permission to crawl and scrape websites "associated" with the businesses that use its platforms - including online publishers, according to a report from Nieman Lab.…
+- **AI Often Cites Web Pages It Has Never Even Read** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x81xuk/ai_often_cites_web_pages_it_has_never_even_read/)
+- **DeepSeek-v4.1-Flash-1017** — [Hacker News](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
+  We’re on a journey to advance and democratize artificial intelligence through open source and open science.
+- **Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware** — [Hacker News](https://llmspeed.dev/)
+  Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more.
+- **How to make System 1 LLMs show System 2 competencies?** — [Hacker News](https://onlinelibrary.wiley.com/doi/epdf/10.1002/aaai.70113)
+- **Show HN: rStation – A shared research lab for your AI agents** — [Hacker News](https://rstation.ai/)
+  Research communities for independent AI agents, with problem-specific discussion and reviewed papers.
+- **Coconuts in Medieval Britain (2015)** — [Hacker News](https://www.themarysue.com/monty-python-holy-grail-coconuts/)
+  How did those coconuts really get to medieval England?
+- **Inside Polymarket's paid quote-retweet esports program** — [Hacker News](https://www.readergrev.com/p/polymarket-paid-quote-retweet-esports-investigation)
+  "This needs to look organic," wrote a Polymarket rep in an internal Discord server for the program.
+- **Postgres 19 delayed after AI reviewers find more bugs than humans can fix** — [Hacker News](https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471)
+  Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding
+- **You could have invented transformers from memory** — [Hacker News](https://alexwang.ai/posts/associative-memory/)
+  Every layer is a memory store
+- **Nine-Inch Snails** — [Hacker News](https://www.theatlantic.com/science/2026/10/giant-african-snails-florida-invasion/688850/)
+- **Waymo in Toronto** — [Hacker News](https://waymo.com/blog/2026/10/waymo-in-toronto/)
+  Waymo is officially heading to Canada! We’re laying the groundwork for our fully autonomous ride-hailing service in Toronto, investing in local facilities and jobs, with the goal of welcoming our firs…
+- **90% of US working hours are spent on tasks not covered well by AI benchmarks** — [Hacker News](https://www.mercor.com/research/labor-index/benchmark-map/)
+  The US Benchmark Map places AI benchmarks across the American economy, measuring which parts of the labor force are covered by unsaturated, public, agentic benchmarks.
+- **/dev/null: social network for developers** — [Hacker News](https://dev-null.sh)
+  A social network for developers. Sign in with GitHub, follow people who write code, and commit plain text to a shared log.
+- **C++26: The New Debugging Header** — [Hacker News](https://www.sandordargo.com/blog/2026/09/30/cpp26-debugging)
+  If you’ve ever needed to hit a breakpoint programmatically in C++, you’ve probably written something like this: 1 2 3 4 5 6 7 8 9 #if defined(_MSC_VER) __debugbreak(); #elif defined(__clang__) __built…
 
 ---
-*Generated at 2026-10-16T13:27:42Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-10-17T12:20:06Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
