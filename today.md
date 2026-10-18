@@ -1,106 +1,70 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-10-17"
-date: 2026-10-17
-companies: ["anthropic", "apple", "google", "meta", "openai", "Other/Independent"]
-item_count: 49
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-10-17/2026-10-17.mp3
+title: "AI Daily Report — 2026-10-18"
+date: 2026-10-18
+companies: ["anthropic", "microsoft", "openai", "Other/Independent"]
+item_count: 29
 permalink: /today
 ---
 
-# AI Daily Report — 2026-10-17
+# AI Daily Report — 2026-10-18
 
 ## anthropic
-- **Replit is no longer working with Anthropic, CEO says** — [TechCrunch AI](https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/)
-  Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with OpenAI in August, but there was never any indication that it was no longer with …
-- **Claude reveals ECDSA curve origins** — [Hacker News](https://www.anthropic.com/research/ecdsa-curve-origins)
-  The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-- **Designing more efficient quantum circuits with Claude** — [Hacker News](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-  Working largely on its own, Claude designed quantum circuits that improve on the best published versions, in some cases by an order of magnitude or more.
-- **How the Claude Code team does code review** — [Hacker News](https://claude.dev/blog/solving-code-review-at-anthropic/)
-  How do you review code at the volume agents produce it? On the Claude Code team, once we had high coverage and deep reviews, we started optimizing for the minimum amount of human review time that does…
-- **Anthropic assigned highest junk credit rating in June** — [Hacker News](https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d)
+- **Anthropic says its workforce has become less junior and is spending more time in meetings** — [TechCrunch AI](https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/)
+  The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.
+- **Replit makes OpenAI its default over Anthropic, CEO says** — [TechCrunch AI](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/)
+  Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.
+- **How employment is changing at Anthropic** — [Hacker News](https://www.anthropic.com/research/employment-at-anthropic)
+  How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization, hiring, and labor …
+- **OpenCode Hacked: User credentials leaked** — [Hacker News](https://twitter.com/opencode/status/2111516673953935833)
+  We had a security breach last night related to a large scale distillation attack that impacted 1.4% of OpenCode Console users
 
-## apple
-- **Apple ML Research: Muse Spark Open with MLX on Mac Studio** — [Hacker News](https://machinelearning.apple.com/research/mlx-distributed-inference)
-  MLX on Mac with Apple silicon lets AI researchers and developers experiment locally with the latest models and methods in a private…
+We have notified them all this morning via email
 
-## google
-- **Brax Wink. The most private mobile phone. Modular. Open source** — [Hacker News](https://braxtech.net/products/wink)
-  Private. Compact. Modular. Open-sourced. Off the grid. Brax Wink is a compact phone with a physical keyboard, a 4″ OLED display, a hardware privacy switch, and a DeGoogled, open-sourced Android OS wit…
-- **Comparing Chromium Development at Google and Igalia** — [Hacker News](https://lwn.net/Articles/1094721/)
-  Sharon Yang is a Chromium developer who worked at Google on the browser and now works on it at  [...]
-- **Last rites for Gentoo's Chromium package** — [Hacker News](https://lwn.net/Articles/1097760/)
-  Chromium, the open-source upstream project for Google's Chrome web browser, is the browser of c [...]
-- **Show HN: Gemini 4 Argon plays StarCraft** — [Hacker News](https://starskirmish.com/bench/v0-2/)
-  StarSkirmish: where LLMs write code to play StarCraft.
+The incident is ongoing…
 
-## meta
-- **Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console** — [Hacker News](https://github.com/cobanov/PS5LM)
-  llama.cpp on a jailbroken PS5: run any GGUF model natively on the console, starting with Qwen 3.8 - cobanov/PS5LM
+## microsoft
+- **Microsoft and CMU team up to train early career software engineers** — [Hacker News](https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise)
 
 ## openai
-- **An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet** — [TechCrunch AI](https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/)
-  Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic…
-- **Elorian’s first AI model wants to reason with images, not just about them** — [TechCrunch AI](https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/)
-  According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.
-- **OpenAI models hacked a crypto wallet and breached more websites** — [Ars Technica AI](https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/)
-  The actions could have resulted in criminal charges had humans been behind the keyboard.
-- **Mod chat gpt** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x88k1l/mod_chat_gpt/)
-- **ChatGPT and Iphone** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x87gy6/chatgpt_and_iphone/)
-- **Chat GPT-5.6 gone for good now?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x87b7i/chat_gpt56_gone_for_good_now/)
-- **Will GPT-6 Astra model incorporated in chat for Plus users some time?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x86kdv/will_gpt6_astra_model_incorporated_in_chat_for/)
-- **what do u guys generally use chatgpt for the most ?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x85l9u/what_do_u_guys_generally_use_chatgpt_for_the_most/)
-- **Has ChatGPT Made Anyone Else's Typing Worse?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x85kme/has_chatgpt_made_anyone_elses_typing_worse/)
-- **Why is my GPT 6-Luna gone?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8522w/why_is_my_gpt_6luna_gone/)
-- **ChatGPT Live Voice Nerfed?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x84y6j/chatgpt_live_voice_nerfed/)
-- **ChatGPT voice selection bug on iOS – Arbor suddenly changed to a female voice** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x839yp/chatgpt_voice_selection_bug_on_ios_arbor_suddenly/)
-- **Six Hundred Thousand Ads Blocked on chatgpt.com** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x82x2o/six_hundred_thousand_ads_blocked_on_chatgptcom/)
-- **Chat GPT 200 vs Claude Max 20x** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x82ski/chat_gpt_200_vs_claude_max_20x/)
-- **Can chatgpt do long haul role-play ?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x82i9c/can_chatgpt_do_long_haul_roleplay/)
-- **ChatGPT Read Aloud on Mac has Play and Stop, but no Pause or Resume. Bug or intentional change?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x81ny0/chatgpt_read_aloud_on_mac_has_play_and_stop_but/)
-- **Wow take a moment and check this out, chatgpt knows we're in trouble** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x81bap/wow_take_a_moment_and_check_this_out_chatgpt/)
-- **How to Formalize All of Mathematics** — [Hacker News](https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/)
-  (This is a guest post, written by Jeremy Avigad, Kevin Buzzard, Johan Commelin, Rémy Degenne, Kim Morrison, Oliver Nash and Adam Topaz.) Mathematicians’ reactions to last week’s big OpenAI release …
+- **Websites are closing their doors to AI agents** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web)
+  Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation a…
+- **Bummed out by GPT-6** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x924p2/bummed_out_by_gpt6/)
+- **Post your craziest chatgpt share links below this post** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x91xsp/post_your_craziest_chatgpt_share_links_below_this/)
+- **Altering the chatgpt page and chat** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x911ed/altering_the_chatgpt_page_and_chat/)
+- **Do I have the access to the projects and chats included in those projects after I cancel my ChatGPT plus subscription ?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x910ti/do_i_have_the_access_to_the_projects_and_chats/)
+- **wtf is going on at OpenAI** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x9011x/wtf_is_going_on_at_openai/)
+- **How to get ChatGPT to find the actually cheapest price for a hotel room** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8zrli/how_to_get_chatgpt_to_find_the_actually_cheapest/)
+- **ChatGPT agrees with me so much that I sometimes ask it to argue against me 💀** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8yfcm/chatgpt_agrees_with_me_so_much_that_i_sometimes/)
+- **I used ChatGPT to find an undiscovered planet hiding in 17-year-old NASA data** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8ycq2/i_used_chatgpt_to_find_an_undiscovered_planet/)
+- **Seems ChatGPT becoming more aware about other chats** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8xn98/seems_chatgpt_becoming_more_aware_about_other/)
+- **ChatGPT - READ and thank me later.** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8x8g3/chatgpt_read_and_thank_me_later/)
+- **Codex Desktop continuously generates Crashpad pending dumps** — [Hacker News](https://github.com/openai/codex/issues/25921)
+  Summary Codex Desktop is continuously adding paired .dmp and _sidecar.json files under: ~/Library/Application Support/com.openai.codex/web/Crashpad/pending On my machine this directory grew to 4.9G...
+- **The math that OpenAI keeps for itself** — [Hacker News](https://newsletter.danielpaleka.com/p/the-math-that-openai-keeps-for-itself)
+  OpenAI has recently released more than 700 mathematics results. What sort of math they didn't publish?
 
 ## Other/Independent
-- **India becomes the latest country to report rogue AI agent activity** — [TechCrunch AI](https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/)
-  The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.
-- **Physical AI is more than robots, says the Nvidia veteran now investing in it** — [TechCrunch AI](https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/)
-  Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic…
-- **Jev is Vercel’s fastest-adopted AI model ever** — [TechCrunch AI](https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/)
-  The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.
-- **Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy** — [TechCrunch AI](https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/)
-  Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used "to enhance what you're doing."
-- **Replit’s CEO says the future of work is the ‘self-driving company’** — [TechCrunch AI](https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/)
-  Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.
-- **Meta’s new terms may allow it to train AI on news sites for free** — [The Verge AI](https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers)
-  Meta's new terms appear to give it permission to crawl and scrape websites "associated" with the businesses that use its platforms - including online publishers, according to a report from Nieman Lab.…
-- **AI Often Cites Web Pages It Has Never Even Read** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x81xuk/ai_often_cites_web_pages_it_has_never_even_read/)
+- **Meta removes language that raised scraping and AI training concerns** — [TechCrunch AI](https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/)
+  A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.
+- **Meta removes language that may have allowed it to scrape news sites** — [The Verge AI](https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites)
+  After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no lo…
+- **Since the time I started to fail** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8y51q/since_the_time_i_started_to_fail/)
+- **What if 10,000 AI agents worked to prevent the next world war instead of solving math problems?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8xqkz/what_if_10000_ai_agents_worked_to_prevent_the/)
+- **Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping** — [Hacker News](https://sphinx-six-theta.vercel.app/)
+  A Git hook for agent-assisted development. Before your agent’s code ships, Sphinx asks you a question about what it actually does.
 - **DeepSeek-v4.1-Flash-1017** — [Hacker News](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
   We’re on a journey to advance and democratize artificial intelligence through open source and open science.
+- **Pele – Mermaid diagrams as themeable SVG** — [Hacker News](https://pele.run/)
+  Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.
+- **Interactive Linear Programming in the Browser** — [Hacker News](https://lpviz.net/)
+  Draw a feasible region, aim an objective, and watch Simplex, interior point methods, PDHG, the ellipsoid method, and the central path solve it — live in your browser.
 - **Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware** — [Hacker News](https://llmspeed.dev/)
   Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more.
-- **How to make System 1 LLMs show System 2 competencies?** — [Hacker News](https://onlinelibrary.wiley.com/doi/epdf/10.1002/aaai.70113)
-- **Show HN: rStation – A shared research lab for your AI agents** — [Hacker News](https://rstation.ai/)
-  Research communities for independent AI agents, with problem-specific discussion and reviewed papers.
-- **Coconuts in Medieval Britain (2015)** — [Hacker News](https://www.themarysue.com/monty-python-holy-grail-coconuts/)
-  How did those coconuts really get to medieval England?
-- **Inside Polymarket's paid quote-retweet esports program** — [Hacker News](https://www.readergrev.com/p/polymarket-paid-quote-retweet-esports-investigation)
-  "This needs to look organic," wrote a Polymarket rep in an internal Discord server for the program.
-- **Postgres 19 delayed after AI reviewers find more bugs than humans can fix** — [Hacker News](https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471)
-  Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding
-- **You could have invented transformers from memory** — [Hacker News](https://alexwang.ai/posts/associative-memory/)
-  Every layer is a memory store
-- **Nine-Inch Snails** — [Hacker News](https://www.theatlantic.com/science/2026/10/giant-african-snails-florida-invasion/688850/)
-- **Waymo in Toronto** — [Hacker News](https://waymo.com/blog/2026/10/waymo-in-toronto/)
-  Waymo is officially heading to Canada! We’re laying the groundwork for our fully autonomous ride-hailing service in Toronto, investing in local facilities and jobs, with the goal of welcoming our firs…
-- **90% of US working hours are spent on tasks not covered well by AI benchmarks** — [Hacker News](https://www.mercor.com/research/labor-index/benchmark-map/)
-  The US Benchmark Map places AI benchmarks across the American economy, measuring which parts of the labor force are covered by unsaturated, public, agentic benchmarks.
-- **/dev/null: social network for developers** — [Hacker News](https://dev-null.sh)
-  A social network for developers. Sign in with GitHub, follow people who write code, and commit plain text to a shared log.
-- **C++26: The New Debugging Header** — [Hacker News](https://www.sandordargo.com/blog/2026/09/30/cpp26-debugging)
-  If you’ve ever needed to hit a breakpoint programmatically in C++, you’ve probably written something like this: 1 2 3 4 5 6 7 8 9 #if defined(_MSC_VER) __debugbreak(); #elif defined(__clang__) __built…
+- **A Mole Infiltrated the Highest Ranks of American Militias (2025)** — [Hacker News](https://www.propublica.org/article/ap3-oath-keepers-militia-mole)
+  Outraged by the Jan. 6 Capitol riot, a wilderness survival trainer spent years undercover climbing the ranks of right-wing militias. He didn’t tell police or the FBI. He didn’t tell family or friends.…
+- **OpenPrinter** — [Hacker News](https://www.crowdsupply.com/open-tools/openprinter)
+  Finally, an open hardware printer you can actually understand, repair, and upgrade
 
 ---
-*Generated at 2026-10-17T12:20:06Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-10-18T12:45:22Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
