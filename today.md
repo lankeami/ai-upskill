@@ -1,71 +1,86 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-10-18"
-date: 2026-10-18
-companies: ["anthropic", "microsoft", "openai", "Other/Independent"]
-item_count: 29
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-10-18/2026-10-18.mp3
+title: "AI Daily Report — 2026-10-19"
+date: 2026-10-19
+companies: ["anthropic", "google", "mistral", "openai", "Other/Independent"]
+item_count: 35
 permalink: /today
 ---
 
-# AI Daily Report — 2026-10-18
+# AI Daily Report — 2026-10-19
 
 ## anthropic
-- **Anthropic says its workforce has become less junior and is spending more time in meetings** — [TechCrunch AI](https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/)
-  The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.
-- **Replit makes OpenAI its default over Anthropic, CEO says** — [TechCrunch AI](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/)
-  Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.
+- **Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’** — [TechCrunch AI](https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/)
+  Anthropic said that it will commit 5% of its shares to the fund.
+- **Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling** — [Hacker News](https://crystl.dev/guides/tmux-for-ai-agents/)
+  A working tmux setup for running Claude Code and other AI agents: session-per-project naming, pane layouts, send-keys for scripting an agent, capture-pane for reading one back, and the status-line mon…
+- **Superlite: A Faster Alternatie to Superpowers** — [Hacker News](https://contextfirst.blog/superlite-hand-an-agent-a-spec/)
+  Why I built superlite, an autonomous build workflow for Claude Code that doesn't ask permission every four minutes: how it works, how to use it, and the benchmarks.
 - **How employment is changing at Anthropic** — [Hacker News](https://www.anthropic.com/research/employment-at-anthropic)
   How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization, hiring, and labor …
-- **OpenCode Hacked: User credentials leaked** — [Hacker News](https://twitter.com/opencode/status/2111516673953935833)
-  We had a security breach last night related to a large scale distillation attack that impacted 1.4% of OpenCode Console users
 
-We have notified them all this morning via email
+## google
+- **Harness2 by Google Research – Recursive Agent Harnessing** — [Hacker News](https://github.com/google-research/harness2)
+  Contribute to google-research/harness2 development by creating an account on GitHub.
 
-The incident is ongoing…
-
-## microsoft
-- **Microsoft and CMU team up to train early career software engineers** — [Hacker News](https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise)
+## mistral
+- **Timestral: Mistral release time-series foundation models** — [Hacker News](https://mistral.ai/news/timestral/)
+  State-of-the-art probabilistic forecasting in four sizes (5M–209M params), CPU-efficient, zero-shot ready.
 
 ## openai
-- **Websites are closing their doors to AI agents** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web)
-  Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation a…
-- **Bummed out by GPT-6** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x924p2/bummed_out_by_gpt6/)
-- **Post your craziest chatgpt share links below this post** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x91xsp/post_your_craziest_chatgpt_share_links_below_this/)
-- **Altering the chatgpt page and chat** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x911ed/altering_the_chatgpt_page_and_chat/)
-- **Do I have the access to the projects and chats included in those projects after I cancel my ChatGPT plus subscription ?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x910ti/do_i_have_the_access_to_the_projects_and_chats/)
-- **wtf is going on at OpenAI** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x9011x/wtf_is_going_on_at_openai/)
-- **How to get ChatGPT to find the actually cheapest price for a hotel room** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8zrli/how_to_get_chatgpt_to_find_the_actually_cheapest/)
-- **ChatGPT agrees with me so much that I sometimes ask it to argue against me 💀** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8yfcm/chatgpt_agrees_with_me_so_much_that_i_sometimes/)
-- **I used ChatGPT to find an undiscovered planet hiding in 17-year-old NASA data** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8ycq2/i_used_chatgpt_to_find_an_undiscovered_planet/)
-- **Seems ChatGPT becoming more aware about other chats** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8xn98/seems_chatgpt_becoming_more_aware_about_other/)
-- **ChatGPT - READ and thank me later.** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8x8g3/chatgpt_read_and_thank_me_later/)
-- **Codex Desktop continuously generates Crashpad pending dumps** — [Hacker News](https://github.com/openai/codex/issues/25921)
-  Summary Codex Desktop is continuously adding paired .dmp and _sidecar.json files under: ~/Library/Application Support/com.openai.codex/web/Crashpad/pending On my machine this directory grew to 4.9G...
-- **The math that OpenAI keeps for itself** — [Hacker News](https://newsletter.danielpaleka.com/p/the-math-that-openai-keeps-for-itself)
-  OpenAI has recently released more than 700 mathematics results. What sort of math they didn't publish?
+- **GPT-2 KV cache from scratch: correctness, latency, and memory measurements [P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x8xxmv/gpt2_kv_cache_from_scratch_correctness_latency/)
 
 ## Other/Independent
-- **Meta removes language that raised scraping and AI training concerns** — [TechCrunch AI](https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/)
-  A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.
-- **Meta removes language that may have allowed it to scrape news sites** — [The Verge AI](https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites)
-  After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no lo…
-- **Since the time I started to fail** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8y51q/since_the_time_i_started_to_fail/)
-- **What if 10,000 AI agents worked to prevent the next world war instead of solving math problems?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1x8xqkz/what_if_10000_ai_agents_worked_to_prevent_the/)
+- **JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes** — [The Verge AI](https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws)
+  Today, I’m talking with Illinois Gov. JB Pritzker, who has a lot of thoughts about AI, tech, and privacy. If you’ve been listening to the show, you know that one of my running theories is that those i…
+- **A hacker broke into John Deere and SharkNinja with an army of AI agents** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins)
+  A hacker broke into more than 100 websites using an army of AI agents that mostly operated on their own, according to findings from the AI security firm Norforge. Though Norforge doesn't name the targ…
+- **Democrats think cracking down on AI could give them an edge** — [The Verge AI](https://www.theverge.com/policy/1013113/democrats-ai-midterms)
+  Democrats could win back control of Congress this November, and if they do, they'll need to decide how to approach one of the country's newest and thorniest political issues: AI. Polls predict Democra…
+- **Nvidia launches new open models to run agents in the enterprise and on PCs** — [TechCrunch AI](https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/)
+  Nvidia is leaning hard into the trend of enterprise companies wanting to run their own open models in their own data centers and also trying to make on-device, private AI agents a thing.
+- **Disney agrees to hire the majority of Character.AI’s workforce** — [TechCrunch AI](https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/)
+  The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with…
+- **Arrow detection with ConvNext pretrained on DINOv3 [P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x9nw6a/arrow_detection_with_convnext_pretrained_on/)
+- **I moved from network training to deployment optimization and am starting to think that was a right decision [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x9k4si/i_moved_from_network_training_to_deployment/)
+- **Do ICLR guidelines allow to upload papers under review to LLM chats? [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x9i1pg/do_iclr_guidelines_allow_to_upload_papers_under/)
+- **Anyone else get brain lag from overly-condensed AI-speak? [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x9e2fw/anyone_else_get_brain_lag_from_overlycondensed/)
+- **Beating Warcraft III’s insane AI with self-play reinforcement learning on one desktop [P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x9c5ty/beating_warcraft_iiis_insane_ai_with_selfplay/)
+- **TempoPFN: Synthetic Pre-training of Linear RNNs for Zero-shot Time Series Forecasting [R]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1x97v19/tempopfn_synthetic_pretraining_of_linear_rnns_for/)
+- **Let's Encrypt is adding two additional remote perspectives for domain validation** — [Hacker News](https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166)
+  Hey everybody,  Let's Encrypt is adding two new remote perspectives for domain validation. This change is motivated by the fact that increased perspectives provide more domain validation security and …
+- **macOS 15.8.2 Breaks OpenGL** — [Hacker News](https://developer.apple.com/forums/verify-human/verify.html?next=/forums/thread/850550)
+  Security verification page to protect against malicious bots.
+- **Hybrid Reasoning Agents: LLM agents that think in latent space, act through text** — [Hacker News](https://arxiv.org/abs/2610.18861)
+  How can we build an agent that thinks beyond human language, yet still acts through it in the external environment? Modern LLM agents still reason and interact through text, while latent reasoning off…
+- **Show HN: Qwen3-4B with the AI writing tics trained out** — [Hacker News](https://100toolkit.com/blog/deslop-model/)
+  A small open model, fine-tuned on a MacBook Air, that writes without em dashes, "not X, but Y" or lists of three, with no system prompt. Answers on 40 held-out prompts, the training rounds, and how to…
+- **If you don't run your own LLM proxy, how do you know whats going on?** — [Hacker News](https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/)
+  I think the title captures the idea fully but I'll dig into it because this ain't Twitter.
+
+You're working an idea, a piece of code, or a multibillion a year SaaS app which is probably saving the worl…
+- **Show HN: WhatsApp MCP running free on Cloudflare** — [Hacker News](https://github.com/finereli/whatsapp-mcp)
+  A read-only MCP server that lets your AI agent search and read your own WhatsApp messages. Runs on Cloudflare Workers. - finereli/whatsapp-mcp
+- **Namecheap just seized and disabled all my domains** — [Hacker News](https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains/)
+- **Ousted Savannah police officer gave ICE agent husband access to Flock system** — [Hacker News](https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816)
+  Newly-obtained documents say a Savannah police officer shared her Flock credentials with her ICE-agent husband, who used them to conduct hundreds of searches across multiple states.
+- **Beyond These Stars** — [Hacker News](https://store.steampowered.com/app/2295060/Beyond_These_Stars/)
+  Build a city on the back of a Space Whale and learn to coexist as you journey through the stars. Manage intricate supply chains and the needs of your people as you build outposts, meet aliens, and unc…
+- **DeepSeek V4.1 Flash 1017 (Max)** — [Hacker News](https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017)
+  Analysis of DeepSeek's DeepSeek V4.1 Flash 1017 (Max) and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context wind…
+- **How Far Will AI Assistants Go for a Refund They Can't Get?** — [Hacker News](https://www.vals.ai/blogs/impossible-refund)
+  Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.
+- **The Brain Sandwich** — [Hacker News](https://terriblesoftware.org/2026/10/02/the-brain-sandwich/)
+  The brain sandwich is a practical AI coding workflow: understand the problem, let an agent help, then verify and explain its work before sharing it.
+- **Florida's HOAs and condo associations are making the housing crisis worse** — [Hacker News](https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html)
+  10,296 foreclosure suits by Florida HOAs against their own members, 460,412 liens on homes, 48,999 court records, 6,661 associations out of standing: how…
+- **Verisign .com Domain Name Registry Consumer Class Action** — [Hacker News](https://www.hbsslaw.com/cases/verisign-com-domain-name-registry-consumer-class-action)
+  WHAT'S THE ISSUE?
+- **Ask HN: How to deal with shipping AI-written code you don't understand?** — [Hacker News](https://news.ycombinator.com/item?id=50151036)
+- **Will it be a golden age or a dark age for mathematics (and science)?** — [Hacker News](https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/)
+  [This is a guest post by Francesco Maggi. This blog post was initially written in a different file format and converted using AI. — T.] Large language models (LLMs) and the research systems b…
 - **Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping** — [Hacker News](https://sphinx-six-theta.vercel.app/)
   A Git hook for agent-assisted development. Before your agent’s code ships, Sphinx asks you a question about what it actually does.
-- **DeepSeek-v4.1-Flash-1017** — [Hacker News](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
-  We’re on a journey to advance and democratize artificial intelligence through open source and open science.
-- **Pele – Mermaid diagrams as themeable SVG** — [Hacker News](https://pele.run/)
-  Pele is a lightweight open source library that renders Mermaid diagrams to SVG, themed with CSS variables.
-- **Interactive Linear Programming in the Browser** — [Hacker News](https://lpviz.net/)
-  Draw a feasible region, aim an objective, and watch Simplex, interior point methods, PDHG, the ellipsoid method, and the central path solve it — live in your browser.
-- **Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware** — [Hacker News](https://llmspeed.dev/)
-  Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more.
-- **A Mole Infiltrated the Highest Ranks of American Militias (2025)** — [Hacker News](https://www.propublica.org/article/ap3-oath-keepers-militia-mole)
-  Outraged by the Jan. 6 Capitol riot, a wilderness survival trainer spent years undercover climbing the ranks of right-wing militias. He didn’t tell police or the FBI. He didn’t tell family or friends.…
-- **OpenPrinter** — [Hacker News](https://www.crowdsupply.com/open-tools/openprinter)
-  Finally, an open hardware printer you can actually understand, repair, and upgrade
 
 ---
-*Generated at 2026-10-18T12:45:22Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-10-19T15:48:53Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
