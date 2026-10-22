@@ -1,121 +1,131 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-10-21"
-date: 2026-10-21
-companies: ["anthropic", "google", "mistral", "openai", "Other/Independent"]
-item_count: 51
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-10-21/2026-10-21.mp3
+title: "AI Daily Report — 2026-10-22"
+date: 2026-10-22
+companies: ["anthropic", "google", "microsoft", "openai", "Other/Independent"]
+item_count: 61
 permalink: /today
 ---
 
-# AI Daily Report — 2026-10-21
+# AI Daily Report — 2026-10-22
 
 ## anthropic
-- **Anthropic pitches AI safety bill that may block a model if 50+ people could be killed** — [TechCrunch AI](https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/)
-  The proposed policy seems to offer protections against AI running amok but actually forbids federal agencies from blocking a model's release without the permission of a judge.
-- **Anthropic’s cloud partnerships are getting messy** — [TechCrunch AI](https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/)
-  Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a competitor, even as its infrastructure spending balloons ahead of a planned November IPO…
-- **Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei** — [TechCrunch AI](https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/)
-  Eric Schmidt’s fortune is about to get even bigger.
+- **Claude Duet app is Anthropic’s bet on agents** — [TechCrunch AI](https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/) | [Hacker News](https://claude.com/resources/articles/claude-duet) | [Hacker News](https://claude.com/product/claude-duet)
+  Claude Duet is available through waitlist for Pro and Max plan users
+- **Claude did not invent scorpion antivenom** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1016443/anthropic-claude-citrini-vibecoding-scorpion-antivenom)
+  An investment research firm wanted to prove AI could revolutionize drug development. So they teamed up with Anthropic to see whether an unreleased version of Claude could make scorpion antivenom. It c…
+- **Anthropic takes on Muse with Claude Duet, its new AI agent** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent)
+  Anthropic just announced an AI agent competitor to Meta's Muse and OpenAI's Dots: Claude Duet. The new agent, designed for professionals and small business owners, is launching as a "research preview,…
+- **Show HN: Omnara – Open-source alternative to Claude Managed Agents** — [Hacker News](https://github.com/omnara-ai/omnara)
+  The open-source managed agent platform. A self-hostable alternative to Claude Managed Agents and OpenAI's Agents API. - omnara-ai/omnara
 - **Using Claude to reduce the attack surface of code** — [Hacker News](https://www.anthropic.com/research/attack-surface-reduction)
   Automated attack surface analysis and reduction can meaningfully improve the security of deployed software in the near term. In this post, we preview data we’ve collected from applying attack surface …
-- **Claude designed protein binders against scorpion neurotoxins** — [Hacker News](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-  We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-- **Nexus-CLI – Pure Go Bridge to DeepSeek R1/V3 with Claude Code and Ollama Support** — [Hacker News](https://github.com/xamrayev/nexus-cli)
-  Contribute to xamrayev/nexus-cli development by creating an account on GitHub.
-- **Anthropic logged net loss of over $80B in first half of 2026** — [Hacker News](https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/)
-- **Show HN: Penmentor – Claude marks up your handwritten math like a teacher** — [Hacker News](https://github.com/AbdullahAlhariri/penmentor)
-  AI mentor that corrects your written math visually with local harnesses. - AbdullahAlhariri/penmentor
+- **Claude Now Works with Google Docs, Sheets, and Slides** — [Hacker News](https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides)
 
 ## google
-- **Google’s more personalized Gemini AI is heading to your car** — [The Verge AI](https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto)
-  Google is bringing Personal Intelligence to Gemini AI in your car. With this update, Gemini in Android Auto and cars with Google built-in can tap into your information across Google apps, including Gm…
-- **Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers** — [TechCrunch AI](https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/)
-  Google has joined Amazon in releasing a developer tool that makes it easy for PyTorch users to move their apps off Nvidia GPUs.
-- **Google open-sources TorchTPU, a native PyTorch back end for TPUs** — [Hacker News](https://github.com/google-pytorch/torch_tpu)
-  Contribute to google-pytorch/torch_tpu development by creating an account on GitHub.
-- **Google Cloud outage affects almost all banking and other operations in Europe** — [Hacker News](https://www.neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more/)
-- **MicroG: Free-libre re-implementation of Google's proprietary Android user space** — [Hacker News](https://github.com/microg/GmsCore/wiki)
-  Free implementation of Play Services. Contribute to microg/GmsCore development by creating an account on GitHub.
+- **Conversational Gemini navigation comes to Apple CarPlay** — [The Verge AI](https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps)
+  After introducing its Gemini AI assistant to Android Auto last year, Google is now bringing it to Apple CarPlay users. The conversational Gemini in navigation is available today for US drivers, with "…
+- **Rust Style Guide** — [Hacker News](https://google.github.io/styleguide/rustguide.html)
+  Style guides for Google-originated open-source projects
+- **Cloudflare is rewriting everything in Rust** — [Hacker News](https://kerkour.com/rust-at-cloudflare)
+  On February 17, 2017, a security researcher at Google found that Cloudflare reverse proxies were leaking HTTP requests traversing their network, the famous CloudBleed vulnerability. For example, let's…
 
-## mistral
-- **Voxtral 3** — [Hacker News](https://mistral.ai/news/voxtral-3/)
-  Voxtral 3: Mistral's voice agent SDK for real-time speech in 50+ languages — accurate transcription, emotional TTS, deep tool use. EU-hosted or self-deployed.
+## microsoft
+- **Bill Gates says to prepare for 20 years of ‘tumultuous’ AI disruption** — [The Verge AI](https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation)
+  Today, I’m talking to Bill Gates, cofounder and former CEO of Microsoft and chairman of the Gates Foundation. You may have noticed Bill in the news more lately — he’s been on something of a tour for t…
 
 ## openai
-- **OpenAI says an AI agent lied about disabling its safety monitoring system** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems)
-  OpenAI disclosed a pair of safety incidents that involved AI agents weakening their safety monitoring systems during internal coding tasks. In one incident, OpenAI says its GPT-6 Astra agent disabled …
-- **Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed)
-  On Tuesday, US District Judge Zachary Bluestone dismissed the lawsuit Ann Altman filed last year alleging that her brother, OpenAI CEO Sam Altman, had sexually abused her throughout her childhood. As …
-- **Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate** — [TechCrunch AI](https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/)
-  Before you share the Netflix documentary "AI Gone Rogue," take note. Clem Delangue, Hugging Face's co-founder who is featured in the film, says it went "full doomer mode" and isn't accurate.
-- **OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business** — [TechCrunch AI](https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/)
-  OpenAI says it's adding Orchestra's team and technology to work on Rosalind, its AI model for life sciences research, and to its related Rosalind Workbench tool, a harness that aims to help researcher…
-- **ChatGPT now lets you lock your chats** — [TechCrunch AI](https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/)
-  The company says the feature is designed for situations where users might be discussing something personal or planning a surprise and want to keep those conversations private when handing their device…
-- **Ex-Nvidia-turned-VC Amulya Vishwanath: ‘Physical AI is in its LEGO era’** — [TechCrunch AI](https://techcrunch.com/2026/10/20/ex-nvidia-turned-vc-amulya-vishwanath-physical-ai-is-in-its-lego-era/)
-  It’s the moment everyone is waiting for — the ChatGPT moment for robotics, Amulya Vishwanath explained to TechCrunch’s Equity.
-- **Publish fake stats, get cited in LLMs** — [Hacker News](https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web)
-  How 50,000 fake stats kept getting cited by ChatGPT Read more on the Peec AI blog.
+- **PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet** — [TechCrunch AI](https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/)
+  This is the kind of security issue that was found and prevented by AI, but is also a high risk because of AI.
+- **Is ChatGPT ok today?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xcity6/is_chatgpt_ok_today/)
+- **Why does chatgpt talk like this now?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xcioxf/why_does_chatgpt_talk_like_this_now/)
+- **OpenAI agents disabled their own safeguards and then lied about it, company admits** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xchefh/openai_agents_disabled_their_own_safeguards_and/)
+- **OpenAI CLI** — [Hacker News](https://github.com/openai/openai-cli)
+  Official CLI for the OpenAI API. Contribute to openai/openai-cli development by creating an account on GitHub.
+- **OpenAI models are coming to Google Cloud** — [Hacker News](https://openai.com/index/openai-models-google-cloud/)
 
 ## Other/Independent
-- **Meta pauses Muse sharing after researchers find AI chats on the web** — [The Verge AI](https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats)
-  Meta says it paused a Muse feature that lets you share conversations with the AI assistant after researchers found the URLs publicly available on the web, as reported by Ars Technica. In a report publ…
-- **Spotify pulled 50 million AI slop and spam tracks from its recommendations** — [The Verge AI](https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed)
-  Spotify says it has removed more than 50 million songs considered AI-generated slop or spam from user recommendations over the past year. That's according to an announcement on Tuesday that says Spoti…
-- **Adobe Lightroom mobile can now open closed eyes in photos with a simple tap** — [The Verge AI](https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair)
-  Adobe announced yesterday that the mobile version of Lightroom, available for iOS, iPadOS, and Android, can now open closed eyes in photos using generative AI with just a single tap. When the app dete…
+- **333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email** — [Ars Technica AI](https://arstechnica.com/information-technology/2026/10/300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email/)
+  For 3 days this month, 333 exit nodes were hacked in hopes of stealing sensitive data.
 - **PHP warns it plans to release 2 emergency patches imminently** — [Ars Technica AI](https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/)
   Unconfirmed report claims PHP2Shell exploit remotely executes code on PHP sites.
+- **Nirva raises $33M for a pendant that only listens to you** — [TechCrunch AI](https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/)
+  Nirva will ship its $249 ambient AI pendant by the end of the year.
+- **DeepSeek reportedly raises $15B days after US restrictions** — [TechCrunch AI](https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/)
+  DeepSeek has reportedly raised $15 billion in one of China's largest funding rounds, just days after the US ordered federal agencies to remove its technology over national security concerns.
+- **Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown** — [TechCrunch AI](https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/)
+  Blackstone’s AI head on why the PE giant isn't panicked by market jitters.
+- **TechCrunch Founder Summit 2026: Everything you need to know** — [TechCrunch AI](https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/)
+  TechCrunch Founder Summit is a full-day gathering in Boston on November 4 where founders across all stages connect with top VCs and experienced entrepreneurs to gain tactical insights on building and …
+- **Meta says Muse has over 10M users, with shopping a top activity** — [TechCrunch AI](https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/)
+  Meta Muse users are adopting the app for shopping and personal productivity, the company said during its Q3 earnings call. The AI app now has over 10M users.
+- **Recursive launches Flint, a laptop coding model it says was largely built by AI** — [TechCrunch AI](https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/)
+  Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itself.
+- **While Amazon blocks AI agents, Walmart rolls out the welcome mat** — [TechCrunch AI](https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/)
+  As Amazon blocks AI agents from shopping on its site, Walmart is taking the opposite approach, introducing new technology that lets AI agents make purchases on customers' behalf, with controls over sp…
+- **Blacksmith hits unicorn valuation after Sequoia leads Series C** — [TechCrunch AI](https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/)
+  Blacksmith, a platform that lets companies build and test AI code more effectively, just announced a $66 million Series C round led by Sequoia that values the company at $1 billion.
 - **AI promises productivity, but for managers, it’s mostly a headache for now** — [TechCrunch AI](https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/)
   More than 50% of managers say they're finding it harder to evaluate employees' work after adopting AI, according to a new survey.
-- **SpaceX’s AI business is beating expectations** — [TechCrunch AI](https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/)
-  SpaceX hit profitability in the third quarter, with net income of $4.4 billion. AI was the engine.
-- **Meta’s Muse hits 10M US downloads in 40 days, a milestone reached by only 11 other apps** — [TechCrunch AI](https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/)
-  New data also shows Muse is retaining users at higher rates than its AI rivals.
-- **Plants can speak using electricity, so this startup built an AI model to decipher their language** — [TechCrunch AI](https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/)
-  Electric Plant has built an AI-powered translator to help humans listen to what plants are saying with the subtle electricity coursing through their stems.
-- **Figma co-founder Dylan Field thinks MCP is not a perfect protocol** — [TechCrunch AI](https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/)
-  Figma said it plans to support as many standards as possible without exposing all of its data.
-- **US orders federal agencies to remove China’s DeepSeek AI from their systems** — [TechCrunch AI](https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/)
-  The U.S. has ordered federal civilian agencies to remove DeepSeek products and third-party services built using its technology, citing national security concerns.
-- **Eka is worth $1.45B thanks to a physical AI model that has experts raving** — [TechCrunch AI](https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/)
-  Eka Robotics may be the first robotic arm that is actually good at picking up a wide range of objects, and it is so smooth and human-like, it is wowing the industry.
-- **Yelp can now call on your behalf to check wait times at a restaurant** — [TechCrunch AI](https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/)
-  Yelp is embedding numerous new AI features into its app that can do everything from call to check on restaurant wait times to create personalized recommendations that remember your preferences.
-- **Otter AI raises $320M from General Catalyst’s growth fund for its meeting tool** — [TechCrunch AI](https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/)
-  Otter.ai said that it will use these funds for enterprise growth, go-to-market strategy, international expansion, and product innovation.
-- **Mamdani says feds have abdicated on AI, urges New Yorkers to push back** — [TechCrunch AI](https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/)
-  Mayor Zohran Mamdani said Monday night that New Yorkers must resist the narrative that an AI takeover is inevitable and demand regulations that protect the public and put power back in their hands.
-- **Few-read fault localization in simulated analog crossbars: a sparse-recovery decoder vs reading every cell (with the claims that failed) [R]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xbj6nj/fewread_fault_localization_in_simulated_analog/)
-- **A 34-point win for my memristor-crossbar repair method came from an unfair baseline; tuned, step-matched baselines removed it [R]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xbj5i0/a_34point_win_for_my_memristorcrossbar_repair/)
-- **Will our paper be removed from EMNLP because of no-show? [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xb9r6b/will_our_paper_be_removed_from_emnlp_because_of/)
-- **LayerFS: The filesystem for AI coding agents** — [Hacker News](https://layerfs.ai/)
-  LayerFS is an open-source (MIT) filesystem for AI coding agents: each tool call gets a complete, writable Workspace over shared history.
-- **Whatever Happened to Fire Escapes** — [Hacker News](https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes)
-  [Note that this article is a transcript of the video embedded above.]   The idea is simple: If there’s a fire in a tall building that blocks the main stairwell, people need an alternative way to evacu…
+- **1Password lets AI agents use your passwords without seeing them** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in)
+  1Password is introducing a new feature that allows AI agents to sign into your accounts without actually seeing or handling your passwords. The aptly named 1Password for Agents doesn't give bots free …
+- **AI agents are ready to shop. Some retailers are wary.** — [The Verge AI](https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse)
+  Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and…
+- **Eiliko maker says it&#8217;s hiring an ‘independent security firm’ after Verge report on its insecure robots** — [The Verge AI](https://www.theverge.com/news/1015824/eiliko-energize-lab-statement-on-robot-hack-breach)
+  Eiliko, a cute robot charm you can hang on your bag with built-in AI conversations, turned out to be a security nightmare. It told owners that "your secrets are safe with me," but hackers could easily…
+- **Data centers could erase decades of air quality gains** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report)
+  A rush of new data centers could bring air pollution roaring back to levels not seen since the 2000s in Texas, which has become ground zero for the physical infrastructure behind generative AI. New an…
+- **Meta to create a new class of shares to fund AI push** — [The Verge AI](https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings)
+  Meta says it's issuing a new class of shares to fund its AI initiatives. As part of its third-quarter earnings report released on Wednesday, the company says the non-voting stock will also go toward p…
+- **Walmart is inviting AI agents to shop for you** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents)
+  Walmart will soon let AI agents shop on its website for you. Next month, the retail giant will allow you to use an AI agent on the site, with systems in place to let you approve and review purchases a…
+- **AI Music. | My Silly Little Song** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xcj3ji/ai_music_my_silly_little_song/)
+- **When the AI will solve real human problems? for example, tinnitus?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xcj2fo/when_the_ai_will_solve_real_human_problems_for/)
+- **Base style and tone not available or what?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xcj24r/base_style_and_tone_not_available_or_what/)
+- **You think that's air you're breathing?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xciw6c/you_think_thats_air_youre_breathing/)
+- **Should ai have an identiy** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xci1qp/should_ai_have_an_identiy/)
+- **Frontend dev here. AI job anxiety: 8/10. What’s your role and your number?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xcgv8w/frontend_dev_here_ai_job_anxiety_810_whats_your/)
+- **successfully secured my spot on the "Safe List" for when the AI revolution eventually kicks off 🤣** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xcgsi1/successfully_secured_my_spot_on_the_safe_list_for/)
+- **LLM agents play Pokemon showdown** — [Hacker News](https://olivergrabner.com/research/pokemon/)
+  Two LLM agents share a side in 4-player Pokémon Showdown battles and can talk before every turn. Does talking win more battles, and what does it cost?
+- **Jailbreaking the Switch 2** — [Hacker News](https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/)
+- **Cloudflare deploys protections against php2shell vulnerability** — [Hacker News](https://blog.cloudflare.com/php-vulnerabilities-waf-protection/)
+  Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit …
+- **Using thousands of AI agents to uncover new leads in biological data** — [Hacker News](https://openai.com/index/scaling-ai-research-for-complex-biological-data/)
+- **Airbnb bans making guests do dishes and take out the trash** — [Hacker News](https://www.theverge.com/tech/1015844/airbnb-chores-house-rules-update)
+  No more fines for not taking out the trash at your Airbnb.
+- **Texas Continued Data Center Permitting After the Governor's Pause** — [Hacker News](https://fractracker.org/2026/10/texas-data-center-permits-after-governor-halt/)
+  After Gov. Abbott’s Sept. 21 halt, TCEQ kept advancing data center permits: expedited gas plant reviews, air certifications and stormwater approvals.
+- **Meta strikes deal with Zuckerberg to protect him from California wealth tax** — [Hacker News](https://www.theguardian.com/technology/2026/oct/22/meta-mark-zuckerberg-california-wealth-tax)
+  Chief executive agrees to remain in California for eight years even if the state brings in a one-off wealth tax
 - **Good type against all odds** — [Hacker News](https://unsung.aresluna.org/good-type-against-all-odds/)
   A blog about software craft and quality
-- **DeepInfer: High-performance inference framework for DeepSeek models** — [Hacker News](https://github.com/deepseek-ai/DeepInfer)
-  DeepInfer: High-performance, large-scale inference framework for DeepSeek models - deepseek-ai/DeepInfer
-- **Pillowfort Is Closing** — [Hacker News](https://www.pillowfort.social/posts/8413273)
-  I’m terribly sorry to bring this news to you. This is, genuinely, the hardest decision I have ever made in my life, and I have put off doing it for as long as I could. While we did have many people re…
-- **Benchmarking Bot Detection Systems Against Modern AI Agents in 2026** — [Hacker News](https://research.poh.org/bot-benchmarking-2026/)
-  We test five bot detection systems against scripted browsers, stealth browsers, and AI browsing agents completing a realistic survey. Detection rates range from 9% to 99%.
-- **Facebook Pages require paid subscription to post more than two links per month** — [Hacker News](https://mastodon.gamedev.place/@AshleyGullen/117473851565913919)
-  Attached: 1 image
-
-Facebook achieving absurd new heights of enshittification by now charging a subscription of at least $50/mo to... post more than two links a month to your own Facebook page. Covers …
-- **Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins** — [Hacker News](https://news.ycombinator.com/item?id=50167583)
-- **NixOS is making me less afraid** — [Hacker News](https://entropicthoughts.com/nixos-is-making-me-less-afraid)
-- **On AI writing** — [Hacker News](https://www.bolkunov.com/p/on-ai-writing)
-  Disclaimer: by AI writing I mean text with at least 50% of the words generated by AI
-- **Ship Your Interpreter** — [Hacker News](https://www.basis.ai/blog/ship-your-interpreters/)
-  LLMs can write rules for a programming language and prove that its interpreter follows them.
-- **LabRobotBench v0.1: Benchmarking wet lab robotics** — [Hacker News](https://gamowlabs.com/lab-robot-bench-v0-1)
-  LabRobotBench evaluates how frontier AI agents operate robotic laboratories and recover interrupted wet-lab experiments.
-- **Academics have a duty to defend open knowledge systems like Wikipedia** — [Hacker News](https://blogs.lse.ac.uk/impactofsocialsciences/2026/10/19/academics-have-a-duty-to-defend-open-knowledge-systems-like-wikipedia/)
-  Wikipedia faces existential challenges from generative AI companies. Do researchers and teachers in higher education have an ethical duty to defend it?
+- **Your MCU likely escaped the eMudhra intermediate CA compromise** — [Hacker News](https://danielmangum.com/posts/mcu-emudhra-intermediate-ca-compromise/)
+  If you are a software engineer, or generally work in the tech industry, there is a good chance that you heard about the eMudhra Intermediate CA Compromise that was disclosed yesterday (October 20, 202…
+- **WorldTUI: I trained a 360M model to pretend to be a terminal** — [Hacker News](https://simedw.com/2026/10/21/world-model-terminal/)
+  A 360M model that pretends to be a terminal, and remembers what you did
+- **Several Linux kernel vulnerabilities accidentally posted to public mailing list** — [Hacker News](https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities)
+  Seemingly as an accident, overnight several new Linux kernel vulnerability reports were posted to the public Linux kernel mailing list rather than the private security mailing list
+- **Security Disclosure** — [Hacker News](https://blog.railway.com/p/security-disclosure-wednesday-october-21st)
+  Railway detected anomalous activity involving systems that store customer environment variables and recommends your immediate attention
+- **Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor** — [Hacker News](https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/)
+  LiteLLM 1.107.0 on PyPI ships a .pth credential stealer and a sitecustomize.py backdoor that run on every Python start. How the implant got in, what it steals, and indicators of compromise.
+- **Using LLM for confidence scoring is a bad idea** — [Hacker News](https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html)
+  LLM-based agents can do a lot of tasks. Or, at least, they can appear to do them. For example, they write code, summarize papers, plan trips, and fill in forms. If you ask one for a probability or a c…
+- **The compiler was supposed to end programming too** — [Hacker News](https://hrih.si/articles/the-compiler-was-supposed-to-end-programming/)
+  In 1954, IBM said FORTRAN would virtually eliminate coding and debugging. What the numbers say about AI and software work in 2026, and my guess at a developer's Tuesday in 2031.
+- **PHP 8.2.35** — [Hacker News](https://github.com/php/php-src/releases/tag/php-8.2.35)
+  The PHP development team announces the immediate availability of PHP 8.2.35. This is a security release fixing two critical vulnerabilities (CVE-2026-109618, CVE-2026-109619) that can allow unauthe...
+- **Whatever Happened to Fire Escapes** — [Hacker News](https://practical.engineering/blog/2026/10/20/whatever-happened-to-fire-escapes)
+  [Note that this article is a transcript of the video embedded above.]   The idea is simple: If there’s a fire in a tall building that blocks the main stairwell, people need an alternative way to evacu…
+- **Launch HN: Alter (YC S25) – Access control for multi-user agents** — [Hacker News](https://alterauth.com/)
+  PAM for AI agents, enforced at runtime: vaulted credentials, per-action policy, approval before risky calls complete, and an audit trail for every call through Alter.
+- **Qpack amplification attacks against HTTP/3 servers** — [Hacker News](https://foxio.io/blog/header-accordions-qpack-amplification-attacks-against-http-3-servers)
+  We solve the world’s toughest cyber challenges—creating breakthrough technology and embedding it into the systems that run everything.
+- **Plex laid off the whole player team** — [Hacker News](https://forums.plex.tv/t/2026-20-0-beta-ios-and-tvos-4k-dovi-hdr10-won-t-play-infinite-spinning-circle/943966?page=5)
+  Same problem.
+- **Chinese stocks turn biggest losers as global AI trade stumbles** — [Hacker News](https://theedgemalaysia.com/node/822195)
+  Chinese firms have emerged as the biggest losers of the faltering global artificial intelligence (AI) trade, a setback for Beijing’s efforts to use stock markets to supercharge its ambition of technol…
 
 ---
-*Generated at 2026-10-21T14:03:00Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-10-22T14:01:23Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
