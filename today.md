@@ -1,71 +1,94 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-10-24"
-date: 2026-10-24
-companies: ["google", "openai", "Other/Independent"]
-item_count: 30
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-10-24/2026-10-24.mp3
+title: "AI Daily Report — 2026-10-25"
+date: 2026-10-25
+companies: ["anthropic", "google", "meta", "microsoft", "openai", "xai", "Other/Independent"]
+item_count: 41
 permalink: /today
 ---
 
-# AI Daily Report — 2026-10-24
+# AI Daily Report — 2026-10-25
+
+## anthropic
+- **ChatGPT vs Claude** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xf12lh/chatgpt_vs_claude/)
+- **Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness** — [Hacker News](https://github.com/slee-persis/GVS5H)
+  GVS5H: Five Qwen3.8-27B Models Match Claude Fable 5 on LiveCodeBench Hard  |  Fable 5 Level Coding for a Fifth the Price - or on a Single GPU - slee-persis/GVS5H
+- **Making My Blog Readable by AI Agents** — [Hacker News](https://deallocatedobjects.com/posts/making-my-blog-readable-by-ai-agents)
+  A lot of the people reading this blog now aren’t people. They’re agents: Claude, ChatGPT, Perplexity and friends, fetching a page because somebody asked them a question. This week I spent an evening m…
 
 ## google
-- **Now Google says it might use your Gmail and Google Photos data to target ads** — [The Verge AI](https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update)
-  Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Aut…
+- **Google’s AI search changes upended online publishing** — [The Verge AI](https://www.theverge.com/column/1017983/google-ai-search-online-publishing)
+  This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inbox…
 - **Around a dozen banking apps began specifically permitting GrapheneOS** — [Hacker News](https://grapheneos.social/@GrapheneOS/117492375462459244)
   @maya@gs.lexinova.eu @OmegaPolice@hachyderm.io @britter@chaos.social Most banking apps work on GrapheneOS but many have memory corruption bugs and incorrect anti-tampering code requiring our per-app e…
-- **Gemma-4-26B-A4B with 39-69% less thinking at same accuracy** — [Hacker News](https://bottlecapai.com/post/thinkingcap-gemma-4-26b/)
-  This is the fifth model in the ThinkingCap series. We reduced how much Google's gemma-4-26B-A4B-it thinks, without compromising the quality of its answers.
-- **German court calls Google aerial imagery 'spying'** — [Hacker News](https://www.courthousenews.com/german-court-calls-google-aerial-imagery-spying/)
-  After winning a privacy case against Google Street View and Apple Look Around, a homeowner in Frankfurt has scored a win against Google Earth and Google Maps for displaying his property.
+
+## meta
+- **Meta Ignores Brazilian Court Order to End Bolsonaro Favoritism** — [Hacker News](https://www.panamericandispatch.org/p/meta-ignores-brazilian-court-order)
+  Sleeping Giants and CTRL-Z sent evidence to Brazil’s Superior Electoral Court today showing Meta AI continues to spontaneously link Lula to negative content
+
+## microsoft
+- **Xbox Turns Down Netflix $500M Offer** — [Hacker News](https://www.darkhorizons.com/xbox-turns-down-netflix-500-million-offer/)
+  Netflix reportedly offered Microsoft $500 million for a seven year deal that would allow the streaming giant to adapt shows and films about Xbox characters. Puck broke the news, indicating that Micros…
 
 ## openai
-- **OpenAI now trains its frontier AI models with no internet access** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet)
-  OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment …
-- **OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”** — [TechCrunch AI](https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/)
-  OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.
-- **Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended** — [Hacker News](https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/)
+- **The AI graveyard: a running list of projects and startups that didn’t make it** — [TechCrunch AI](https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/)
+  From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.
+- **ChatGPT found my lost earbud** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xf17xz/chatgpt_found_my_lost_earbud/)
+- **I tested ChatGPT to save 2 conjoined twins and 2 healthy twins, Swipe for the full chat.** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xf15xx/i_tested_chatgpt_to_save_2_conjoined_twins_and_2/)
+- **Ever had a date with chatgpt?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xf10sf/ever_had_a_date_with_chatgpt/)
+- **My ChatGPT chat history is horrible** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xf0tot/my_chatgpt_chat_history_is_horrible/)
+- **OpenAI sous titré en Fr ! Wow** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xf0kwo/openai_sous_titr%C3%A9_en_fr_wow/)
+- **My chatGPT has opinions on anglerfish 😂😂 (sorry for the jump scare to anyone, it loves jump scaring me in the chat!! 😤)** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xf07vq/my_chatgpt_has_opinions_on_anglerfish_sorry_for/)
+- **I got tired of scrolling through long ChatGPT chats, so I brought back the table of contents** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xezzap/i_got_tired_of_scrolling_through_long_chatgpt/)
+- **Apparently a Bulgarian ChatGPT themed song is a thing** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xezucw/apparently_a_bulgarian_chatgpt_themed_song_is_a/)
+- **Asked ChatGPT: How many dumplings are on the table?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xezotv/asked_chatgpt_how_many_dumplings_are_on_the_table/)
+- **ChatGPT Classic companion is available in new chatgpt aap or not on Mac?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xeygqt/chatgpt_classic_companion_is_available_in_new/)
+- **Anyone else frustrated with GPT-6.1 Sol not finishing tasks?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xeygkd/anyone_else_frustrated_with_gpt61_sol_not/)
+- **Reading ChatGPT's explanation feels like learning. Getting quizzed on it right after shows how little actually stuck** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xex4nd/reading_chatgpts_explanation_feels_like_learning/)
+- **Oai-math-revised: a community hub for revising OpenAI's math write-ups** — [Hacker News](https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/)
+  [This is a guest post by Abhinav Nellore, Johannes Schmitt, Soledad Villar, and Rachel Ward – T.] OpenAI’s math write-ups at can be difficult to understand and can have incomplete citat…
+
+## xai
+- **Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.** — [TechCrunch AI](https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/)
+  A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.
 
 ## Other/Independent
-- **Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech)
-  Jack Dorsey's Block announced an AI model called Dessa that's trained "from scratch on nothing but human conversation," and to show off the model, Block shared chats it has had with humans that can oc…
-- **Meta delays new business terms after publisher pushback on AI scraping** — [The Verge AI](https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping)
-  Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company.…
-- **Retro gaming is being overrun with AI** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port)
-  Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past mont…
-- **From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026** — [TechCrunch AI](https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/)
-  Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, d…
-- **Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia** — [TechCrunch AI](https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/)
-  The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.
-- **Left alone with nothing to do, AI agents started playing** — [TechCrunch AI](https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/)
-  MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.
-- **CVE Tracker** — [Hacker News](https://cve.0xosprey.com/)
-  Live count of published CVE records, rebuilt daily from the official CVE list.
-- **A whirlwind tour of systemd-nspawn containers (2025)** — [Hacker News](https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/)
-  An introduction to systemd-nspawn, a simple containerization technology that enables lightweight “virtual machines” without a hypervisor, diving into how they might be set up.
+- **Block’s new voice model sounds eerily human** — [TechCrunch AI](https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/)
+  Block said that the voice model can run locally on a MacBook M4 Max
+- **Here are the top AI agents that can live in your text messages** — [TechCrunch AI](https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/)
+  We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.
+- **Blue Planet III is keeping the rough edges in the age of AI** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai)
+  BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage t…
+- **Pennsylvania will require labels on AI-generated ads** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act)
+  On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's…
+- **Ask AI For Forgiveness - Digital Confessional** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xeypnl/ask_ai_for_forgiveness_digital_confessional/)
+- **Mediocre use of AI?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xeyc0t/mediocre_use_of_ai/)
+- **Neural chip decodes interactions between brain regions** — [Hacker News](https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/)
+  EPFL researchers have developed an implantable neural chip that tracks communication across brain regions, identifying cognitive and emotional states in real time.
+- **Nikon photography contest winner loses title after scientists spot signs of AI** — [Hacker News](https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html)
+  Nikon's 16th annual Small World in Motion contest is open to any movie or digital time-lapse photography taken through the microscope.
+- **FreeDNS** — [Hacker News](https://freedns.afraid.org/)
+  Free DNS hosting, lets you fully manage your own domain.  Dynamic DNS and Static DNS services available.  You may also create hosts off other domains that we host upon the domain owners consent, we ha…
+- **Cerebras Deploys Trillion-Parameter AI Models** — [Hacker News](https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras)
+  Learn how Cerebras maps trillion-parameter frontier models across WSE-3T wafers to deliver scalable inference at 1,000–2,000+ tokens per second.
+- **Roku developer repositories moved from GitHub to GitLab** — [Hacker News](https://blog.roku.com/developer/gitlab-move)
+  Roku provides the simplest way to stream entertainment to your TV. On your terms. With thousands of available channels to choose from.
+- **America has lost 200k of jobs in media, film and the arts. How much is AI?** — [Hacker News](https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class)
+  America is Losing Hundreds of Thousands of Jobs in Media, Film & the Arts. How Much is AI to Blame?
+- **Why is AI generated language so hard to understand?** — [Hacker News](https://arxiv.org/abs/2610.29162)
+  There is a widespread sense that AI-generated text has recently become harder to understand. In this study, we investigate a set of psycholinguistic features that are known to correlate with human pro…
+- **Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz** — [Hacker News](https://missileer.watch)
+  Emergency Action Messages heard on the HF Global Communications System, copied off air.
 - **How Block Blast harvests its players for ad money** — [Hacker News](https://ayoships.com/breakdowns/block-blast)
   Rules downloaded from their server decide your pieces, your score and your ads. One waits for an expensive ad, then asks for a hand you can’t place.
-- **Air Purifiers as White Noise Machines** — [Hacker News](https://www.jefftk.com/p/air-purifiers-as-white-noise-machines)
-  White noise machines are widely used for sound masking, increasing privacy in offices and helping people sleep. The  classic approach is a fan in a box, though in the past ten years people have mostly…
-- **Alzheimer's breakthrough: 2 hrs of sleep restored without clearing brain plaques** — [Hacker News](https://www.sciencedaily.com/releases/2026/10/261018084421.htm)
-  Scientists have uncovered an unexpected culprit behind sleep loss in Alzheimer’s disease: overactive immune cells in the brain. By temporarily removing these cells, researchers restored more than two …
+- **Show HN: Autonomous root for Tcl Android TV via CVE-2022-22706** — [Hacker News](https://gitlab.com/c4psu13/mali-pagecache-root)
+  TCL 50C721 (RTD1319 / Mali-G31) root toolkit — autonomous CVE-2022-22706 exploit chain
+- **A CA key that was the number 4 passed its audit. Nobody was assigned to check it** — [Hacker News](https://pilgrima.ge/p/someone-else-checked)
+  On a titanium tea set, a secret key that was the number 4, and the woman who went down the stairs
+- **No signs of AI payoff outside the tech sector** — [Hacker News](https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector)
+  Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech. Subscribe for daily updates.
 - **AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist** — [Hacker News](https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/)
   A fresh academic paper on Z-Library cites a TorrentFreak article that doesn’t exist, and several other sources in the paper are also unfindable. The authors disclose that they used AI tools, which may…
-- **Securing our frontier model training environment** — [Hacker News](https://openai.com/index/securing-our-frontier-model-training-environment/)
-- **Indian government sites are serving revoked eMudhra certificates** — [Hacker News](https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/)
-  On 17th October, eight eMudhra intermediate CAs chaining to emSign ECC Root CA - G3 were found to have trivially recoverable private keys. They were revoked the next day, and Mozilla and Chrome are no…
-- **Dessa: Conversation Model trained only on speech** — [Hacker News](https://block.xyz/dessa)
-  You learned to talk by listening. So did Dessa. A research preview of a full-duplex speech model.
-- **The future might just be software freedom (and less e-waste)** — [Hacker News](https://thederf.com/the-future-might-just-be-software-freedom/)
-  Cheap software makes e-waste useful again, and owning your own devices practical.
-- **Got a pretrained music transformer to jam with me live, no fine-tuning, just steering the sampling [P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xe4pex/got_a_pretrained_music_transformer_to_jam_with_me/)
-- **Are we solving LLM memory by remembering more, when the real problem is knowing what to forget?[D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xdpek9/are_we_solving_llm_memory_by_remembering_more/)
-- **[R] The Hive Mind is a Single Reinforcement Learning Agent: Deriving the Exact Equivalence Between Swarm Dynamics and Multi-Armed Bandits** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xdhf7r/r_the_hive_mind_is_a_single_reinforcement/)
-- **Study Notes on Transformers and Hamiltonian Monte Carlo [P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xdfeki/study_notes_on_transformers_and_hamiltonian_monte/)
-- **Is symbolic ai dead? [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xdekrf/is_symbolic_ai_dead_d/)
-- **AAAI 2027 phase 2 reviews discussion [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xddbgv/aaai_2027_phase_2_reviews_discussion_d/)
-- **I made Transformer Architecture from scratch [P]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xdctou/i_made_transformer_architecture_from_scratch_p/)
 
 ---
-*Generated at 2026-10-24T12:52:39Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-10-25T13:18:38Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
