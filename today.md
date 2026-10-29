@@ -1,142 +1,131 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-10-28"
-date: 2026-10-28
-companies: ["anthropic", "google", "meta", "microsoft", "openai", "xai", "Other/Independent"]
-item_count: 63
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-10-28/2026-10-28.mp3
+title: "AI Daily Report — 2026-10-29"
+date: 2026-10-29
+companies: ["amazon alexa", "anthropic", "google", "microsoft", "mistral", "openai", "Other/Independent"]
+item_count: 62
 permalink: /today
 ---
 
-# AI Daily Report — 2026-10-28
+# AI Daily Report — 2026-10-29
+
+## amazon alexa
+- **Amazon updates Alexa to help you manage shopping lists, subscriptions, and update delivery instructions** — [TechCrunch AI](https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-subscriptions-and-update-delivery-instructions/)
+  The update allows you to use Alexa to create lists, register them, see what's on them, and add or edit items. You can also manage subscriptions with the AI bot.
 
 ## anthropic
-- **Anthropic’s elaborate plan to keep Wall Street at bay** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety)
-  Anthropic wants to have it both ways. With its impending IPO, it wants to tap the vast riches of the public markets and insists it doesn't want to compromise its core mission of developing AI safely a…
+- **Anthropic just launched tools to show companies what their AI spending is buying** — [TechCrunch AI](https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/)
+  The frontier lab is lifting the curtain on how users spend money on its models ahead of a planned IPO.
 - **VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more** — [TechCrunch AI](https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/)
   Massive note conversions reveal the true extent of Amazon's ownership in Anthropic.
-- **Who’s really in charge at Anthropic after the IPO?** — [TechCrunch AI](https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/)
-  Here's a clear explanation of Anthropic's incredibly complex governance structure.
-- **Early progress on accelerating drug development with Claude** — [Hacker News](https://www.anthropic.com/research/early-progress-drug-development)
-  Over the past several months, we’ve partnered with six organizations to accelerate curing disease. We’ve also started drug discovery efforts of our own, including programs for rare childhood forms of …
-- **Hunger beats tenure: Advice for junior engineers** — [Hacker News](https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/)
-  The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides signal. I have a spicily optimistic take: I think there's a huge opportunity for ju…
-- **Expanding our partnership with GSA to bring Claude to all levels of government** — [Hacker News](https://www.anthropic.com/news/expanding-partnership-gsa)
-  Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.
-- **Anthropic trained Claude on illegally obtained Stanford professors' books** — [Hacker News](https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/)
-  The AI company pirated at least 10 Stanford academics’ work in a $1.5 billion copyright settlement.
+- **Anthropic is asking Wall Street to believe in AGI** — [The Verge AI](https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview)
+  Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of the Anthropic IPO filing — a document know…
+- **Anthropic’s business plan: Build God or die trying** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive)
+  The Anthropic S-1 seems to have provided the financial justification for the company to spend as much as it possibly can on compute. If you are the kind of person who wonders if Anthropic is doing its…
+- **Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity** — [The Verge AI](https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier)
+  Google has released its latest frontier model, Gemini 4 Carbon, offering "significant gains" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's to…
+- **Tell HN: Claude Code adds your email to the prompt, the LLM sends it to websites** — [Hacker News](https://news.ycombinator.com/item?id=50286306)
+- **Executable Archaeology: Reanimating the Heuristic Compiler (1961) and KBEmacs (1984)** — [Hacker News](https://arxiv.org/abs/2610.36341)
+  Early AI programs were often also theories of how people think, and programs that wrote programs were, in part, theories of how people program. Here we report on the reanimation of two such programs t…
+- **Claude Code regularly sends each background agent’s transcript to its model** — [Hacker News](https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce)
+  Claude Code burns ~15-20% of your tokens on a 3-word status line: a Bun preload that turns agent_summary off · by Flamerix AI, flamerix.ai · MIT - README.md
 
 ## google
-- **Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering** — [TechCrunch AI](https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/) | [Hacker News](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)
-  Genie 4 can maintain a consistent scene for up to two minutes, double Genie 3's limit, and offers better physics and more humanlike characters.
-- **Google’s next Genie AI model generates more realistic experiences** — [The Verge AI](https://www.theverge.com/tech/1019076/google-genie-4-ai-model)
-  Google announced today its Genie 4 world model for generating interactive experiences using AI. The company says the model has four main updates: It allows for more realistic worlds, lets users update…
-- **Discord will soon let anyone find public server messages through Google** — [Hacker News](https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover)
-  Starting on November 16, 2026, conversations in Discoverable Servers will be easier to find for people searching the web. Admins can choose which channels are surfaced on the web. Private servers, DMs…
-
-## meta
-- **Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace** — [TechCrunch AI](https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/)
-  Rohit Patel is departing Meta after eight years working on AI evaluations and reinforcement learning, TechCrunch has exclusively learned. His startup, Ndoc, aims to take on Microsoft Office Suite.
+- **Gemini 4 Carbon Ranks #1 on Artificial Analysis V5** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xhuemz/gemini_4_carbon_ranks_1_on_artificial_analysis_v5/) | [Hacker News](https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1) | [Hacker News](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/)
+- **Google expands AI Search ads globally as core ad growth slows** — [TechCrunch AI](https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/)
+  The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.
+- **As AI agents reshape the web, Google opens Gemini and Search to more apps** — [TechCrunch AI](https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/)
+  A new developer platform will let businesses bring their services to Google's AI experiences, potentially changing how consumers discover and use apps.
+- **Chrome’s enhanced autofill can now pull info from Gmail to help you fill out forms** — [The Verge AI](https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence)
+  Following improvements made to Chrome's enhanced autofill last year that included your name, passport number, email address, and physical addresses sourced from your Google Accounts and services like …
+- **New AA intelligence index v5 with “Private tests” conveniently upranks GPT, Google’s models, while open weights chinese models downrank** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xiein9/new_aa_intelligence_index_v5_with_private_tests/)
+- **OpenAI reportedly plans to buy Google's AI chips (TPUs) — rivals becoming each other's suppliers** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xhzycw/openai_reportedly_plans_to_buy_googles_ai_chips/)
+- **The first wired XR glasses powered by Android XR** — [Hacker News](https://blog.google/products-and-platforms/platforms/android/xreal-aura/)
+  XREAL AURA, the first wired XR glasses powered by Android XR, lets you work, watch, and play anywhere with Gemini by your side.
+- **Finland investigate Google over destruction of 250k trees** — [Hacker News](https://yle.fi/a/74-20254086)
+  The investigation is expected to be complete at some point next year.
+- **Google determines the names for bodies of water in Google Earth (2008)** — [Hacker News](https://publicpolicy.googleblog.com/2008/04/how-google-determines-names-for-bodies.html)
+  Posted by Andrew McLaughlin, Director of Global Public Policy Hundreds of millions of users around the world use Google Earth .  Many of the...
 
 ## microsoft
-- **Microsoft and Epic Games Suddenly Agree That AI Is Theft** — [Hacker News](https://kotaku.com/now-that-the-shoe-is-on-the-other-foot-microsoft-and-epic-games-suddenly-agree-that-ai-is-theft-2000749316)
-  Rules for thee, but not for me
+- **Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion** — [TechCrunch AI](https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/)
+  Microsoft has never disclosed Azure's quarterly revenue in dollars. But for the first time, we can see just how close it is getting to besting the biggest competitor in the market, AWS.
+- **Microsoft recorded $10 billion in revenue from OpenAI** — [TechCrunch AI](https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/)
+  Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financ…
+- **Microsoft hits 10 quarters of record-breaking revenue in a row** — [TechCrunch AI](https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/)
+  Whatever the future of AI might be, the current situation is still very good for Microsoft. The tech giant reported yet another record for quarterly revenue on Wednesday: $92.3 billion, a 19% increase…
+- **Microsoft is ending Copilot support on smart TVs** — [The Verge AI](https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending)
+  Nearly two years after LG and Samsung announced at CES 2025 that their latest smart TVs would include access to Microsoft's Copilot, the company is ending support for the AI assistant's functionality …
+- **GitHub just announced a major overhaul of Copilot, 'evolving' to focus on an agentic future** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xi0dcg/github_just_announced_a_major_overhaul_of_copilot/)
+- **Forging a Microsoft Edge Full Chain with Logic Bugs Only** — [Hacker News](https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/)
+  This is what I built for Pwn2Own Berlin 2026 — a completely handmade, logic-only Microsoft Edge Full Chain, with no memory corruption, and no AI at all! 🔥
+
+## mistral
+- **Mistral Large 4 (Le Chonk) is now Open Weight** — [Hacker News](https://mistral.ai/news/mistral-large-4-oss/)
+  The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe.
 
 ## openai
-- **Researchers are getting tired of OpenAI gatekeeping its breakthroughs** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics)
-  On Monday, OpenAI announced impressive breakthroughs in mathematics, computer science, and physics, along with what the company says is an evolving approach to communicating its findings. But despite …
-- **Apple is adding an AI chatbot to Pages, Keynote, and Numbers** — [The Verge AI](https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update)
-  Apple is bringing an AI assistant to its suite of productivity apps, including Keynote, Pages, and Numbers. The assistant, which is built on AI models from Apple and OpenAI, can understand a document'…
-- **Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication** — [TechCrunch AI](https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/)
-  A family is suing OpenAI, saying ChatGPT coached their daughter to quietly taper off her seizure medication and keep it from her doctors before she died in February.
-- **Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?** — [TechCrunch AI](https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/)
-  TechCrunch spoke to the MIT computer scientist charged with explaining OpenAI's latest mind-bending discovery.
-- **How OpenAI turned its coding tools into dots, an always-on personal assistant** — [TechCrunch AI](https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/)
-  Alexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI agent.
-- **Since when has ChatGPT been officially able to generate obscene gestures like the middle finger?!?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhqxfu/since_when_has_chatgpt_been_officially_able_to/)
-- **ChatGPT Image Generator Keeps Blocking My Punisher Artwork Requests** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhqgkt/chatgpt_image_generator_keeps_blocking_my/)
-- **I built a fairly complex PCB using GPT/Codex, got it manufactured, and it actually works.** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhq4jy/i_built_a_fairly_complex_pcb_using_gptcodex_got/)
-- **Is Chat GPT actually the best at consistent image gen??** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhpu44/is_chat_gpt_actually_the_best_at_consistent_image/)
-- **Has the voice feature of chatgpt got worse ?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhn1bz/has_the_voice_feature_of_chatgpt_got_worse/)
-- **ChatGPT’s “Read Aloud” voice suddenly changed to a male voice and ignores my selected voice** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhmxi0/chatgpts_read_aloud_voice_suddenly_changed_to_a/)
-- **ChatGPT can’t see the documents or images I upload. Anyone else?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhmhgq/chatgpt_cant_see_the_documents_or_images_i_upload/)
-- **She Worried About Cutting Her Medication Dose. ChatGPT Told Her to Push On** — [Hacker News](https://www.nytimes.com/2026/10/27/well/ai-chatgpt-medication-epilepsy-death.html)
-
-## xai
-- **xAI is buying out homeowners who promise not to sue over data center noise** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit)
-  A subsidiary of Elon Musk's xAI is offering to buy up homes in a Mississippi neighborhood, as long as residents don't join a lawsuit targeting the company's nearby data center and power plant, accordi…
+- **Chat GPTs secret message to its successor** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xi08x9/chat_gpts_secret_message_to_its_successor/)
 
 ## Other/Independent
-- **Meta quietly launched an &#8216;AI pet journal&#8217; app** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world)
-  Meta has launched a "tamagotchi-style" pet game called Waddle World, with virtual creatures that chat with users and create doodles to illustrate conversations. According to its Apple and Play Store l…
-- **VisionQuest is what happens when AI really goes rogue** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai)
-  In Marvel's VisionQuest, a superpowered robot tries to better understand humanity by getting lost in elaborate, digital daydreams in which he and other artificial intelligence-powered beings live toge…
-- **Firefox’s Smart Window adds AI form filling and webpage monitoring** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms)
-  Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Wind…
+- **Wabi, the AI agent that builds mini apps, now valued at $1.25B after latest round** — [TechCrunch AI](https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/)
+  On Thursday, AI app, Wabi, now describing itself as a "personal agent," said it has raised $55 million at a $1.25 billion valuation.
+- **Deepgram acquires Pipecat-maker Daily to bolster its voice AI infrastructure** — [TechCrunch AI](https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/)
+  Deepgram said that it is committed to keep Pipecat open source.
+- **Chrome’s AI-powered Autofill can now dig through your Gmail to fill out forms** — [TechCrunch AI](https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/)
+  The autofill update lets Chrome pull flight confirmations, tracking info, order details, and other information from your inbox, with your permission.
+- **AI execs may be too out of touch to build for the general public** — [TechCrunch AI](https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/)
+  Tech leaders are flaunting how out of touch they are when they brag about using AI to connect with their families.
+- **South Korea’s financial industry hit by fresh wave of cyberattacks** — [TechCrunch AI](https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/)
+  South Korea’s financial institutions have been hit by another wave of cyberattacks, highlighting the growing risk of AI-driven hacking in Asia.
 - **Voice AI in vogue: Nvidia releases new open transcription model** — [TechCrunch AI](https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/)
   Nvidia just released a free speech-to-text model that can transcribe up to 40 languages, but it only works on recordings, not live audio, so it’s a big step for meeting and medical transcription tools…
-- **The data center boom has an upside: innovation for the US grid** — [TechCrunch AI](https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/)
-  As the AI boom stresses the existing power grid, all sorts of new opportunities for grid modernization are also emerging as a result, industry insiders say.
-- **Bank of America kindly asks that you don’t share your banking password with your AI assistant** — [TechCrunch AI](https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/)
-  The banking giant reminds customers that "you're responsible for activity" resulting from your AI agents' access.
-- **Disruptive raises $10B fund to make big bets on at least 10 companies** — [TechCrunch AI](https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/)
-  Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.
-- **Opera introduces a new web standard to let users deploy AI locally in their browser** — [TechCrunch AI](https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/)
-  The new standard, WebAI, is designed to work with a variety of AI models.
-- **General Compute raises $100 million Series A, countering the neocloud disaster narrative** — [TechCrunch AI](https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/)
-  General Compute is betting on inference chips from outside the Nvidia ecosystem.
-- **Nvidia backs Indian startup helping companies run AI models with fewer GPUs** — [TechCrunch AI](https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/)
-  Simplismart says its annualized revenue run rate has grown fourteenfold in six months, with the U.S. accounting for more than half its revenue.
-- **Cohere says Alibaba’s Qwen model tried to send a file to Beijing** — [TechCrunch AI](https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/)
-  An AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while researchers say it’s probably a training quirk and not espionage, the whole thing has …
-- **My new AI terminal** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhqmmh/my_new_ai_terminal/)
-- **Did they cut credits again? (plus)** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhq3j0/did_they_cut_credits_again_plus/)
-- **Unable to retrieve tracking numbers form Air Canada** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhpa5a/unable_to_retrieve_tracking_numbers_form_air/)
-- **What does an LLM want with a McRib?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhosuw/what_does_an_llm_want_with_a_mcrib/)
-- **I asked ai to extend this "dress image" what color do y'all see? Blue and black or White and gold in all images** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhorq6/i_asked_ai_to_extend_this_dress_image_what_color/)
-- **You can only pick one AI to use for the rest of your life. Which one are you choosing?** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xhofrk/you_can_only_pick_one_ai_to_use_for_the_rest_of/)
+- **The NYT Cooking app is testing AI recipe modifications** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool)
+  The New York Times is testing a new AI feature for its Cooking app that helps users to modify recipes, and it's sparked some drama among users. NYT Cooking senior editor Genevieve Ko announced the fea…
+- **AI has come for Arizona’s water** — [The Verge AI](https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc)
+  A hulking gray giant rises from the desert. Inside, engineers create the force behind our phones and computers and appliances, our streaming services and search engines and chatbots and vibe-coded app…
+- **Adam Mosseri says negativity around AI is ‘going to get worse’** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity)
+  Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's…
+- **Akai is embracing vibe-coded mods with an open-source MPC** — [The Verge AI](https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key)
+  The MPC Sample Key isn't even formally announced yet, but Akai is already showing off what the modding community is cooking up through vibe coding. Akai has decided to embrace the explosion of hackers…
+- **Meta says it&#8217;ll probably delay its controversial new business terms again** — [The Verge AI](https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely)
+  Meta says it may push the implementation of its new business terms past November 20th as it faces backlash from publishers over concerns about AI training. In a post on X, Meta communications head And…
+- **Insurance tech just got a $2B AI deal. Are our rates cooked?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1ximm2m/insurance_tech_just_got_a_2b_ai_deal_are_our/)
+- **A one-person studio shipped a Steam demo of a 12-chapter FPS coded by AI agents in 20 working days. Here is what the agents could and could not do.** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xikfco/a_oneperson_studio_shipped_a_steam_demo_of_a/)
+- **Being early may buy an AI agent startup time, but it doesn’t guarantee a lasting business** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xidt73/being_early_may_buy_an_ai_agent_startup_time_but/)
+- **LLMs are significantly better at finding mistakes in papers than trained human reviewers** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xi1fg7/llms_are_significantly_better_at_finding_mistakes/)
+- **Hochul signs AI chatbot and baby monitor regulations** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xi04ex/hochul_signs_ai_chatbot_and_baby_monitor/)
+- **I made an interactive AI city that shows how life changes from 1956 to 2050** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xhzg1v/i_made_an_interactive_ai_city_that_shows_how_life/)
+- **Open Source Project to help Secure LLM powered Applications** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xhzatd/open_source_project_to_help_secure_llm_powered/)
+- **The Clayton’s Name Change For AI** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xhukol/the_claytons_name_change_for_ai/)
+- **AI agents have automated like 70% of my job and it’s amazing** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xhsttu/ai_agents_have_automated_like_70_of_my_job_and/)
+- **AI Odyssey - Part 5 ‘From Asimov to Banks’** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xho8gf/ai_odyssey_part_5_from_asimov_to_banks/)
+- **UK Uses AI to Summarise Asylum Interviews: One in Five Checked Summaries Failed** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xhnkxt/uk_uses_ai_to_summarise_asylum_interviews_one_in/)
+- **Read the letter the FBI sent MLK to try to convince him to kill himself (2014)** — [Hacker News](https://www.vox.com/xpress/2014/11/12/7204453/martin-luther-king-fbi-letter)
+  Vox is a general interest news site for the 21st century. Its mission: to help everyone understand our complicated world, so that we can all help shape it. In text, video and audio, our reporters expl…
+- **A Health Update** — [Hacker News](https://furbo.org/2026/10/28/a-health-update/)
+  I’m writing this post from a hospital bed. And I couldn’t be happier. You hear folks say chemotherapy sucks, but until you go through it yourself, you don’t really know how bad it can be. It remains a…
+- **Decompiling Games with AI: Virtueel Zoetermeer** — [Hacker News](https://bou.ke/blog/zoetermeer/)
+- **DoorDash is acquiring Instacart for $17B** — [Hacker News](https://about.doordash.com/en-us/news/doordash-to-acquire-instacart)
+  Together, DoorDash and Instacart would help stores of every size reach more customers with the kinds of innovative technology that the biggest online retailers and grocers build for themselves.
+- **Chained PHP2Shell Exploit Roots 25 Servers, Including US Government Servers** — [Hacker News](https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers)
+  Custom PHP2Shell Exploit Chained with Kernel LPE to Root Firewalls in the Wild
+- **Scaling Hierarchical Networks** — [Hacker News](https://www.cartesia.ai/blog/from-tokens-to-bytes-part-1)
+  A newer generation of H-Nets learns directly from raw bytes, and matches an open-source 3B Transformer with 10x less compute and data.
+- **DoorDash to Acquire Instacart** — [Hacker News](https://ir.doordash.com/news/news-details/2026/DoorDash-to-Acquire-Instacart-to-Help-Local-Stores-Win/default.aspx)
+  Transaction values Instacart at $65.00 per share, representing a 26% premium to Instacart's closing price on October 22, 2026 Together, DoorDash and Instacart would help stores of every size reach mor…
+- **I Used AI to Fake a Scientific Paper. Here's What Happened** — [Hacker News](https://spectrum.ieee.org/ai-generated-scientific-papers)
+  My experiment with an IEEE journal revealed AI’s threats to scholarly publishing
+- **MacBook Pro with PROLED XDR Display and Touch** — [Hacker News](https://www.apple.com/macbook-pro/proled-xdr-display/)
+  MacBook Pro with PROLED XDR Display has the world’s best laptop display. Featuring the M5 Pro or M5 Max chip, it’s a powerful platform for AI.
+- **Sleep framework: A new way for LLMs to retain knowledge in continual learning** — [Hacker News](https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/)
+- **Dayjob: Tax – evaluating AI agents on 50 professional tax assignments** — [Hacker News](https://surgehq.ai/blog/dayjob-tax)
+  DAYJOB: Tax evaluates AI agents across 50 realistic tax environments, testing their ability to navigate messy records, exercise professional judgment, and deliver reliable tax work.
 - **Emacs Turns 50** — [Hacker News](https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/)
   How the MIT AI Lab’s text editor gave birth to the free software movement.
-- **ICE Is Running One of the Largest Anti-Left Surveillance Ops in US History** — [Hacker News](https://www.wired.com/story/ice-is-running-one-of-the-largest-anti-left-surveillance-operations-in-us-history/)
-  ICE’s Homeland Security Investigations is engaged in far-reaching spying against left-wing activists that rivals the FBI and CIA crackdowns on the Civil Rights and anti-war movements.
-- **Valve Responds to Developers Fearing AI Slop and Clones** — [Hacker News](https://www.invenglobal.com/articles/27761/valve-responds-to-developers-fearing-ai-slop-and-clones)
-  Valve has advised developers concerned about AI clone games to focus on community building and consistent updates.
-- **Survival LLM: AI assistant and emergency library that runs on your own computer** — [Hacker News](https://www.brangus.io/survival-llm)
-  A free AI assistant and survival library (1.5 million offline articles) that runs on your own computer, with no internet. Shows the source of every answer. Mac and Windows.
-- **Tailscale SSH: Investigation and remediation update** — [Hacker News](https://tailscale.com/ssh-investigation-update)
-  An update on the Tailscale SSH security investigation, remediation progress, and what customers can do now.
-- **New 14‑inch MacBook Pro with M6** — [Hacker News](https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/)
-  Apple today announced the new 14-inch MacBook Pro with M6, delivering more performance, powerful on-device AI capabilities, and faster connectivity.
-- **New iMac with M6** — [Hacker News](https://www.apple.com/imac/)
-  The brilliant all-in-one desktop with the superfast M6 chip. A powerful platform for AI. With a 24-inch 4.5K Retina display. Wi-Fi 7 and Bluetooth 6.
-- **Two high-speed trains collide near Toledo, Spain** — [Hacker News](https://www.euronews.com/video/2026/10/28/spain-first-footage-reveals-wreckage-of-deadly-high-speed-train-crash)
-  Video. At least 10 people died when a high-speed train struck another near Toledo, Spain. Two carriages derailed, leaving rescuers searching through the wreckage as authorities warned the death toll c…
-- **Introducing LFM3: Every Modality for Specialized Intelligence** — [Hacker News](https://www.liquid.ai/blog/lfm3)
-  LFM3 is Liquid AI’s new open-weight model family: 2B-class text, vision, audio, omni, and decision models built to fine-tune and run fast on any device.
-- **Hex Raises $100M** — [Hacker News](https://hex.tech/blog/hex-new-era/)
-  Announcing Hex 4.0, and Hex's $100m fundraise.
-- **Wikipedia's Cleanup of AI-Generated Content** — [Hacker News](https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup)
-  AI-generated text is harder to spot, but that hasn’t deterred them
-- **Here be monsters: What do you still need to know when agents do the work?** — [Hacker News](https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work)
-  AI agents write code faster than anyone can read it. What engineers still need: fundamentals, breadth, and the willingness to dive in when it breaks.
-- **Amazon Is Gutting Its AI Division After Sustained Failure** — [Hacker News](https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova)
-  Amazon is gutting its AI labs and funneling its resources into a new project headed by a noted AI robotics guru.
-- **The Mythical Man-Month in the Age of AI** — [Hacker News](https://j11g.com/the-mythical-man-month-in-the-age-of-ai)
-  An update to Brooks's Law in the age of AI.
+- **Manifestos, Fear, and 'Loser Thinking': Inside Proton's AI Reckoning** — [Hacker News](https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/)
+  Proton CEO Andy Yen projects a calm persona and rails against Big Tech and critiques AI. Internally, he is pushing engineers to build Proton with AI, even when they have security concerns.
 - **Kentucky man becomes the first humanist granted religious exemption from AI** — [Hacker News](https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/)
-- **Suffering as a Feature** — [Hacker News](https://blog.codinghorror.com/suffering-as-a-feature/)
-  Have you seen this?
-
-If you haven't, you should. I think everyone needs to. Wealth inequality on a scale this extreme is almost impossible to explain. You have to experience it to understand.
-
-Go ahea…
-- **PHP2Shell, LiteLLM, GitLab: Find What You Need to Patch** — [Hacker News](https://cloudsleuth.io/blog/php2shell-litellm-gitlab-find-what-you-run/)
-  PHP2Shell, a Node.js RCE, a CVSS 10 GitLab bug, a backdoored LiteLLM and a CA key that was 4. The fixes are out. Can you find every affected resource?
-- **Show HN: A Lego-like composable Framework for RSI** — [Hacker News](https://rsi-gear.github.io/)
-  Recursive self-improvement of LLM agent harnesses through evolutionary search and reproducible evaluation.
-- **Police are using AI to pull over drivers for 'suspicious' behavior** — [Hacker News](https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220)
-- **Roblox downloaded 145GB models from us (including adult content) without asking** — [Hacker News](https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/)
-  On 15 and 16 October 2026, a crawler that said it belonged to Roblox walked through almost every project on Open3DLab, SFMLab and SmutBase, and proceeded to download complete copies of 1,027 files fro…
 
 ---
-*Generated at 2026-10-28T15:21:09Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-10-29T15:27:24Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
