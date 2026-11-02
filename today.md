@@ -1,80 +1,94 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-11-01"
-date: 2026-11-01
+title: "AI Daily Report — 2026-11-02"
+date: 2026-11-02
 companies: ["anthropic", "openai", "xai", "Other/Independent"]
-item_count: 35
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-11-01/2026-11-01.mp3
+item_count: 39
 permalink: /today
 ---
 
-# AI Daily Report — 2026-11-01
+# AI Daily Report — 2026-11-02
 
 ## anthropic
-- **Anthropic takes steps to block Claude from reverse-engineering video games** — [Hacker News](https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering)
-  The restrictions are so broad that they're even hurting legitimate game developers and preventing basic troubleshooting tasks.
-- **Anthropic blocks users for anything touching training larger models** — [Hacker News](https://twitter.com/jiahaoshao1/status/2116475922190922088)
-  Shame on @DarioAmodei / Anthropic. I never distilled Claude—rollouts came from a strong open-source model; Claude just helped submit jobs and run analysis. Still got tagged for "training a competitor,…
+- **Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings** — [Hacker News](https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now)
+- **Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1** — [Hacker News](https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html)
+  Anthropic unveiled its S-1 prospectus last week, but the initial filing only included the company's financials through the first half of the year.
+- **Anthropic's internal AI use, at retail prices, now exceeds its employee pay** — [Hacker News](https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11)
+  Anthropic's IPO filing reveals a striking milestone: Its internal AI usage is now valued above employee compensation.
 
 ## openai
-- **OpenAI reportedly lowers funding target for new round** — [TechCrunch AI](https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/)
-  OpenAI’s latest funding round doesn't seem to be living up to expectations.
-- **Best Advice given by my ChatGPT** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl5pxv/best_advice_given_by_my_chatgpt/)
-- **Nooooooooooooooooooo ChatGPT app** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl5nwh/nooooooooooooooooooo_chatgpt_app/)
-- **ChatGPT has taken over my MacBook** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl4qhx/chatgpt_has_taken_over_my_macbook/)
-- **I'm concerned about ChatGPT discontinuing 5.6 Sol** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl45cj/im_concerned_about_chatgpt_discontinuing_56_sol/)
-- **I built a Chrome extension to make long ChatGPT conversations easier to navigate.** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl3w3l/i_built_a_chrome_extension_to_make_long_chatgpt/)
-- **Gpt plus free trial** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl3pc0/gpt_plus_free_trial/)
-- **Fighting the Nerd Reich via ChatGPT** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl371p/fighting_the_nerd_reich_via_chatgpt/)
-- **ChatGPT also doesn’t agree with it’s CEO** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl2utc/chatgpt_also_doesnt_agree_with_its_ceo/)
-- **GPT-5.6 Sol can beat Factorio on peaceful mode** — [Hacker News](https://ryanmadden.net/gpt-56-beats-factorio/)
-  Edit: Woah, this took off! If you want more details you can subscribe at the bottom of the post or on YouTube. I’m working on a more detailed highlights/commentary post and video.
-Previously: We got C…
-- **Do the math: How we took over ChatGPT accounts** — [Hacker News](https://www.parameter.ai/labs/we-found-a-gap-at-openai)
-  By bypassing ChatGPT's sandbox and content security policy, our research team was able to take over anyone's account simply by sending them a link.
-- **ChatGPT and Codex usage limits merging** — [Hacker News](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits)
-- **Show HN: A language model that lives in a boot sector** — [Hacker News](https://github.com/kerlenton/bootgpt)
-  A language model that lives in a boot sector. Contribute to kerlenton/bootgpt development by creating an account on GitHub.
+- **OpenAI pitches data center power plants as a way to protect nearby areas** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program)
+  In an announcement on Monday, OpenAI says it will pilot its "Grid Protectors Program" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts …
+- **OpenAI is finally merging ChatGPT’s Chat and Work tabs** — [TechCrunch AI](https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/)
+  OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.
+- **OpenAI might rebrand its data centers as ‘AI compute campuses’** — [TechCrunch AI](https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/)
+  Data centers are deeply unpopular. But what if we called them something else?
+- **GPT-Rosalind-6 System Card Addendum** — [Hacker News](https://deploymentsafety.openai.com/gpt-rosalind-6)
+  Explore OpenAI safety evaluations and system cards for deployed AI systems.
+- **Mathematics has changed. Let's act like it** — [Hacker News](https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/)
+  [This is a guest post by Frank Calegari. This blog post was initially written in a different file format and converted using AI. — T.] Why we should not be sad The release by OpenAI on Octobe…
+- **I Am the Reason OpenAI Is Killing Unlimited Chats** — [Hacker News](https://chaosmanage.github.io/i-killed-unlimited-chatgpt/)
+  How I built custom MCP integrations and used multiple ChatGPT conversations for software development.
 
 ## xai
-- **Judge allows NAACP lawsuit over xAI data center pollution to move forward** — [TechCrunch AI](https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/)
-  An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.
+- **Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs** — [TechCrunch AI](https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/)
+  Musk recently referred to Grok Bot as having "the fastest growth of a product that I've ever seen in my life."
 
 ## Other/Independent
-- **Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’** — [TechCrunch AI](https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/)
-  Apple's new CEO defended the company's current position in the AI landscape.
-- **Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia** — [TechCrunch AI](https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/)
-  When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.
-- **I built an AI Tamagotchi before Meta could** — [The Verge AI](https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code)
-  Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a…
-- **While Altman complains about your audacity of having RAM in your PC, more than half of NVIDIA's GPUs are unproductive stocked in warehouses says author Ed Zitron** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl49d3/while_altman_complains_about_your_audacity_of/)
-- **Email: Usage back to what it was** — [Reddit r/ChatGPT](https://www.reddit.com/r/ChatGPT/comments/1xl2v5p/email_usage_back_to_what_it_was/)
-- **Proving and Improving the Platonic Representation Hypothesis with JEPAs** — [Hacker News](https://arxiv.org/abs/2610.39302)
-  Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, b…
-- **Malware uses LLMs to rank victims by how much they're worth** — [Hacker News](https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/)
-  The self-deleting VOLTA infostealer steals credentials, sessions, and cryptocurrency wallets. Then, it uses LLMs to profile victims and rank their most valuable assets.
-- **Distributed Proofreaders** — [Hacker News](https://www.pgdp.net/c/)
-  Distributed Proofreaders provides a web-based method to ease the conversion of Public Domain books into e-books. By dividing the workload into individual pages, many volunteers can work on a book at t…
-- **Surviving "The Graduate"** — [Hacker News](https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate)
-  It was the film that made me famous. On set, all I could think about was how I was failing.
-- **noyb win: French electronics retailer Fnac Darty fined €7M** — [Hacker News](https://noyb.eu/en/noyb-win-french-electronics-retailer-fnac-darty-fined-eu7-million)
-  The fine is based on a noyb complaint from 2023. Back then, we highlighted that Fnac Darty illegally tracked users of its mobile apps without consent
-- **The question we should all be asking about AI** — [Hacker News](https://www.cnn.com/2026/10/30/business/ai-stocks-bonds-debt)
-  The stock market is turning its back on Big Tech.
-- **An Italian farmer found some unknown seeds in his attic and planted them** — [Hacker News](https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/)
-  When a seven-eared stem emerged from the ground, it seemed like a miracle. What Claudio Grossi had unearthed was an ancient grain that proved to be an answer to some modern problems
-- **Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing** — [Hacker News](https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/)
-  Two lawyers hid a white-on-white instruction inside a court filing telling the AI to go easy on their case. The court's AI caught it. The fine was $16,000.
-- **Domain hacks with unusual Unicode characters (2018)** — [Hacker News](https://xn--69f31l4t57c0mag4b613h.xn--7uh4898msjaso/🆆🆃🅵/)
-- **The AI cost of JavaScript frameworks** — [Hacker News](https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/)
-  One of my pet peeves with the web development community is that so many of the decisions we make are vibes-based. Frameworks are “blazing fast,” tools will…
-- **AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy** — [Hacker News](https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy)
-  It is hoped game testing can provide insight into recent AI agent headlines, good and bad.
+- **The New York Times sues Brave web browser for AI scraping and bypassing paywalls** — [The Verge AI](https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times)
+  The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass t…
+- **42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’** — [TechCrunch AI](https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/)
+  Here's a question straight out of sci-fi: What if AI could predict what you were going to do before you decided to, even in a completely new situation?
+- **Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition** — [TechCrunch AI](https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/)
+  Two startups tackling the data center water problem are joining forces in a $16 million deal.
+- **AI can make tech CEOs’ lives easier. What about everyone else?** — [TechCrunch AI](https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/)
+  On Equity, we discuss why tech CEO statements can seem so tone deaf.
+- **What did Ilya Sutskever mean when he said "The models, they just want to learn"? [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xlyr77/what_did_ilya_sutskever_mean_when_he_said_the/)
+- **ML PhDs: Would you rather have done your PhD before or after the rise of AI chatbots? [D]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xlt9wm/ml_phds_would_you_rather_have_done_your_phd/)
+- **[R] There is no free lunch in RLVR: under strategy specialization, every pass@1 gain provably costs some prompt, and the pass@k crossover has a tight bound [R]** — [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1xlnu1y/r_there_is_no_free_lunch_in_rlvr_under_strategy/)
 - **Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)** — [Hacker News](https://arxiv.org/abs/2409.02292)
   Air-gapped systems are physically separated from external networks, including the Internet. This isolation is achieved by keeping the air-gap computers disconnected from wired or wireless networks, pr…
-- **Serbia just elected the world's brainiest parliament** — [Hacker News](https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament)
-- **AI text watermarking and quality loss** — [Hacker News](https://blog.keyvan.net/p/ai-text-watermarking-and-quality)
-  After the EU AI Act’s transparency guidelines went into effect, and following the announcement that most major AI labs will soon be watermarking their text output to comply, there has been some debate…
+- **Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app** — [Hacker News](https://momentic.ai/)
+  Mo is an AI QA engineer that bug bashes your app. 117,010 bugs caught, with repro steps and evidence. Plain-English tests agents execute and maintain.
+- **C64 Basic Dungeon Crawler: Stairs, Levels and Levelling Up (Part 11)** — [Hacker News](https://retrogamecoders.com/c64-basic-dungeon-part11/)
+  Adding new levels and a feeling of progress to our C64 BASIC Dungeon game
+- **The U.S. Census Bureau and "Super Intelligence"** — [Hacker News](https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/)
+  I was reminded today of AI Adoption Rate Trending Down for Large Companies, a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in …
+- **Supermarket freezers across Europe hit by second suspected cyber-attack** — [Hacker News](https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack)
+  Chains in seven countries say cooling unit temperatures rose overnight in incident similar to hack of French stores
+- **Jobless tech workers are being left out of San Francisco's AI boom** — [Hacker News](https://www.bloomberg.com/news/features/2026-09-17/san-francisco-s-ai-wealth-boom-skirts-engineers-as-openai-anthropic-ipos-near)
+- **Never Complain, Never Explain** — [Hacker News](https://en.wikipedia.org/wiki/Never_complain,_never_explain)
+- **40 °C heat extremes are no longer implausible in the Nordic countries** — [Hacker News](https://www.nature.com/articles/s44304-026-00290-9)
+  The Nordic countries of Norway, Sweden, and Finland have traditionally been characterised by less intense heatwaves than continental Europe. However, during recent events, such as the 2026 heatwave, e…
+- **China's First Frontier AI Export Controls: Mofcom Announcement No. 48** — [Hacker News](https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/)
+  China’s First Frontier AI Export Controls: MOFCOM Announcement No. 48 Key Takeaways On October 16, 2026, China’s Ministry of Commerce (MOFCOM) and Ministry of Science and Technology (MO…
+- **The AI cost of JavaScript frameworks** — [Hacker News](https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/)
+  One of my pet peeves with the web development community is that so many of the decisions we make are vibes-based. Frameworks are “blazing fast,” tools will…
+- **Last night an AI agent performed brain surgery on a mouse** — [Hacker News](https://twitter.com/OcanaSantero/status/2115442964574908902)
+  Last night an AI agent performed brain surgery on a mouse.
+
+We gave it 19 gene therapy vectors in a spreadsheet, a mouse model of epilepsy, access to a motorize surgery rig with cameras and one goal: …
+- **Trigger.dev customer environment variables exposed** — [Hacker News](https://trigger.dev/blog/security-incident-nov-2026)
+  An attacker gained unauthorized access to environment variables for a subset of organizations. We've blocked the exploit and emailed all impacted account owners with steps to mitigate.
+- **From Charlemagne to the Kitchen Boy: Reading the Hamburg Rathaus** — [Hacker News](https://alsterrunde.com/from-charlemagne-to-the-kitchen-boy-reading-the-hamburg-rathaus/)
+  The Hamburg Rathaus tells the story of its city in more than a hundred small details, and this is my walk through them.
+- **Proving and improving the Platonic Representation Hypothesis with JEPAs** — [Hacker News](https://arxiv.org/abs/2610.39302)
+  Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, b…
+- **Ask HN: What hardware are you using to run local LLMs?** — [Hacker News](https://news.ycombinator.com/item?id=50337431)
+- **OccupySaaS** — [Hacker News](https://occupysaas.com/)
+  Clean-room, AI-assisted, open-source, drop-in replacements for the SaaS giants. Apache-2.0. Self-hosted. No per-seat tax.
+- **Domain hacks with unusual Unicode characters (2018)** — [Hacker News](https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters/)
+  Unicode contains a range of symbols which don't get much use. For example, there are separate symbols for TradeMark - ™, Service Mark - ℠, and Prescriptions - ℞.  Nestling among the "Letterlike Symbol…
+- **Let Me Ch...** — [Hacker News](https://blog.alxgsv.com/let-me-check/)
+  That morning I woke up at 6:58, two minutes before the alarm. I lay there and waited for it to ring. And it rang. We both did our jobs.
+I still don’t know why I remember it in such detail. I used to f…
+- **Frontier Airlines Likely Breached** — [Hacker News](https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/)
+- **Seoul Viosys begins production of rare-earth-free white light emitter** — [Hacker News](https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml)
+  WICOP 3 targeted at AR glasses and AI datacoms applications
+- **Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing** — [Hacker News](https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/)
+  Two lawyers hid a white-on-white instruction inside a court filing telling the AI to go easy on their case. The court's AI caught it. The fine was $16,000.
+- **BioWare co-founder: game execs "have never made a game" and don't get it** — [Hacker News](https://www.pcgamer.com/gaming-industry/none-of-these-people-have-ever-made-a-game-bioware-co-founder-greg-zeschuk-says-of-game-industry-executives-they-just-dont-know-how-it-works/)
+  In a rare interview, Zeschuk said the closure of BioWare is sad, but his greater concern is for the people put out of work.
 
 ---
-*Generated at 2026-11-01T15:24:22Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-11-02T18:43:53Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
