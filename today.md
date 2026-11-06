@@ -1,122 +1,138 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-11-05"
-date: 2026-11-05
-companies: ["google", "meta", "openai", "Other/Independent"]
-item_count: 55
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-11-05/2026-11-05.mp3
+title: "AI Daily Report — 2026-11-06"
+date: 2026-11-06
+companies: ["amazon alexa", "anthropic", "google", "meta", "microsoft", "openai", "Other/Independent"]
+item_count: 62
 permalink: /today
 ---
 
-# AI Daily Report — 2026-11-05
+# AI Daily Report — 2026-11-06
+
+## amazon alexa
+- **Amazon will let you text Alexa your shopping list** — [The Verge AI](https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders)
+  Amazon is adding a new feature to Alexa for Shopping that allows customers to purchase items by texting the AI shopping assistant. Users can describe the products they're looking to buy and/or provide…
+- **After blocking Muse, Amazon now lets users text Alexa to help them shop** — [TechCrunch AI](https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/)
+  Amazon said that the feature will roll out to millions of users in coming weeks.
+
+## anthropic
+- **Perplexity launches its own take on AI agents for work** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work)
+  Perplexity is taking on OpenAI and Anthropic with its own work-focused AI agents. The startup's new always-on "Teammates" can take on multiple roles within a workspace, while pulling existing projects…
+- **Claude AI can plug directly into your bank account** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance)
+  Anthropic has a new pitch for managing your personal finances: let Claude do it instead, with a new Personal Finance feature that connects it to your bank and card accounts via the Plaid bank bridging…
+- **Ramp data shows AI spending stalling just as Anthropic nears its IPO** — [TechCrunch AI](https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/)
+  AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.
+- **OpenAI president Greg Brockman says company could be IPO ready in 2027** — [TechCrunch AI](https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/)
+  Speaking at a Wall Street Journal tech conference on Wednesday, the executive touted how the company had been gaining ground in the enterprise market, where rival Anthropic had already successfully ma…
+- **Claude can now analyze your spending with its new Personal Finance tool** — [TechCrunch AI](https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/)
+  With Personal Finance in Claude, users can connect their bank and card accounts through Plaid and ask questions about their finances.
+- **Independent Assessment of AI R&D Acceleration at Anthropic in October 2026** — [Hacker News](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/)
+  METR's high-access assessment of the degree to which AI is accelerating AI research and development at Anthropic.
+- **Claude Code sends your email address to websites** — [Hacker News](https://github.com/anthropics/claude-code/issues/107757)
+  Bug Description I receive dozens of scam emails per day because claude code divulged my email to arbitrary 3rd parties in the User-Agent request header while conducting web searches without my perm...
+- **AI for scientific discovery: How researchers use Claude** — [Hacker News](https://www.anthropic.com/research/how-researchers-use-claude)
+  We analyzed 207,000 research sessions to learn how Claude is used in science, why some tasks get more use than others, and how AI could speed up discovery.
+- **My psychophysics as a bilateral cochlear implant user** — [Hacker News](https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf)
+  Try out Artifacts created by Claude users
+- **Show HN: Stroq – a local audit of what your coding agent did and why** — [Hacker News](https://github.com/AGGIB/Stroq)
+  Find known secrets in your AI coding agent sessions (Claude Code, Codex, Cursor), then guard the next one with local hooks that trace risky commands to the content that dictated them. Open source, ...
 
 ## google
-- **DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy** — [TechCrunch AI](https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/)
-  DuckDuckGo is courting schools frustrated by Google's AI restrictions, pointing educators to its search engine and options to disable AI features.
-- **Google faces backlash for plan that would turn off Search for schools that restrict AI** — [TechCrunch AI](https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/)
-  Politicians on the left, like NYC mayor Zohran Mamdani and former FTC chair Lina Khan, accused Google of acting as an unregulated monopoly.
-- **Gemini for Home now plugs into AT&#038;T’s smart security system** — [The Verge AI](https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system)
-  AT&T's smart home security system now integrates with Gemini for Home. The company says its Connected Life system is the "first" home security product to integrate with Google Home Premium, enabling a…
-- **An open-source project just ranked #1 on EnterpriseRAG-Bench, ahead of the listed systems from OpenAI, Google, Microsoft and Amazon** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xoiaye/an_opensource_project_just_ranked_1_on/)
-- **Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)** — [Hacker News](https://news.ycombinator.com/item?id=50363461)
+- **Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS** — [Hacker News](https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105)
+  Is there an existing issue for this? I have searched the existing issues App name ASN Bank Link to app https://play.google.com/store/apps/details?id=nl.devolksbank.asn.bankieren App version 2.40.2 ...
+- **Gemini Omni 1.2 Flash** — [Hacker News](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/)
+  Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.
+- **Kugelblitz – Mac-Native Google Earth Alternative** — [Hacker News](https://apps.metaebene.me/en/kugelblitz)
+  The Earth and its neighbors as a 3D globe and atlas for the Mac – maps and open geodata on real terrain.
 
 ## meta
-- **[GUIDE] Qwen3.8 Flash-Next on a single RTX 5080 + 64GB RAM: >250 tok/s tg and 5700 tok/s prefill in real agent coding sessions (Basalt + new Unsloth UD-IQ3_XXS + Lamina drafter),+ how it compares to llama.cpp** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xomy0i/guide_qwen38_flashnext_on_a_single_rtx_5080_64gb/)
+- **moe-cache : LRFU/MQ-like hybrid cache, ClassLRU by sanmai · Pull Request #31233 · ggml-org/llama.cpp** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xpfvfz/moecache_lrfumqlike_hybrid_cache_classlru_by/)
+
+## microsoft
+- **Protesters break into Microsoft data center site in Amsterdam** — [The Verge AI](https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam)
+  Protesters have broken into a construction site of a new Microsoft data center in Amsterdam this morning. Members of the Geef Tegengas group helped organize the protest against the construction of thr…
 
 ## openai
-- **OpenAI is already trying to shape the 2028 election** — [TechCrunch AI](https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/)
-  OpenAI’s Chris Lehane wants AI to define the 2028 election, proposing a new social contract that could benefit Americans while also advancing the AI giant’s own business interests.
-- **ChatGPT will now make you animated GIFs** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6)
-  ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot. The update, which is rolling out alongside OpenAI's new Images 2.6 model, allows you to adjust the GIF's animation spe…
+- **OpenAI is stepping back from NDAs for data center projects** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda)
+  Following this week's midterms where voters resoundingly voiced their opposition to data center expansion, OpenAI today announced new commitments to communities where it is working on data center proj…
+- **OpenAI says its new cybersecurity model is better at not hacking other companies** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch)
+  OpenAI is launching GPT-6 Cyber, the latest version of its cybersecurity AI model, which it says is better at finding vulnerabilities and less likely to go rogue and hack other platforms in the proces…
+- **OpenAI released a new cybersecurity model. Is that enough?** — [TechCrunch AI](https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/)
+  OpenAI's newest cybersecurity model comes out as AI labs face scrutiny of their work to protect digital infrastructure.
+- **OpenAI Finds 948 Local Privilege Escalation Bugs in the Linux Kernel** — [Hacker News](https://www.phoronix.com/news/OpenAI-948-Linux-LPE-Bugs)
+  OpenAI published a blog post outlining their work on autonomous vulnerability discovery
 - **GPT-6 Astra covertly underperforms on safety research** — [Hacker News](https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/)
   Research on aligning AI with human values and intent, and reports documenting model failures.
-- **OpenAI to acquire Pierre Computer Company** — [Hacker News](https://openai.com/index/openai-to-acquire-pierre/)
 
 ## Other/Independent
+- **Airbnb is working on an AI travel agent** — [The Verge AI](https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings)
+  Airbnb plans to roll out an AI agent in the first half of 2027 that will help users plan and book travel, the company said in its Q3 2026 earnings shareholder letter released today. "Today's AI agents…
+- **Muse has a voice mode now** — [The Verge AI](https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar)
+  Meta now lets you have voice conversations with your Muse AI agent in real time, CEO Mark Zuckerberg announced today. The feature has been rolled out to me, and I gave it a spin on the iOS app while w…
+- **‘Total repudiation’: The blue wave is about to hit AI** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai)
+  On Tuesday night, Democrats made history as they took control of the House and the Senate, and a blue wave swept through traditionally red and swing states - with the nation's first Black woman govern…
+- **Grimes is going to star in an AI movie that’s coming to theaters** — [The Verge AI](https://www.theverge.com/entertainment/1026282/grimes-ai-movie)
+  The AI-generated sci-fi film Gods Don't Give Gifts has added a bit of star power: Pop star Grimes is going to appear in the movie. Billed as "the first AI film to come to theatres," Gods Don't Give Gi…
+- **Meet *sshole, the vulnerability that lets hackers SSH into Linux devices** — [Ars Technica AI](https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/)
+  Certain configurations of Alpine are affected. Other distros may be as well.
+- **Physicl raises $10M to make the digital world real enough for robots** — [TechCrunch AI](https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/)
+  Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.
+- **Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M** — [TechCrunch AI](https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/)
+  Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.
+- **Airbnb says it’s launching an AI travel agent in the first half of 2027** — [TechCrunch AI](https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/)
+  Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.
+- **Meta says US users can now video chat with their Muse AI avatar** — [TechCrunch AI](https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/)
+  Meta's AI agent can now take calls as a customizable animated avatar, ahead of the launch of a Tamagotchi-like wearable designed to bring Muse to life.
+- **Meta warns that election backlash against data centers could make AI expansion harder** — [TechCrunch AI](https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/)
+  Meta warns that growing political opposition to data centers could threaten future AI investments, as communities push back against massive infrastructure projects.
 - **Axiom Math wants to keep AI slop out of mathematics** — [TechCrunch AI](https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/)
   As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries.
 - **Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure** — [TechCrunch AI](https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/)
   The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.
-- **Aina’s smart ring has a screen, a joystick and a mic so you can talk to AI agents** — [TechCrunch AI](https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/)
+- **Aina’s smart ring has a screen, a joystick, and a mic so you can talk to AI agents** — [TechCrunch AI](https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/)
   Aina's ring can also take calls and help you dictate notes on your Mac.
-- **A YC startup is putting $1M behind five unsolved materials science problems for AI** — [TechCrunch AI](https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/)
-  Discovered Materials, a months-old YC startup that uses AI to find chip materials, is offering $200,000 for each solution to five open materials science problems.
+- **A YC startup is putting $1M behind 5 unsolved materials science problems for AI** — [TechCrunch AI](https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/)
+  While frontier AI models have solved a remarkable series of outstanding mathematics problems and made progress in the life sciences, they have yet to truly plumb the complex physics in advanced materi…
 - **Apple is reportedly cutting budgets for its internal AI usage** — [TechCrunch AI](https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/)
-  The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.
-- **AI PACs spent millions trying to shape Congress — here’s how they fared** — [TechCrunch AI](https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/)
-  AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.
-- **Nothing CEO says company’s mysterious AI-first device is dropping next month** — [TechCrunch AI](https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/)
-  While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.
-- **Almost no one uses AI agents to book their Uber, company says** — [TechCrunch AI](https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/)
-  During its busiest week last quarter, Uber said only four people booked a ride using an AI agent.
-- **Meta acquires AI coding startup Conductor** — [TechCrunch AI](https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/)
-  The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.
-- **Open source AI is booming. Hugging Face explains who profits.** — [TechCrunch AI](https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/)
-  Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable model…
-- **Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs** — [TechCrunch AI](https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/)
-  Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable model…
-- **I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling** — [TechCrunch AI](https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/)
-  Apple's AI-powered Siri Recaps won me over in just one day, despite my privacy reservations. But there's still room for improvement.
-- **The hidden supply chain costs of the AI boom** — [The Verge AI](https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book)
-  Today, I’m talking with Willy Shih, an economist, a professor of management practice at Harvard Business School, and the author of the upcoming book, Where Does My Stuff Come From? The Powerful Econom…
-- **You can post AI music straight to SoundCloud from ElevenLabs** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs)
-  After partnering with Moises earlier this year, SoundCloud is now adding integration with another AI music platform, ElevenLabs. Now, rather than having to export and download your outputs from Eleven…
-- **Big Tech’s big AI buildout will not end until someone stops it** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3)
-  After four of the biggest competitors in the AI race held quarterly earnings calls late last month, two things are clear: Big Tech is not done spending record amounts on the AI data center buildout, a…
-- **Qualcomm is betting big on data centers as smartphone sales sink** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers)
-  With smartphone sales tanking by around 20 percent compared to 2025, Qualcomm is looking to data centers to help boost its bottom line. During its Q4 2026 earnings call, the company laid out its plans…
-- **17 better ways Elon Musk could have wasted $446 million** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich)
-  One of the basic problems of spending too much time on social media is that you are cooking your brain by reading posts from a pack of attention-seeking lunatics. If your social media of choice is the…
-- **Nothing teases a screen-free AI device ahead of launch next month** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei)
-  Nothing CEO Carl Pei said in a post on X that the company's launching its first AI device in December. That's just a little over a year after Pei announced plans for "AI-native" devices and an AI oper…
-- **Data centers lost the midterms** — [The Verge AI](https://www.theverge.com/policy/1026365/data-centers-midterms-results)
-  Data center developers are poised to face a more restrictive building environment after voters across the country voted in candidates who favor moratoriums and ballot measures that put more obstacles …
-- **Dream come true: I trained 48 in-browser 24 kHz TTS voices for Classical Sanskrit, English & 10 Indic languages (21.7 MB mobile iSTFTNet / 27.9 MB HiFi-GAN)** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xomom1/dream_come_true_i_trained_48_inbrowser_24_khz_tts/)
-- **[Hardware] Is a AMD 395+ AI with 128 GB RAM still good choice for local LLMs? (inference mostly)** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xolh19/hardware_is_a_amd_395_ai_with_128_gb_ram_still/)
-- **Getting editable layers out of Qwen-Image 2.1, a model that only edits: what works, what still fails (local, open source) Kokon** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xoji3b/getting_editable_layers_out_of_qwenimage_21_a/)
-- **Tiiny AI Performance tests. I just got my Tiiny, and here's what it can do.** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xoib84/tiiny_ai_performance_tests_i_just_got_my_tiiny/)
-- **My first experience with agentic AI** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xohbd3/my_first_experience_with_agentic_ai/)
-- **So a dedicated pc for Ai text models and comfyui. Windows or Linux?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xoefzw/so_a_dedicated_pc_for_ai_text_models_and_comfyui/)
-- **Int8-vllm updated with Nemotron 3.5 Bolt 74B** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xod8nb/int8vllm_updated_with_nemotron_35_bolt_74b/)
-- **baidu/ERNIE-5.5-Flash-Base · Hugging Face** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xobtwx/baiduernie55flashbase_hugging_face/)
-- **Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding** — [Hacker News](https://www.ricursive.com/ripple)
-  We develop frontier AI methods to reinvent chip development, collapsing traditional design timelines, closing the loop between AI and the hardware that fuels it, and enabling a Cambrian explosion of c…
-- **MCP Explained** — [Hacker News](https://mcp-explained.com/)
-  Every MCP message on the wire, step by step. Transports, auth, tools, sampling, tasks, tool search and codemode. By Runlayer.
-- **Launch HN: Kino AI (YC S23) – AI media manager and video editor** — [Hacker News](https://news.ycombinator.com/item?id=50368804)
+  The tokenmaxxing frenzy has been short-lived as bills for said tokens came due, and companies decided that token rationing might be a more fiscally sensible approach.
+- **lowvram: How I ran large AI models in low VRAM GPUs** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xpense/lowvram_how_i_ran_large_ai_models_in_low_vram_gpus/)
+- **[R] First paper on how to train actual SOTA Decision Models ever: full playbook - architecture, datasets, training, evaluation, inference** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xpeevv/r_first_paper_on_how_to_train_actual_sota/)
+- **Local AI Development and Testsystem Hardware** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xpecbl/local_ai_development_and_testsystem_hardware/)
+- **Linum-AI/pjit-21k · Hugging Face - A Text-to-Image Model Trained for $21K** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xpcpws/linumaipjit21k_hugging_face_a_texttoimage_model/)
+- **Has anyone tried using Qwen or other LLMs to directly edit ACE-Step weights?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xpaag5/has_anyone_tried_using_qwen_or_other_llms_to/)
+- **FAA Begins Retiring Decades Old Floppy Disks from Air Traffic Control** — [Hacker News](https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-begins-retiring-decades-old-floppy-disks-air)
+- **University libraries are being swarmed by AI bots, putting public access at risk** — [Hacker News](https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287)
+- **Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016)** — [Hacker News](https://jhr.pensoft.net/articles.php?id=9096)
+  A unique accumulation of workers (‘colony’) of the wood ant Formica polyctena Först., trapped within an old bunker for storing nuclear weapons, is described. The source of the ‘colony’ is a large colo…
+- **MS Paint Remote Code Execution Vulnerability** — [Hacker News](https://www.cve.org/CVERecord?id=CVE-2026-83844)
+- **Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue** — [Hacker News](https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html)
+  Cuban says he has been seeing his own face in scammy AI-generated ads for nonexistent diabetes cures.
+- **Where Each U.S. State Gets Its Tax Revenue From** — [Hacker News](https://www.visualcapitalist.com/where-each-states-tax-revenue-comes-from/)
+  California taxes income, while Florida and Texas rely on property tax. Each U.S. state has its own approach to raising government revenue.
+- **Pangram Image 1.0** — [Hacker News](https://www.pangram.com/blog/introducing-pangram-image-1-0)
+  Introducing Pangram Image 1.0, our AI image and video detector.
 - **Motorola Signature 27 with GrapheneOS support** — [Hacker News](https://motorolanews.com/motorola-signature-27-2/)
   Meet motorola signature 27, Motorola's most advanced flagship smartphone ever with next-gen AI, industry-leading tech, & a distnctive design.
+- **MCP Explained** — [Hacker News](https://mcp-explained.com/)
+  Every MCP message on the wire, step by step. Transports, auth, tools, sampling, tasks, tool search and codemode. By Runlayer.
+- **They War-Gamed Dimming the Sun. It Went Worse Than You Think** — [Hacker News](https://www.wired.com/story/they-war-gamed-dimming-the-sun-it-went-even-worse-than-you-think/)
+  Solar geoengineering could buy humanity time against climate change—or trigger a dangerous new arms race. A first-of-its-kind simulation offered a glimpse of what happens when geopolitics takes the wh…
 - **Baidu released ERNIE 5.5 Flash Base** — [Hacker News](https://ernie.baidu.com/release/ernie-5-5-flash-base/)
   ERNIE 5.5 Flash Base: a 280B-A14B hybrid-attention MoE pretrained on 33.5T tokens. An open, efficient pretraining base.
-- **YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens** — [Hacker News](https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/)
-  Y Combinator Garry Tan has jokingly admitted that he's suffered from "cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter …
-- **AI stock selloffs fuel fears Big Tech's best quarters are over** — [Hacker News](https://www.latimes.com/business/story/2026-10-30/big-techs-growth-is-cooling-raising-fears-that-best-quarters-are-over)
-  Companies such as Intel and ServiceNow saw massive drops in their share prices this week as financial results spook investors, dragging down the U.S. stock market.
-- **Don't Call It a Decision Model** — [Hacker News](https://typesafe.ai/blog/dont-call-it-a-decision-model)
-  TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.
-- **Overlooked Linux Mv Option Replaces Three Commands with One** — [Hacker News](https://itsfoss.com/mv-exchange/)
-  Still swapping Linux files with three commands and a temporary filename? The mv command has an option that does it in one step. It works for directories too, with one detail you need to get right.
-- **Show HN: I built a tool that prices a pre-built PC part by part** — [Hacker News](https://pcdealcheck.com/)
-  Quick, easy computer price checks for anyone. AI helps read listings; our custom pricing engine determines the grade. Working now. Check US retailer links from anywhere, no account needed. US market p…
-- **'It's just vape, nail, charity shops': Can anything save UK high street?** — [Hacker News](https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham)
-  It’s 20 years since Jo and Richard Hill bought anything in Rotherham town centre. Why have they and so many locals abandoned it for the nearest retail park – and what would it take to change their min…
-- **Replacing homepage demo media with looping HTML and CSS** — [Hacker News](https://stepshots.com/css-feature-clips)
-  Replace homepage GIFs and videos with looping product demos in plain HTML and CSS. Live examples, the source, and a copy-paste AI prompt for any framework.
-- **Ask HN: What's your current AI agentic setup?** — [Hacker News](https://news.ycombinator.com/item?id=50366117)
-- **AMD expects to outsell Intel in Q4 for the first time in history** — [Hacker News](https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections)
-  AI boom drives record quarterly revenue, but client and gaming business faces double-digit declines going into 2027
-- **AI is forcing us to pay off 40 years of technical debt** — [Hacker News](https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability)
-  AI is forcing us to pay off 40 years of technical debt
-- **Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s** — [Hacker News](https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra)
-  Qualcomm Cloud AI 100 Ultra accelerates generative AI. Discover cost-optimized solutions and explore our products. Contact us today.
-- **OpenSSH 10.6p2 has been released with a workaround for a critical vulnerability** — [Hacker News](https://hachyderm.io/@damienmiller/117563026759098135)
-  OpenSSH 10.6p2 has been released with a workaround for a critical vulnerability.
-
-https://openssh.com/releasenotes.html#10.6p2
-
-If you operate a Linux system that uses musl libc without PAM (Alpine Li…
-- **Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)** — [Hacker News](https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/)
-  When two cyclists were tragically killed in hit-and-run collisions this past summer, a group of anonymous urban activists known as the San Francisco Transformation Agency erected a set of protected bi…
+- **Britain to make salary disclosure in job ads mandatory** — [Hacker News](https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/)
+- **Nvidia Kubernetes Engine (NVKE)** — [Hacker News](https://github.com/dsx-ai-factory/nvke)
+  NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal. - dsx-ai-factory/nvke
+- **App Store 2026 in numbers: AI, pricing, abandoned apps** — [Hacker News](https://obelisk.club/research/app-store-2026)
+- **Search for everyone** — [Hacker News](https://kagi.com/changelog#11820)
+  Better search results with no ads. Welcome to Kagi (pronounced kah-gee), a paid search engine that gives power back to the user.
+- **The Stacks Project, Formalized in Lean** — [Hacker News](https://axiommath.ai/research/the-stacks-project-formalized/)
+  A unified library for modern algebraic geometry, built on decades of human scholarship and engineered for the next era of mathematical discovery.
+- **I struggle to believe that AI R&D is ingenious** — [Hacker News](https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL)
+- **Hugging Face's CEO Says His P(Doom) Is 'Close to Zero'** — [Hacker News](https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/)
+  “Most of the risk is actually created by a couple of players building behind closed doors,” Clément Delangue said of the need for open source AI.
+- **Building a Multi-Agent System from Scratch: Architecture Patterns** — [Hacker News](https://kadhar.dev/blog/multi-agent-systems-from-scratch)
+  Orchestrator-worker, blackboard, and pipeline patterns for coordinating multiple AI agents — with the failure modes that only show up once you go past a single-agent demo.
+- **80k Hops per Second Measurement Confirm Starlink Up/Downlink Channel Pairing** — [Hacker News](https://sdr-x.github.io/starlink-ul-dl-pair-80k-hop-ad9361/)
 
 ---
-*Generated at 2026-11-05T16:41:07Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-11-06T16:08:49Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
