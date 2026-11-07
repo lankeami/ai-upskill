@@ -4,6 +4,7 @@ title: "AI Daily Report — 2026-11-07"
 date: 2026-11-07
 companies: ["amazon alexa", "anthropic", "google", "meta", "openai", "Other/Independent"]
 item_count: 53
+podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-11-07/2026-11-07.mp3
 permalink: /today
 ---
 
