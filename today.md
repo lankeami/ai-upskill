@@ -1,73 +1,122 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-11-08"
-date: 2026-11-08
-companies: ["anthropic", "google", "meta", "microsoft", "Other/Independent"]
-item_count: 31
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-11-08/2026-11-08.mp3
+title: "AI Daily Report — 2026-11-09"
+date: 2026-11-09
+companies: ["anthropic", "google", "meta", "microsoft", "openai", "xai", "Other/Independent"]
+item_count: 53
 permalink: /today
 ---
 
-# AI Daily Report — 2026-11-08
+# AI Daily Report — 2026-11-09
 
 ## anthropic
-- **Why a new report on Anthropic automating AI development is alarming researchers** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development)
-  Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slo…
-- **Goodbye Claude, Hello Pi** — [Hacker News](https://caleb.software/posts/claude-to-pi.html)
-- **Anthropic strikes $3.4B deal to generate gas-fired power for data centres** — [Hacker News](https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0)
-- **Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files** — [Hacker News](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again)
-  Secure everything coding agents build, use, and ship - prevent risk before code exists, AutoFix the backlog, and protect the coding agents and supply chain.
-- **The Components of Agent Memory** — [Hacker News](https://www.anthropic.com/research/components-of-agent-memory)
-  For Claude to learn from experience, it has to decide what’s worth remembering before it knows what’s next. Here’s how “dreaming” helps it organize memory and correct mistakes.
-
-## google
-- **Crusoe sells troubled Wyoming data center project to Google** — [TechCrunch AI](https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/)
-  The deal highlights the challenges of developing massive AI data centers.
-
-## meta
-- **Ask LocalLLaMA: How are you handling the liability caused by unrestricted search?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xqwqak/ask_localllama_how_are_you_handling_the_liability/)
-- **mtmd: support MageVL-Cowork model by ngxson · Pull Request #31819 · ggml-org/llama.cpp** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xqpc7u/mtmd_support_magevlcowork_model_by_ngxson_pull/)
+- **Anthropic launches new Claude Fable and Mythos 5.2 models** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2) | [Hacker News](https://www.anthropic.com/claude-fable-and-mythos-5-2)
+  Anthropic is announcing two new models today: Claude Fable 5.2 and Claude Mythos 5.2, which it says are designed to take on "daunting" technical challenges. The company claims the new models show impr…
+- **Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines** — [TechCrunch AI](https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/)
+  Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.
+- **Goldman Sachs is pulling Claude Code from its bankers and traders** — [Hacker News](https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers)
+  In July, Goldman's tech chief was praising the tools traders built with AI coding agents. New internal guidance hands those agents back to the engineers, weeks before Goldman takes Anthropic public.
+- **How I'm fighting the AI brain fry** — [Hacker News](https://sergeykuhne.com/blog/fighting-ai-brain-fry)
+  If you work with Claude Code or Codex from the terminal, you know this one.
 - **Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU** — [Hacker News](https://github.com/synchopate/llama-modchip)
   🐋 Run 284B DeepSeek-V4-Flash (<59GiB RAM, 44.4 tok/s pp, 9.1-14.7 tok/s) & 30B MoEs (25-111 tok/s) on a pure 64GB CPU at 256K ctx (0 GPUs). SwiGLU-H2, Stockfish-PVS L3 & 13ms Claude Code...
 
+## google
+- **Is Opus 5.5 nerfed? Thinking patterns changed on November 3** — [Hacker News](https://twitter.com/shanemelaugh/status/2119192075505893695)
+  is Opus 5.5 nerfed?
+
+I just had Gemini 4 Argon analyze 1,400 Claude Code sessions and it found that on November 3, something definitely happened.
+
+the model name didn't change, but the way it does rea…
+- **PixelOS** — [Hacker News](https://pixelos.net/)
+  PixelOS is an AOSP based ROM, with Google apps included and all Pixel goodies. We aim to provide an experience similar to Google Pixel phones with numerous performance enhancements and a small amount …
+
+## meta
+- **RustingStrata vs llama.cpp, DeepSeek-V4.1-Flash Q2 (249 GB) on a single RTX 3060 12 GB with 30 GB RAM** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrw6uv/rustingstrata_vs_llamacpp_deepseekv41flash_q2_249/)
+- **Best llama.cpp settings for Qwen3.8-Flash-Next on Ryzen AI Max+ 395** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrowl7/best_llamacpp_settings_for_qwen38flashnext_on/)
+
 ## microsoft
-- **The end of Microsoft Research's AI Frontiers group** — [Hacker News](https://hunch.net/?p=13764006)
-- **GeoWorks, Microsoft Windows' Upstart '90s Competitor (2016)** — [Hacker News](https://www.atlasobscura.com/articles/the-history-of-geoworks-microsoft-windows-upstart-90s-competitor)
-  AOL's also involved.
+- **Borrowing a Microsoft-signed shim to abuse Secure Boot on corporate hardware** — [Hacker News](https://leosmith.wtf/blog/not-so-secure-boot.html)
+  Leo Smith's website, specialized in cyber security research, programming and audit. This website also contains my personal cyber security write ups and tools.
+
+## openai
+- **Apple is racing to make Siri more agentic** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic)
+  Bloomberg's Mark Gurman says CEO John Ternus is pressuring AI czar Craig Federighi to accelerate the Siri roadmap and deliver a powerful AI agent that can compete with OpenAI's Dots or Meta's Muse. Wh…
+- **Too many men suffering in silence, national health report finds (Canada)** — [Hacker News](https://www.westcentralonline.com/articles/too-many-men-suffering-in-silence-national-health-report-finds)
+  Too many Canadian men and boys are facing challenges with their mental health and well-being without the support they need, according to findings from a nationwide consultation that will help shape Ca…
+- **ChatGPT Desktop forwards your SSH agent to remote machines** — [Hacker News](https://news.ycombinator.com/item?id=50422628)
+- **RAM-Altman reports unused RAM on your machine, one email a day** — [Hacker News](https://github.com/IainKay/ram-altman)
+  Monitors your RAM and reports any "quite terrible" unused capacity directly to the CEO of OpenAI. - IainKay/ram-altman
+
+## xai
+- **Local first open source alternative to GrokBot** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xryile/local_first_open_source_alternative_to_grokbot/)
 
 ## Other/Independent
-- **Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo** — [TechCrunch AI](https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/)
-  A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.
-- **NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake** — [The Verge AI](https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review)
-  Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, "Chicken again?" Yes, I should meal plan more, b…
-- **The US let Nvidia sell chips to an empty office in China** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government)
-  Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According …
-- **AI broke the cybersecurity world. What’s next?** — [The Verge AI](https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos)
-  Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series l…
-- **I fine-tuned Qwen3.5-0.8B to turn plain English into bash. What I learnt** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xr0ykk/i_finetuned_qwen3508b_to_turn_plain_english_into/)
-- **"Does censorship exist in [country]?", according to various LLMs** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xr09nq/does_censorship_exist_in_country_according_to/)
-- **Users have started buying RTX 5060 Ti 16GB graphics cards en masse for the sake of AI.** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xr01bj/users_have_started_buying_rtx_5060_ti_16gb/)
-- **Is a dual GTX 1080 Ti setup useful for local AI?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xqzqbi/is_a_dual_gtx_1080_ti_setup_useful_for_local_ai/)
-- **Need help or recommendations with setting up Minecraft AI (bots/players)** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xqzlqa/need_help_or_recommendations_with_setting_up/)
-- **35 domain-expert LoRAs on a MoE (Qwen3.6-35B-A3B) trained with MLX on one Mac Studio — what worked, what didn't, all Apache-2.0** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xqw6fr/35_domainexpert_loras_on_a_moe_qwen3635ba3b/)
-- **Consumer brain wave headsets threaten privacy** — [Hacker News](https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F)
-- **Every Mac comes with an (undocumented) family member classifier** — [Hacker News](https://8rank.ai/game/apple-intelligence-personal-knowledge-graph)
-  Every Mac since macOS 13 (2022) ships a pair of daemons whose only purpose in life is to build a graph about who you are, who you know, how those people are related to you and to each other, how you c…
-- **How Long Can Life Wait?** — [Hacker News](https://mceglowski.substack.com/p/how-long-can-life-wait)
-- **Show HN: Maple – Sub-2-BPW Moe Pruning to Run Gemma 4 26B at 45 TPS on a 6GB GPU** — [Hacker News](https://github.com/AmSach/maple)
-  MAPLE: Manifold-Activated Pruning of Latent Experts for Sub-2-BPW MoE LLMs - AmSach/maple
-- **Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8** — [Hacker News](https://github.com/Video-Rebirth/hyperflow-h3-flash)
-  HyperFlow H3 Flash: Video Rebirth's 13.7B, 4- to 8-step compressed MiniMax-H3 for joint video and audio generation (INT8 and GGUF) - Video-Rebirth/hyperflow-h3-flash
-- **Show HN: LLM weight editing tool made by a 15-year-old** — [Hacker News](https://github.com/Miyamoto-Renya/LaplacesScissors)
-  Laplace's Scissors: protected readout rotations for open LLMs. Diagnose weak output directions, repair answers, preserve successful generations, and analyze scaling deviations with Rust and Tri...
-- **Show HN: An offline desktop companion to help maintain a healthy blink rhythm** — [Hacker News](https://eyesrhythm.com/)
-  EyesRhythm is a free, private webcam blink rate detector for Mac and Windows. It scores how often and how steadily you blink during screen work, and Poise shows which way you turned your head so the n…
-- **GitHub Down Again?** — [Hacker News](https://github.com/torvalds/linux)
-  Linux kernel source tree. Contribute to torvalds/linux development by creating an account on GitHub.
-- **What should we learn now?** — [Hacker News](https://ducktape.blot.im/what-should-we-learn-now)
-  With LLMs writing more and more of our code during the day, how do we learn now?
-- **The AI sell-off compared to well-known stock market crashes** — [Hacker News](https://www.kadoa.com/companies/insights/ai-selloff-perspective)
-  The S&P 500 fell 4.4% on 5 Nov 2026, its worst day since April 2025, and is 6% below its 6 Oct record. Charted day by day against 1987, 2008, Covid and other falls since 1950.
+- **Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny** — [TechCrunch AI](https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/)
+  Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.
+- **Meta releases Muse Ember, a new lightweight model for agent execution** — [TechCrunch AI](https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/)
+  At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.
+- **Medium’s new TK app brings AI assistance directly into the writing process** — [TechCrunch AI](https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/)
+  Medium's new writing app embraces AI-assisted writing, despite growing controversy over the technology's role in publishing.
+- **Automattic debuts a platform to deploy vibe-coding apps amid a changing internet** — [TechCrunch AI](https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/)
+  Automattic aims to compete with the likes of Lovable with Spacefast.
+- **Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy** — [TechCrunch AI](https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/)
+  In a memo to the company, Huang admitted that he had an affair.
+- **Instagram’s Effect Builder makes new filters from AI prompts** — [The Verge AI](https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters)
+  After expanding its Edits app to macOS last week, Instagram's next move is launching this Effect Builder that generates custom filters for your Stories posts with AI. Available now for US residents wh…
+- **The future of AI hinges on… Jensen Huang’s sex life?** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me)
+  I would prefer that these people's sex lives were none of my business but I guess we have to talk about Jensen Huang and the National Security Incident. Who could have guessed that the guy who was out…
+- **Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai)
+  Asked about AI executives' warnings about their models' safety on 60 Minutes, Trump said, "I think that the risk is not nearly as real as it- as they talk, and I think the risk can be managed, and it'…
+- **Disney and Adobe are building generative AI tools together** — [The Verge AI](https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership)
+  The Walt Disney Company has teamed up with Adobe to develop proprietary "artist-led" generative AI models to support Disney's production pipeline. The multiyear partnership was announced today at Adob…
+- **Hold up — I had a great time talking to the RIAA guy** — [The Verge AI](https://www.theverge.com/podcast/1029684/riaa-mitch-glazier-napster-ai-labels-music)
+  Today, I’m talking with Mitch Glazier, who is CEO and chairman of the RIAA. This conversation was a real full-circle moment for me: I was in college when Napster hit, and the RIAA became everyone’s vi…
+- **Jonathan Kanter is using AI to take on Big Tech** — [The Verge AI](https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech)
+  When Jonathan Kanter stepped down as head of the Justice Department's Antitrust Division in 2024, he set out to keep fighting to dismantle illegal monopolies. But this time, he's continuing the fight …
+- **Here’s the full text of Jensen Huang’s memo to Nvidia** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia)
+  On Sunday, Nvidia announced it was launching an investigation into CEO Jensen Huang's relationship with Alice Huang, an AI executive and agent of the Chinese government. In addition to the Board of Di…
+- **Why vector DB metadata filters fail on agent memory write paths (0% raw leak vs 67% leak) reproducible offline test suite** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xryzby/why_vector_db_metadata_filters_fail_on_agent/)
+- **Any accountants/financial professionals using local LLMs?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrx72d/any_accountantsfinancial_professionals_using/)
+- **Work has given me an M5Max 64gb. What is an ideal LLM setup, work related ?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrvi6a/work_has_given_me_an_m5max_64gb_what_is_an_ideal/)
+- **Best cyber LLM under 30B / ideally 10B parameters?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrun96/best_cyber_llm_under_30b_ideally_10b_parameters/)
+- **Worth buying a DGX-1 (8× V100 32GB) for local LLM inference in 2026? ~15k €** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrulta/worth_buying_a_dgx1_8_v100_32gb_for_local_llm/)
+- **What if we could improve reasoning by having multiple AI agents discuss a problem in parallel?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrsleb/what_if_we_could_improve_reasoning_by_having/)
+- **Anyone else given up waiting for Qwen4?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrpo1y/anyone_else_given_up_waiting_for_qwen4/)
+- **which model would you use to manage your gmail inbox?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrnmso/which_model_would_you_use_to_manage_your_gmail/)
+- **The case for and against local, private AI** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xrn9a6/the_case_for_and_against_local_private_ai/)
+- **Magenta solar panels may be agrivoltaics' cleverest trick yet** — [Hacker News](https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/)
+  See-through solar cells harvest some wavelengths of light to make electricity, while passing through the red and blue wavelengths that plants need. In a new agrivoltaics experiment, broccoli yields he…
+- **What is malloc doing, anyway?** — [Hacker News](https://benmandrew.com/articles/what-is-malloc-doing-anyway)
+  malloc has a very nice and simple interface: you ask for a certain amount of memory, and you’re given a void pointer to your block of contiguous bytes that’s been magicked into existence. Once you’re …
+- **Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system** — [Hacker News](https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy)
+  The new system will enable participating financial service providers to clear and settle payments in real time, providing a made-in-Canada platform for future innovation and prosperity.
+- **Fold Epic Paper Airplanes** — [Hacker News](https://www.foldableflight.com)
+  The world's largest database of paper airplanes with easy, step-by- step video tutorials for folding each plane!
+- **Chimera Vocal Synth** — [Hacker News](https://chimera-vocal-synth.vercel.app/)
+  CHIMERA: a physically modelled voice synthesizer. Every sound comes from a simulated airway.
+- **Nvidia CEO Jensen Huang's letter to staff about affair** — [Hacker News](https://nvidianews.nvidia.com/news/a-message-to-our-company)
+  I owe my family and all of you an apology. I was unfaithful to my wife. My actions hurt her and our children. There is no excuse for what I did. I am deeply sorry. Throughout my life, my ...
+- **Ask HN: How do you evaluate the skills your AI agents use?** — [Hacker News](https://news.ycombinator.com/item?id=50426070)
+- **Outlook.com is rejecting email from domains without DMARC** — [Hacker News](https://mailroute.net/blog/outlook-rejecting-email-without-dmarc)
+  Since November 5, Outlook.com and Hotmail have been bouncing mail from domains with no DMARC record, small senders included. What changed, and the one-record fix.
+- **6 Hours of YouTube and 85 handtyped pages of notes on LLM Inference – Start here** — [Hacker News](https://github.com/samir-sarwar/samir-vllm)
+  small LLM inference engine from scratch, w/ 6+ hours of youtube tutorials & 85+ pages of handwritten notes included - samir-sarwar/samir-vllm
+- **Humans will never again create a project quite like Wikipedia** — [Hacker News](https://www.economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia)
+- **I saw your HN comment** — [Hacker News](https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/)
+  I used to love getting emails from people in response to things I’ve written online, blog posts or Hacker News comments, but in the last 2 years it’s changed from mostly signal to mostly noise. I’ve …
+- **Children of Men: The future is a mirror for the present** — [Hacker News](https://reactormag.com/children-of-men-the-future-is-a-mirror-for-the-present/)
+  Don't look away: this remains one of the absolute best sci fi movies of the 21st century.
+- **Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation** — [Hacker News](https://arxiv.org/abs/2610.14162)
+  Diffusion language models (DLMs) offer parallel sampling for faster generation than autoregressive models, an increasingly important advantage as inference becomes a dominant computational workload. H…
+- **Drones built to look like birds evaded detection at Air Force tech exercise** — [Hacker News](https://taskandpurpose.com/news/drone-mimicking-bird-test/)
+  The drones built by U.S.-based Ornadyne are designed to look like birds you might see flying in any region of the world.
+- **The Learjet Repo Man (2009)** — [Hacker News](https://www.salon.com/2009/06/06/lear_jet_repo_man/)
+  Business has never been better for the fearless pilot who takes back millionaires' expensive toys.
+- **More than 400k Russians killed fighting in Ukraine war, leaked data suggests** — [Hacker News](https://www.theguardian.com/world/2026/nov/09/russians-killed-ukraine-war-leaked-data)
+  Death records reveal losses since full-scale invasion that are unprecedented in Russia’s modern history
+- **I'm not convinced the AI bubble exists** — [Hacker News](https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists)
+  The AI bubble is a speculative concept that the AI industry is extremely over-valued. If true, the value of most companies involved in AI (several of whom are worth well over a trillion dollars) will …
 
 ---
-*Generated at 2026-11-08T15:30:26Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-11-09T19:01:38Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
