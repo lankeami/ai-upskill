@@ -1,79 +1,97 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-11-15"
-date: 2026-11-15
-companies: ["anthropic", "google", "openai", "Other/Independent"]
-item_count: 37
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-11-15/2026-11-15.mp3
+title: "AI Daily Report — 2026-11-16"
+date: 2026-11-16
+companies: ["google", "meta", "microsoft", "openai", "Other/Independent"]
+item_count: 41
 permalink: /today
 ---
 
-# AI Daily Report — 2026-11-15
-
-## anthropic
-- **Anthropic rebuilds Claude Code Projects around a coordinator and parallel worker threads - each thread is a full cloud session on its own branch** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xwj3v0/anthropic_rebuilds_claude_code_projects_around_a/)
-- **What a task costs on Opus 5.5** — [Hacker News](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/)
-  The same token price can cost very different amounts per task. Learn what Claude Code tasks cost on Opus 5.5 and which settings change the bill.
+# AI Daily Report — 2026-11-16
 
 ## google
-- **Google used 29 AI agents to build a 50-task benchmark for causal reasoning** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xvwdwz/google_used_29_ai_agents_to_build_a_50task/)
-- **Tech companies are trying to shift the concept of privacy again** — [Hacker News](https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again)
-  Privacy, which companies were once happy to claim was all about personal choice, is now primed to affect everyone around you even more than it already did.Meta and Google’s smart glasses can record an…
+- **Google Maps can now build trip itineraries with real-time details about each stop** — [TechCrunch AI](https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/)
+  You could use Ask Maps to plan a holiday shopping day trip or something more complex, like a three-day road trip featuring coastal hikes and oceanfront dining.
+- **Google Maps can now create trip itineraries for you** — [The Verge AI](https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning)
+  Google is launching a new AI trip-planning feature for Maps that allows the app to create custom itineraries for you and provide real-time details about each stop. The update, which is rolling out to …
+- **Google: AI agent turned a security patch into a exploit with no human help** — [Hacker News](https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926)
+  Look ma, no human in the loop!
+- **Israel uploaded photos to Amazon's Rekognition to track Palestinians** — [Hacker News](https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians)
+  Upload came as the Israeli military was increasing its reliance on Amazon’s cloud platform to meet the technological demands of its bombardment of Gaza
+
+## meta
+- **AMD Loom Fun: Added Radeon 9700 support over the weekend. Benchmarked 48 models with an average 42% speedup over llama.cpp.** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xxuzgg/amd_loom_fun_added_radeon_9700_support_over_the/)
+- **Training-free page-sparse decode in llama.cpp: Qwen3-30B-A3B is 1.72× faster at 128k on an RTX 5090, with a 1-point RULER loss** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xxqdil/trainingfree_pagesparse_decode_in_llamacpp/)
+
+## microsoft
+- **Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests** — [Hacker News](https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html)
+  Wegen der Outlook-Störung am Freitag bekam das Phantasialand nicht mit, dass zu viel Chlor im Pool war. 15 Gäste wurden verletzt.
+- **Microsoft blames monster email outage on software defect introduced in July fix** — [Hacker News](https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026)
+  Summer code change caused a Fall fail – frantic engineers had to patch the patch instead of rolling back
 
 ## openai
-- **The AI graveyard: a running list of projects and startups that didn’t make it** — [TechCrunch AI](https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/)
-  From Apple's repeatedly delayed Siri AI to OpenAI's messy "super app" launch, here's a look at the AI projects that shut down or missed expectations.
-- **The OpenAI board member who fired Sam Altman says we still can&#8217;t trust AI CEOs** — [The Verge AI](https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview)
-  Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Hele…
+- **Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’** — [TechCrunch AI](https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/)
+  OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.
+- **OpenAI will embed safety researchers to investigate AI subversion** — [TechCrunch AI](https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/)
+  OpenAI will embed six Apollo Research evaluators to investigate whether its AI models engage in subversive behavior, but restrictions on access and disclosure raise questions about their independence.
+- **OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM** — [TechCrunch AI](https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/)
+  ChatGPT will ban an account trying to access CSAM content for 24 hours as a warning
+- **OpenAI: Strengthening the fight against online child sexual abuse** — [Hacker News](https://openai.com/index/strengthening-online-child-safety/)
 
 ## Other/Independent
-- **Jensen Huang and the decline of the visionary showman founder CEO** — [The Verge AI](https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo)
-  On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packe…
-- **Building with AI is now easier but trust takes further testing.** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xwwrm0/building_with_ai_is_now_easier_but_trust_takes/)
-- **Are AI leaderboards even worth taking seriously anymore?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xwwdhv/are_ai_leaderboards_even_worth_taking_seriously/)
-- **Not all AI sounds human.** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xwo2iz/not_all_ai_sounds_human/)
-- **Don't we want the AI to do our work...** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xwlffv/dont_we_want_the_ai_to_do_our_work/)
-- **The Chrisrmas Tree Test. Fable, Opus, Haiku. You decide...Just for fun** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xwj5u8/the_chrisrmas_tree_test_fable_opus_haiku_you/)
-- **What Happens When AI No Longer Needs Human Permission?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xwezao/what_happens_when_ai_no_longer_needs_human/)
-- **One Router Grounded America? Seriously? Are you sure it wasn’t Rogue AI or a Hack?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xwd18l/one_router_grounded_america_seriously_are_you/)
-- **AI Incest: What happens when AI trains on AI-generated content, generation after generation?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xw7ytx/ai_incest_what_happens_when_ai_trains_on/)
-- **Could AI handle public transit information calls?** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xw6eqj/could_ai_handle_public_transit_information_calls/)
-- **Requiem for a robot: the AI users mourning chatbots that may have harmed them** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xw2k13/requiem_for_a_robot_the_ai_users_mourning/)
-- **Beware of numes.ai** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xvzz1e/beware_of_numesai/)
-- **AI usage and detection survey** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xvu63h/ai_usage_and_detection_survey/)
-- **Mark Zuckerberg wants AI walking around your home, do you? | BBC News** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xvq2xe/mark_zuckerberg_wants_ai_walking_around_your_home/)
-- **Did AI ground US flights? DHS is looking at the FAA's new AI tool** — [Reddit r/artificial](https://www.reddit.com/r/artificial/comments/1xvnyzp/did_ai_ground_us_flights_dhs_is_looking_at_the/)
+- **FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’** — [TechCrunch AI](https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/)
+  The FBI says that the open-source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.
+- **Jordan Belfort’s new AI voice startup, Tone, wants to sell like the ‘Wolf of Wall Street’** — [TechCrunch AI](https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/)
+  Belfort claims his AI sales voice can already close deals almost as well as the best human salespeople, and he thinks it will catch up in a year.
+- **Audible turns to AI to help users discover audiobooks** — [TechCrunch AI](https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks/)
+  Audible's new AI-generated audio previews summarize a book's themes and what readers liked about it, in addition to playing the narrated sample.
+- **US tightens AI chip export controls to deter Chinese companies from accessing compute remotely** — [TechCrunch AI](https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/)
+  Under the interim rule, the U.S. will require firms to get licenses to export AI chips if they may provide compute to China or other restricted countries.
+- **Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM** — [TechCrunch AI](https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/)
+  Dreamteam has signed up more than 100 customers across 13 countries, with some businesses switching from established CRMs.
+- **Apple launches new app to study how people use AI for health** — [TechCrunch AI](https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/)
+  Apple's new app for a study will answer everyday medical questions
+- **Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market** — [TechCrunch AI](https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/)
+  Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.
+- **Is bad news for Jensen Huang also bad news for the AI industry?** — [TechCrunch AI](https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/)
+  "Jensen is Nvidia, right? And so much of this economy is riding on Nvidia."
+- **Audible is trying to make it easier to find audiobooks you’ll actually like** — [The Verge AI](https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability)
+  Audible is introducing an AI-assisted synopsis feature that's designed to help users determine whether they'll enjoy an audiobook before they jump in and start listening to it. The new audio discovery…
+- **The Nvidia scandal isn’t slowing down** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down)
+  For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips are "the bedrock upon wh…
+- **Apple’s new study looks to improve the effectiveness of AI health tools** — [The Verge AI](https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools)
+  Apple announced a new study today with the goal of better understanding how people interact with conversational AI health tools and how useful their responses actually are. The company is conducting t…
+- **Congress wants to tighten export rules on AI chips after Nvidia spy scandal** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china)
+  Unsurprisingly, following the scandal involving now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, Congress is looking to further restrict exports of AI chips. Both Democrats and Republic…
+- **Censorship is turning me into a true Local LLM believer** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xxsc7u/censorship_is_turning_me_into_a_true_local_llm/)
+- **Does grammar-constrained decoding hurt small or quantized models?** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xxrhm3/does_grammarconstrained_decoding_hurt_small_or/)
+- **PyBot: No weights. No training. Pure Python.** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xxrf1d/pybot_no_weights_no_training_pure_python/)
+- **[Paper] Mobile AI Factory: Building Specialized Language Models for Your Mobile Device** — [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1xxpop4/paper_mobile_ai_factory_building_specialized/)
+- **Nvidia was in trouble before the Jensen Huang mess** — [Hacker News](https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/)
+  AI competitors are catching up to Nvidia—and poised to take advantage of the chaos.
+- **Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack** — [Hacker News](https://forum.torproject.org/t/security-release-0-4-9-17/22454)
+  Where to Download  Tarballs Gitlab Repository Bug Report  Changes Below are the major changes of the released versions and links to more detailed release notes.  Stable Today, we are releasing 0.4.9.1…
+- **A short explainer on how El Niño works [video]** — [Hacker News](https://www.youtube.com/watch?v=7_JF3etiAv8)
+- **WebGL Flight Simulator with seed generated terrain** — [Hacker News](https://baron.by.dai.studio/)
+  Take off, explore a procedurally generated world and land it in one piece. Pick a biplane, turboprop or jet in the hangar. Free, built with DAI Studio.
+- **Whistleblower accuses Pentagon over Iran strike on US base that killed 6** — [Hacker News](https://www.cnn.com/2026/11/15/politics/army-soldier-whistleblower-complaint)
+  One of the US Army soldiers that survived an Iranian strike that hit a makeshift operations center in Kuwait and killed six has submitted a whistleblower complaint alleging that the Pentagon did not l…
+- **Parcel: A desktop mail client for Linux, built with Zig** — [Hacker News](https://tangled.org/rockorager.dev/parcel)
+  Repository parcel by rockorager.dev on Tangled.
+- **Interpreting claims that a theorem is correct because it was checked in Lean** — [Hacker News](https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/)
+  This post is an attempt to explain in simple terms how to interpret claims of the form “this theorem is correct because it was checked in Lean”. The summary is: there is an important si…
+- **Clice v1.0 Released: Welcome to Modern C++** — [Hacker News](https://ykiko.me/en/articles/2105384023094834022/)
+  clice recently hit 1,000 commits, a special milestone for the project. Since July 19, 2026, clice has been shipping nightly builds and going through roughly four months of alpha testing, with a huge n…
+- **Michael Mann's 'Heat' Copyright Fight Turns on a Deal with Himself** — [Hacker News](https://copyrightlately.com/michael-mann-heat-copyright-termination/)
+  New Regency says Mann can’t reclaim rights in “Heat” because he wrote it for his own company. Mann says he wrote the early drafts on his own.
 - **All AI-generated code should be Open Source** — [Hacker News](https://jakub.jankiewicz.org/blog/ai-code-open-source/)
   All code generated with help from AI should be Open Source or on Creative Commons Zero (CC0) license.
-- **Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM** — [Hacker News](https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/)
-  Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations connected over ConnectX-8 RDMA serve one…
-- **Dartmouth (Guarini) will not admit math PhD cohort this year** — [Hacker News](https://www.thedartmouth.com/article/2026/11/gandhi-fagell-guarini-will-not-admit-math-ph-d-cohort-this-year)
-  Faculty raised concerns about the program’s suspension at the general faculty meeting on Nov. 9. A College spokesperson declined to answer questions about when applications would resume.
-- **Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs** — [Hacker News](https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus)
-  Following the departure of now-former NVIDIA CEO, Jensen Huang, a new report by The Wall Street Journal (via Wccftech) has emerged alleging that NVIDIA artificially inflated the ongoing GPU and memory…
 - **Understanding Positional Embeddings in Modern LLMs** — [Hacker News](https://magazine.sebastianraschka.com/p/understanding-positional-embeddings)
   The Methods Behind How LLMs Represent Token Positions
-- **Lovable apps expose passport details and more than 200K private messages** — [Hacker News](https://www.crissyfield.de/research/lovable-en/)
-  Our analysis of 159,041 Lovable projects reveals many cases where sensitive data was accessible without logging in.
-- **Show HN: Gawain – Require type hints on all Python variables** — [Hacker News](https://github.com/matheuzgomes/gawain)
-  Every Python type declared, every covenant kept. Contribute to matheuzgomes/gawain development by creating an account on GitHub.
-- **How to Create Your Own Decentralized Messenger Protocol** — [Hacker News](https://karboosx.net/post/5j7jdDM3/how-to-create-your-own-decentralized-messenger-protocol)
-  Ever wondered how to build a decentralized messenger without any central servers? It's all about federation - just like email! In this post, I'll show you how to design a simple protocol from scratch,…
-- **The Single Router in Southern Arkansas That Ground Air Travel to a Halt** — [Hacker News](https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c)
-- **DKIM2 – Every system that handles an email signs for what it did** — [Hacker News](https://dkim2.com/)
-  DKIM2 gives legitimate email a verifiable way to show it is from who it says it's from, with every change attributable to whoever made it — so whatever is still in the grey area can be treated as bad.…
-- **We're Asking an Appeals Court to Require a Warrant for ALPR Searches** — [Hacker News](https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches)
-  Automated license plate readers are simply not comparable to observing an individual license plate on a passing car. As we’ve explained in many amicus briefs and in our lawsuits directly challenging t…
-- **Show HN: DeepSeek V3 in ~200 lines of pure Jax** — [Hacker News](https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax)
-  DeepSeek V3 (MLA, DeepSeekMoE, aux-loss-free balancing, MTP) in 190 lines of pure JAX, trained on a MacBook Air. Write-up: vaibhaav.in/writing/deepseek-v3-jax - Vaibhaav-Tiwari/deepseek-v3-jax
-- **Jensen Huang allegedly manufactured the GPU shortage** — [Hacker News](https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon/)
-  New details reveal that former NVIDIA CEO Jensen Huang used circular financing to fund AI startups and absorb excess TSMC wafers and memory rather than letting GPU prices drop
-- **Show HN: A custom font based on the Jamaican flag alphabet** — [Hacker News](https://bobbiec.github.io/jamaican-font.html)
-  A font where the letters are based on the Jamaican flag design.
-- **Kiri – The Modern Container Runtime** — [Hacker News](https://runkiri.com/)
-  Docker containers on Mac, Windows and Linux with one Rust daemon. docker run in 22 ms on a Mac. Works with docker, Compose and the Docker API.
-- **A visual explanation of reinforcement learning** — [Hacker News](https://aatishb.com/myriad/how-brains-learn/)
-  A visual explanation of reinforcement learning
+- **Friends at Frontier Labs** — [Hacker News](https://www.jenn.site/on-friends-at-frontier-labs/)
+  I am deeply uncertain about whether or not it is a good idea to get my friends to quit working at frontier AI labs. I am against people working at frontier A...
+- **Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost** — [Hacker News](https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch)
+  It's unclear what caused the anomaly, which occurred 10 minutes into flight.
 
 ---
-*Generated at 2026-11-15T15:47:49Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-11-16T18:48:38Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
