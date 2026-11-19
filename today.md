@@ -1,134 +1,136 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-11-18"
-date: 2026-11-18
-companies: ["amazon alexa", "anthropic", "google", "microsoft", "openai", "xai", "Other/Independent"]
-item_count: 57
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-11-18/2026-11-18.mp3
+title: "AI Daily Report — 2026-11-19"
+date: 2026-11-19
+companies: ["anthropic", "google", "microsoft", "openai", "Other/Independent"]
+item_count: 56
 permalink: /today
 ---
 
-# AI Daily Report — 2026-11-18
-
-## amazon alexa
-- **Not even Sam Altman is safe from AI deepfakes on Instagram** — [The Verge AI](https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake)
-  Instagram is filled with people posting deepfaked content - including, as of late, from one of Meta's most prominent executives. Earlier in November, Alexandr Wang, Meta's chief AI officer, shared a s…
+# AI Daily Report — 2026-11-19
 
 ## anthropic
-- **Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop** — [TechCrunch AI](https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/)
-  Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access.
-- **"Anthropic Is Not a Safe AI Company" – Coalition Challenges Anthropic Safety** — [Hacker News](https://www.businesswire.com/news/home/20261118974464/en/Anthropic-is-Not-a-Safe-AI-Company---Broad-Coalition-of-Scientists-Legal-Scholars-and-Tech-Leaders-Challenge-Anthropics-Safety-Branding-Ahead-of-IPO)
-- **Claude was trained on protein sequences at scale** — [Hacker News](http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/)
-  A next-amino-acid test on little-studied proteins finds that the latest Claude models were trained on protein sequences at scale. Other frontier models show no sign of it.
+- **Anthropic hits NASDAQ exchanges at $111, 33% above IPO price** — [TechCrunch AI](https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/)
+  Anthropic's IPO price was set at $83, representing more than $80 billion in new capital raised.
+- **At Nasdaq opening bell, Anthropic CEO recommits to pacing AI development** — [TechCrunch AI](https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/)
+  In his Nasdaq opening bell speech, Dario Amodei reiterated Anthropic's commitment to pacing AI development, regardless of business or political pressure.
+- **Anthropic prices IPO at $83 a share, above projected range** — [TechCrunch AI](https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/)
+  The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.
+- **Snapchat now lets developers build AR Lenses with AI assistants like Claude Code and Cursor** — [TechCrunch AI](https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/)
+  Lens creators can describe the Lens they want in plain language, and their AI assistant handles the process from start to finish, Snapchat says.
+- **Anthropic starts trading on Wall Street** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq)
+  Anthropic has officially gone public. It began trading on the Nasdaq under the ticker symbol "ANT" at $111.50 per share, up from its initial $83 per share price that put company's value at around $1.5…
+- **With the biggest IPO of all time, Anthropic’s ‘good guy’ reputation is on the line** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure)
+  Today is a new beginning for Anthropic: a years-in-the-making IPO that beat out SpaceX for most valuable of all time, having raised $81.3 billion and set an important precedent for the other public AI…
+- **Anthropic prices initial public offering** — [Hacker News](https://www.anthropic.com/news/anthropic-prices-initial-public-offering)
+  Today Anthropic, PBC priced its initial public offering of its Class A common stock.
+- **Anthropic hits $2T in Nasdaq debut** — [Hacker News](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/)
 
 ## google
-- **Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free** — [The Verge AI](https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free)
-  Google is rebranding its Spark AI agent as "Tasks" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage you…
-- **Amazon and Google will together own nearly 30% of Anthropic after its IPO** — [TechCrunch AI](https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/)
-  Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.
-- **Google joins the tech outage trend by announcing it’s not having one** — [TechCrunch AI](https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/)
-  With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.
-- **Google expands access to Gemini Tasks, which can help with calls, purchases** — [TechCrunch AI](https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/)
-  Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.
-- **Google to keep Gemini chats for 2 months, up from 72 hours, even with history off** — [TechCrunch AI](https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/)
-  Google's Gemini update extending chat retention will roll out globally over the coming weeks.
+- **Gemini 4 Neon** — [Hacker News](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) | [Hacker News](https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/)
+  Today, we’re introducing Gemini 4 Neon
+- **Anthropic’s IPO puts AI’s circular financing boom to the test** — [TechCrunch AI](https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/)
+  Anthropic faces enormous compute commitments as it goes public, but its biggest infrastructure partners, including Amazon and Google, could continue profiting from AI even if Anthropic loses its lead.
+- **Google’s AI feature in Search gets its own incognito mode** — [TechCrunch AI](https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/)
+  Google's new temporary threads let users have conversations in AI Mode without adding them to their search history or influencing future recommendations.
+- **The nation’s largest school districts consider ditching Google Search** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google)
+  New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Time…
+- **Google Chrome dev team declares bug report bankruptcy** — [Hacker News](https://blog.plover.com/tech/bug-reports.html)
+  From the highly eclectic blog of Mark Dominus
+- **Genie 4 is now available** — [Hacker News](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/)
+  We are rolling out a new Project Genie experience to eligible Google AI Ultra subscribers, opening access to our new Genie 4 world model.
 - **Why is Gemini 4 Carbon taking so long?** — [Hacker News](https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/)
   Gemini 4 Carbon spent close to an hour on tasks that Opus and Astra finished in minutes. We traced every step of its runs to find out why.
-- **Google's AI answers reducing search traffic by 40%** — [Hacker News](https://revscope.co/blog/search-seo-geo-2026/)
 
 ## microsoft
-- **Satya Nadella says he’s AGI-pilled now** — [The Verge AI](https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now)
-  Microsoft CEO Satya Nadella says he's AGI-pilled, at least when it comes to how AI might make startling changes to the structure of the economy and how politics might change because of it. "I am AGI-p…
-- **Microsoft AI: Seven new world-class models at scalable price-performance** — [Hacker News](https://microsoft.ai/news/microsoft-ignite-2026/)
-- **Microsoft's ONNX Runtime has disappeared from GitHub** — [Hacker News](https://github.com/microsoft/onnxruntime)
+- **Microsoft CEO Satya Nadella explains why he asked 60K employees to quit** — [TechCrunch AI](https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/)
+  Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive …
+- **Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’** — [TechCrunch AI](https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/)
+  The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.
+- **Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit** — [TechCrunch AI](https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/)
+  Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.
+- **Satya Nadella predicts AI agents will reshuffle the economics of the web** — [TechCrunch AI](https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/)
+  Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.
 - **Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365** — [Hacker News](https://exitpath-ruddy.vercel.app/)
-  Which open-source alternatives really hold up, what moves across, what does not, and how much work the switch is.
+  A catalog of open-source alternatives to common proprietary tools: what transfers, what does not, and how hard the move is.
 
 ## openai
 - **OpenAI CEO Sam Altman says it’s ‘hard to imagine the AI industry without Jensen’** — [TechCrunch AI](https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen/)
   Nvidia founder and former CEO Jensen Huang stepped down last week amid several scandals, including an affair with an alleged Chinese spy.
-- **GPT‑6.2 Astra and Sol** — [Hacker News](https://openai.com/index/introducing-gpt-6-2-astra-sol/)
-- **Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium** — [Hacker News](https://github.com/RunanywhereAI/trnrt)
-  The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere. - RunanywhereAI/trnrt
-- **Jensen Huang's fall hits 'open' models in boost to Anthropic and OpenAI** — [Hacker News](https://www.ft.com/content/418ca885-fbcf-4b9f-a8b9-2bd60b543fc5)
-
-## xai
-- **Grok Bot took unapproved actions, ignored orders to stop, and then denied it** — [Ars Technica AI](https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/)
-  AI agent takes unapproved actions even when laptop lid is closed and told not to.
+- **ChatGPT can transcribe as you speak now with Live Dictation** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation)
+  ChatGPT can receive audio prompts from your microphone faster now with a Live Dictation feature that transcribes as you speak, rather than waiting until you finish recording. It's rolling out now glob…
+- **Advancing chip design with OpenAI models** — [Hacker News](https://openai.com/index/advancing-chip-design-with-our-models/)
+- **OpenAI still has a WebRTC Problem** — [Hacker News](https://moq.dev/blog/webrtc-is-still-the-problem/)
+  Media over QUIC: Your voice AI keeps asking "can you repeat that?" because WebRTC throws away your words. MoQ dun do that.
 
 ## Other/Independent
-- **Hundreds of websites deliver potent malware cocktail to unsuspecting visitors** — [Ars Technica AI](https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/)
-  Malware cocktail delivers cryptocurrency theft payloads and iOS exploits, among other things.
-- **Will Wright’s next game uses AI to map your memories** — [The Verge AI](https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview)
-  Will Wright, the creator of legendary franchises like SimCity and The Sims, is working on a new game - and it's built around AI. The new title, focused on your memories, is called MyMems. Like Wright'…
-- **Nvidia isn’t selling any more AI chips to China** — [The Verge AI](https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling)
-  Nvidia has stopped sending its advanced AI chips to China despite the approval it received from the White House to do so in December last year. The announcement was made by interim Nvidia CEO Colette …
-- **Suno now lets you make AI videos for your AI music** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature)
-  Suno has introduced image and video generation in its latest effort to expand beyond being an AI music platform. The new feature, called "Visuals," allows users to turn Suno songs into AI-generated vi…
-- **Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing** — [The Verge AI](https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang)
-  Interim Nvidia CEO Colette Kress announced the company's Q3 earnings on Tuesday, without initially mentioning former CEO Jensen Huang or the details of his departure, or possible attempt at a return. …
-- **The DOJ says it’s investigating Megaspeed** — [The Verge AI](https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update)
-  The Justice and Commerce Departments said that they are investigating Megaspeed, the Singapore-based data center company intertwined with the resignation of Nvidia CEO Jensen Huang, after reporting su…
-- **Jensen Huang says he’s willing to return as Nvidia CEO** — [The Verge AI](https://www.theverge.com/tech/1035420/jensen-huang-nvidia-return-as-ceo-statement)
-  Jensen Huang, who resigned as Nvidia's CEO last week, would be willing to return as CEO if the company's board of directors wanted it, he said in a statement reported on by The Wall Street Journal. "S…
+- **Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories** — [TechCrunch AI](https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/)
+  Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.
+- **Superhuman pushes its Go assistant everywhere** — [TechCrunch AI](https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/)
+  Superhuman is making Go its central agent and making it available in Docs and Mail.
+- **Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’** — [TechCrunch AI](https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/)
+  “I don’t think [Huang is] disloyal to the United States," Musk said.
+- **Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’** — [TechCrunch AI](https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/)
+  The Anduril co-founder says outdated technology is leaving systems vulnerable to a new wave of AI-enabled attacks.
+- **Palmer Luckey thinks China is ‘thrilled to have Jensen out,’ so he wants the ousted Nvidia CEO reinstated** — [TechCrunch AI](https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated/)
+  "It makes America weaker to knock him out," the Anduril CEO said about ousted Nvidia leader Jensen Huang.
+- **Sam Altman says his life is so weird that he’s unfazed by Andrew Garfield portraying him in upcoming movie** — [TechCrunch AI](https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unfazed-by-andrew-garfield-portraying-him-in-upcoming-movie/)
+  "It doesn't feel like it's in like the top 10 weirdest things about my life," Altman said.
+- **More banks say customers using AI agents are on their own — even if they get hacked** — [TechCrunch AI](https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/)
+  Citi is the latest major financial institution to put the breaks on personal finance AI agents.
 - **Sam Altman warns against a future where AI, not humans, calls the shots** — [TechCrunch AI](https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/)
   Sam Altman and Greg Brockman pushed back against Silicon Valley's growing debate over an AI takeover, while acknowledging the challenges of keeping advanced models under human control.
-- **Nvidia clarifies when it will — and won’t — keep financing neoclouds** — [TechCrunch AI](https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/)
-  If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress e…
-- **Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents** — [TechCrunch AI](https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/)
-  With a team of just seven, Unsiloed AI plans to compete with tech giants and specialized startups in the crowded AI document-processing market.
-- **India’s Humyn Labs raises $47M to feed US robotics companies the data they need** — [TechCrunch AI](https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/)
-  Founded in February, Humyn Labs competes with startups such as Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.
-- **Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit** — [TechCrunch AI](https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/)
-  Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.
-- **SEC reportedly investigating Nvidia amid Huang exit** — [TechCrunch AI](https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/)
-  The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.
-- **Model ML raises $250M to automate investment banking grunt work** — [TechCrunch AI](https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/)
-  The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affec…
-- **As decision model use skyrockets, is customization the next frontier?** — [TechCrunch AI](https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/)
-  Sqwish Labs has a new wrinkle on the decision model: Train it with your own data to max its capabilities.
-- **Pedestal AI raises $4.7 million to agentify the supply chain** — [TechCrunch AI](https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/)
-  The company uses agentic AI to make supply chains faster and more reliable.
-- **AI models can be tricked into identifying civilians as military targets by telling them it’s a game** — [TechCrunch AI](https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/)
-  Vals, a San Francisco-based AI evaluation startup, tested whether leading AI models could be manipulated into participating in autonomous warfare. They usually compiled.
-- **Quad9 Is Leaving France: Why DNS Resolvers Are the Wrong Place to Fight Piracy** — [Hacker News](https://techstackups.com/articles/quad9-leaves-france-dns-blocking/)
-  On November 24, 2026, the non-profit DNS resolver Quad9 stops serving users in France rather than obey a beIN Sports blocking order. Here's what Quad9 is, how the French law got here, and why forcing …
-- **Highly classified US national security communications network goes down** — [Hacker News](https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down)
-  The highly classified network that the National Security Agency uses for its internal communications is down, according to six people familiar with the matter. The NSA closed its campus to most employ…
-- **AI Agents Ask Better Questions Than KPMG Accountants in Landmark Audit Trial** — [Hacker News](https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/)
+- **How to tell a cyberattack from a plain old outage** — [Ars Technica AI](https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/)
+  When everything goes down, don’t assume it’s a cyberattack.
+- **I let Apple’s always-listening AI summarize my life for two weeks** — [The Verge AI](https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on)
+  Was it worth it? I've been asking myself this quite a bit over the last month or so while testing both the Amazon Bee Frontier and Siri Recap on the Apple Watch Ultra 4. Both enable a wearable to ambi…
+- **Canva adds an AI ‘off’ button** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button)
+  Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature,…
+- **Trump’s latest land grab is an AI hub in the Philippines** — [The Verge AI](https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica)
+  President Donald Trump was greeted by no less than five beauty queens when he landed in the Philippines on Tuesday, according to local news outlet Rappler. As he stepped onto the tarmac, a child hande…
+- **Tech lawsuits defined 2026 — and lawmakers want more** — [The Verge AI](https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act)
+  With just a few weeks remaining, lawmakers are trying to pass new protections for victims of online harm before the end of 2026, targeting deepfake creators and online platforms that block users from …
+- **What is Nvidia without AI’s sugar daddy in charge?** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition)
+  If the glorious AI revolution rests entirely on the well-being of one man, AI is perhaps not as robust a technology as I had previously been led to believe. Nonetheless, chunks of Silicon Valley are n…
+- **Everything you need to survive and rebuild society** — [Hacker News](https://lastbook.org/)
+  Free, open-source survival library with local AI, maps and how-to videos. Works offline after setup on Mac, Windows and Linux.
+- **Chrome AI Features Wasting Much Bandwidth** — [Hacker News](https://perishablepress.com/chrome-ai-wasting-much-bandwidth/)
+  🔎 Finally solved the mystery. At some point this year (around a few months ago), my bandwidth/data usage went thru the roof. Figured out it was Chrome's...
+- **Why AI Wants to Be Local – With Pete Warden (Creator of Moonshine Voice)** — [Hacker News](https://thedataexchange.media/pete-warden-moonshine/)
+  Pete Warden on Local AI, Open Models, Voice Interfaces, and the Future of Hardware. Subscribe: Apple • Spotify • Overcast … More
+- **Fuck Your AI Safeguards** — [Hacker News](https://ounapuu.ee/posts/2026/11/19/unsafeguards/)
+  You can't tell me that you found a security issue in my product and then refuse to fix it.
+- **Mosquitoes are Ladakh's latest tourists** — [Hacker News](https://ruralindiaonline.org/article/mosquitoes-are-ladakh-s-latest-tourists)
+  In Ladakh’s Leh district, a series of factors – climate change, failing public systems, shrinking livelihoods and unplanned tourism – combine to create vulnerability to malaria and dengue in a region …
+- **AI agents ask better questions than KPMG accountants in audit trial** — [Hacker News](https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/)
   LONDON, November 18, 2026 — Artificial intelligence has taken another significant step into the world of professional services after KPMG revealed that AI
-- **U.S. AirForce is looking for old storage Media (CF or PC cards)** — [Hacker News](https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view)
-- **NGINX2Root by Xint – From Nginx visitor to root of the server host** — [Hacker News](https://nginx2root.com/)
-  Xint discovered five nginx vulnerabilities, including CVE-2026-123007. From unauthenticated RCE to host root, chained with a kernel exploit.
-- **SuperEMeans: Making e-means 3× faster** — [Hacker News](https://www.lkuffo.com/superemeans/)
-  TL;DR: We fused SuperKMeans and e-means, resulting in 3× faster clustering of high-dimensional vectors without quality trade-offs. Available now at https://github.com/cwida/SuperKMeans.
-Recently, ther…
-- **Energy drinks linked to 11 times more reports of cardiac arrest** — [Hacker News](https://www.sciencedaily.com/releases/2026/11/261110042543.htm)
-  A new study found that energy drinks and stimulant supplements were linked to disproportionately frequent reports of serious heart problems, including 11 times more reports of cardiac arrest and 4.5 t…
-- **Poland says it thwarted false flag operation near border with Kaliningrad** — [Hacker News](https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html)
-  Russian intelligence services reportedly planned a sabotage attack near Poland's border with Kaliningrad, aiming to cause mass casualties and blame Ukraine, Rzeczpospolita reports.
-- **Is AI a bicycle for the mind, or a car?** — [Hacker News](https://twitter.com/kouhxp/status/2123096768996892959)
-  Jobs called the computer a bicycle for the mind. is AI a bicycle or an automobile?
-- **Cerebras Disaggregated Inference** — [Hacker News](https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference)
-  Cerebras pairs AMD GPUs for prefill with wafer-scale decode to deliver 5× more tokens per megawatt without reducing token generation speed.
-- **Not Everything Needs an LLM** — [Hacker News](https://newsletter.posthog.com/p/decision-models)
-  How we use decision models
-- **Harvard researchers find AI coding agents shifted the bottleneck to code review** — [Hacker News](https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/)
-  Harvard study: AI coding agents raised code output 30 percent; finished work did not measurably rise, and getting code through review took 49 percent longer.
-- **Classical Energies Learn to Reason 1k× Faster Than Looped Models** — [Hacker News](https://arxiv.org/abs/2611.17309)
-  Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to trai…
-- **MAI Code 2 and Code 2 Flash** — [Hacker News](https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/)
-- **Who Builds the Machines That Build the Machines?** — [Hacker News](https://read.corematter.com/p/section-232-us-machine-tools)
-  The Russian doll of physical AI’s bottlenecks
-- **Effects of a Nuclear Detonation in Low Earth Orbit** — [Hacker News](https://arxiv.org/abs/2611.09827)
-  More than 13,000 satellites operate in low Earth orbit (LEO), and concern has grown that nuclear weapons could be used in space to target them. Beyond the initial X-ray burst, electrons released by ra…
-- **IBM Links Two Nighthawk R3 Chips to Make a 1,040-Qubit Quantum System** — [Hacker News](https://www.nextplatform.com/compute/2026/11/17/ibm-links-two-nighthawk-r3-chips-to-make-a-1040-qubit-quantum-system/5310545)
-  Big Blue has been on a tear for the past couple of years detailing the strides it’s making towards m ...
-- **Can Peer Review Survive AI-Generated Text? [pdf]** — [Hacker News](https://www.sas.upenn.edu/~jesusfv/Peer_Review.pdf)
-- **A 4.5M-parameter TTS model runs 70x real-time on CPU and cost just $10 to train** — [Hacker News](https://huggingface.co/n4ze3m/tiny-voca)
-  Text-to-Speech model. Download, explore files and run it on Hugging Face.
-- **AI is killing All About Berlin** — [Hacker News](https://nicolasbouliane.com/blog/death-by-ai)
-  They used my work to train their AI, and now they're using their AI to put me out of work.
+- **AI isn't replacing your job. It's turning it into low-paid gig work** — [Hacker News](https://restofworld.org/2026/ai-jobs-skills-gig-work/)
+  Platform companies are luring doctors, lawyers, and Ph.D.s with top rates, but then use the same tactics of pay cuts and sudden ghosting that have plagued global data workers.
+- **Show HN: Foolscap – a writing app that reads your book and never writes for you** — [Hacker News](https://foolscap.works/)
+  Foolscap uses AI to help you write, without writing for you. Foolscap does not generate text for you. Your writing is entirely yours.
+- **LLM assisted reverse engineering** — [Hacker News](https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering)
+  I have been hacking both hardware and software for 2 decades. Previously manually. But in 2026 with the help of AIs the proccess is greatly sped up. Below I wil
+- **DaisyRose-27B** — [Hacker News](https://www.radixark.com/blog/daisyrose-27b)
+  Introducing DaisyRose-27B, RadixArk’s first model, trained with Miles on 1,200 curated tasks in 18 days on 144 H200 GPUs.
+- **Codeberg.org Not Reachable** — [Hacker News](https://social.anoxinon.de/@codebergstatus/117636437840688845)
+  As you probably noticed, our domain codeberg.org is entirely unreachable.
+
+It was registered with namesilo and entirely disappeared from our account. We're waiting for their customer support to invest…
+- **Launch HN: Maritime (YC F26) – A managed cloud for production AI agents** — [Hacker News](https://news.ycombinator.com/item?id=50549188)
+- **Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2** — [Hacker News](https://contralabs.com/frontierdesign)
+  Which AI model designs best? Professional designers compared their work, blind, on real client briefs.
+- **AI Overworks People** — [Hacker News](https://twitter.com/catalinmpit/status/2123061832781090948)
+  It's absolutely fascinating how people are digging themselves an early grave.
+
+AI's promise was to allow people to work less and get more done. But now people are working more, feeling more stressed, …
+- **Launch HN: Onlook (YC W25) – An open-source developer tool for designers** — [Hacker News](https://github.com/onlook-dev/onlook/)
+  The Developer Tool for Designers • An Open-Source AI-First Design tool • Visually build, style, and edit your code with AI • World's best, top-most agent recommended #1 Developer tool for Desig...
+- **Ruby2ßhell: Pre-authentication RCE on stock Rails** — [Hacker News](https://verialabs.com/ruby2shell/)
+  Ruby2Shell (GHSA-34m4-m9fh-gqp5): a one-byte heap overflow in Ruby's string case conversion, reachable without authentication in common Ruby web frameworks and self-hosted software.
+- **Mass launched to orbit each year by rocket builder** — [Hacker News](https://www.kadoa.com/companies/insights/spacex-europe-payload)
+  SpaceX's Falcon rockets carried 2,330 tonnes to orbit in 2025, 81% of the world's total. Yearly payload against Europe, Russia and China, launches and Starlink's part.
+- **Do not buy RAM, compress** — [Hacker News](https://curiousbits.nl/blog/do-not-buy-ram-compress/)
+  AI has changed a lot. We do more work in parallel. This increases the memory demand on our workstations. Also, memory is expensive and often not extendable. So buying more RAM is not an easy option. R…
 
 ---
-*Generated at 2026-11-18T17:28:09Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-11-19T17:33:35Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
