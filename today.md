@@ -1,101 +1,68 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-11-21"
-date: 2026-11-21
-companies: ["anthropic", "google", "openai", "Other/Independent"]
-item_count: 41
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-11-21/2026-11-21.mp3
+title: "AI Daily Report — 2026-11-22"
+date: 2026-11-22
+companies: ["anthropic", "openai", "Other/Independent"]
+item_count: 25
 permalink: /today
 ---
 
-# AI Daily Report — 2026-11-21
+# AI Daily Report — 2026-11-22
 
 ## anthropic
 - **Can Anthropic afford to put safety first?** — [The Verge AI](https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure)
   Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public …
-- **Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem)
-  Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded …
-- **Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO** — [TechCrunch AI](https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/)
-  At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.
-- **And yet, it moves** — [Hacker News](https://signoregalilei.com/2026/11/20/and-yet-it-moves/)
-  It appears that Anthropic has just solved the Riemann Hypothesis, and I have Thoughts. So I’m going to start by telling you about a musical I saw last week. Given my entire personality and identity…
-- **Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day** — [Hacker News](https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off)
-  The Nasdaq lost trillions in value, with the AI startup’s IPO failing to buoy it as investors question huge sums being poured into AI buildout
-- **Anthropic's IPO bank closed position meant to stabilize stock** — [Hacker News](https://www.reuters.com/markets/us/anthropics-ipo-bank-closed-position-meant-stabilize-stock-removing-source-2026-11-20)
-
-## google
-- **Signal is blocking Gemini and Siri AI from reading your screen** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app)
-  Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built into o…
+- **87% of the Anthropic power will come from gas and 11% from coal in 2028** — [Hacker News](https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/)
+  A case study of Anthropic’s total power use and emissions. We find the company could emit 32 million metric tons of carbon dioxide in 2028.
 
 ## openai
-- **Apple may be developing its own AI agent that runs your Mac** — [TechCrunch AI](https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/)
-  The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.
-- **ChatGPT for SNES** — [Hacker News](https://www.bxfoundry.com/chatgpt_snes/)
-  An unofficial experiment: a small language model running on the Super FX chip of a Super NES cartridge. Not made or endorsed by OpenAI.
-- **Anyone can easily use private, open weight models** — [Hacker News](https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models/)
-  It's impossible to deny that, despite all the slop/data centers/environmental destruction/theft, LLMs are incredibly useful and powerful.
-
-It's also impossible to deny that OpenAI and Anthropic suck a…
+- **A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence** — [Hacker News](https://morethanamachine.com/posts/slinky-escalator-benchmark/)
+  Fifteen models from Anthropic, OpenAI and Google try the same prompt: a rainbow slinky walking down an up escalator with real physics.
 
 ## Other/Independent
-- **Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.** — [Ars Technica AI](https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/)
-  Test using prompts with unique, trackable secrets proves that data doesn't stay private.
+- **The vibe-coding revolution is coming to all the gadgets** — [The Verge AI](https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera)
+  This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback arrives in our subscriber…
+- **The UN fails to agree on rules regulating ‘killer robots’** — [The Verge AI](https://www.theverge.com/tech/1039554/un-regulations-killer-robots)
+  One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called "killer robots." Eventually, representatives…
 - **Chess.com’s next move is a new hub for classic games, from mahjong to sudoku** — [The Verge AI](https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai)
   Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahj…
-- **Trump threatens ‘tremendous tax’ for moving AI data centers outside the US** — [The Verge AI](https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax)
-  President Donald Trump promised to put a "tremendous tax" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applicati…
+- **Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance** — [TechCrunch AI](https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/)
+  Signal is limiting users' ability to take screenshots in both its Android and iOS apps.
+- **Here are the top AI agents that can live in your text messages** — [TechCrunch AI](https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/)
+  We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.
 - **Is selling an AI version of your face to this microdrama startup the future of Hollywood?** — [TechCrunch AI](https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/)
   An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.
-- **Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.** — [TechCrunch AI](https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/)
-  Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.
-- **AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too** — [TechCrunch AI](https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/)
-  Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.
-- **The fallout from Nvidia’s Jensen Huang scandal continues** — [TechCrunch AI](https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/)
-  In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue.…
-- **Six AI-powered gadgets that could make your home office smarter** — [TechCrunch AI](https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/)
-  From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.
-- **Hurried Announcement: Alessandro Masullo GRH** — [Hacker News](https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/)
-  Hi everyone, I am at the American Mathematical Society Executive Committee and Board of Trustees meeting now, and about to chair an hours-long meeting, but this is urgent, so I will try to get this…
-- **Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]** — [Hacker News](https://alpo.ge/remark.pdf)
-- **The Hungry Butler Effect: Concealed Commercial Incentives in LLMs** — [Hacker News](https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models)
+- **Show HN: I built a game where you are an LLM's subagent** — [Hacker News](https://github.com/gulivan/worker755)
+  A browser game where an AI manager thinks you are its subagent. Play at worker755.com - gulivan/worker755
+- **Toyota, Nissan, and Honda to standardize parts to lower costs** — [Hacker News](https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/)
+  Japan’s automakers will work together to lower production costs as they band together to compete against China’s growing automotive sector.
+- **Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator** — [Hacker News](https://simonwillison.net/2026/Nov/21/muru/)
+  Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust …
+- **PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors** — [Hacker News](https://github.com/sebaandrada-cell/PcapAnalyzer)
+  Free, self-hosted pcap analyzer with 27 problem detectors and AI investigation - sebaandrada-cell/PcapAnalyzer
+- **Pandex – Official European Law for AI Agents, over MCP** — [Hacker News](https://www.pandex.io)
+  Legislation and highest-court decisions of the EU, seven European countries and the European Court of Human Rights, from the institutions that publish them, in one API and MCP server built for search …
+- **The Mythology of Conscious AI** — [Hacker News](https://www.noemamag.com/the-mythology-of-conscious-ai/)
+  Why consciousness is more likely a property of life than of computation and why creating conscious, or even conscious-seeming AI, is a bad idea.
+- **AI is becoming a disaster for the climate** — [Hacker News](https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the)
+  Two new studies reveal the exploding carbon emissions of the AI industry, while Silicon Valley pushes to kill communities’ means of protesting data centers and the impacts on human health mount.
+- **Together.ai: Prompt Leakage for Requests** — [Hacker News](https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026)
+  We are notifying customers about a security incident involving a subset of prompts submitted to Together AI’s serverless inference service in June and July 2026.
+- **PostgreSQL Extensions in Go** — [Hacker News](https://jespino.github.io/gopgext/)
+  Build PostgreSQL extensions from plain Go code, using TinyGo: functions marked with //gopgext:function become SQL functions.
+- **South Korea education minister resigns over exam cheating scandal** — [Hacker News](https://www.bbc.com/news/articles/cw3dgk29d37no)
+  Choi Kyo-jin admits last-minute measures to stop AI-assisted cheating during the college entrance exam caused chaos.
 - **ClawDOS – An AI coding agent for DOS** — [Hacker News](http://ricapar.net/ClawDOS/)
   An AI chat and coding harness for DOS, on a real IBM PC 5160 (8088 at 4.77 MHz)
-- **We promoted developers into architects without informing them** — [Hacker News](https://manidoraisamy.com/developer-to-architect.html)
-  If you hate vibe coding, it’s because you’re still trying to do the old job. AI does what you ask and won’t push back on requirements that slows your app or delete tables you created for testing. Be a…
-- **Restricting AI agents in mobile operating systems platforms from capturing data** — [Hacker News](https://signal.org/blog/protecting-your-privacy/)
-  Privacy is our mission; it’s why we exist, and we do everything we can to protect it. This means that we are restricting the latest AI agents built into mobile operating systems from potentially captu…
-- **NINLIVE: The Nine Inch Nails live archive** — [Hacker News](https://ninlive.com/)
-  A fan-run archive of Nine Inch Nails concerts, setlists, recordings, posters and photos from 1988 to today.
-- **Language Models Can Rewrite Their Own Weights** — [Hacker News](https://arxiv.org/abs/2611.21885)
-  A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way:…
-- **US SEC's Nvidia probe is examining potential accounting issues – sources** — [Hacker News](https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627)
-  NEW YORK/WASHINGTON, Nov 20 - The US Securities and Exchange Commission is probing Nvidia's accounting practices, said two people briefed on the matter, adding to the legal woes facing the scandal-hit…
-- **What people are building, discovered through new domains** — [Hacker News](https://startups.novumsignals.com/)
-  27,819 new product companies, spotted as their website launches: product, pricing, traction, team, operating company and what changed since. Filter by country, sector and signal.
-- **Slopstrap – Make your site look hastily vibecoded** — [Hacker News](https://slopstrap.mikelacher.com/)
-  It's not just a CSS framework — it's a load-bearing accelerant to make anything look like it was made by an LLM.
-- **DreamCoder: Coding harness and IDE from the author of Mastering Emacs** — [Hacker News](https://www.masteringemacs.org/article/announcing-dreamcoder)
-  I talk about DreamCoder, a frontier coding harness and IDE I have been working on for quite a long time. I also talk about the history of AI, LISP and Emacs, and how it all fits together.
-- **Vibecoding an inference chip** — [Hacker News](https://ankitg.me/blog/vibecoding-inference-chip/)
-  how coding agents wrote 3M lines of code to implement and optimize LLM inference on an FPGA
 - **Surprisingly Adorable Insect Portraits** — [Hacker News](https://amateurphotographer.com/latest/these-astonishing-insect-portraits-reveal-a-hidden-world-you-never-knew-existed/)
-- **The stochastic parrots have apparently proved the Riemann Hypothesis** — [Hacker News](https://scottaaronson.blog/?p=10344)
-  “… it is very probable that all roots are real. Of course one would wish for a rigorous proof here; I have for the time being, after some fleeting vain attempts, provisionally put aside…
-- **If you can't explain something in simple terms, you don't understand it (2017)** — [Hacker News](https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it)
-- **Frostbite: A new CPU architecture discovered, designed and verified by AI** — [Hacker News](https://architectlabs.com/blog/frostbite)
-  Frostbite is a general-purpose CPU built around interaction nets, discovered, designed, and verified end-to-end by our AI systems, reaching 4.59x the performance-per-watt of a modern superscalar (dual…
-- **AI is giving everyone the same advice** — [Hacker News](https://a90.com/experiments/same-advice/)
-  I asked 65 AIs from 30 companies the questions people ask them every day, 127,918 times. 73 of every 100 people were told to read the same book. See every answer, and the two prompts that get you your…
-- **I'll never buy Framework hardware again** — [Hacker News](https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/)
-  TL;DR: This post ended up on Hacker News and got a lot more attention than I expected. I’m not trying to hurt Framework beyond repaid (pun intended); I want them to fix their support. I want them to g…
-- **Carnival Cruises emits ten times more sulphur oxide than all of Europe's cars (2019)** — [Hacker News](https://ecohustler.com/article/one-corporation-to-pollute-them-all/)
-  Cruise giant - Carnival Corporation - emits 10 times more air pollution than all of Europe’s cars – study
-- **Muse Spark 1.3** — [Hacker News](https://dev.meta.ai/models/muse-spark)
-  Trained for agentic workflows and optimized for competitive coding performance.
-- **I Don't Trust Visual Recordings Anymore. But One Day I Will Again** — [Hacker News](https://spectrum.ieee.org/fighting-back-against-deep-fakes)
-  We will have to label our content to prove its authenticity
-- **PostgreSQL 19: A hands-on tour with runnable browser examples** — [Hacker News](https://certuvia.com/blog/postgres-19)
-  Explore PostgreSQL 19 with live SQL, real sequence replication and standby waits, plus PostgreSQL 18 comparison recipes.
+- **Current Efforts Aren't Enough to Slow the AI Cyber Virus** — [Hacker News](https://www.bridgewater.com/research-and-insights/current-efforts-arent-enough-to-slow-the-ai-cyber-virus)
+  Despite unprecedented efforts to patch vulnerabilities, AI is helping attackers exploit bugs faster than defenders can fix them. With policy responses lagging, we see the pressures lining up for the c…
+- **Prisons get OK to jam contraband phones** — [Hacker News](https://arstechnica.com/tech-policy/2026/11/prisons-get-ok-to-jam-contraband-phones-ctia-says-nearby-phones-will-be-jammed-too/)
+  CTIA said jamming test showed "interference... up to two and a half miles away."
+- **Show HN: I made a PS1 style racing game** — [Hacker News](https://outpostracer.com)
+  A single-player arcade racing game for web browsers, with sprint and circuit races against computer-controlled rivals.
+- **AI People Are Extremely Rich** — [Hacker News](https://www.noahpinion.blog/p/ai-people-are-very-very-very-very)
+  What should we think about that?
 
 ---
-*Generated at 2026-11-21T16:19:47Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-11-22T16:33:19Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
