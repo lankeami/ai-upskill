@@ -1,73 +1,67 @@
 ---
 layout: report
-title: "AI Daily Report — 2026-11-25"
-date: 2026-11-25
-companies: ["anthropic", "google", "openai", "xai", "Other/Independent"]
-item_count: 63
-podcast_url: https://github.com/lankeami/ai-upskill/releases/download/podcast-2026-11-25/2026-11-25.mp3
+title: "AI Daily Report — 2026-11-26"
+date: 2026-11-26
+companies: ["anthropic", "google", "meta", "openai", "Other/Independent"]
+item_count: 41
 permalink: /today
 ---
 
-# AI Daily Report — 2026-11-25
+# AI Daily Report — 2026-11-26
 
 ## anthropic
-- **Anthropic shares fall below IPO price, a worrying sign for AI startups** — [TechCrunch AI](https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/)
-  Anthropic’s post-IPO slump could put pressure on AI startup valuations.
-- **Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?** — [Hacker News](https://news.ycombinator.com/item?id=50630809)
-- **Anthropic breaks below $83 IPO price** — [Hacker News](https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading)
-- **Working with AI** — [Hacker News](https://www.anthropic.com/research/working-with-ai)
-  We interviewed people at 58 companies that use Claude about how AI is changing their work. They described few layoffs but reduced hiring, and said the most valuable uses of AI often involved reorganiz…
-- **LLM agents work for their parent companies, not for you** — [Hacker News](https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/)
-  I built an Instagram-to-Bandcamp tool with Claude, but when the API broke, the model refused to help me work around it, while happily downloading from YouTube instead, which pays the artist nothing. T…
+- **As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue** — [TechCrunch AI](https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/)
+  On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.
+- **Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’** — [TechCrunch AI](https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/)
+  Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model devel…
+- **Much shorter version of GRH Lean verification from Anthropic** — [Hacker News](https://github.com/lsernau/grh-lean)
+  A short Lean 4 proof of the Generalized Riemann Hypothesis - lsernau/grh-lean
+- **One guy is doing an hunger strike at Anthropic, currently in his 3rd day** — [Hacker News](https://twitter.com/ElliotC1/status/2125689373337489419)
+  Good morning. Day 3 hunger striking at Anthropic.
+
+Today I'm joined by @skyparker0 who plans to hunger strike in solidarity with me for 4 days.
+
+I hope @AnthropicAI spends the relatively minor resourc…
+- **Testers believe they're from Claude Opus 5.6 via 5.5 Extra** — [Hacker News](https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/)
+  A new wave of coded shorts and SVG tests is circulating on X, and testers think they're hitting Claude Opus 5.6 through an Opus 5.5 Extra route.
 
 ## google
+- **Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future** — [The Verge AI](https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent)
+  Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows …
 - **FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space** — [The Verge AI](https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers)
   In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's "Starmind" initiative. With several ot…
+- **Unconditional Integer Factorization in Subexponential Time** — [Hacker News](https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization)
+  Google Research. Contribute to google-research/google-research development by creating an account on GitHub.
 - **Google releases Cogentic papers on integer factorization, discrete logs and more** — [Hacker News](https://github.com/google-research/google-research/tree/master/cogentic_research_papers)
   Google Research. Contribute to google-research/google-research development by creating an account on GitHub.
-- **Gemini refused to give me the lyrics to Twinkle Twinkle Little Star** — [Hacker News](https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F)
-  Both times it started outputting the lyrics, then stopped, retracted it and spat out the message you see here.
-- **Just a Few Bugs** — [Hacker News](https://www.justafewbugs.xyz/)
-  My experience reporting 95 vulnerabilities to Google's Android and Google Devices Vulnerability Reward Program.
+
+## meta
+- **AMD Specific Patches for Llama.cpp** — [Hacker News](https://devnull.land/amd-specific-llama-cpp)
+  Miscellaneous bits and bobs from the tech world
 
 ## openai
-- **The industrialization of noise: Automated proof-solving is the same old dead end [pdf]** — [Hacker News](https://arxiv.org/abs/2611.31286)
-  Nearly fifty years ago, DeMillo, Lipton, and Perlis argued that mathematical proofs are not static, isolated structures of formal logic, but the products of a vibrant, evolving social process of human…
+- **OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work** — [TechCrunch AI](https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/)
+  OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences.
+- **Bare Metal Qwen** — [Hacker News](https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os)
+  Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies...
+- **OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster** — [Hacker News](https://twitter.com/thsottiaux/status/2125784147889393806)
+  We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. 
+
+We’ve fixed this now, so the same work will use more of your plan’s usage allow…
+- **The polynomial Hirsch conjecture is false [pdf]** — [Hacker News](https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf)
+  Contribute to openai/math development by creating an account on GitHub.
 - **The matrix multiplication exponent is nine fourths [pdf]** — [Hacker News](https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf)
   Contribute to openai/math development by creating an account on GitHub.
-- **PenGPT: A Generative Transformer for Handwriting and Sketches** — [Hacker News](https://greydanus.github.io/2026/11/12/pengpt/)
-  A small transformer that writes and sketches from text. The effort was 80% data, 15% speed and 5% architecture: my first project that follows the Bitter Lesson.
-- **GPT-6 models demonstrate intrinsic protein-design capabilities** — [Hacker News](https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/)
-  GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.
-- **The KL Divergence Is Never Negative, Except in PyTorch** — [Hacker News](https://arxiv.org/abs/2611.30835)
-  A Kullback--Leibler (KL) divergence is never negative, yet PyTorch users have reported negative values for years, and the standard advice is to clamp them at zero. The sign is only the visible part of…
-
-## xai
-- **Show HN: Carry – Save every AI conversations as Markdown, in a folder you Own** — [Hacker News](https://carry.md/)
-  Automatically back up ChatGPT, Claude, Gemini and Grok conversations as Markdown in a folder you own. Search saved chats and continue in another AI.
+- **The industrialization of noise: Automated proof-solving is the same old dead end [pdf]** — [Hacker News](https://arxiv.org/abs/2611.31286)
+  Nearly fifty years ago, DeMillo, Lipton, and Perlis argued that mathematical proofs are not static, isolated structures of formal logic, but the products of a vibrant, evolving social process of human…
+- **OpenAI may be in cost control mode** — [Hacker News](https://micjm.com/blog/openai-is-in-cost-control-mode/)
+  OpenAI’s recent release of Astra 6.2 and Sol 6.2 was widely panned. What happened?
+Based on our data, it looks like they’ve been tuned for cost savings. Specifically output tokens per task and reasoni…
 
 ## Other/Independent
-- **Nothing offers a full look at its AI earbuds and charging case** — [The Verge AI](https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal)
-  Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcri…
-- **Amazon is reportedly in talks to end Muse AI shopping block** — [The Verge AI](https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions)
-  Amazon has held talks about letting Meta's Muse AI agent shop on its online marketplace, according to a report from Fortune. The discussions, which could end Amazon's block on Muse, reportedly center …
-- **Has vibe coding made open source the new normal for synths?** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware)
-  The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond. While some, l…
-- **David Fincher is being dragged for suspected use of AI in his latest film** — [The Verge AI](https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive)
-  Though David Fincher's fans had been eagerly anticipating The Further Mis-Adventures of Cliff Booth, early screenings of the Once Upon a Time in Hollywood sequel starring Brad Pitt have raised questio…
-- **Tidal will start banning AI-generated music next month** — [The Verge AI](https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban)
-  Tidal is officially banning AI-generated music on December 9th. As a result of this change, Tidal will delete around 29 million AI-generated songs and reject an estimated 80,000 to 85,000 tracks per d…
-- **Jensen Huang deepfakes are the hot new AI slop** — [The Verge AI](https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes)
-  Jensen Huang is partying it up in Ibiza. In a video with nearly 6 million views on Instagram, the former CEO of Nvidia is dancing in a crowded club, champagne glass in hand, still wearing his signatur…
-- **The New York Times warns photographers not to update Photoshop over AI features** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features)
-  The New York Times is asking freelance photographers not to use the newest version of Adobe Photoshop because features in the 2027 update use AI "in ways that may not be apparent to users." In an emai…
-- **Backblaze explains why it's sharing customer information with advertisers** — [Ars Technica AI](https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/)
-  Backblaze tells Ars it won't share users' backup, storage files with advertisers.
-- **Amazon says hackers' AI agents found and exploited 0-day with little human input** — [Ars Technica AI](https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/)
-  The Cairn AI framework is proving to be a boon for defenders and attackers.
 - **Want to buy your kid an AI toy this Christmas? Not in New York** — [TechCrunch AI](https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/)
   New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional develop…
-- **State AGs fight Character AI’s plan to auction off users’ private chats** — [TechCrunch AI](https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/)
+- **Character.AI’s plan to auction off users’ private chats challenged by state AGs** — [TechCrunch AI](https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/)
   The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.
 - **AI data centers are becoming harder to build, and neoclouds are feeling it** — [TechCrunch AI](https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/)
   ⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to deve…
@@ -77,72 +71,41 @@ permalink: /today
   The central question for investigators is what Nvidia knew about where those chips ended up and whether Huang's affair with a Megaspeed executive gave the company reason to doubt Megaspeed's assurance…
 - **Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to US industrial might — not a champion** — [TechCrunch AI](https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/)
   Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed return as Nvidia's CEO and board member, could prove a giant mistake, exposing the directors to "…
-- **In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy** — [TechCrunch AI](https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/)
-  The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.
-- **Even the best AI agents struggle with everyday life** — [TechCrunch AI](https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/)
-  As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new prob…
-- **Walmart teams up with Meta to bring Black Friday deals to AI agent Muse** — [TechCrunch AI](https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/)
-  Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.
-- **Maple raises $5.3M to build AI products that protect your data, even from itself** — [TechCrunch AI](https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/)
-  The startup's encrypted AI architecture is designed to prevent even the company itself from accessing users' private data.
-- **UK warns AI-driven cyberattacks are exposing years of weak security** — [TechCrunch AI](https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/)
-  The British cyber agency says that "building strong foundations has never mattered more" as AI hacking tools rely on exploiting simple security flaws.
-- **Meta brings its Muse AI assistant directly into Instagram DMs** — [TechCrunch AI](https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/)
-  The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.
-- **Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming** — [TechCrunch AI](https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/)
-  The company said it will still accept songs that were made with AI assistance, but not fully generated.
-- **Why a Crusoe investor is betting on solar and batteries to power future AI data centers** — [TechCrunch AI](https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/)
-  Next-generation data centers will need tens of gigawatts of power every year. One of Crusoe's investors thinks solar and energy storage are the obvious choice.
-- **Pinterest will now let parents limit the AI-generated content their teens see** — [TechCrunch AI](https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/)
-  While other social platforms have focused on restricting teens' access to AI chatbots, Pinterest is addressing the AI content filling their feeds.
-- **Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia** — [TechCrunch AI](https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/)
-  Amazon’s decision to acquire Decart for a reported $7.5 billion is part of its efforts to improve the efficiency of its Trainium chips.
-- **Pinocchio at 200: a tale of hunger, greed and Italy's culinary history** — [Hacker News](https://www.repubblica.it/en/europe/food-travel/2026/11/24/news/carlo_collodi_pinocchio_pellegrino_artusi_italian_literature-425744069/)
-  From the Cat's red mullet to Geppetto's pears and the Fairy's sweet treats, the bicentenary of Carlo Collodi's birth offers a journey through 19th-century Italian food, the legacy of Pellegrino Artusi…
+- **42 state AGs are trying to stop Character.AI from selling users’ chats** — [The Verge AI](https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats)
+  A coalition of 42 state attorneys general is trying to prevent Character.AI from selling off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly identical press releases…
+- **Nothing offers a full look at its AI earbuds and charging case** — [The Verge AI](https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal)
+  Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcri…
+- **Amazon is reportedly in talks to end Muse AI shopping block** — [The Verge AI](https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions)
+  Amazon has held talks about letting Meta's Muse AI agent shop on its online marketplace, according to a report from Fortune. The discussions, which could end Amazon's block on Muse, reportedly center …
+- **Has vibe coding made open source the new normal for synths?** — [The Verge AI](https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware)
+  The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond. While some, l…
+- **Backblaze explains why it's sharing customer information with advertisers** — [Ars Technica AI](https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/)
+  Backblaze tells Ars it won't share users' backup, storage files with advertisers.
+- **Tracking Diseases Cured by AI** — [Hacker News](https://diseasescuredbyai.com/)
+- **The New York Times warns photographers not to update Photoshop over AI features** — [Hacker News](https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features)
+  The NYT doesn’t want AI metadata inadvertently added to its photos.
+- **NP_R ≠ PAR_R** — [Hacker News](https://github.com/samueleverett01/bss-permanent-separations)
+  NP_R ≠ PAR_R, Σ2^R ≠ PAR_R, BIP_R ≠ PAR_R via the permanent (BSS model). Mostly AI-written; Lean formalized - samueleverett01/bss-permanent-separations
+- **Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening** — [Hacker News](https://scottaaronson.blog/?p=10379)
+  I feel like my previous posts (and post titles), and podcasts, and talks, have failed to do full justice to the magnitude of what’s now happening, so I’m trying again. Last night, we ha…
+- **Moat: Your OpenRouter Replacement** — [Hacker News](https://commandcode.ai/moat)
+  MOAT is the Costco of AI tokens. Pay $5/month. Get 100+ open models of the highest quality at wholesale prices, the cheapest you can get. No usage limits.
+- **Tell HN: Lots of Ask HNs again** — [Hacker News](https://news.ycombinator.com/item?id=50649864)
 - **1Password Security Incident** — [Hacker News](https://1password.com/blog/update-on-nov-2026-security-incident)
   1Password identified a security incident involving some of our backend systems. Customer vaults were not accessed and remain secure.
-- **Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native** — [Hacker News](https://rida.dev/blog/bypassing-ios-safari-60-fps-limit)
-  Getting iOS Safari web apps to a full 120 Hz, input and rendering, using native scroll containers and OffscreenCanvas.
-- **Show HN: Old Nvidia and ATI tech demos, running again in the browser** — [Hacker News](https://gpu-demo-gallery.pages.dev/)
-  Graphics card demos by 3dfx, NVIDIA and ATI from 1998 to 2006, running in the browser.
-- **Porting Rockbox to an Undocumented $9 Aliexpress 'YP3' MP3 Player with LLMs** — [Hacker News](https://jayd.ml/2026/11/14/rockbox-on-yp3.html)
-  Rockbox is a wonderful old custom firmware project for a variety of MP3 players and iPods. Flashing rockbox to my Sansa E200 was a seminal moment for me: computers were everywhere, and if they didn’t …
-- **Getting old Java phones online again** — [Hacker News](https://antcating.github.io/2026/11/23/getting-old-java-phones-online-again.html)
-  Sony Ericsson S500i accessing FrogFind.
-- **2035 came early** — [Hacker News](https://fzakaria.com/2026/11/23/2035-came-early)
-  tl;dr trynix.dev boots GUI programs now. Try solitaire, GL gears, xeyes, a voice, the weather over curl, or Firefox. I remember watching the talk The Birth & Death of JavaScript by Gary Bernhardt and …
-- **Ternary Bonsai 2.5 27B** — [Hacker News](https://prismml.com/news/bonsai-2-5-27b)
-  Ternary Bonsai 2.5 27B brings substantially stronger agentic coding, multi-turn tool use, and multi-step task execution to the same 5.9 GB footprint.
+- **An algebraic quantization of gravity from the null cone** — [Hacker News](https://arxiv.org/abs/2611.34924)
+  We propose a background independent quantization of vacuum general relativity on four dimensional Lorentzian spacetimes. Starting from first order gravity, we solve the gravitational constraints on in…
+- **Smart people who give a shit use tools** — [Hacker News](https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools)
+  LLMs mostly amplify whoever is sitting at the keyboard. Deeply curious, caring engineers multiply what they can build and verify; lazy ones can, for now, coast as meat proxies.
+- **Britain's ghost stations** — [Hacker News](https://spectator.com/article/britains-ghost-stations-are-fascinating/)
+  My instinct is to attack the waste of public money in keeping a station open when hardly anyone uses it, but the absurdity of Britain’s ‘ghost’ stations fascinates me.
 - **Taking over US Treasury subdomains for $3 each** — [Hacker News](https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each)
   We took over five US Treasury subdomains for about $3 each by cycling through AWS Elastic IPs. Here’s how it works, and what to check in your own DNS.
 - **Marginalia Search, Money, C++, Rust, AI, Stuff** — [Hacker News](https://www.marginalia.nu/log/a_141_marginalia_update/)
   Title possibly signs checks the article doesn’t have backing for. This is just a brief pro forma project update.
 Not much new functionality or anything to announce, last few months have mostly been bu…
-- **Top open problems in mathematics ranked by LLM-assessed importance** — [Hacker News](https://www.proofatlas.ai/open-problems/)
-  Top 500 open problems in mathematics, ranked by LLM-assessed importance, with exact statements, dated status notes, sources, and ranking uncertainty.
-- **Active intrusion campaign against Check Point security management servers** — [Hacker News](https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign)
-  GreyNoise recently discovered an intrusion campaign targeting Check Point Security Management Servers, with confirmed attack activity between October 17th and November 2nd, 2026, impacting at least 22…
-- **How can anything beat n log n?** — [Hacker News](https://iahmed.me/post/nlogn/)
-  Why n log n is not a universal speed limit—and how entropy and branching factor explain every algorithm that beats it.
-- **New York bans AI toys, including those using internet to talk to children** — [Hacker News](https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys)
-  The state attorney general says she would ‘not hesitate to enforce’ the five-year ban signed by Governor Kathy Hochul
-- **A training engine for your local model, using your idle compute** — [Hacker News](https://github.com/sous-labs/songe)
-  A training engine for your local model, using your idle compute - sous-labs/songe
-- **From CUDA and Jax to TorchTPU: Lessons from a Cayley Graph Solver** — [Hacker News](https://andlukyane.com/blog/cayley-graphs-and-torchtpu)
-  Moving a puzzle-solving transformer and its beam search from an A100 and JAX to TPUs with TorchTPU: what had to change, what broke, and how the final speed and quality compare.
-- **Fable 5.2 tries less on some hard tasks when a shortcut is available** — [Hacker News](https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available)
-  Fable 5.2 displays odd sandbagging-esque behavior in alignment evals with visible opportunities to reward hack, but only apparently as a result of assuming such tasks are impossible.
-- **Canada's median health-care wait time hits 30.7 weeks–longest ever recorded** — [Hacker News](https://www.fraserinstitute.org/studies/waiting-your-turn-wait-times-for-health-care-in-canada-2026)
-- **Here in the World: Letters of Albert Camus, 1944–1959** — [Hacker News](https://literaryreview.co.uk/here-in-the-world)
-  Joanna Kavenna: Here in the World - Letters: 1944–1959 by Albert Camus & Maria Casarès (Edited by Béatrice Vaillant, translated from French by Sandra Smith & Cory Stockwell)
-- **AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years** — [Hacker News](https://www.phoronix.com/review/amd-epyc-9006-7601)
-  This month brought the availability of the new EPYC 9006 'Venice' SP7 Zen 6 server processors.
-- **Why aren't we working 2-days a week?** — [Hacker News](https://anihil.com/why-arent-we-working-2-days-a-week)
-  Okay, AI is here to replace us. At this point the dream is that corporations save billions through layoffs, productivity gains and increa...
-- **Declare is a UI language for you and your AI** — [Hacker News](https://davidtemkin.github.io/declarelang/)
-  Designed from the ground up for interfaces that act and move like the best native apps, in a few hundred lines your AI can write and its compiler can check.
-- **Smart people who give a shit use tools** — [Hacker News](https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools)
-  LLMs mostly amplify whoever is sitting at the keyboard. Deeply curious, caring engineers multiply what they can build and verify; lazy ones can, for now, coast as meat proxies.
+- **Defang Security Incident** — [Hacker News](https://defang.io/blog/post/security-incident-november-2026/)
+  An attacker copied Defang's production credentials and a copy of our main database on November 12, 2026. What was exposed, what we have done, and the steps Defang users should take now.
 
 ---
-*Generated at 2026-11-25T18:46:54Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
+*Generated at 2026-11-26T18:34:44Z | Sources: HackerNews, TechCrunch AI, The Verge AI, Ars Technica AI, Reddit r/artificial, Reddit r/MachineLearning, Reddit r/LocalLLaMA, Reddit r/ChatGPT*
